@@ -1,0 +1,13 @@
+---
+title: "HSI 2022 Workshop"
+---
+
+# HSI 2022 – Second Workshop
+
+Overview.
+
+## Focus Areas
+- ...
+
+## Resources
+See the [Resources page](resources.qmd).

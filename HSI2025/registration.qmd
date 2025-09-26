@@ -1,0 +1,15 @@
+---
+title: "HSI 2025 Registration"
+---
+
+# Registration
+
+Provide instructions, fees table, deadlines.
+
+## Categories
+- Early Bird (deadline ...)
+- Regular
+- Student
+
+## How to Register
+Link or embedded form.

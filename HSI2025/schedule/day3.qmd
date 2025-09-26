@@ -1,0 +1,11 @@
+---
+title: "Day 3 – Closing & Workshops"
+listing:
+  contents: day3/*.qmd
+  type: table
+  sort: "title"
+---
+
+# Day 3 – Closing & Workshops
+
+Intro for day 3.

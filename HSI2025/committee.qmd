@@ -1,0 +1,19 @@
+---
+title: "HSI 2025 Technical Committee & Chairs"
+---
+
+# Technical Committee & Chairs
+
+## General Chairs
+- Name (Affiliation)
+
+## Program Chairs
+- Name (Affiliation)
+
+## Technical Committee
+- Member 1 (Affiliation)
+- Member 2 (Affiliation)
+- ...
+
+## Organizing Team
+Roles and contacts.

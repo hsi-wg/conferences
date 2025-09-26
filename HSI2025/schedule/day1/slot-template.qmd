@@ -1,0 +1,20 @@
+---
+title: "Session Title Placeholder"
+author: "Speaker Name"
+abstract: |
+  2–3 sentence abstract placeholder describing the session.
+category: Keynote
+---
+
+# Session Title Placeholder
+
+**Speaker:** Speaker Name  
+**Time:** HH:MM–HH:MM (Local)  
+**Room:** TBD
+
+## Abstract
+
+Replace with real abstract.
+
+## Bio
+Short speaker bio placeholder.

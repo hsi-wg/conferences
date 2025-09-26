@@ -1,0 +1,12 @@
+---
+title: "HSI 2024 Proceedings"
+listing:
+  contents: proceedings/*.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+---
+
+# Proceedings – HSI 2024
+
+Below are the papers (template entries). Update each paper file in `proceedings/`.

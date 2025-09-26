@@ -1,0 +1,16 @@
+---
+title: "HSI 2020 Workshop"
+---
+
+# HSI 2020 – First Workshop
+
+Brief description, context (virtual/in-person), focus.
+
+## Themes
+- ...
+
+## Outcomes
+Summarize major insights.
+
+## Resources
+See the [Resources page](resources.qmd).

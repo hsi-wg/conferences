@@ -1,0 +1,20 @@
+---
+title: "Paper Title Placeholder"
+authors: ["First Author", "Second Author"]
+keywords: [HSI, Placeholder]
+date: 2024-06-01
+abstract: |
+  Short abstract placeholder. Replace with actual abstract text summarizing contribution.
+---
+
+# Introduction
+
+Write introduction here.
+
+# Methods
+
+# Results
+
+# Discussion
+
+# References

@@ -1,0 +1,17 @@
+---
+title: "HSI 2019 Conference"
+---
+
+# HSI 2019 – First Conference
+
+Introductory text (replace with real content): Provide overview, theme, location, dates.
+
+## Key Topics
+- Human Systems Integration foundations
+- ...
+
+## Program Overview
+(Embed schedule summary or link to detailed PDF)
+
+## Resources
+See the [Resources page](resources.qmd).

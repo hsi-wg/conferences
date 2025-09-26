@@ -1,0 +1,11 @@
+---
+title: "Day 2 – Main Program"
+listing:
+  contents: day2/*.qmd
+  type: table
+  sort: "title"
+---
+
+# Day 2 – Main Program
+
+Intro for day 2.

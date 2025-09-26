@@ -1,0 +1,11 @@
+---
+title: "Day 1 – Opening"
+listing:
+  contents: day1/*.qmd
+  type: table
+  sort: "title"
+---
+
+# Day 1 – Opening Day
+
+Intro for day 1.

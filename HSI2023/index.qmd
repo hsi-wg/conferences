@@ -1,0 +1,15 @@
+---
+title: "HSI 2023 Sector Workshops"
+---
+
+# HSI 2023 – Sector Workshops
+
+Overview of multiple sector-focused workshops.
+
+## Sectors
+- Aerospace
+- Healthcare
+- ...
+
+## Resources
+See the [Resources page](resources.qmd).

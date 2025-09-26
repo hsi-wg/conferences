@@ -1,0 +1,16 @@
+---
+title: "HSI 2024 Conference"
+---
+
+# HSI 2024 – Third Conference
+
+Intro text for 2024 conference.
+
+## Themes
+- ...
+
+## Proceedings
+Proceedings will be published. See the [Proceedings overview](proceedings.qmd).
+
+## Resources
+See the [Resources page](resources.qmd).

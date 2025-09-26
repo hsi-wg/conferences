@@ -1,0 +1,12 @@
+---
+title: "HSI 2025 Conference"
+---
+
+# HSI 2025 – Fourth Conference (Current Event)
+
+Welcome text, venue, dates, theme.
+
+## Quick Links
+- [Registration](registration.qmd)
+- [Schedule Overview](schedule/index.qmd)
+- [Technical Committee & Chairs](committee.qmd)

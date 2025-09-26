@@ -7,7 +7,30 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - text: Events
+        menu:
+          - text: HSI 2025 (Current)
+            href: HSI2025/index.qmd
+          - text: HSI 2024
+            href: HSI2024/index.qmd
+          - text: HSI 2023
+            href: HSI2023/index.qmd
+          - text: HSI 2022
+            href: HSI2022/index.qmd
+          - text: HSI 2021
+            href: HSI2021/index.qmd
+          - text: HSI 2020
+            href: HSI2020/index.qmd
+          - text: HSI 2019
+            href: HSI2019/index.qmd
+      - href: HSI2025/registration.qmd
+        text: Registration 2025
+      - href: HSI2025/schedule/index.qmd
+        text: Schedule 2025
+      - href: HSI2025/committee.qmd
+        text: Committee 2025
+      - href: about.qmd
+        text: About
 
 format:
   html:

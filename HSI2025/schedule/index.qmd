@@ -1,0 +1,12 @@
+---
+title: "HSI 2025 Schedule"
+listing:
+  contents: ./*.qmd
+  sort: "title"
+  filter-ui: false
+  type: table
+---
+
+# Event Schedule Overview
+
+Select a day for details.
