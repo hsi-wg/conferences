@@ -1,5 +1,6 @@
 ---
-title: "HSIConferenceWebsite"
+title: "HSI Conferences and Workshop Website"
+page-layout: full
 ---
 
 # INCOSE HSI Working Group Conferences and Workshops 
