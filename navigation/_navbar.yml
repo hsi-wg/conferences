@@ -1,0 +1,17 @@
+website:
+  navbar:
+    right:
+      - href: HSI2025/index.qmd
+        text: HSI2025
+      - href: HSI2024/index.qmd
+        text: HSI2024
+      - href: HSI2023/index.qmd
+        text: HSI2023
+      - href: HSI2022/index.qmd
+        text: HSI2022
+      - href: HSI2021/index.qmd
+        text: HSI2021
+      - href: HSI2020/index.qmd
+        text: HSI2020
+      - href: HSI2019/index.qmd
+        text: HSI2019

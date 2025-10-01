@@ -1,0 +1,75 @@
+website:
+  sidebar:
+    - id: hsi2025
+      title: "HSI 2025"
+      style: docked
+      search: true
+      collapse-level: 2
+      contents:
+        - text: HSI 2025
+          href: HSI2025/index.qmd
+        - text: Registration
+          href: HSI2025/registration.qmd
+        - section: Schedule
+          contents:
+            - text: Overview
+              href: HSI2025/schedule/index.qmd
+            - HSI2025/schedule/day1.qmd
+            - HSI2025/schedule/day2.qmd
+            - HSI2025/schedule/day3.qmd
+        - text: Committee
+          href: HSI2025/committee.qmd
+    - id: hsi2024
+      title: "HSI 2024"
+      style: docked
+      search: true
+      contents:
+        - text: HSI 2024
+          href: HSI2024/index.qmd
+        - text: Resources
+          href: HSI2024/resources.qmd
+        - text: Proceedings
+          href: HSI2024/proceedings.qmd
+        - section: Papers
+          contents:
+            - auto: "HSI2024/proceedings/*.qmd"
+    - id: hsi2023
+      title: "HSI 2023"
+      style: docked
+      contents:
+        - text: HSI 2023
+          href: HSI2023/index.qmd
+        - text: Resources
+          href: HSI2023/resources.qmd
+    - id: hsi2022
+      title: "HSI 2022"
+      style: docked
+      contents:
+        - text: HSI 2022
+          href: HSI2022/index.qmd
+        - text: Resources
+          href: HSI2022/resources.qmd
+    - id: hsi2021
+      title: "HSI 2021"
+      style: docked
+      contents:
+        - text: HSI 2021
+          href: HSI2021/index.qmd
+        - text: Resources
+          href: HSI2021/resources.qmd
+    - id: hsi2020
+      title: "HSI 2020"
+      style: docked
+      contents:
+        - text: Overview
+          href: HSI2020/index.qmd
+        - text: Resources
+          href: HSI2020/resources.qmd
+    - id: hsi2019
+      title: "HSI 2019"
+      style: docked
+      contents:
+        - text: Overview
+          href: HSI2019/index.qmd
+        - text: Resources
+          href: HSI2019/resources.qmd
