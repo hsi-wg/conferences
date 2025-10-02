@@ -2,9 +2,11 @@
 title: "HSI 2025 Schedule"
 listing:
   id: conference-sessions
-  template: schedule.ejs
+  template: ../../templates/schedule.ejs
   contents: 
     - sessions.yml
+  template-params:
+    days: { '1':'5 Nov 2025', '2':'6 Nov 2025', '3':'7 Nov 2025' }
   sort-ui: false
   filter-ui: false
   page-size: 100

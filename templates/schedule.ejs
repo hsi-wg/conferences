@@ -93,7 +93,7 @@
     });
   });
   // Assign human dates for day headings (optional mapping)
-  const dayDates = { '1':'5 Nov 2025', '2':'6 Nov 2025', '3':'7 Nov 2025' };
+  const dayDates = <%= JSON.stringify(templateParams.days) %>;
   document.querySelectorAll('.schedule-day-date').forEach(span=>{
     const d = span.getAttribute('data-day');
     if (dayDates[d]) span.textContent = dayDates[d];
