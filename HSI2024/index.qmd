@@ -2,15 +2,24 @@
 title: "HSI 2024 Conference"
 ---
 
-# HSI 2024 – Third Conference
+# HSI2024 Conference (3rd INCOSE HSI Conference)
 
-Intro text for 2024 conference.
+Held in Jeju, Republic of Korea, on August 27–29, 2024, in collaboration with the 22nd Triennial Congress of the International Ergonomics Association (IEA-2024) — Better Life Ergonomics for Future Humans.
+
+The third edition of the international HSI conference brought together practitioners, researchers, and decision-makers to reaffirm the central place of humans in the design of complex systems.
 
 ## Themes
-- ...
+- Growing role of generative AI in human interfaces
+- Ethical and operational limits of automation
+- Need for user-centred approaches from the earliest design stages
 
 ## Proceedings
 Proceedings will be published. See the [Proceedings overview](proceedings.qmd).
+- 20 research papers
+- 6 early research papers
+- 4 industry papers
+- 3 paperless presentations and panels
 
 ## Resources
 See the [Resources page](resources.qmd).
+
