@@ -1,5 +1,12 @@
 ---
 title: "HSI 2024 Conference"
+listing:
+  id: conference-sessions
+  template: ../templates/schedule.ejs
+  template-params:
+    days: { '1':'27 Aug 2024', '2':'28 Aug 2024', '3':'29 Aug 2024' }
+  contents: 
+    - sessions.yml
 ---
 
 # HSI2024 Conference (3rd INCOSE HSI Conference)

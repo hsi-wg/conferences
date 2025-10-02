@@ -1,0 +1,17 @@
+---
+title: "HSI 2024 Schedule"
+listing:
+  id: conference-sessions
+  template: ../../templates/schedule.ejs
+  contents: 
+    - sessions.yml
+  template-params:
+    days: { '1':'27 Aug 2024', '2':'28 Aug 2024', '3':'29 Aug 2024' }
+  sort-ui: false
+  filter-ui: false
+  page-size: 100
+--- 
+# Event Schedule Overview
+
+Below is the full conference program. Times are shown in your local timezone. Use filter/sort controls to refine (e.g., by tag or category). Click "Show more" to expand abstracts.
+
