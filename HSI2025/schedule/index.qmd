@@ -1,12 +1,15 @@
 ---
 title: "HSI 2025 Schedule"
 listing:
-  contents: ./*.qmd
-  sort: "title"
+  id: conference-sessions
+  template: schedule.ejs
+  contents: 
+    - sessions.yml
+  sort-ui: false
   filter-ui: false
-  type: table
----
-
+  page-size: 100
+--- 
 # Event Schedule Overview
 
-Select a day for details.
+Below is the full conference program. Times are shown in your local timezone. Use filter/sort controls to refine (e.g., by tag or category). Click "Show more" to expand abstracts.
+

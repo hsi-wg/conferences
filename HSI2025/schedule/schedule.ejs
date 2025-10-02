@@ -1,0 +1,104 @@
+```{=html}
+
+<% /* Custom conference schedule template
+  Expects items representing sessions with fields:
+   - title, href, start, end, tags (array), category, authors (string), day
+  Group by day (1..n). Show local start/end times (converted client-side).
+*/ %>
+<h1 class="mb-4">Conference Schedule</h1>
+
+<div class="schedule-controls mb-3">
+  <div class="row g-2">
+    <div class="col-auto"><strong>Schedule (local time)</strong></div>
+    <div class="col-auto small text-muted" id="tz-indicator"></div>
+  </div>
+</div>
+
+
+<% // Group items by day %>
+<% const byDay = {}; %>
+<% for (const item of items) { %>
+  <% const d = item.day || '1'; %>
+  <% if (!byDay[d]) byDay[d] = []; %>
+  <% byDay[d].push(item); %>
+<% } %>
+
+<% const dayKeys = Object.keys(byDay).sort((a,b)=>parseInt(a)-parseInt(b)); %>
+
+<div class="schedule-days">
+  <% for (const day of dayKeys) { %>
+    <% const sessions = byDay[day].sort((a,b)=> new Date(a.start) - new Date(b.start)); %>
+    <section class="listing-day mb-5" data-day="<%= day %>">
+      <h2 class="h4 border-bottom pb-1 mt-4">Day <%= day %> – <span class="schedule-day-date" data-day="<%= day %>"></span></h2>
+      <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
+        <% for (const sess of sessions) { %>
+          <% const tagStr = (sess.tags||[]).join(', '); %>
+          <li class="session-item mb-3 p-3 border rounded" <%= metadataAttrs(sess) %>>
+            <div class="d-flex flex-wrap align-items-baseline gap-2">
+              <div class="session-time fw-bold" data-start="<%- sess.start %>" data-end="<%- sess.end %>">
+                <span class="time-range">--:-- – --:--</span>
+              </div>
+              <div class="flex-grow-1">
+                <a href="<%- sess.href %>" class="listing-title h6 d-block mb-0"><%= sess.title %></a>
+                <small class="text-muted listing-authors"><%= sess.authors %></small>
+              </div>
+              <div class="listing-category badge bg-primary"><%= sess.category %></div>
+               <% if (sess.tags && sess.tags.length) { %>
+              <div class="mt-1 small listing-tags">
+                <% for (const t of sess.tags) { %>
+                  <span class="badge bg-secondary me-1 listing-tag"><%= t %></span>
+                <% } %>
+              </div>
+            <% } %>
+            </div>
+           
+            <div class="session-abstract collapse mt-2" id="abs-<%= sess.id %>">
+              <p class="mb-0 listing-abstract"><%= sess.abstract %></p>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-<%= sess.id %>" aria-expanded="false">Show more</button>
+          </li>
+        <% } %>
+      </ul>
+    </section>
+  <% } %>
+</div>
+
+<script>
+(function(){
+  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const tzEl = document.getElementById('tz-indicator');
+  if (tzEl) tzEl.textContent = tz;
+  function formatRange(startISO,endISO){
+    try {
+      const s = new Date(startISO);
+      const e = new Date(endISO);
+      const fmt = new Intl.DateTimeFormat(undefined,{hour:'2-digit',minute:'2-digit'});
+      return fmt.format(s) + ' – ' + fmt.format(e);
+    } catch { return startISO + ' – ' + endISO; }
+  }
+  document.querySelectorAll('.session-item .session-time').forEach(el=>{
+    const start = el.getAttribute('data-start');
+    const end = el.getAttribute('data-end');
+    el.querySelector('.time-range').textContent = formatRange(start,end);
+  });
+  // toggle abstract
+  document.querySelectorAll('.toggle-abstract').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const sel = btn.getAttribute('data-target');
+      const panel = document.querySelector(sel);
+      if (!panel) return;
+      const shown = panel.classList.toggle('show');
+      btn.setAttribute('aria-expanded', shown ? 'true':'false');
+      btn.textContent = shown ? 'Show less' : 'Show more';
+    });
+  });
+  // Assign human dates for day headings (optional mapping)
+  const dayDates = { '1':'5 Nov 2025', '2':'6 Nov 2025', '3':'7 Nov 2025' };
+  document.querySelectorAll('.schedule-day-date').forEach(span=>{
+    const d = span.getAttribute('data-day');
+    if (dayDates[d]) span.textContent = dayDates[d];
+  });
+})();
+</script>
+
+```

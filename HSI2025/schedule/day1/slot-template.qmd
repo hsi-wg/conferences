@@ -4,6 +4,7 @@ author: "Speaker Name"
 abstract: |
   2–3 sentence abstract placeholder describing the session.
 category: Keynote
+date: YYYY-MM-DDTHH:mm:ssZ
 ---
 
 # Session Title Placeholder

@@ -1,0 +1,264 @@
+- id: heuristics-workshop
+  day: 1
+  title: "Heuristics Workshop"
+  authors: ["G. Kennedy", "H. Lee"]
+  category: Workshop
+  tags: ["A", "G"]
+  start: 2025-11-05T09:00:00Z
+  duration: PT90M
+  end: 2025-11-05T10:30:00Z
+  abstract: |
+    Workshop to derive and refine a set of HSI heuristics from primer materials; participants review an LLM-generated starter set and synthesize a concise validated collection for the INCOSE heuristics database.
+- id: sociotechnical-systems-of-systems-for-resilience
+  day: 1
+  title: "Sociotechnical Systems-of-Systems for Resilience"
+  authors: ["G. Kennedy", "Project Wildfire Team"]
+  category: Workshop
+  tags: ["H"]
+  start: 2025-11-05T10:30:00Z
+  duration: PT90M
+  end: 2025-11-05T12:00:00Z
+  abstract: |
+    Kickoff engagement for Project Wildfire exploring resilience in wildfire emergencies across extreme conditions, sustainment, responder wellbeing, community rebuilding, logistics, multi-agency coordination, and SoS characteristics.
+- id: conops-early-stage-rd
+  day: 1
+  title: "CONOPS Early Stage R&D"
+  authors: ["R. Reis"]
+  category: Talk
+  tags: ["B"]
+  start: 2025-11-05T12:00:00Z
+  duration: PT90M
+  end: 2025-11-05T13:30:00Z
+  abstract: |
+    Exploration of early-stage research and development approaches for Concept of Operations (CONOPS) framing within HSI-driven system design and validation.
+- id: hsi-from-a-development-perspective
+  day: 1
+  title: "HSI from a Development Perspective"
+  authors: ["Peter Hellekant"]
+  category: Talk
+  tags: ["A", "B", "F"]
+  start: 2025-11-05T13:30:00Z
+  duration: PT90M
+  end: 2025-11-05T15:00:00Z
+  abstract: |
+    Perspective on integrating HSI across development workflows, toolchains, and governance; linking fundamentals, methods, and organizational implementation.
+- id: efficient-integration-of-model-based-and-data-driven-approaches
+  day: 1
+  title: "Efficient Integration of Model-based and Data-driven Approaches"
+  authors: ["John S. Baras", "Others TBD"]
+  category: Panel
+  tags: ["A", "H", "C"]
+  start: 2025-11-05T15:00:00Z
+  duration: PT90M
+  end: 2025-11-05T16:30:00Z
+  abstract: |
+    Session on modeling, monitoring, valuation, and management of HSI using integrated model-based and data-driven techniques including trust, risk, and multi-metric trade analysis.
+- id: hsi-in-the-5th-industrial-revolution
+  day: 1
+  title: "HSI in the 5th Industrial Revolution"
+  authors: ["Avi Harel"]
+  category: Talk
+  tags: ["G", "H", "C"]
+  start: 2025-11-05T16:30:00Z
+  duration: PT90M
+  end: 2025-11-05T18:00:00Z
+  abstract: |
+    Examines sustainability, error-proofing by design, and scenario-based methods to manage operational complexity with AI and model-driven approaches.
+- id: human-digital-twin-ontology-development
+  day: 1
+  title: "Human Digital Twin Ontology Development"
+  authors: ["Mike Miller"]
+  category: Discussion
+  tags: ["C"]
+  start: 2025-11-05T18:00:00Z
+  duration: PT90M
+  end: 2025-11-05T19:30:00Z
+  abstract: |
+    Discussion of expanding digital twin ontology efforts to encompass human digital twins: applications, terminology alignment, and potential working group formation.
+- id: hsi-outreach-and-inter-network-directions
+  day: 1
+  title: "HSI Outreach and Inter-network Directions"
+  authors: ["INCOSE", "IEA", "ACM", "IEEE", "NAB"]
+  category: Panel
+  tags: ["G", "H"]
+  start: 2025-11-05T19:30:00Z
+  duration: PT90M
+  end: 2025-11-05T21:00:00Z
+  abstract: |
+    Panel of international HSI-related networks sharing activities, challenges, joint opportunities, and future collaboration pathways.
+- id: advance-hsi-infused-architecting-of-ai-enabled-systems
+  day: 1
+  title: "Advance HSI Infused Architecting of AI Enabled Systems"
+  authors: ["R. Reis"]
+  category: Workshop
+  tags: ["H", "C", "B"]
+  start: 2025-11-05T21:00:00Z
+  duration: PT90M
+  end: 2025-11-05T22:30:00Z
+  abstract: |
+    Collaborative development of a COST action proposal to embed HSI concerns centrally in safety-critical AI-enabled systems architecture across domains.
+- id: hsi-in-sysml-mil-std-1472h
+  day: 1
+  title: "HSI in SysML: MIL-STD 1472H Walkthrough"
+  authors: ["Caitlin Ryan", "Chris Bartlett"]
+  category: Talk
+  tags: ["H", "C", "B"]
+  start: 2025-11-05T22:30:00Z
+  duration: PT90M
+  end: 2025-11-06T00:00:00Z
+  abstract: |
+    Detailed walkthrough of modeling MIL-STD 1472H in SysML, highlighting digital engineering standards adoption challenges and access pathways via INCOSE SELab.
+- id: commonalities-and-differences-between-hci-and-hsi
+  day: 2
+  title: "Commonalities and Differences between HCI and HSI"
+  authors: ["P. Palanque", "Contributors"]
+  category: Panel
+  tags: ["A", "G"]
+  start: 2025-11-06T09:00:00Z
+  duration: PT90M
+  end: 2025-11-06T10:30:00Z
+  abstract: |
+    Comparative exploration of Human-Computer Interaction and Human Systems Integration domains to map overlaps, divergences, and collaboration opportunities.
+- id: hsi-requirements
+  day: 2
+  title: "HSI Requirements"
+  authors: ["(Reqt WG?)"]
+  category: Discussion
+  tags: ["H", "C", "B"]
+  start: 2025-11-06T10:30:00Z
+  duration: PT90M
+  end: 2025-11-06T12:00:00Z
+  abstract: |
+    Session to examine elicitation, specification, and verification of HSI requirements, integrating modeling and simulation and method/tool support.
+- id: social-systems-group
+  day: 2
+  title: "Social Systems Group"
+  authors: ["G. Kennedy", "Shams"]
+  category: Discussion
+  tags: ["A", "G"]
+  start: 2025-11-06T12:00:00Z
+  duration: PT90M
+  end: 2025-11-06T13:30:00Z
+  abstract: |
+    Session focusing on foundational social system constructs and critique within HSI, linking societal dynamics to integration practices.
+- id: mb-hsi-and-social-enterprise-project
+  day: 2
+  title: "MB-HSI & Social Enterprise Project"
+  authors: ["TBD"]
+  category: Discussion
+  tags: ["C"]
+  start: 2025-11-06T13:30:00Z
+  duration: PT90M
+  end: 2025-11-06T15:00:00Z
+  abstract: |
+    Exploration of model-based HSI approaches within social enterprise contexts and collaborative project scoping.
+- id: hrls-orls-measurement
+  day: 2
+  title: "HRLs / ORLs Measurement"
+  authors: ["Judi See (TBC)"]
+  category: Talk
+  tags: ["E"]
+  start: 2025-11-06T15:00:00Z
+  duration: PT90M
+  end: 2025-11-06T16:30:00Z
+  abstract: |
+    Examination of Human Readiness Levels (HRLs) and Operational Readiness Levels (ORLs) metrics, potential measurement frameworks, and maturity considerations.
+- id: sae-hsi-group
+  day: 2
+  title: "SAE HSI Group"
+  authors: ["TBD"]
+  category: Talk
+  tags: ["F", "D"]
+  start: 2025-11-06T16:30:00Z
+  duration: PT90M
+  end: 2025-11-06T18:00:00Z
+  abstract: |
+    Overview of SAE HSI group activities linking organizational implementation, predictive methods, and cross-industry alignment.
+- id: transport-hsi
+  day: 3
+  title: "Transport HSI"
+  authors: ["V. Valentinova", "Authors"]
+  category: Panel
+  tags: ["F", "D"]
+  start: 2025-11-07T09:00:00Z
+  duration: PT90M
+  end: 2025-11-07T10:30:00Z
+  abstract: |
+    Multi-author session on transport domain human systems integration addressing safety, predictive methods, and organizational adoption.
+- id: automotive-ai
+  day: 3
+  title: "Automotive AI"
+  authors: ["TBD"]
+  category: Panel
+  tags: ["F", "D"]
+  start: 2025-11-07T10:30:00Z
+  duration: PT90M
+  end: 2025-11-07T12:00:00Z
+  abstract: |
+    Session on AI integration in automotive contexts with emphasis on predictive methods and organizational implementation of HSI.
+- id: health-hsi
+  day: 3
+  title: "Health HSI"
+  authors: ["Renaldo Blocker", "P. Lambertson", "G. Kennedy"]
+  category: Panel
+  tags: ["F", "D"]
+  start: 2025-11-07T12:00:00Z
+  duration: PT90M
+  end: 2025-11-07T13:30:00Z
+  abstract: |
+    Panel on implementing HSI practices in healthcare domains, addressing prediction, safety, and organizational transformation.
+- id: modern-technological-applications
+  day: 3
+  title: "Modern Technological Applications"
+  authors: ["TBD"]
+  category: Talk
+  tags: ["F", "D"]
+  start: 2025-11-07T13:30:00Z
+  duration: PT90M
+  end: 2025-11-07T15:00:00Z
+  abstract: |
+    Survey of emerging technological applications integrating HSI for predictive performance and organizational adoption.
+- id: space
+  day: 3
+  title: "Space"
+  authors: ["SY Kim"]
+  category: Talk
+  tags: ["F", "D"]
+  start: 2025-11-07T15:00:00Z
+  duration: PT90M
+  end: 2025-11-07T16:30:00Z
+  abstract: |
+    Discussion of HSI practices and predictive approaches in space systems contexts.
+- id: advanced-air-mobility
+  day: 3
+  title: "Advanced Air Mobility"
+  authors: ["TBD"]
+  category: Panel
+  tags: ["F", "D"]
+  start: 2025-11-07T16:30:00Z
+  duration: PT90M
+  end: 2025-11-07T18:00:00Z
+  abstract: |
+    Panel addressing HSI considerations in emerging advanced air mobility ecosystems and safety-critical integration.
+- id: nuclear
+  day: 3
+  title: "Nuclear"
+  authors: ["A. Williams (Sandia)", "J. See"]
+  category: Talk
+  tags: ["F", "D"]
+  start: 2025-11-07T18:00:00Z
+  duration: PT90M
+  end: 2025-11-07T19:30:00Z
+  abstract: |
+    Presentation on HSI implementation and predictive assessment in nuclear systems contexts.
+- id: defence-hsi
+  day: 3
+  title: "Defence HSI"
+  authors: ["Mike Miller", "SY Kim", "G. Kennedy", "Others"]
+  category: Panel
+  tags: ["F", "D"]
+  start: 2025-11-07T19:30:00Z
+  duration: PT90M
+  end: 2025-11-07T21:00:00Z
+  abstract: |
+    Panel on defense sector HSI implementation, predictive methods, and cross-organization collaboration frameworks.

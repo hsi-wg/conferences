@@ -14,9 +14,12 @@ website:
           contents:
             - text: Overview
               href: HSI2025/schedule/index.qmd
-            - HSI2025/schedule/day1.qmd
-            - HSI2025/schedule/day2.qmd
-            - HSI2025/schedule/day3.qmd
+            - text: Day 1 – 5 Nov 2025
+              href: HSI2025/schedule/index.qmd#day-1-–-5-nov-2025
+            - text: Day 2 – 6 Nov 2025
+              href: HSI2025/schedule/index.qmd#day-2-–-6-nov-2025
+            - text: Day 3 – 7 Nov 2025
+              href: HSI2025/schedule/index.qmd#day-3-–-7-nov-2025
         - text: Committee
           href: HSI2025/committee.qmd
     - id: hsi2024
