@@ -4,11 +4,103 @@ title: "HSI 2019 Conference"
 
 # HSI 2019 – First Conference
 
-Introductory text (replace with real content): Provide overview, theme, location, dates.
+# INCOSE International Conference on Human Systems Integration (HSI2019)
+
+**Dates:** September 11–13, 2019  
+**Location:** Biarritz, France  
+
+---
+
+HSI emerged from the combination of **human-centered design (HCD)** and **systems engineering (SE)** as a highly participative and incremental process.  
+
+HSI required **creativity** (thought as synthesis and integration) as well as **experience awareness and validation** (through experimental tests, operations quality analysis, discovery of emergent properties, standards, and more).  
+
+**Modeling and simulation capabilities** tremendously improved possibilities of taking into account human factors during the early stages of design and throughout the entire life cycle of systems. Operational personnel were involved in virtual operations tests to determine appropriate requirements for effective design and development.  
+
+---
+
+HSI2019 took place in **Biarritz, France**, a beautiful proactive place, where engineering education, innovation, and tourism were main assets. In this setting, the conference **inspired and engaged researchers, innovators and practitioners** in productive discussions of how technologies, organizations, jobs and responsibilities of operations actors, engineering designers, certifiers, trainers, maintainers and many other technology stakeholders could be reshaped to meet near and long-term goals of **safe, efficient and comfortable operations**.  
+
+HSI2019 continued the discussion of the **shift from human-computer interaction to human-systems integration** which was started during HCI-Aero 2016 in Paris, France.  
+
+It also welcomed papers on **visionary and transformational ideas** and *“out-of–the-box” thinking* that could move industrial operations in new directions.  
+
+---
+
+### Theme: *Integrate and Interact*
+
+This was the primary focus of HSI2019. The event encouraged dialogue between industrial sectors that included **aeronautics, space, medicine, automotive, oil and gas, defense** as well as other fields.  
+
+---
+
+HSI2019 brought together **manufacturers, operators, government, research centers and academia** to focus on improving industrial **teams of teams**. The economic environment of the time put additional pressure on all to make industrial operations more efficient and affordable.  
+
+Participants submitted **innovative methods, techniques, tools and technology** that led the way. These included:  
+
+- Laboratory research and field investigations  
+- Industrial developments and perspectives  
+- Design, evaluation, certification and rule-making  
+- Training, maintenance, in-service experience  
+- Incident/accident investigation  
+
+---
+
+**Organizers:** HSI2019 was organized in cooperation with **ACM, IEA and Air & Space Academy**.  
+
+
 
 ## Key Topics
-- Human Systems Integration foundations
-- ...
+
+- **HSI principles, methods and tools**
+    - Tools & methods for human-systems integration
+    - Ethnographic studies, Human error, Fatigue
+    - Situation awareness, decision-making, workload
+    - Crisis & unexpected events management
+    - Training issues, personnel selection
+    - HSI metrics for certification
+    - Role of HSI in accident investigations
+    - Experience feedback & reporting systems
+    - Emerging operational issues in complex systems
+    - Concepts of operations, scenario-based design
+    - Mock-ups, part task and full-task simulators
+    - Human-centered design, Design for usability
+    - Creativity, design thinking and design theories
+    - Digital Human modeling
+- **Organizational issues and solutions**
+    - Teams of teams vs. systems of systems
+    - Next generation OPS/technical documentation
+    - Automation across systems
+    - Supervision, mediation, cooperation, competition
+    - Multi-agent modeling
+    - Tangible interactive systems
+    - Change management, lean management
+    - Organization design and management
+    - Maintenance resource management / CRM
+    - Human-centered model-based systems engineering
+    - Modeling and simulation, human-in-the-loop simulation
+- **Humans, autonomy and complexity**
+    - Automation vs. autonomy
+    - Cyber physical & human systems
+    - Training for autonomy
+    - Adaptive system design
+    - Complexity analysis and property emergence
+    - Autonomous systems maturity & reliability
+    - Flexibility in design and operations
+    - Human-robot interaction
+    - Information visualization, immersive environments
+- **HSI, safety and infrastructures**
+    - Agents-infrastructure integration
+    - Safety management system (SMS)
+    - Influence of national and organizational cultures
+    - Integration and global coordination
+    - Responding to infrastructure collapse
+- **Legal and Regulatory**
+    - Standards and specific regulations
+    - Regulatory compliance
+    - Criminalization of accidents, Legal issues
+    - Regulating autonomous vehicles
+    - HSI means of compliance
+    - HSI evaluations for design and certification
 
 ## Program Overview
 (Embed schedule summary or link to detailed PDF)
