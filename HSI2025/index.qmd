@@ -4,7 +4,17 @@ title: "HSI 2025 Conference"
 
 # HSI 2025 – Fourth Conference (Current Event)
 
-Welcome text, venue, dates, theme.
+We are pleased to announce that the INCOSE HSI International Workshop (HSI 2025) will be held from November 5th-7th 2025.  This year the workshop will be fully virtual. 
+
+The theme of this year's workshop is: **HSI Now: People, Practice and Potential**.  
+Exploring the current landscape of Human Systems Integration through shared insights and evolving expertise.
+
+The three dimensions of this year's theme represent the aims for the workshop.  
+
+- **People** - HSI 2025 is about providing a forum for discussion, bringing together INCOSE WG members as well as other HSI networks and associations.
+- **Practice** - Explore the state of practice in HSI, share knowledge and discuss contemporary challenges.
+- **Potential** - Seek to build and develop HSI into the future, let HSI 2025 be a catalyst to progressing our fields of work.
+
 
 ## Quick Links
 - [Registration](registration.qmd)

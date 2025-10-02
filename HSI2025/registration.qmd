@@ -1,15 +1,19 @@
 ---
 title: "HSI 2025 Registration"
+about:
+  template: solana
+  links: 
+    - text: contact us 
+      href:  mailto:hsi@incose.org
+    - text: Registration form 
+      href:  mailto:https://to.define.url
+email-obfuscation: javascript
 ---
 
 # Registration
 
-Provide instructions, fees table, deadlines.
+The event is free and open to all but subject to registration. Please complet the following forms at least a day before. Late registrant may email us at [hsi@incose.org](mailto:hsi@incose.org)
 
-## Categories
-- Early Bird (deadline ...)
-- Regular
-- Student
 
 ## How to Register
-Link or embedded form.
+[Registration form](http://to.define.url)

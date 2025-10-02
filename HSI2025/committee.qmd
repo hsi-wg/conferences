@@ -5,15 +5,9 @@ title: "HSI 2025 Technical Committee & Chairs"
 # Technical Committee & Chairs
 
 ## General Chairs
-- Name (Affiliation)
 
-## Program Chairs
-- Name (Affiliation)
-
-## Technical Committee
-- Member 1 (Affiliation)
-- Member 2 (Affiliation)
-- ...
-
-## Organizing Team
-Roles and contacts.
+- Grace Kennedy (**Chair** - Asia-Oceania Sector)
+- So Young Kim (Co-Chair -  Americas Sector)
+- Paul Lambertson (Co-Chair - Americas Sector)
+- Ami Harel (Co-Chair - EMEA Sector)
+- Dimitri Masson (Co-Chair - EMEA Sector)
