@@ -1,5 +1,10 @@
 ---
 title: "HSI 2020 Workshop"
+about: 
+    template: solana
+    links: 
+      - text: Incose Event Page
+        href: https://www.incose.org/hsi2019/home
 ---
 
 # HSI 2020 – First Workshop
