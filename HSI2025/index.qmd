@@ -1,5 +1,12 @@
 ---
 title: "HSI 2025 Conference"
+about: 
+  template: solana
+  links: 
+    - text: Official Incose Event Page 
+      href: https://www.incose.org/events/event-detail/2025/11/05/default-calendar/incose-hsi-conference-2024---jeju--korea
+toc: false
+layout: full
 ---
 
 # HSI 2025 – Fourth Conference (Current Event)
