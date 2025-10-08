@@ -1,5 +1,9 @@
 project:
   type: website
+  preview: 
+    port: 7324
+    watch-inputs: true
+
 
 website:
   title: "HSI Conference and Workshop Series"
@@ -10,6 +14,7 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    title-block-banner: true
 
 metadata-files:
   - ./navigation/_sidebars.yml
