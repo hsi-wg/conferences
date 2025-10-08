@@ -1,0 +1,99 @@
+
+# General Co-Chairs
+- Chair: Guy A. Boy, CentraleSupélec & ESTIA, France, Chair of INCOSE HSI WG
+- Co-Chair: Michelle Robertson, Office Ergonomics Research Committee, IEA, USA
+# Technical Co-Chairs
+
+## Papers Chairs
+- Grace Kennedy, University of Wollongong, Australia
+- Michael Boardman, Ministry of Defence, U.K.
+- Philippe Palanque, University of Toulouse, France
+## Industry papers Co-Chairs
+- Alexander Rudolph, EUMETSAT, Germany
+- Jean-Jacques Speyer, University of Brussels, Belgium
+## Workshops Co-Chairs
+- Holly Handley, Old Dominion University, USA for IEEE
+- Ami Harel, e2eS, Israel
+
+## Panels Co-Chairs
+- So Young Kim, JPL-Caltech, USA
+- Avigdor Zonnenshain, Technion, Israel
+
+## Demonstrations Co-Chairs
+- Stélian Camara Dit Pinto, ESTIA, France
+- Gopal Jani, KineticX Tech Solutions, India
+
+## Early Stage Research papers Co-Chairs
+- Pernilla Ulfvengren, KTH, Sweden
+- Dimitri Masson, ESTIA, France
+
+## Posters Co-Chairs
+- Wei Tan, Civil Aviation Univ. of China, China
+- Peter Moertl, Virtual Vehicle Research Center, Austria
+
+## Program Committee
+- Jutta Abulawi, Hamburg University of Applied Siences, Germany
+- David Atkinson, Continental, USA
+- Jawahar Bhalla, SESA, Australia
+- Michael Boardman, MOD, UK
+- Jean-François Boujut, Grenoble Tech, France
+- Sebastien Boulnois, RoundFeather, USA
+- Pascale Carayon, Uni. Wisconsin-Madison, USA
+- Divya Chandra, USDOT Volpe Center, USA
+- Michael Conroy, University of Central Florida, USA
+- Nancy Cooke, Arizona State University, USA
+- Nadine Couture, ESTIA, France
+- Françoise Darses, IRBA, France
+- Bernardo A. Delicado, INCOSE, Spain
+- Philippe Doyon-Poulin, Ecole Poly. Montréal, Canada
+- Markus Durstewitz, Airbus, Germany
+- Mahmoud Efatmaneshnik, Uni. South Australia, Australia
+- Mica Endsley, SA Technologies, USA
+- Didier Fass, Lorraine University, France
+- Marc Garbey, Houston Methodist Hospital, USA
+- Jose Orlando Gomes, Federal University of Rio de Janeiro, Brazil
+- Gudela Grote, ETH, Switzerland
+- Holly Handley, IEEE, Old Dominion Uni., USA
+- John Hansman, MIT, USA
+- Ami Harel, e2eS, Israel
+- Avi Harel, ErgoLight, Israel
+- Andreas Makoto Hein, IRT SystemX, France
+- Ella-Mae Hubbard, Loughborough University, UK
+- Gopal Jani, KineticX Tech Solutions, India
+- Marija Jankovic, CentraleSupélec, France
+- Grace Kennedy, University of Wollongong, Australia
+- Ratan Khatwa, Honeywell, USA
+- So Young Kim, JPL-Caltech, USA
+- Parimal Kopardekar, NASA, USA
+- Bernd Korn, DLR, Germany
+- Jérémy Legardeur, ESTIA
+- Wen Chin Li, Cranfield University, UK
+- Andreas Lüdtke, OFFIS, Germany
+- Azad M. Madni, University of Southern California, USA
+- Harald Molina-Tillmann, ITV System Design, Germany
+- Dimitri Masson, ESTIA, France
+- Peter Moertl, Karl-Franzens-Uni., Graz, Austria
+- Kathleen Mosier, University of San Francisco, USA
+- Cynthia Null, NASA Ames, USA
+- Philippe Palanque, University of Toulouse, France
+- Avi Parush, Technion, Israel
+- Jean Pinet, Air & Space Academy, France
+- Susan Plano-Faber, Plano-Faber Services LLC
+- Edwige Quillerou-Grivot, INRS, France
+- Florence Reuzeau, Airbus, France
+- Michelle Robertson, Office Ergonomics Research Committee, USA
+- Alexander Rudolph, Continental, Germany
+- Dirk Schaefer, EUROCONTROL, France
+- Axel Schulte, Bundeswehr Uni., Germany
+- Jean-Jacques Speyer, Univ. Bruxelles, Belgium
+- Sun Ruishan, Civil Aviation Univ. of China, China
+- Larry Shattuck, Naval Postgraduate School, USA
+- Murray Sinclair, Loughborough University, UK
+- David Michael Sirkin, Stanford University, USA
+- Wei Tan, Civil Aviation Univ. of China, China
+- Riccardo Tartaglia, Italian Network for Safety in Health Care, Italy
+- Pernilla Ulfvengren, KTH, Sweden
+- Rob Vingerhoeds, ISAE-SUPAERO, France
+- Andrew Wright, Segula Technologies Australia
+- Bernard Yannou, CentraleSupélec, France
+- Avigdor Zonnenshain, Technion, Israel

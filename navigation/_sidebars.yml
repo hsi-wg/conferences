@@ -66,8 +66,8 @@ website:
       contents:
         - text: HSI 2021
           href: HSI2021/index.qmd
-        - text: Resources
-          href: HSI2021/resources.qmd
+        - text: Committee
+          href: HSI2021/committee.qmd
     - id: hsi2020
       title: "HSI 2020"
       style: docked
