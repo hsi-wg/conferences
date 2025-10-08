@@ -1,10 +1,63 @@
 ---
 title: "HSI 2021 Conference"
+date: 16 sept 2021
+citation: 
+    type: event
+    event-title: INCOSE International Conference on Human Systems Integration (HSI2021)
+    event-place: Online
+    event-date: "17-19/09/2021"
+    publisher: INCOSE
+about: 
+    template: solana
+    links: 
+      - text: Incose Event Page
+        href: https://www.incose.org/hsi2021
+---
+# INCOSE International Conference on Human Systems Integration (HSI2021)
+
+**Dates:** November 17–19, 2021  
+**Location:** Virtual
+
 ---
 
-# HSI 2021 – Second Conference
+## Theme: *Digital People?*
 
-Overview text.
+This was the primary focus of HSI2021. The conference explored the shift into a **deeper digital society** where people should keep **control and management of affairs in the most tangible way**.  
+
+It encouraged dialogue between industrial sectors that included **aeronautics, space, medicine, automotive, oil and gas, defense** as well as other fields involved in **Industry 4.0** and, more generally, in systems that are increasingly digital.  
+
+## Synopsis  
+
+HSI emerged from the combination of **human-centered design (HCD)** and **systems engineering (SE)** as a highly participative and incremental process.  
+
+In 2020, **INCOSE and IEA (International Ergonomics Association)** signed a **Memorandum of Understanding** that fostered this combination. The organizers proudly co-chaired this conference.  
+
+HSI required **creativity** (thought as synthesis and integration) as well as **experience awareness and validation** (through experimental tests, operations quality analysis, discovery of emergent properties, standards, and so on).  
+
+**Modeling and simulation capabilities** tremendously improved possibilities of taking into account human factors during the early stages of engineering design and throughout the entire life cycle of systems. Operational personnel were involved in **virtual operations tests using human-in-the-loop simulations** to determine appropriate requirements for effective design and development.  
+
+HSI2021 continued the discussions started during **HSI2019 in Biarritz, France**, and the collaborative work done during the last year in the **INCOSE HSI Working Group**. Despite the COVID pandemic, successful HSI workshops had been held in 2020.  
+
+The conference also invited papers on **visionary and transformational ideas** and *“out-of–the-box” thinking* that could move industrial operations in new directions.  
+
+---
+
+HSI2021 brought together **manufacturers, operators, government, research centers and academia** to focus on improving industrial **teams of teams**. The economic environment of the time placed additional pressure on all to make industrial operations more efficient and affordable.  
+
+Participants submitted **innovative methods, techniques, tools and technology** that led the way. These included:  
+
+- Laboratory research and field investigations  
+- Industrial developments and perspectives  
+- Design, evaluation, certification and rule-making  
+- Training, maintenance, in-service experience  
+- Incident/accident investigation  
+
+---
+
+**Organizers:** HSI2021 was organized in cooperation with **IEA, ACM and Air & Space Academy**.  
+
+
+## Commit
 
 ## Highlights
 - Keynotes
@@ -12,3 +65,4 @@ Overview text.
 
 ## Resources
 See the [Resources page](resources.qmd).
+
