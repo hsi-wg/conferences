@@ -1,5 +1,17 @@
 ---
 title: "HSI 2019 Conference"
+date: 11 sept 2019
+citation: 
+    type: event
+    event-title: INCOSE International Conference on Human Systems Integration (HSI2019)
+    event-place: Biarritz, France  
+    event-date: "11-13/09/2019"
+    publisher: INCOSE
+about: 
+    template: solana
+    links: 
+      - text: Incose Event Page
+        href: https://www.incose.org/hsi2019/home
 ---
 
 # HSI 2019 – First Conference
