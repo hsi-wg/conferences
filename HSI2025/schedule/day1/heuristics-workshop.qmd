@@ -1,0 +1,23 @@
+---
+title: "Heuristics Workshop"
+author: "G. Kennedy; H. Lee"
+category: Workshop
+abstract: |
+  Workshop to derive and refine a set of HSI heuristics from primer materials; participants review an LLM-generated starter set and synthesize a concise validated collection for the INCOSE heuristics database.
+date: 2025-01-XXT09:00:00Z
+---
+
+# Heuristics Workshop
+
+**Speakers/Facilitators:** G. Kennedy, H. Lee (plus others TBD)
+
+## Abstract
+This workshop introduces the INCOSE heuristics initiative and focuses on developing pragmatic HSI heuristics that clarify value and dispel misconceptions.
+
+## Discussion Seeds
+- HSI misconceptions
+- Candidate heuristics from primer + LLM
+- Synthesis for database submission
+
+## Bio
+Short bios TBD.

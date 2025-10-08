@@ -1,0 +1,18 @@
+---
+title: "MB-HSI & Social Enterprise Project"
+author: "TBD"
+category: Discussion
+abstract: |
+  Exploration of model-based HSI approaches within social enterprise contexts and collaborative project scoping.
+date: 2025-01-XXT11:15:00Z
+---
+
+# MB-HSI & Social Enterprise Project
+
+**Facilitator:** TBD
+
+## Abstract
+Session frames opportunities for applying model-based HSI methods to socially driven enterprise initiatives.
+
+## Bio
+Bio TBD.

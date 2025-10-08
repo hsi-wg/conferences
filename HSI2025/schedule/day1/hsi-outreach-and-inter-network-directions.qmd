@@ -1,0 +1,18 @@
+---
+title: "HSI Outreach and Inter-network Directions"
+author: "Panel: INCOSE, IEA, ACM, IEEE, NAB"
+category: Panel
+abstract: |
+  Panel of international HSI-related networks sharing activities, challenges, joint opportunities, and future collaboration pathways.
+date: 2025-01-XXT16:30:00Z
+---
+
+# HSI Outreach and Inter-network Directions
+
+**Panelists:** INCOSE (G. Kennedy), IEA (Y. Yaniv), ACM (P. Palanque), IEEE (P. Barry), NAB (E. Robinson)
+
+## Abstract
+A knowledge-sharing panel mapping distinct focuses and intersectional collaboration possibilities across leading HSI networks.
+
+## Bio
+Panelist bios TBD.

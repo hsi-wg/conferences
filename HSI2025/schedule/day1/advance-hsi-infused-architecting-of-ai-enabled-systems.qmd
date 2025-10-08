@@ -1,0 +1,18 @@
+---
+title: "Advance HSI Infused Architecting of AI Enabled Systems"
+author: "R. Reis"
+category: Workshop
+abstract: |
+  Collaborative development of a COST action proposal to embed HSI concerns centrally in safety-critical AI-enabled systems architecture across domains.
+date: 2025-01-XXT17:30:00Z
+---
+
+# Advance HSI Infused Architecting of AI Enabled Systems
+
+**Facilitator:** Ricardo Reis (others TBD)
+
+## Abstract
+Session drafts a proposal structure addressing cross-domain safety-critical architectures, accelerating translation from research to industrial adoption.
+
+## Bio
+Bio TBD.

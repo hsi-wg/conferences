@@ -1,0 +1,18 @@
+---
+title: "HSI Requirements"
+author: "(Reqt WG?)"
+category: Discussion
+abstract: |
+  Session to examine elicitation, specification, and verification of HSI requirements, integrating modeling and simulation and method/tool support.
+date: 2025-01-XXT09:45:00Z
+---
+
+# HSI Requirements
+
+**Facilitator:** TBD
+
+## Abstract
+Explores structure, traceability, and maturity of HSI requirements across lifecycle phases, considering interplay with modeling, simulation, and organizational adoption.
+
+## Bio
+Bio TBD.

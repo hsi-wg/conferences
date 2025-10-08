@@ -1,0 +1,18 @@
+---
+title: "HRLs / ORLs Measurement"
+author: "Judi See (TBC)"
+category: Talk
+abstract: |
+  Examination of Human Readiness Levels (HRLs) and Operational Readiness Levels (ORLs) metrics, potential measurement frameworks, and maturity considerations.
+date: 2025-01-XXT13:00:00Z
+---
+
+# HRLs / ORLs Measurement
+
+**Speaker:** Judi See (to be confirmed)
+
+## Abstract
+Discusses current practices and gaps in readiness level assessment, proposing refinements for integrating human readiness into system readiness evaluations.
+
+## Bio
+Bio TBD.

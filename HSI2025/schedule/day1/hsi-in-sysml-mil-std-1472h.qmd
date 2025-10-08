@@ -1,0 +1,18 @@
+---
+title: "HSI in SysML: MIL-STD 1472H Walkthrough"
+author: "Caitlin Ryan; Chris Bartlett"
+category: Talk
+abstract: |
+  Detailed walkthrough of modeling MIL-STD 1472H in SysML, highlighting digital engineering standards adoption challenges and access pathways via INCOSE SELab.
+date: 2025-01-XXT18:15:00Z
+---
+
+# HSI in SysML: Detailed Walkthrough of MIL-STD 1472H
+
+**Speakers:** Caitlin Ryan, Chris Bartlett
+
+## Abstract
+Presents screenshots and lessons from constructing a SysML representation of MIL-STD 1472H, addressing tool access, troubleshooting, and the need for standardized digital artifacts.
+
+## Bio
+Bios TBD.

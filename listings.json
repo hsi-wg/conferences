@@ -1,0 +1,38 @@
+[
+  {
+    "listing": "/HSI2025/schedule/day3.html",
+    "items": [
+      "/HSI2025/schedule/day3/slot-template.html"
+    ]
+  },
+  {
+    "listing": "/HSI2024/proceedings.html",
+    "items": [
+      "/HSI2024/proceedings/paper-template-1.html"
+    ]
+  },
+  {
+    "listing": "/HSI2024/index.html",
+    "items": []
+  },
+  {
+    "listing": "/HSI2024/schedule/index.html",
+    "items": []
+  },
+  {
+    "listing": "/HSI2025/schedule/index.html",
+    "items": []
+  },
+  {
+    "listing": "/HSI2025/schedule/day2.html",
+    "items": [
+      "/HSI2025/schedule/day2/slot-template.html"
+    ]
+  },
+  {
+    "listing": "/HSI2025/schedule/day1.html",
+    "items": [
+      "/HSI2025/schedule/day1/slot-template.html"
+    ]
+  }
+]

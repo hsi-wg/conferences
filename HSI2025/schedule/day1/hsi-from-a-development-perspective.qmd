@@ -1,0 +1,18 @@
+---
+title: "HSI from a Development Perspective"
+author: "Peter Hellekant"
+category: Talk
+abstract: |
+  Perspective on integrating HSI across development workflows, toolchains, and governance; linking fundamentals, methods, and organizational implementation.
+date: 2025-01-XXT13:00:00Z
+---
+
+# HSI from a Development Perspective
+
+**Speaker:** Peter Hellekant
+
+## Abstract
+Discusses practical integration of HSI principles into iterative development life cycles, emphasizing decision data, modeling, and organizational change.
+
+## Bio
+Bio TBD.

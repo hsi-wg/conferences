@@ -1,0 +1,18 @@
+---
+title: "CONOPS Early Stage R&D"
+author: "R. Reis"
+category: Talk
+abstract: |
+  Exploration of early-stage research and development approaches for Concept of Operations (CONOPS) framing within HSI-driven system design and validation.
+date: 2025-01-XXT11:30:00Z
+---
+
+# CONOPS Early Stage R&D
+
+**Speaker:** R. Reis
+
+## Abstract
+Focus on CONOPS practices in early lifecycle phases emphasizing human-system considerations and traceability into architecture and requirements.
+
+## Bio
+Bio TBD.

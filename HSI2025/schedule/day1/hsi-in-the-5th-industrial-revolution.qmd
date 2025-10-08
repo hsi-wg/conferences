@@ -1,0 +1,18 @@
+---
+title: "HSI in the 5th Industrial Revolution"
+author: "Avi Harel"
+category: Talk
+abstract: |
+  Examines sustainability, error-proofing by design, and scenario-based methods to manage operational complexity with AI and model-driven approaches.
+date: 2025-01-XXT15:00:00Z
+---
+
+# HSI in the 5th Industrial Revolution
+
+**Speaker:** Avi Harel
+
+## Abstract
+Addresses strategies for reducing complexity growth, applying scenario-based design, and leveraging AI and generic rule-driven models to mitigate error-prone conditions.
+
+## Bio
+Bio TBD.

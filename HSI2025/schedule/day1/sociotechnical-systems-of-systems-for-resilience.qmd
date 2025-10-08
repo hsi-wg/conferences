@@ -1,0 +1,27 @@
+---
+title: "Sociotechnical Systems-of-Systems for Resilience"
+author: "G. Kennedy; Project Wildfire Team"
+category: Workshop
+abstract: |
+  Kickoff engagement for Project Wildfire exploring resilience in wildfire emergencies across extreme conditions, sustainment, responder wellbeing, community rebuilding, logistics, multi-agency coordination, and SoS characteristics.
+date: 2025-01-XXT10:30:00Z
+---
+
+# Sociotechnical Systems-of-Systems for Resilience
+
+**Facilitator:** G. Kennedy  
+**Contributors:** J. Dahmann, A. Harding, S. Ronning, R. Rookwood (Project Wildfire)  
+
+## Abstract
+This session launches HSI WG involvement in Project Wildfire, examining human and systemic resilience dimensions of wildfire emergency management.
+
+## Focus Dimensions
+- Extreme environmental conditions
+- Sustainment & support logistics
+- Wellbeing of responders & communities
+- Community recovery & rebuilding
+- Multi-agency teamwork & coordination
+- System-of-Systems considerations
+
+## Bio
+Bios TBD.
