@@ -2,4 +2,8 @@
 title: "About"
 ---
 
-About this site
+Human Systems Integration (HSI) is a transdisciplinary sociotechnical and management approach to systems engineering used to ensure that a system’s technical, organizational, and human elements are appropriately addressed across the whole system lifecycle, service or enterprise system. HSI considers systems in their operational context together with the necessary interactions between and among their human and technological elements to make them work in harmony and cost-effectively, from the early design to disposal.
+
+Our mission is to ensure all design and engineering disciplines include human and socio-technical interaction and integration to enable system performance.
+
+https://www.incose.org/communities/working-groups-initiatives/human-systems-integration
