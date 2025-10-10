@@ -8,10 +8,17 @@ listing:
   template-params:
     days: { '1':'5 Nov 2025', '2':'6 Nov 2025', '3':'7 Nov 2025' }
   sort-ui: false
-  filter-ui: false
+  filter-ui: true
+  
+
   page-size: 100
+toc: false
+page-layout: full
 --- 
 # Event Schedule Overview
 
-Below is the full conference program. Times are shown in your local timezone. Use filter/sort controls to refine (e.g., by tag or category). Click "Show more" to expand abstracts.
+Below is the full conference program. Times are shown in your local timezone. Click "Show more" to expand abstracts.
 
+:::{ #conference-sessions }
+
+:::

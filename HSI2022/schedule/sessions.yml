@@ -1,0 +1,411 @@
+sessions:
+  - id: tutorial-hsi-engineering-theory-sts-integration
+    day: 0
+    title: "Tutorial: HSI Engineering: Theory and Framework for STS Integration"
+    authors: ["Instructors TBD"]
+    categories: ["Tutorial"]
+    tags: ["Hybrid"]
+    start: 2022-11-15T10:00:00-08:00
+    duration: PT7H
+    end: 2022-11-15T17:00:00-08:00
+    abstract: |
+      Location: Torrance Marriott Redondo Beach (Hybrid)
+      Full-day tutorial covering HSI engineering theory and a framework for socio-technical systems (STS) integration.
+
+  - id: welcome-invited-hsi-state-human-machine-teaming
+    day: 1
+    title: "Welcome & Invited talk: HSI State of the Art at INCOSE & Human-Machine Teaming"
+    authors: ["Speakers TBD"]
+    categories: ["Invited"]
+    tags: ["Hybrid"]
+    start: 2022-11-16T08:30:00-08:00
+    duration: PT1H
+    end: 2022-11-16T09:30:00-08:00
+    abstract: |
+      Location: Torrance Marriott Redondo Beach (Hybrid)
+      Opening session and invited talk on the state of HSI at INCOSE and perspectives on Human–Machine Teaming.
+
+  - id: workshop-1-incose-hsi-primer-vol-1-2
+    day: 1
+    title: "Workshop 1: INCOSE HSI Primer - Volumes 1 & 2 (HSI 101)"
+    authors: ["Facilitators TBD"]
+    categories: ["Workshop"]
+    tags: ["Hybrid"]
+    start: 2022-11-16T09:30:00-08:00
+    duration: PT1H
+    end: 2022-11-16T10:30:00-08:00
+    abstract: |
+      Introductory workshop on HSI Primer Volumes 1 and 2.
+
+  - id: break-1
+    day: 1
+    title: "Break"
+    authors: []
+    categories: ["Break"]
+    tags: []
+    start: 2022-11-16T10:30:00-08:00
+    duration: PT30M
+    end: 2022-11-16T11:00:00-08:00
+    abstract: |
+      Coffee break.
+
+  - id: where-are-we-wrong-integration-ventures
+    day: 1
+    title: "Where Are we Wrong? - Integration of Human-System Considerations in Ventures"
+    authors: ["Speakers TBD"]
+    categories: ["Session"]
+    tags: ["Hybrid"]
+    start: 2022-11-16T11:00:00-08:00
+    duration: PT90M
+    end: 2022-11-16T12:30:00-08:00
+    abstract: |
+      Discussion on integration of human-system considerations in ventures; lessons learned and pitfalls.
+
+  - id: panel-agnostic-characteristics-of-mb-hsi
+    day: 1
+    title: "Panel: Agnostic Characteristics of MB-HSI"
+    authors: ["Panelists TBD"]
+    categories: ["Panel"]
+    tags: ["Hybrid"]
+    start: 2022-11-16T11:30:00-08:00
+    duration: PT1H
+    end: 2022-11-16T12:30:00-08:00
+    abstract: |
+      Panel exploring model-based HSI (MB-HSI) characteristics that are agnostic to domain and implementation.
+
+  - id: lunch-1
+    day: 1
+    title: "Lunch"
+    authors: []
+    categories: ["Break"]
+    tags: []
+    start: 2022-11-16T12:30:00-08:00
+    duration: PT1H
+    end: 2022-11-16T13:30:00-08:00
+    abstract: |
+      Lunch break.
+
+  - id: strategic-vision-for-hsi-architecting
+    day: 1
+    title: "Before everything: the need of strategic vision to improve architecting from the HSI perspective"
+    authors: ["Speakers TBD"]
+    categories: ["Session"]
+    tags: ["Hybrid"]
+    start: 2022-11-16T13:30:00-08:00
+    duration: PT90M
+    end: 2022-11-16T15:00:00-08:00
+    abstract: |
+      Session discussing strategic vision to enhance systems architecting from an HSI perspective.
+
+  - id: hsi-in-se-technical-leadership-incose-tli
+    day: 1
+    title: "HSI in SE Technical Leadership with INCOSE TLI"
+    authors: ["Speakers TBD"]
+    categories: ["Session"]
+    tags: ["Hybrid"]
+    start: 2022-11-16T13:30:00-08:00
+    duration: PT90M
+    end: 2022-11-16T15:00:00-08:00
+    abstract: |
+      Joint session with INCOSE Technical Leadership Institute (TLI) on integrating HSI in technical leadership.
+
+  - id: break-2
+    day: 1
+    title: "Break"
+    authors: []
+    categories: ["Break"]
+    tags: []
+    start: 2022-11-16T15:00:00-08:00
+    duration: PT30M
+    end: 2022-11-16T15:30:00-08:00
+    abstract: |
+      Coffee break.
+
+  - id: implementation-trends-requirements-incose-req-wg
+    day: 1
+    title: "Implementation and Changing Trends in Requirements with INCOSE Requirements WG"
+    authors: ["Speakers TBD"]
+    categories: ["Session"]
+    tags: ["Hybrid"]
+    start: 2022-11-16T15:30:00-08:00
+    duration: PT90M
+    end: 2022-11-16T17:00:00-08:00
+    abstract: |
+      Collaboration with INCOSE Requirements Working Group on evolving practices and trends for HSI-related requirements.
+
+  - id: lab-talk-1
+    day: 1
+    title: "Lab Talk"
+    authors: ["Presenters TBD"]
+    categories: ["Lab Talk"]
+    tags: ["Hybrid"]
+    start: 2022-11-16T15:30:00-08:00
+    duration: PT90M
+    end: 2022-11-16T17:00:00-08:00
+    abstract: |
+      Short presentations from laboratories on ongoing HSI research and development.
+
+  - id: training-centred-design
+    day: 1
+    title: "Training-centred Design"
+    authors: ["Speakers TBD"]
+    categories: ["Session"]
+    tags: ["Hybrid"]
+    start: 2022-11-16T15:30:00-08:00
+    duration: PT90M
+    end: 2022-11-16T17:00:00-08:00
+    abstract: |
+      Session focusing on training-centered design approaches and applications.
+
+  - id: welcome-reception
+    day: 1
+    title: "Welcome reception"
+    authors: []
+    categories: ["Reception"]
+    tags: []
+    start: 2022-11-16T18:00:00-08:00
+    duration: PT90M
+    end: 2022-11-16T19:30:00-08:00
+    abstract: |
+      Networking reception for attendees.
+
+  - id: invited-talk-hsi-at-nasa-jpl
+    day: 2
+    title: "Invited Talk: HSI at the NASA JPL"
+    authors: ["Speaker TBD"]
+    categories: ["Invited"]
+    tags: ["Hybrid"]
+    start: 2022-11-17T08:30:00-08:00
+    duration: PT1H
+    end: 2022-11-17T09:30:00-08:00
+    abstract: |
+      Insights from NASA JPL on Human Systems Integration practices and challenges.
+
+  - id: workshop-2-incose-hsi-primer-vol-3-plus
+    day: 2
+    title: "Workshop 2: INCOSE HSI Primer - Vol 3+"
+    authors: ["Facilitators TBD"]
+    categories: ["Workshop"]
+    tags: ["Hybrid"]
+    start: 2022-11-17T09:30:00-08:00
+    duration: PT1H
+    end: 2022-11-17T10:30:00-08:00
+    abstract: |
+      Workshop focusing on later volumes of the HSI Primer.
+
+  - id: break-3
+    day: 2
+    title: "Break"
+    authors: []
+    categories: ["Break"]
+    tags: []
+    start: 2022-11-17T10:30:00-08:00
+    duration: PT30M
+    end: 2022-11-17T11:00:00-08:00
+    abstract: |
+      Coffee break.
+
+  - id: panel-hsi-readiness-levels-shared-language
+    day: 2
+    title: "Panel: HSI and Readiness Levels: Defining a shared language and approaches"
+    authors: ["INCOSE HSI WG", "IEA", "IEEE", "ACM SIGCHI"]
+    categories: ["Panel"]
+    tags: ["Hybrid"]
+    start: 2022-11-17T11:00:00-08:00
+    duration: PT90M
+    end: 2022-11-17T12:30:00-08:00
+    abstract: |
+      Joint panel with INCOSE HSI WG / IEA / IEEE / ACM SIGCHI to develop common language and approaches around HRLs/ORLs and related readiness metrics.
+
+  - id: lunch-2
+    day: 2
+    title: "Lunch"
+    authors: []
+    categories: ["Break"]
+    tags: []
+    start: 2022-11-17T12:30:00-08:00
+    duration: PT1H
+    end: 2022-11-17T13:30:00-08:00
+    abstract: |
+      Lunch break.
+
+  - id: lab-talk-human-robot-ai
+    day: 2
+    title: "Lab Talk: Human-Robot AI"
+    authors: ["Presenters TBD"]
+    categories: ["Lab Talk"]
+    tags: ["Hybrid"]
+    start: 2022-11-17T13:30:00-08:00
+    duration: PT30M
+    end: 2022-11-17T14:00:00-08:00
+    abstract: |
+      Short lab talk on human-robot AI topics.
+
+  - id: panel-human-contribution-to-safety
+    day: 2
+    title: "Panel: Human Contribution to Safety – It’s Not Just About Error"
+    authors: ["Panelists TBD"]
+    categories: ["Panel"]
+    tags: ["Hybrid"]
+    start: 2022-11-17T13:30:00-08:00
+    duration: PT90M
+    end: 2022-11-17T15:00:00-08:00
+    abstract: |
+      Panel discussing the constructive role of humans in safety beyond error-centric narratives.
+
+  - id: intersections-human-systems-social-systems-justice
+    day: 2
+    title: "Intersections of Human Systems, Social Systems and Social Justice (with INCOSE Social Systems WG)"
+    authors: ["Panelists TBD"]
+    categories: ["Panel"]
+    tags: ["Hybrid"]
+    start: 2022-11-17T13:30:00-08:00
+    duration: PT90M
+    end: 2022-11-17T15:00:00-08:00
+    abstract: |
+      Joint session with INCOSE Social Systems WG on intersections across human/social systems and social justice.
+
+  - id: break-4
+    day: 2
+    title: "Break"
+    authors: []
+    categories: ["Break"]
+    tags: []
+    start: 2022-11-17T15:00:00-08:00
+    duration: PT30M
+    end: 2022-11-17T15:30:00-08:00
+    abstract: |
+      Coffee break.
+
+  - id: lab-talk-flextech-modelling-simulation
+    day: 2
+    title: "Lab Talk: Flextech Modelling & Simulation"
+    authors: ["Presenters TBD"]
+    categories: ["Lab Talk"]
+    tags: ["Hybrid"]
+    start: 2022-11-17T15:30:00-08:00
+    duration: PT90M
+    end: 2022-11-17T17:00:00-08:00
+    abstract: |
+      Lab talk on Flextech modelling and simulation approaches and results.
+
+  - id: modelling-simulation-specifics-case-studies
+    day: 2
+    title: "Modelling & Simulation Specifics (case studies)"
+    authors: ["Speakers TBD"]
+    categories: ["Session"]
+    tags: ["Hybrid"]
+    start: 2022-11-17T15:30:00-08:00
+    duration: PT90M
+    end: 2022-11-17T17:00:00-08:00
+    abstract: |
+      Case studies highlighting specific modelling and simulation methods and outcomes in HSI contexts.
+
+  - id: invited-talk-beyond-sts-ai-networks-of-accountability
+    day: 3
+    title: "Invited Talk: Beyond socio-technical systems: Designing and using AI in networks of accountability"
+    authors: ["Speaker TBD"]
+    categories: ["Invited"]
+    tags: ["Hybrid"]
+    start: 2022-11-18T08:00:00-08:00
+    duration: PT1H
+    end: 2022-11-18T09:00:00-08:00
+    abstract: |
+      Invited talk on AI design and use within accountable socio-technical networks.
+
+  - id: workshop-3-incose-hsi-website
+    day: 3
+    title: "WORKSHOP 3: INCOSE HSI Website"
+    authors: ["Facilitators TBD"]
+    categories: ["Workshop"]
+    tags: ["Hybrid"]
+    start: 2022-11-18T09:00:00-08:00
+    duration: PT1H
+    end: 2022-11-18T10:00:00-08:00
+    abstract: |
+      Workshop on the INCOSE HSI website: content, structure, and contributions.
+
+  - id: break-5
+    day: 3
+    title: "Break"
+    authors: []
+    categories: ["Break"]
+    tags: []
+    start: 2022-11-18T10:00:00-08:00
+    duration: PT30M
+    end: 2022-11-18T10:30:00-08:00
+    abstract: |
+      Coffee break.
+
+  - id: digital-twins
+    day: 3
+    title: "Digital Twins"
+    authors: ["Speakers TBD"]
+    categories: ["Session"]
+    tags: ["Hybrid"]
+    start: 2022-11-18T10:30:00-08:00
+    duration: PT1H
+    end: 2022-11-18T11:30:00-08:00
+    abstract: |
+      Session on digital twin concepts and applications in HSI.
+
+  - id: lab-talk-autonomous-vehicles-human-operators
+    day: 3
+    title: "Lab Talk: Autonomous Vehicles & Human Operators Lab"
+    authors: ["Presenters TBD"]
+    categories: ["Lab Talk"]
+    tags: ["Hybrid"]
+    start: 2022-11-18T10:30:00-08:00
+    duration: PT1H
+    end: 2022-11-18T11:30:00-08:00
+    abstract: |
+      Lab talk on human-automation interactions in autonomous vehicle operations.
+
+  - id: human-centred-ai-with-incose-ai-wg
+    day: 3
+    title: "Human-centred AI with INCOSE AI WG"
+    authors: ["Speakers TBD"]
+    categories: ["Session"]
+    tags: ["Hybrid"]
+    start: 2022-11-18T11:30:00-08:00
+    duration: PT1H
+    end: 2022-11-18T12:30:00-08:00
+    abstract: |
+      Session with the INCOSE AI Working Group on human-centered AI topics.
+
+  - id: lab-talks-education-safemode
+    day: 3
+    title: "Lab Talks: AFIT HSI Education & Research; SAFEMODE Risk Design"
+    authors: ["Presenters TBD"]
+    categories: ["Lab Talk"]
+    tags: ["Hybrid"]
+    start: 2022-11-18T11:30:00-08:00
+    duration: PT1H
+    end: 2022-11-18T12:30:00-08:00
+    abstract: |
+      1) HSI Education and Research Directions at the Air Force Institute of Technology
+      2) SAFEMODE: exploring synergies between Aviation and Maritime for Human Informed Risk Design
+
+  - id: wrap-up-conclusions
+    day: 3
+    title: "Wrap up & Conclusions"
+    authors: []
+    categories: ["Closing"]
+    tags: []
+    start: 2022-11-18T12:30:00-08:00
+    duration: PT30M
+    end: 2022-11-18T13:00:00-08:00
+    abstract: |
+      Closing session of the workshop.
+
+  - id: lunch-3
+    day: 3
+    title: "Lunch"
+    authors: []
+    categories: ["Break"]
+    tags: []
+    start: 2022-11-18T13:00:00-08:00
+    duration: PT1H
+    end: 2022-11-18T14:00:00-08:00
+    abstract: |
+      Lunch break.
