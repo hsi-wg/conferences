@@ -98,3 +98,11 @@ div#quarto-sidebar h2 {
 .dCol-8 {
   grid-column: span 8;
 }
+
+.schedule-day-list {
+  list-style: none;
+  padding-left: 0;
+}
+.listing-tag {
+  background-color: var(--cobalt-blue);
+}
