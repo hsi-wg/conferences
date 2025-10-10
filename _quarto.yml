@@ -7,6 +7,20 @@ project:
 
 website:
   title: "HSI Conference and Workshop Series"
+  favicon: assets/favicon.png
+  description: "A series of conferences and workshops dedicated to Human Systems Integration (HSI), organized by the INCOSE HSI Working Group."
+  site-url: "https://hsi-wg.github.io/conferences"
+  image: assets/HSI2025-banner_twitter.png
+  twitter-card: 
+    creator: "@dhmmasson"
+    card-style: summary_large_image
+    image-alt: "HSI2025 announcement - November 5-7, 2025 - Online"
+    image-width: 800
+    image-height: 227
+  open-graph: 
+    locale: en_US
+    site-name: "HSI Conference and Workshop Series"
+
 
 
 format:
