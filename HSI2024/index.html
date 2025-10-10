@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.53">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -30,17 +30,24 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../assets/favicon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-aa571ad5f03635bf0010979451b742ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-aa571ad5f03635bf0010979451b742ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-aa571ad5f03635bf0010979451b742ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,10 +85,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-id','listing-day','listing-title','listing-authors','listing-category','listing-tags','listing-start','listing-duration','listing-end','listing-abstract',{ data: ['index'] },{ data: ['categories'] }],
-      page: 25,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-id","listing-day","listing-title","listing-authors","listing-category","listing-tags","listing-start","listing-duration","listing-end","listing-abstract"],
+      valueNames: ['listing-sessions',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-sessions"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -113,7 +119,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -132,13 +138,15 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">HSI Conference and Workshop Series</span>
     </a>
@@ -217,6 +225,10 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -350,412 +362,411 @@ window.Quarto = {
   </div>
 </div>
 
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
 <div class="schedule-days">
   
+  
+  <section class="listing-day mb-5" data-day="1">
+    <h2 class="h4 border-bottom pb-1 mt-4 anchored">Day 1 – <span class="schedule-day-date" data-day="1"></span></h2>
     
-    <section class="listing-day mb-5" data-day="1">
-      <h2 class="h4 border-bottom pb-1 mt-4 anchored">Day 1 – <span class="schedule-day-date" data-day="1"></span></h2>
-      <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
-        
+    <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="0" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="0">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-27T08:30:00+09:00" data-end="2024-08-27T09:15:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Opening Remarks</a>
-                <small class="text-muted listing-authors">Dimitri Masson</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-27T08:30:00+09:00" data-end="2024-08-27T09:15:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Opening Remarks</a>
+            <small class="text-muted listing-authors">Dimitri Masson</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-opening-remarks">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-opening-remarks" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-opening-remarks">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session Chair: Dimitri Masson, ESTIA, France
 - Opening Address: So Young Kim &amp; Michelle Robertson (HSI2024 General Co-Chairs)
 - INCOSE Working Group today &amp; HSI2024 Program: Grace Kennedy (HSI2024 Program Co-Chair)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-opening-remarks" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="1" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="1">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-27T09:15:00+09:00" data-end="2024-08-27T09:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Introduction to HSI2024 Posters</a>
-                <small class="text-muted listing-authors">Kahina Amokrane-Ferka</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-27T09:15:00+09:00" data-end="2024-08-27T09:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Introduction to HSI2024 Posters</a>
+            <small class="text-muted listing-authors">Kahina Amokrane-Ferka</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-introduction-to-hsi2024-posters">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-introduction-to-hsi2024-posters" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-introduction-to-hsi2024-posters">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session Chair: Kahina Amokrane-Ferka (SystemX, France)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-introduction-to-hsi2024-posters" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="2" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="2">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-27T09:45:00+09:00" data-end="2024-08-27T10:15:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
-                <small class="text-muted listing-authors"></small>
-              </div>
-              <div class="listing-category badge bg-primary">Break</div>
-               
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-break-posters-1">
-              <p class="mb-0 listing-abstract">Break &amp; Posters
-</p>
-            </div>
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-27T09:45:00+09:00" data-end="2024-08-27T10:15:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-break-posters-1" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="3">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-27T10:15:00+09:00" data-end="2024-08-27T11:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Artificial Intelligence: Interface and Human-Centered Design</a>
-                <small class="text-muted listing-authors">Wen-Chin Li,Dimitri Masson</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">AI</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Human-Centered</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break-posters-1">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Break &amp; Posters
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="3" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-27T10:15:00+09:00" data-end="2024-08-27T11:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Artificial Intelligence: Interface and Human-Centered Design</a>
+            <small class="text-muted listing-authors">Wen-Chin Li,Dimitri Masson</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">AI</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">Human-Centered</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-ai-interface-human-centered-design">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-ai-interface-human-centered-design" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-ai-interface-human-centered-design">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session Chair: Wen-Chin Li (Cranfield University, UK)
 Co-Chair: Dimitri Masson (ESTIA, France)
 
 10:15  Developing Prompts to Facilitate Generative Pre-Trained Transformer
-   Classifying Decision-Errors in Flight Operations.
-   Wen-Chin Li, Declan Saunders and Hamed Amanzadeh (Cranfield University, UK)
+  Classifying Decision-Errors in Flight Operations.
+  Wen-Chin Li, Declan Saunders and Hamed Amanzadeh (Cranfield University, UK)
 
 10:45  Combining user centered design and system engineering to the design of a
-   generic AI-based assistant.
-   Kahina Amokrane-Ferka, Virgil Rousseaux, Matthieu Dussartre, Moustafa Zouinar and Nicolas Renoir (SystemX, France)
+  generic AI-based assistant.
+  Kahina Amokrane-Ferka, Virgil Rousseaux, Matthieu Dussartre, Moustafa Zouinar and Nicolas Renoir (SystemX, France)
 
 11:15  A Pilot Study for Analyzing Systems Engineer-Conversational GenAI
-   Interaction: A Case Study for Requirements Development &amp; Validation
-   Emilie Perreau, Romain Pinquie and Cédric Masclet (Grenoble Institute of Technology, France)
+  Interaction: A Case Study for Requirements Development &amp; Validation
+  Emilie Perreau, Romain Pinquie and Cédric Masclet (Grenoble Institute of Technology, France)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-ai-interface-human-centered-design" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="4" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="4">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-27T11:45:00+09:00" data-end="2024-08-27T13:15:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Lunch &amp; Posters</a>
-                <small class="text-muted listing-authors">Kahina Amokrane-Ferka</small>
-              </div>
-              <div class="listing-category badge bg-primary">Break</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-27T11:45:00+09:00" data-end="2024-08-27T13:15:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Lunch &amp; Posters</a>
+            <small class="text-muted listing-authors">Kahina Amokrane-Ferka</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-lunch-posters-1">
-              <p class="mb-0 listing-abstract">Room: 4F Foyer [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-lunch-posters-1" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-lunch-posters-1">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F Foyer [Hybrid]
 Session Chair: Kahina Amokrane-Ferka (SystemX, France)
 - A function-oriented approach for vehicle development from an HTO perspective. Ekin Uhri and Ingrid Isenhardt (RWTH Aachen University, Germany)
 - A Shared Mental Model for the Natural Human-Computer Interaction. Liang Zhang (University of Memphis, USA)
 - Human-AI Teaming for Cockpit Assistance. Ricardo Jn dos Reis, Anaisa de Paula Guedes Villani, Turkan Hentati, Theodore Letouze, Jaime Diaz-Pineda, Charles Alban Dormoy and Jean-Marc Andre (Embraer, Portugal, and Thales &amp; ENSC, France)
 - How to present paired information on HUD interface: the effects of horizontal and vertical angle on object discrimination. Yan Ge (Institute of Psychology, China Academy of Science, China)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-lunch-posters-1" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="5" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="5">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-27T13:15:00+09:00" data-end="2024-08-27T14:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Risk Assessment: Approaches, Methods and Development</a>
-                <small class="text-muted listing-authors">Elina Parviainen</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-27T13:15:00+09:00" data-end="2024-08-27T14:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Risk Assessment: Approaches, Methods and Development</a>
+            <small class="text-muted listing-authors">Elina Parviainen</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-risk-assessment-approaches-methods-development">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-risk-assessment-approaches-methods-development" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-risk-assessment-approaches-methods-development">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session Chair: Elina Parviainen (IEA, HumanProcess Ltd, Finland)
 
 13:00  Research on Multi-Temporal Safety Assessment of Approach Control System Based on Multi-Level Extensibility Evaluation Method.
-   Tingting Lu, Yaqing He and Ning Li (University College London, UK)
+  Tingting Lu, Yaqing He and Ning Li (University College London, UK)
 13:30  Usability Challenges of Failure Mode and Effects Analysis (FMEA) within the V-Model.
-   Dan Perreault, Erika Gallegos, Vincent Paglioni and Thomas Bradley (Colorado State University, USA)
+  Dan Perreault, Erika Gallegos, Vincent Paglioni and Thomas Bradley (Colorado State University, USA)
 14:00  Risk Analysis and Mitigation of Human Interface with AI Systems to Enable Responsible AI Development.
-   Jennifer Giang and Steven Simske (Colorado State University, USA)
+  Jennifer Giang and Steven Simske (Colorado State University, USA)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-risk-assessment-approaches-methods-development" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="6" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="6">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-27T13:15:00+09:00" data-end="2024-08-27T14:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Analyses and Approaches</a>
-                <small class="text-muted listing-authors">Kine Reegård</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-27T13:15:00+09:00" data-end="2024-08-27T14:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Analyses and Approaches</a>
+            <small class="text-muted listing-authors">Kine Reegård</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-analyses-and-approaches">
-              <p class="mb-0 listing-abstract">Room: 4F 401B [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-analyses-and-approaches" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-analyses-and-approaches">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401B [Hybrid]
 Session Chair: Kine Reegård (Institute for Energy Technology, Norway)
 
 13:00  A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems.
-   Alexandre Disdier, Dimitri Masson, Marija Jankovic and Guy André Boy (CentraleSupelec, ESTIA &amp; CS Group, France)
+  Alexandre Disdier, Dimitri Masson, Marija Jankovic and Guy André Boy (CentraleSupelec, ESTIA &amp; CS Group, France)
 13:30  Function analysis for Human-Machine Teaming for semi-automated trains.
-   Yang Sun, Guy André Boy, Marc Sango and Anne Barros (CentraleSupelec ESTIA &amp; SNCF, France)
+  Yang Sun, Guy André Boy, Marc Sango and Anne Barros (CentraleSupelec ESTIA &amp; SNCF, France)
 14:00  Addressing work design in future operations of advanced nuclear reactors.
-   Kine Reegård and Asgeir Drøivoldsmo (Institute for Energy Technology, Norway)
+  Kine Reegård and Asgeir Drøivoldsmo (Institute for Energy Technology, Norway)
 14:15  HSI for Enhancing Manufacturing Resilience: A Simulation-Based Approach.
-   Tero Sotamaa, Ari Teppo, Arto Reiman and Elina Parviainen (University of Oulu and Human Process Consulting Ltd, Finland)
+  Tero Sotamaa, Ari Teppo, Arto Reiman and Elina Parviainen (University of Oulu and Human Process Consulting Ltd, Finland)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-analyses-and-approaches" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="7" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="7">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-27T14:45:00+09:00" data-end="2024-08-27T15:00:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
-                <small class="text-muted listing-authors"></small>
-              </div>
-              <div class="listing-category badge bg-primary">Break</div>
-               
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-break-posters-2">
-              <p class="mb-0 listing-abstract">Break &amp; Posters
-</p>
-            </div>
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-27T14:45:00+09:00" data-end="2024-08-27T15:00:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-break-posters-2" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="8">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-27T15:00:00+09:00" data-end="2024-08-27T16:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Joint Plenary</a>
-                <small class="text-muted listing-authors"></small>
-              </div>
-              <div class="listing-category badge bg-primary">Plenary</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break-posters-2">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Break &amp; Posters
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Plenary" data-index="8" data-categories="UGxlbmFyeQ==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-27T15:00:00+09:00" data-end="2024-08-27T16:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Plenary</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Joint Plenary</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-joint-plenary">
-              <p class="mb-0 listing-abstract">Room: 3F Halla B [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-joint-plenary" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-joint-plenary">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 3F Halla B [Hybrid]
 Note: This session will be common to both the IEA World Congress and the INCOSE HSI Conference.
 15:00-15:45  INCOSE/HSI Keynote
 Session Chair: Prof. Dr. Yushi Fujita (Former President of IEA)
@@ -766,180 +777,265 @@ Session Chairs: Prof. Dr. Michelle Robertson &amp; Dr. So Young Kim (HSI2024 Gen
 Topic: How human factors and ergonomics specialists and system engineers can collaborate toward human systems integration?
 Panelists: Ms. Grace Kennedy, Prof. Dr. Guy André Boy, Prof. Dr. Yushi Fujita, Prof. Dr. Jose Orlando Gomes, Prof. Dr. Miwa Nakanishi
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-joint-plenary" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="9" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="9">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-27T16:45:00+09:00" data-end="2024-08-27T18:15:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Aviation-1: HSI and Pilot's perspectives and roles</a>
-                <small class="text-muted listing-authors">Lei Wang</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-27T16:45:00+09:00" data-end="2024-08-27T18:15:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Aviation-1: HSI and Pilot's perspectives and roles</a>
+            <small class="text-muted listing-authors">Lei Wang</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-aviation-1-hsi-and-pilots-perspectives">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-aviation-1-hsi-and-pilots-perspectives" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-aviation-1-hsi-and-pilots-perspectives">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session Chair: Lei Wang (Civil Aviation University of China, China)
 16:45  Study on Structure Model of Stressors for Pilot Cadets in Flight Training Based on DEMATEL-ISM.
-   Furong Jiang and Zhaoning Zhang (Civil Aviation University of China, China)
+  Furong Jiang and Zhaoning Zhang (Civil Aviation University of China, China)
 17:15  How Pilots’ Professional Ability Influences Their Workload in Simulated DPO and SPO Task.
-   Ruiyuan Hong, Yu Tian, Mingqian Gao, Shan Gao and Lei Wang (Civil Aviation University of China, China)
+  Ruiyuan Hong, Yu Tian, Mingqian Gao, Shan Gao and Lei Wang (Civil Aviation University of China, China)
 17:45  From Flying to Monitoring in the Future Flight Deck: The Differences in Pilot’s Perceived Mental Workload.
-   Shan Gao, Yuanyuan Xian, Yu Bai and Lei Wang (Civil Aviation University of China, China)
+  Shan Gao, Yuanyuan Xian, Yu Bai and Lei Wang (Civil Aviation University of China, China)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-aviation-1-hsi-and-pilots-perspectives" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="10" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="10">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-27T16:45:00+09:00" data-end="2024-08-27T17:30:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Verification: Strategies and Frameworks</a>
-                <small class="text-muted listing-authors">Vivek Kant</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-27T16:45:00+09:00" data-end="2024-08-27T17:30:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Verification: Strategies and Frameworks</a>
+            <small class="text-muted listing-authors">Vivek Kant</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-verification-strategies-and-frameworks">
-              <p class="mb-0 listing-abstract">Room: 4F 401B [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-verification-strategies-and-frameworks" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-verification-strategies-and-frameworks">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401B [Hybrid]
 Session Chair: Vivek Kant (Indian Institute of Technology Kanpur, India)
 16:45  Cognitive Load Management for Planning and Executing Verification Strategies.
-   Sukhwan Jung and Alejandro Salado (University of Arizona, USA)
+  Sukhwan Jung and Alejandro Salado (University of Arizona, USA)
 17:00  Verification Complexity: Definitions, Measurements, and Indicators.
-   Sukhwan Jung and Alejandro Salado (University of Arizona, USA)
+  Sukhwan Jung and Alejandro Salado (University of Arizona, USA)
 17:15  Exploring A Verification Complexity Framework.
-   Sukhwan Jung and Alejandro Salado (University of Arizona, USA)
+  Sukhwan Jung and Alejandro Salado (University of Arizona, USA)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-verification-strategies-and-frameworks" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Banquet" data-index="11" data-categories="QmFucXVldA==">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="11">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-27T18:15:00+09:00" data-end="2024-08-27T20:15:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Joint INCOSE-IEA Banquet Dinner</a>
-                <small class="text-muted listing-authors"></small>
-              </div>
-              <div class="listing-category badge bg-primary">Banquet</div>
-               
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-banquet-dinner">
-              <p class="mb-0 listing-abstract">Room: 5F Tamna
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-27T18:15:00+09:00" data-end="2024-08-27T20:15:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Banquet</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Joint INCOSE-IEA Banquet Dinner</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-banquet-dinner" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-banquet-dinner">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 5F Tamna
 Joint INCOSE-IEA Banquet Dinner
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-banquet-dinner" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
-      </ul>
-    </section>
+      </li>
+      
+    </ul>
+  </section>
   
+  
+  <section class="listing-day mb-5" data-day="2">
+    <h2 class="h4 border-bottom pb-1 mt-4 anchored">Day 2 – <span class="schedule-day-date" data-day="2"></span></h2>
     
-    <section class="listing-day mb-5" data-day="2">
-      <h2 class="h4 border-bottom pb-1 mt-4 anchored">Day 2 – <span class="schedule-day-date" data-day="2"></span></h2>
-      <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
-        
+    <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Keynote" data-index="12" data-categories="S2V5bm90ZQ==">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="12">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-28T09:00:00+09:00" data-end="2024-08-28T10:00:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Keynote: Taking measure of Human Systems Integration: A view from NASA</a>
-                <small class="text-muted listing-authors">Dr. Cynthia Null</small>
-              </div>
-              <div class="listing-category badge bg-primary">Keynote</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-28T09:00:00+09:00" data-end="2024-08-28T10:00:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Keynote</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Keynote: Taking measure of Human Systems Integration: A view from NASA</a>
+            <small class="text-muted listing-authors">Dr. Cynthia Null</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-keynote-nasa">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-keynote-nasa" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-keynote-nasa">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session Chair: Prof. Dr. Guy André Boy (HSI2024 Program Co-Chair, France)
 Dr. Cynthia Null (NASA Ames Research Center, USA)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-keynote-nasa" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="13" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="13">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-28T10:00:00+09:00" data-end="2024-08-28T10:15:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
-                <small class="text-muted listing-authors"></small>
-              </div>
-              <div class="listing-category badge bg-primary">Break</div>
-               
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-break-posters-3">
-              <p class="mb-0 listing-abstract">Break &amp; Posters
-</p>
-            </div>
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-28T10:00:00+09:00" data-end="2024-08-28T10:15:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-break-posters-3" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="14">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-28T10:15:00+09:00" data-end="2024-08-28T11:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Design: Interfaces, User-centered design, and challenges</a>
-                <small class="text-muted listing-authors">Paul Lambertson</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break-posters-3">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Break &amp; Posters
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="14" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-28T10:15:00+09:00" data-end="2024-08-28T11:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Design: Interfaces, User-centered design, and challenges</a>
+            <small class="text-muted listing-authors">Paul Lambertson</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-design-interfaces-user-centered-challenges">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-design-interfaces-user-centered-challenges" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-design-interfaces-user-centered-challenges">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session Chair: Paul Lambertson (Boeing, USA)
 10:15  Supporting Means-Ends Reasoning In Cybersecurity-critical Case Management Using Integrated Ecological Interface Design Process.
                       Rohit Negi, Abhinaya Paranikumar, Aparna Singh, and Vivek Kant (Indian Institute of Technology Kanpur, India)
@@ -950,81 +1046,123 @@ Session Chair: Paul Lambertson (Boeing, USA)
 11:15  Enabling Seamless Operation: Design Challenges.
                       Avi Harel (Ergolight, Israel)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-design-interfaces-user-centered-challenges" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Workshop" data-index="15" data-categories="V29ya3Nob3A=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="15">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-28T10:15:00+09:00" data-end="2024-08-28T11:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">HSI Primer Writing Workshop</a>
-                <small class="text-muted listing-authors">Grace Kennedy</small>
-              </div>
-              <div class="listing-category badge bg-primary">Workshop</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-28T10:15:00+09:00" data-end="2024-08-28T11:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Workshop</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">HSI Primer Writing Workshop</a>
+            <small class="text-muted listing-authors">Grace Kennedy</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-hsi-primer-writing-workshop">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-primer-writing-workshop" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-hsi-primer-writing-workshop">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session organizer: Grace Kennedy (Acmena Group, Australia)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-primer-writing-workshop" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="16" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="16">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-28T11:45:00+09:00" data-end="2024-08-28T13:15:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Lunch &amp; Posters</a>
-                <small class="text-muted listing-authors"></small>
-              </div>
-              <div class="listing-category badge bg-primary">Break</div>
-               
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-lunch-posters-2">
-              <p class="mb-0 listing-abstract">Lunch &amp; Posters
-</p>
-            </div>
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-28T11:45:00+09:00" data-end="2024-08-28T13:15:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Lunch &amp; Posters</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-lunch-posters-2" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="17">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-28T13:15:00+09:00" data-end="2024-08-28T14:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">MBSE: Case Studies: HSI influences and Analysis</a>
-                <small class="text-muted listing-authors">Romain Pinquié,Dimitri Masson</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-lunch-posters-2">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Lunch &amp; Posters
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="17" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-28T13:15:00+09:00" data-end="2024-08-28T14:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">MBSE: Case Studies: HSI influences and Analysis</a>
+            <small class="text-muted listing-authors">Romain Pinquié,Dimitri Masson</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-mbse-case-studies-hsi-influences-analysis">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-mbse-case-studies-hsi-influences-analysis" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-mbse-case-studies-hsi-influences-analysis">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session Chair: Romain Pinquié (Grenoble Alpes Uni., CNRS, France)
 Co-Chair: Dimitri Masson (ESTIA, France)
 13:15  The Influence of Human-Systems Integration on “Fuzzy Front End” of Innovation: A MedTech Case Study.
@@ -1034,32 +1172,46 @@ Co-Chair: Dimitri Masson (ESTIA, France)
 14:15  Model-based Systems Engineering (MBSE) Enterprise Architecture Framework (EAF) with Human System Integration (HSI) – A Smart-City (SC) Case Study.
                       Sarah Rudder (Colorado State University &amp; Enola, USA)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-mbse-case-studies-hsi-influences-analysis" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="18" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="18">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-28T13:15:00+09:00" data-end="2024-08-28T14:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Aviation-2: Analysis and Evaluation</a>
-                <small class="text-muted listing-authors">Wei Tan,Guy André Boy</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-28T13:15:00+09:00" data-end="2024-08-28T14:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Aviation-2: Analysis and Evaluation</a>
+            <small class="text-muted listing-authors">Wei Tan,Guy André Boy</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-aviation-2-analysis-evaluation">
-              <p class="mb-0 listing-abstract">Room: 4F 401B [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-aviation-2-analysis-evaluation" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-aviation-2-analysis-evaluation">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401B [Hybrid]
 Session Chair: Wei Tan (Civil Aviation University of China, China)
 Co-Chair: Prof. Dr. Guy André Boy (HSI2024 Program Co-Chair, France)
 13:15  Human Reliability Analysis of Single-Pilot Operations Based on Improved CREAM Method.
@@ -1069,53 +1221,81 @@ Co-Chair: Prof. Dr. Guy André Boy (HSI2024 Program Co-Chair, France)
 14:15  Pilot’s roles in the Urban Air Mobility: individual capabilities for safety and security enterprise concerns.
                       Raquel Hoffmann, Hidekazu Nishimura and Rodrigo Calhau (Keio University, Japan)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-aviation-2-analysis-evaluation" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="19" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="19">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-28T14:45:00+09:00" data-end="2024-08-28T15:00:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
-                <small class="text-muted listing-authors"></small>
-              </div>
-              <div class="listing-category badge bg-primary">Break</div>
-               
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-break-posters-4">
-              <p class="mb-0 listing-abstract">Break &amp; Posters
-</p>
-            </div>
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-28T14:45:00+09:00" data-end="2024-08-28T15:00:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-break-posters-4" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="20">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-28T15:00:00+09:00" data-end="2024-08-28T16:30:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Sociotechnical Systems: Organizational assessment &amp; Change</a>
-                <small class="text-muted listing-authors">Alexandre Disdier,Dimitri Masson</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break-posters-4">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Break &amp; Posters
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="20" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-28T15:00:00+09:00" data-end="2024-08-28T16:30:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Sociotechnical Systems: Organizational assessment &amp; Change</a>
+            <small class="text-muted listing-authors">Alexandre Disdier,Dimitri Masson</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-sociotechnical-systems-organizational-assessment-change">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-sociotechnical-systems-organizational-assessment-change" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-sociotechnical-systems-organizational-assessment-change">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session Chair: Alexandre Disdier (CentraleSupélec, ESTIA &amp; CS Group, France)
 Co-Chair: Dimitri Masson (ESTIA, France)
 15:00  A time-based approach for understanding human performance risks associated with technology change: A integrative framework.
@@ -1125,138 +1305,209 @@ Co-Chair: Dimitri Masson (ESTIA, France)
 16:00  Soft Skills for Hard Missions: Ethnographic Insights of Mars 2020 Space Operation Team Dynamics.
                       Thomas Chan, Basak Ramaswamy, Jeremy Argueta, Ana Patino and Alexandria Christoforatos (Jet Propulsion Laboratory - NASA, USA) and So Young Kim (Collins Aerospace)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-sociotechnical-systems-organizational-assessment-change" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="21" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="21">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-28T16:30:00+09:00" data-end="2024-08-28T16:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
-                <small class="text-muted listing-authors"></small>
-              </div>
-              <div class="listing-category badge bg-primary">Break</div>
-               
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-break-posters-5">
-              <p class="mb-0 listing-abstract">Break &amp; Posters
-</p>
-            </div>
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-28T16:30:00+09:00" data-end="2024-08-28T16:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-break-posters-5" aria-expanded="false">Show more</button>
-          </li>
-        
-          
-          <li class="session-item mb-3 p-3 border rounded" data-index="22">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-28T16:45:00+09:00" data-end="2024-08-28T18:15:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Human-Centered AI and Blockchain Integration: Pioneering Automation for Future Design</a>
-                <small class="text-muted listing-authors">Gopal Jani</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
-              </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-human-centered-ai-blockchain-integration">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break-posters-5">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Break &amp; Posters
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-human-centered-ai-blockchain-integration" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
-      </ul>
-    </section>
-  
-    
-    <section class="listing-day mb-5" data-day="3">
-      <h2 class="h4 border-bottom pb-1 mt-4 anchored">Day 3 – <span class="schedule-day-date" data-day="3"></span></h2>
-      <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
-        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="22" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="23">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-29T09:00:00+09:00" data-end="2024-08-29T10:00:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Keynote: Human Systems Integration Across the Health Care Continuum</a>
-                <small class="text-muted listing-authors">Dr. Ayse P. Gurses</small>
-              </div>
-              <div class="listing-category badge bg-primary">Keynote</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-28T16:45:00+09:00" data-end="2024-08-28T18:15:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Human-Centered AI and Blockchain Integration: Pioneering Automation for Future Design</a>
+            <small class="text-muted listing-authors">Gopal Jani</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-invited-panel-bridging-sociotechnical-hsi-design">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-human-centered-ai-blockchain-integration" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-human-centered-ai-blockchain-integration">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
+</p>
+        </div>
+        
+      </li>
+      
+    </ul>
+  </section>
+  
+  
+  <section class="listing-day mb-5" data-day="3">
+    <h2 class="h4 border-bottom pb-1 mt-4 anchored">Day 3 – <span class="schedule-day-date" data-day="3"></span></h2>
+    
+    <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Keynote" data-index="23" data-categories="S2V5bm90ZQ==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-29T09:00:00+09:00" data-end="2024-08-29T10:00:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Keynote</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Keynote: Human Systems Integration Across the Health Care Continuum</a>
+            <small class="text-muted listing-authors">Dr. Ayse P. Gurses</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
+              </div>
+            
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-invited-panel-bridging-sociotechnical-hsi-design" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-invited-panel-bridging-sociotechnical-hsi-design">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session Chair: Prof. Dr. Michelle Robertson (HSI2024 General Co-Chair, USA)
 Dr. Ayse P. Gurses (Johns Hopkins University, USA)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-invited-panel-bridging-sociotechnical-hsi-design" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="24" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="24">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-29T10:00:00+09:00" data-end="2024-08-29T10:15:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
-                <small class="text-muted listing-authors"></small>
-              </div>
-              <div class="listing-category badge bg-primary">Break</div>
-               
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-break-posters-6">
-              <p class="mb-0 listing-abstract">Break &amp; Posters
-</p>
-            </div>
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-29T10:00:00+09:00" data-end="2024-08-29T10:15:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-break-posters-6" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="25">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-29T10:15:00+09:00" data-end="2024-08-29T11:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Case studies: Applying HSI system engineering, cognitive models and Sociotechnical Ecosystem</a>
-                <small class="text-muted listing-authors">Ricardo Reis</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break-posters-6">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Break &amp; Posters
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="25" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-29T10:15:00+09:00" data-end="2024-08-29T11:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Case studies: Applying HSI system engineering, cognitive models and Sociotechnical Ecosystem</a>
+            <small class="text-muted listing-authors">Ricardo Reis</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-case-studies-applying-hsi-system-engineering">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-case-studies-applying-hsi-system-engineering" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-case-studies-applying-hsi-system-engineering">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session Chair: Ricardo Reis (Embraer, Portugal)
 10:15  Classifying conceptual models applied to develop an autonomous snow-plowing system.
                       Tommy Langen, Gerrit Muller and Kristin Falk (University of South-Eastern Norway)
@@ -1265,32 +1516,46 @@ Session Chair: Ricardo Reis (Embraer, Portugal)
 11:15  Challenges in HSI planning.
                       Yakir Yaniv (ED&amp;U, Israel)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-case-studies-applying-hsi-system-engineering" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Session" data-index="26" data-categories="U2Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="26">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-29T10:15:00+09:00" data-end="2024-08-29T11:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">User interface and automation design</a>
-                <small class="text-muted listing-authors">Gopal Jani</small>
-              </div>
-              <div class="listing-category badge bg-primary">Session</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-29T10:15:00+09:00" data-end="2024-08-29T11:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Session</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">User interface and automation design</a>
+            <small class="text-muted listing-authors">Gopal Jani</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-user-interface-automation-design">
-              <p class="mb-0 listing-abstract">Room: 4F 401B [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-user-interface-automation-design" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-user-interface-automation-design">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401B [Hybrid]
 Session Chair: Gopal Jani (P.P. Savani University, India)
 10:15  Human-Machine Natural Language Processing Documentation Translation Technique.
                       Bryant Beeler and Larissa Maksi (Raytheon, USA)
@@ -1299,422 +1564,499 @@ Session Chair: Gopal Jani (P.P. Savani University, India)
 11:15  Human-Centered AI and Blockchain Integration: Pioneering Automation for Future Design.
                       Gopal Jani and Hitendra Shidhapura (PP Savani University, India)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-user-interface-automation-design" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="27" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="27">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-29T11:45:00+09:00" data-end="2024-08-29T13:15:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Lunch &amp; Posters</a>
-                <small class="text-muted listing-authors"></small>
-              </div>
-              <div class="listing-category badge bg-primary">Break</div>
-               
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-lunch-posters-3">
-              <p class="mb-0 listing-abstract">Lunch &amp; Posters
-</p>
-            </div>
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-29T11:45:00+09:00" data-end="2024-08-29T13:15:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Lunch &amp; Posters</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-lunch-posters-3" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="28">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-29T13:15:00+09:00" data-end="2024-08-29T14:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">HSI Primer Volume 2 Writing Workshop</a>
-                <small class="text-muted listing-authors">Dimitri Masson</small>
-              </div>
-              <div class="listing-category badge bg-primary">Workshop</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-lunch-posters-3">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Lunch &amp; Posters
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Workshop" data-index="28" data-categories="V29ya3Nob3A=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-29T13:15:00+09:00" data-end="2024-08-29T14:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Workshop</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">HSI Primer Volume 2 Writing Workshop</a>
+            <small class="text-muted listing-authors">Dimitri Masson</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-hsi-primer-volume-2-writing-workshop">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-primer-volume-2-writing-workshop" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-hsi-primer-volume-2-writing-workshop">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session organizer: Dimitri Masson (ESTIA Institute of Technology, France)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-primer-volume-2-writing-workshop" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Workshop" data-index="29" data-categories="V29ya3Nob3A=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="29">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-29T13:15:00+09:00" data-end="2024-08-29T14:45:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">The development of an HSI massive open online course</a>
-                <small class="text-muted listing-authors">Yakir Yaniv,Yuval Bitan,Nirit Gavish</small>
-              </div>
-              <div class="listing-category badge bg-primary">Workshop</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-29T13:15:00+09:00" data-end="2024-08-29T14:45:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Workshop</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">The development of an HSI massive open online course</a>
+            <small class="text-muted listing-authors">Yakir Yaniv,Yuval Bitan,Nirit Gavish</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-hsi-mooc-development">
-              <p class="mb-0 listing-abstract">Room: 4F 401B [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-mooc-development" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-hsi-mooc-development">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401B [Hybrid]
 Session organizers: Yakir Yaniv, Yuval Bitan and Nirit Gavish (Israeli Human Factors and Ergonomics Association)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-mooc-development" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="30" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="30">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-29T14:45:00+09:00" data-end="2024-08-29T15:00:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
-                <small class="text-muted listing-authors"></small>
-              </div>
-              <div class="listing-category badge bg-primary">Break</div>
-               
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-break-posters-7">
-              <p class="mb-0 listing-abstract">Break &amp; Posters
-</p>
-            </div>
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-29T14:45:00+09:00" data-end="2024-08-29T15:00:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Break &amp; Posters</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-break-posters-7" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="31">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2024-08-29T15:00:00+09:00" data-end="2024-08-29T16:30:00+09:00">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Closing remarks</a>
-                <small class="text-muted listing-authors">Guy André Boy</small>
-              </div>
-              <div class="listing-category badge bg-primary">Closing</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break-posters-7">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Break &amp; Posters
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Closing" data-index="31" data-categories="Q2xvc2luZw==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2024-08-29T15:00:00+09:00" data-end="2024-08-29T16:30:00+09:00">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Closing</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Closing remarks</a>
+            <small class="text-muted listing-authors">Guy André Boy</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Hybrid</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-closing-remarks">
-              <p class="mb-0 listing-abstract">Room: 4F 401A [Hybrid]
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-closing-remarks" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-closing-remarks">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Room: 4F 401A [Hybrid]
 Session Chair: Prof. Dr. Guy André Boy (INCOSE HSI WG Chair, France)
 What could be the future of HSI? Designing a roadmap, forming a joint IEA-INCOSE HSI Working Group, expanding our current development.
 Dr. Grace Kennedy (HSI2024 Program Co-Chair, Australia), Dr. Dimitri Masson (HSI2024 Paper Co-Chair, France), Dr. So Young Kim (HSI2024 General Co-Chair, USA), Prof. Dr. Michelle Robertson (HSI2024 General Co-Chair, USA)
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-closing-remarks" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
-      </ul>
-    </section>
+      </li>
+      
+    </ul>
+  </section>
   
 </div>
 
 <script>
-(function(){
-  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  const tzEl = document.getElementById('tz-indicator');
-  if (tzEl) tzEl.textContent = tz;
-  function formatRange(startISO,endISO){
-    try {
-      const s = new Date(startISO);
-      const e = new Date(endISO);
-      const fmt = new Intl.DateTimeFormat(undefined,{hour:'2-digit',minute:'2-digit'});
-      return fmt.format(s) + ' – ' + fmt.format(e);
-    } catch { return startISO + ' – ' + endISO; }
-  }
-  document.querySelectorAll('.session-item .session-time').forEach(el=>{
-    const start = el.getAttribute('data-start');
-    const end = el.getAttribute('data-end');
-    el.querySelector('.time-range').textContent = formatRange(start,end);
-  });
-  // toggle abstract
-  document.querySelectorAll('.toggle-abstract').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      const sel = btn.getAttribute('data-target');
-      const panel = document.querySelector(sel);
-      if (!panel) return;
-      const shown = panel.classList.toggle('show');
-      btn.setAttribute('aria-expanded', shown ? 'true':'false');
-      btn.textContent = shown ? 'Show less' : 'Show more';
+  (function() {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const tzEl = document.getElementById('tz-indicator');
+    if (tzEl) tzEl.textContent = tz;
+
+    function formatRange(startISO, endISO) {
+      try {
+        const s = new Date(startISO);
+        const e = new Date(endISO);
+        // Get the lang/region from the browser
+        const lang = navigator.language || 'en-US';
+        const fmt = new Intl.DateTimeFormat(lang, {
+          hour: '2-digit',
+          minute: '2-digit'
+        });
+        return fmt.format(s) + ' - ' + fmt.format(e);
+      } catch {
+        return startISO + ' – ' + endISO;
+      }
+    }
+    document.querySelectorAll('.session-item .session-time').forEach(el => {
+      const start = el.getAttribute('data-start');
+      const end = el.getAttribute('data-end');
+      el.querySelector('.time-range').textContent = formatRange(start, end);
     });
-  });
-  // Assign human dates for day headings (optional mapping)
-  const dayDates = {"1":"27 Aug 2024","2":"28 Aug 2024","3":"29 Aug 2024"};
-  document.querySelectorAll('.schedule-day-date').forEach(span=>{
-    const d = span.getAttribute('data-day');
-    if (dayDates[d]) span.textContent = dayDates[d];
-  });
-})();
+    // toggle abstract
+    document.querySelectorAll('.toggle-abstract').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const sel = btn.getAttribute('data-target');
+        const panel = document.querySelector(sel);
+        if (!panel) return;
+        const shown = panel.classList.toggle('show');
+        btn.setAttribute('aria-expanded', shown ? 'true' : 'false');
+        btn.textContent = shown ? 'Show less' : 'Show more';
+      });
+    });
+    // Assign human dates for day headings (optional mapping)
+    const dayDates = {"1":"27 Aug 2024","2":"28 Aug 2024","3":"29 Aug 2024"};
+    document.querySelectorAll('.schedule-day-date').forEach(span => {
+      const d = span.getAttribute('data-day');
+      if (dayDates[d]) span.textContent = dayDates[d];
+    });
+  })();
 </script>
 
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-<nav id="conference-sessions-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
+<div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
       }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
     });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/hsi-wg\.github\.io\/conferences\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
     }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/hsi-wg\.github\.io\/conferences");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-        return container.innerHTML
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -1722,185 +2064,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 
 

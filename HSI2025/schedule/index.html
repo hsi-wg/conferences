@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.53">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -30,17 +30,24 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-listing/list.min.js"></script>
 <script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-aa571ad5f03635bf0010979451b742ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-aa571ad5f03635bf0010979451b742ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-aa571ad5f03635bf0010979451b742ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,9 +85,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-id','listing-day','listing-title','listing-authors','listing-category','listing-tags','listing-start','listing-duration','listing-end','listing-abstract',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-people','listing-tags','listing-sessions',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-id","listing-day","listing-title","listing-authors","listing-category","listing-tags","listing-start","listing-duration","listing-end","listing-abstract"],
+      searchColumns: ["listing-people","listing-tags","listing-sessions"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -112,7 +119,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -131,13 +138,15 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">HSI Conference and Workshop Series</span>
     </a>
@@ -199,13 +208,13 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../HSI2025/schedule/index.html">Schedule</a></li><li class="breadcrumb-item"><a href="../../HSI2025/schedule/index.html">Overview</a></li></ol></nav>
+    <div class="quarto-title column-page-right"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../HSI2025/schedule/index.html">Schedule</a></li><li class="breadcrumb-item"><a href="../../HSI2025/schedule/index.html">Overview</a></li></ol></nav>
       <h1 class="title">HSI 2025 Schedule</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-right">
 
       
     
@@ -213,9 +222,13 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -281,17 +294,9 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#event-schedule-overview" id="toc-event-schedule-overview" class="nav-link active" data-scroll-target="#event-schedule-overview">Event Schedule Overview</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
 
 
 
@@ -299,13 +304,8 @@ window.Quarto = {
 
 <section id="event-schedule-overview" class="level1">
 <h1>Event Schedule Overview</h1>
-<p>Below is the full conference program. Times are shown in your local timezone. Use filter/sort controls to refine (e.g., by tag or category). Click “Show more” to expand abstracts.</p>
-
-
-
-</section>
-
-<div class="quarto-listing quarto-listing-container-custom" id="listing-conference-sessions">
+<p>Below is the full conference program. Times are shown in your local timezone. Click “Show more” to expand abstracts.</p>
+<div id="listing-conference-sessions" class="quarto-listing quarto-listing-container-custom">
 
 <h1 class="mb-4">Conference Schedule</h1>
 
@@ -316,1104 +316,1340 @@ window.Quarto = {
   </div>
 </div>
 
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
 <div class="schedule-days">
   
+  
+  <section class="listing-day mb-5" data-day="1">
+    <h2 class="h4 border-bottom pb-1 mt-4 anchored" data-anchor-id="event-schedule-overview">Day 1 – <span class="schedule-day-date" data-day="1"></span></h2>
     
-    <section class="listing-day mb-5" data-day="1">
-      <h2 class="h4 border-bottom pb-1 mt-4 anchored">Day 1 – <span class="schedule-day-date" data-day="1"></span></h2>
-      <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
-        
+    <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Plenary" data-index="0" data-categories="UGxlbmFyeQ==">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="0">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-05T09:00:00Z" data-end="2025-11-05T10:30:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Heuristics Workshop</a>
-                <small class="text-muted listing-authors">G. Kennedy,H. Lee</small>
-              </div>
-              <div class="listing-category badge bg-primary">Workshop</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">A</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">G</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-05T18:45:00Z" data-end="2025-11-05T19:15:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Plenary</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Chair Welcome</a>
+            <small class="text-muted listing-authors">G. Kennedy</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI fundamentals</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">Critisizing</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-heuristics-workshop">
-              <p class="mb-0 listing-abstract">Workshop to derive and refine a set of HSI heuristics from primer materials; participants review an LLM-generated starter set and synthesize a concise validated collection for the INCOSE heuristics database.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-heuristics-workshop" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-ChairWelcome-workshop" aria-expanded="false">Show more</button>
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="1">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-05T10:30:00Z" data-end="2025-11-05T12:00:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Sociotechnical Systems-of-Systems for Resilience</a>
-                <small class="text-muted listing-authors">G. Kennedy,Project Wildfire Team</small>
-              </div>
-              <div class="listing-category badge bg-primary">Workshop</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">H</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-ChairWelcome-workshop">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>The INCOSE HSI Working Group welcomes participants to this year’s workshop, introducing the theme HSI Now: People, Practice and Potential. The session sets the tone for collaboration, emphasizing shared learning, exploration of current HSI practices, and collective efforts to shape the future of Human Systems Integration.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Keynote" data-index="1" data-categories="S2V5bm90ZQ==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-05T19:15:00Z" data-end="2025-11-05T20:15:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Keynote</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Complex Adaptive and Self-organising Systems</a>
+            <small class="text-muted listing-authors">Patrick Hoverstadt</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI fundamentals</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">Critisizing</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-sociotechnical-systems-of-systems-for-resilience">
-              <p class="mb-0 listing-abstract">Kickoff engagement for Project Wildfire exploring resilience in wildfire emergencies across extreme conditions, sustainment, responder wellbeing, community rebuilding, logistics, multi-agency coordination, and SoS characteristics.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-sociotechnical-systems-of-systems-for-resilience" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-keynote-workshop" aria-expanded="false">Show more</button>
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="2">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-05T12:00:00Z" data-end="2025-11-05T13:30:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">CONOPS Early Stage R&amp;D</a>
-                <small class="text-muted listing-authors">R. Reis</small>
-              </div>
-              <div class="listing-category badge bg-primary">Talk</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">B</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-keynote-workshop">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Patrick Hoverstadt will explore how organisations function as complex adaptive systems, where people are not just components—but catalysts of transformation. Drawing on decades of experience with the Viable System Model and his work in The Grammar of Systems, Patrick will unpack how human agency, collaborative practice, and systemic awareness shape the potential of organisations to adapt, evolve, and thrive. This session will offer a compelling look at how embracing complexity, rather than resisting it, unlocks new possibilities for meaningful and sustainable change.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="2" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-05T20:15:00Z" data-end="2025-11-05T21:00:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Lunch Break</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break1.1">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span></p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Talk" data-index="3" data-categories="VGFsaw==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-05T21:00:00Z" data-end="2025-11-05T21:30:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Talk</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">HSI from a Development Perspective</a>
+            <small class="text-muted listing-authors">Peter Hellekant</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI fundamentals</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI methods and tools</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">Implementation of HSI in org</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-conops-early-stage-rd">
-              <p class="mb-0 listing-abstract">Exploration of early-stage research and development approaches for Concept of Operations (CONOPS) framing within HSI-driven system design and validation.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-conops-early-stage-rd" aria-expanded="false">Show more</button>
-          </li>
-        
-          
-          <li class="session-item mb-3 p-3 border rounded" data-index="3">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-05T13:30:00Z" data-end="2025-11-05T15:00:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">HSI from a Development Perspective</a>
-                <small class="text-muted listing-authors">Peter Hellekant</small>
-              </div>
-              <div class="listing-category badge bg-primary">Talk</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">A</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">B</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">F</span>
-                
-              </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-hsi-from-a-development-perspective">
-              <p class="mb-0 listing-abstract">Perspective on integrating HSI across development workflows, toolchains, and governance; linking fundamentals, methods, and organizational implementation.
-</p>
-            </div>
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-from-a-development-perspective" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="4">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-05T15:00:00Z" data-end="2025-11-05T16:30:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Efficient Integration of Model-based and Data-driven Approaches</a>
-                <small class="text-muted listing-authors">John S. Baras,Others TBD</small>
-              </div>
-              <div class="listing-category badge bg-primary">Panel</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">A</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">H</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">C</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-hsi-from-a-development-perspective">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Perspective on integrating HSI across development workflows, toolchains, and governance; linking fundamentals, methods, and organizational implementation.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Talk" data-index="4" data-categories="VGFsaw==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-05T21:30:00Z" data-end="2025-11-05T22:00:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Talk</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">CONOPS Early Stage R&amp;D</a>
+            <small class="text-muted listing-authors">R. Reis</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI methods and tools</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-efficient-integration-of-model-based-and-data-driven-approaches">
-              <p class="mb-0 listing-abstract">Session on modeling, monitoring, valuation, and management of HSI using integrated model-based and data-driven techniques including trust, risk, and multi-metric trade analysis.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-efficient-integration-of-model-based-and-data-driven-approaches" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-conops-early-stage-rd" aria-expanded="false">Show more</button>
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="5">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-05T16:30:00Z" data-end="2025-11-05T18:00:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">HSI in the 5th Industrial Revolution</a>
-                <small class="text-muted listing-authors">Avi Harel</small>
-              </div>
-              <div class="listing-category badge bg-primary">Talk</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">G</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">H</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">C</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-conops-early-stage-rd">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Exploration of early-stage research and development approaches for Concept of Operations (CONOPS) framing within HSI-driven system design and validation.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Talk" data-index="5" data-categories="VGFsaw==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-05T22:00:00Z" data-end="2025-11-05T22:30:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Talk</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Requirements: HSI &amp; SysML</a>
+            <small class="text-muted listing-authors">Caitlin Ryan,Chris Bartlett</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">contempory challenges</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">modelling Simulation</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI methods and tools</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-hsi-in-the-5th-industrial-revolution">
-              <p class="mb-0 listing-abstract">Examines sustainability, error-proofing by design, and scenario-based methods to manage operational complexity with AI and model-driven approaches.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-in-the-5th-industrial-revolution" aria-expanded="false">Show more</button>
-          </li>
-        
-          
-          <li class="session-item mb-3 p-3 border rounded" data-index="6">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-05T18:00:00Z" data-end="2025-11-05T19:30:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Human Digital Twin Ontology Development</a>
-                <small class="text-muted listing-authors">Mike Miller</small>
-              </div>
-              <div class="listing-category badge bg-primary">Discussion</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">C</span>
-                
-              </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-human-digital-twin-ontology-development">
-              <p class="mb-0 listing-abstract">Discussion of expanding digital twin ontology efforts to encompass human digital twins: applications, terminology alignment, and potential working group formation.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-human-digital-twin-ontology-development" aria-expanded="false">Show more</button>
-          </li>
-        
-          
-          <li class="session-item mb-3 p-3 border rounded" data-index="7">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-05T19:30:00Z" data-end="2025-11-05T21:00:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">HSI Outreach and Inter-network Directions</a>
-                <small class="text-muted listing-authors">INCOSE,IEA,ACM,IEEE,NAB</small>
-              </div>
-              <div class="listing-category badge bg-primary">Panel</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">G</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">H</span>
-                
-              </div>
-            
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-hsi-outreach-and-inter-network-directions">
-              <p class="mb-0 listing-abstract">Panel of international HSI-related networks sharing activities, challenges, joint opportunities, and future collaboration pathways.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-outreach-and-inter-network-directions" aria-expanded="false">Show more</button>
-          </li>
-        
-          
-          <li class="session-item mb-3 p-3 border rounded" data-index="8">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-05T21:00:00Z" data-end="2025-11-05T22:30:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Advance HSI Infused Architecting of AI Enabled Systems</a>
-                <small class="text-muted listing-authors">R. Reis</small>
-              </div>
-              <div class="listing-category badge bg-primary">Workshop</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">H</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">C</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">B</span>
-                
-              </div>
-            
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-advance-hsi-infused-architecting-of-ai-enabled-systems">
-              <p class="mb-0 listing-abstract">Collaborative development of a COST action proposal to embed HSI concerns centrally in safety-critical AI-enabled systems architecture across domains.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-advance-hsi-infused-architecting-of-ai-enabled-systems" aria-expanded="false">Show more</button>
-          </li>
-        
-          
-          <li class="session-item mb-3 p-3 border rounded" data-index="9">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-05T22:30:00Z" data-end="2025-11-06T00:00:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">HSI in SysML: MIL-STD 1472H Walkthrough</a>
-                <small class="text-muted listing-authors">Caitlin Ryan,Chris Bartlett</small>
-              </div>
-              <div class="listing-category badge bg-primary">Talk</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">H</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">C</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">B</span>
-                
-              </div>
-            
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-hsi-in-sysml-mil-std-1472h">
-              <p class="mb-0 listing-abstract">Detailed walkthrough of modeling MIL-STD 1472H in SysML, highlighting digital engineering standards adoption challenges and access pathways via INCOSE SELab.
-</p>
-            </div>
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-in-sysml-mil-std-1472h" aria-expanded="false">Show more</button>
-          </li>
-        
-      </ul>
-    </section>
-  
-    
-    <section class="listing-day mb-5" data-day="2">
-      <h2 class="h4 border-bottom pb-1 mt-4 anchored">Day 2 – <span class="schedule-day-date" data-day="2"></span></h2>
-      <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
-        
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="10">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-06T09:00:00Z" data-end="2025-11-06T10:30:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Commonalities and Differences between HCI and HSI</a>
-                <small class="text-muted listing-authors">P. Palanque,Contributors</small>
-              </div>
-              <div class="listing-category badge bg-primary">Panel</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">A</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">G</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-hsi-in-sysml-mil-std-1472h">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Detailed walkthrough of modeling MIL-STD 1472H in SysML, highlighting digital engineering standards adoption challenges and access pathways via INCOSE SELab.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="6" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-05T22:30:00Z" data-end="2025-11-05T22:45:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Break</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break1.2">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span></p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Panel" data-index="7" data-categories="UGFuZWw=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-05T22:45:00Z" data-end="2025-11-05T23:10:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Panel</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Model-based HSI</a>
+            <small class="text-muted listing-authors">John S. Baras,Others TBD</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI fundamentals</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">contempory challenges</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">modelling Simulation</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-commonalities-and-differences-between-hci-and-hsi">
-              <p class="mb-0 listing-abstract">Comparative exploration of Human-Computer Interaction and Human Systems Integration domains to map overlaps, divergences, and collaboration opportunities.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-commonalities-and-differences-between-hci-and-hsi" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-efficient-integration-of-model-based-and-data-driven-approaches" aria-expanded="false">Show more</button>
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="11">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-06T10:30:00Z" data-end="2025-11-06T12:00:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">HSI Requirements</a>
-                <small class="text-muted listing-authors">(Reqt WG?)</small>
-              </div>
-              <div class="listing-category badge bg-primary">Discussion</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">H</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">C</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">B</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-efficient-integration-of-model-based-and-data-driven-approaches">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Session on modeling, monitoring, valuation, and management of HSI using integrated model-based and data-driven techniques including trust, risk, and multi-metric trade analysis.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Talk" data-index="8" data-categories="VGFsaw==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-05T23:10:00Z" data-end="2025-11-05T23:35:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Talk</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">HRLs / ORLs Measurement</a>
+            <small class="text-muted listing-authors">Judi See (TBC)</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI Maturity</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-hsi-requirements">
-              <p class="mb-0 listing-abstract">Session to examine elicitation, specification, and verification of HSI requirements, integrating modeling and simulation and method/tool support.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-requirements" aria-expanded="false">Show more</button>
-          </li>
-        
-          
-          <li class="session-item mb-3 p-3 border rounded" data-index="12">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-06T12:00:00Z" data-end="2025-11-06T13:30:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Social Systems Group</a>
-                <small class="text-muted listing-authors">G. Kennedy,Shams</small>
-              </div>
-              <div class="listing-category badge bg-primary">Discussion</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">A</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">G</span>
-                
-              </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-social-systems-group">
-              <p class="mb-0 listing-abstract">Session focusing on foundational social system constructs and critique within HSI, linking societal dynamics to integration practices.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-social-systems-group" aria-expanded="false">Show more</button>
-          </li>
-        
-          
-          <li class="session-item mb-3 p-3 border rounded" data-index="13">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-06T13:30:00Z" data-end="2025-11-06T15:00:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">MB-HSI &amp; Social Enterprise Project</a>
-                <small class="text-muted listing-authors">TBD</small>
-              </div>
-              <div class="listing-category badge bg-primary">Discussion</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">C</span>
-                
-              </div>
-            
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-mb-hsi-and-social-enterprise-project">
-              <p class="mb-0 listing-abstract">Exploration of model-based HSI approaches within social enterprise contexts and collaborative project scoping.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-mb-hsi-and-social-enterprise-project" aria-expanded="false">Show more</button>
-          </li>
-        
-          
-          <li class="session-item mb-3 p-3 border rounded" data-index="14">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-06T15:00:00Z" data-end="2025-11-06T16:30:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">HRLs / ORLs Measurement</a>
-                <small class="text-muted listing-authors">Judi See (TBC)</small>
-              </div>
-              <div class="listing-category badge bg-primary">Talk</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">E</span>
-                
-              </div>
-            
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-hrls-orls-measurement">
-              <p class="mb-0 listing-abstract">Examination of Human Readiness Levels (HRLs) and Operational Readiness Levels (ORLs) metrics, potential measurement frameworks, and maturity considerations.
-</p>
-            </div>
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hrls-orls-measurement" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="15">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-06T16:30:00Z" data-end="2025-11-06T18:00:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">SAE HSI Group</a>
-                <small class="text-muted listing-authors">TBD</small>
-              </div>
-              <div class="listing-category badge bg-primary">Talk</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">F</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">D</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-hrls-orls-measurement">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Examination of Human Readiness Levels (HRLs) and Operational Readiness Levels (ORLs) metrics, potential measurement frameworks, and maturity considerations.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Discussion" data-index="9" data-categories="RGlzY3Vzc2lvbg==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-05T23:35:00Z" data-end="2025-11-06T00:00:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Discussion</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Human Digital Twin Ontology Development</a>
+            <small class="text-muted listing-authors">Mike Miller</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">modelling Simulation</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-sae-hsi-group">
-              <p class="mb-0 listing-abstract">Overview of SAE HSI group activities linking organizational implementation, predictive methods, and cross-industry alignment.
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-human-digital-twin-ontology-development" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-human-digital-twin-ontology-development">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Discussion of expanding digital twin ontology efforts to encompass human digital twins: applications, terminology alignment, and potential working group formation.
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-sae-hsi-group" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
-      </ul>
-    </section>
+      </li>
+      
+    </ul>
+  </section>
   
+  
+  <section class="listing-day mb-5" data-day="2">
+    <h2 class="h4 border-bottom pb-1 mt-4 anchored">Day 2 – <span class="schedule-day-date" data-day="2"></span></h2>
     
-    <section class="listing-day mb-5" data-day="3">
-      <h2 class="h4 border-bottom pb-1 mt-4 anchored">Day 3 – <span class="schedule-day-date" data-day="3"></span></h2>
-      <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
-        
+    <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Workshop" data-index="10" data-categories="V29ya3Nob3A=">
+        <div class="dgrid align-items-baseline gap-2">
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="16">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-07T09:00:00Z" data-end="2025-11-07T10:30:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Transport HSI</a>
-                <small class="text-muted listing-authors">V. Valentinova,Authors</small>
-              </div>
-              <div class="listing-category badge bg-primary">Panel</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">F</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">D</span>
-                
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-06T16:00:00Z" data-end="2025-11-06T17:30:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Workshop</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Advance HSI Infused Architecting of AI Enabled Systems</a>
+            <small class="text-muted listing-authors">R. Reis</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">contempory challenges</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">modelling Simulation</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI methods and tools</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-transport-hsi">
-              <p class="mb-0 listing-abstract">Multi-author session on transport domain human systems integration addressing safety, predictive methods, and organizational adoption.
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-advance-hsi-infused-architecting-of-ai-enabled-systems" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-advance-hsi-infused-architecting-of-ai-enabled-systems">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Collaborative development of a COST action proposal to embed HSI concerns centrally in safety-critical AI-enabled systems architecture across domains.
 </p>
-            </div>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="11" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-06T17:30:00Z" data-end="2025-11-06T17:45:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Break</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break2.1">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span></p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Talk" data-index="12" data-categories="VGFsaw==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-06T17:45:00Z" data-end="2025-11-06T19:15:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Talk</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">HSI in Medicine Administration</a>
+            <small class="text-muted listing-authors">Yuval Bitan</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Implementation of HSI in org</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">Prediction and Anticipation</span>
+              
+              </div>
+            
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-in-medicine-administration" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-hsi-in-medicine-administration">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Session 2.2 — Focus on HSI challenges and practices in medicine administration.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Keynote" data-index="13" data-categories="S2V5bm90ZQ==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-06T19:15:00Z" data-end="2025-11-06T20:15:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Keynote</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Keynote 2: SySTEAM</a>
+            <small class="text-muted listing-authors">Caitlyn Singam</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI fundamentals</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">Critisizing</span>
+              
+              </div>
+            
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-keynote-2-systeam" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-keynote-2-systeam">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Caitlyn Singam will be sharing about INCOSE's SySTEAM initiative that strives towards interdisciplinary systems skills being a foundation for every student at all levels of the school curricula. This talk highlights the potential for our current and future HSI people who will be the caretakers of societal progress, creating new practices, and harnessing technologies in digitally savvy and creative ways to engineer for our future challenges.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="14" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-06T20:15:00Z" data-end="2025-11-06T21:00:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Lunch Break</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break2.2">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span></p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Panel" data-index="15" data-categories="UGFuZWw=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-06T21:00:00Z" data-end="2025-11-06T22:00:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Panel</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Well intentioned behaviours that block SE: Social, organisational and cultural factors in embedding HSI practices</a>
+            <small class="text-muted listing-authors">Ryan Messina,Grace Kennedy,Richard Beasley?</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Prediction and Anticipation</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">Critisizing</span>
+              
+              </div>
+            
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-well-intentioned-behaviours-block-se" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-well-intentioned-behaviours-block-se">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Session 2.4 — Discussion on social, organisational and cultural factors that inhibit embedding HSI practices within systems engineering.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Workshop" data-index="16" data-categories="V29ya3Nob3A=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-06T22:00:00Z" data-end="2025-11-06T22:45:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Workshop</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Project Wildfire: Sociotechnical Systems-of-Systems for Resilience</a>
+            <small class="text-muted listing-authors">G. Kennedy,Project Wildfire Team</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">contempory challenges</span>
+              
+              </div>
+            
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-sociotechnical-systems-of-systems-for-resilience" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-sociotechnical-systems-of-systems-for-resilience">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Kickoff engagement for Project Wildfire exploring resilience in wildfire emergencies across extreme conditions, sustainment, responder wellbeing, community rebuilding, logistics, multi-agency coordination, and SoS characteristics.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="17" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-06T22:45:00Z" data-end="2025-11-06T23:00:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Break</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break2.3">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span></p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Panel" data-index="18" data-categories="UGFuZWw=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-06T23:00:00Z" data-end="2025-11-07T00:00:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Panel</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Transport HSI</a>
+            <small class="text-muted listing-authors">V. Valentinova,Authors</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Implementation of HSI in org</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">Prediction and Anticipation</span>
+              
+              </div>
+            
+            
             <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-transport-hsi" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="17">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-07T10:30:00Z" data-end="2025-11-07T12:00:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Automotive AI</a>
-                <small class="text-muted listing-authors">TBD</small>
-              </div>
-              <div class="listing-category badge bg-primary">Panel</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">F</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">D</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-transport-hsi">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Multi-author session on transport domain human systems integration addressing safety, predictive methods, and organizational adoption.
+</p>
+        </div>
+        
+      </li>
+      
+    </ul>
+  </section>
+  
+  
+  <section class="listing-day mb-5" data-day="3">
+    <h2 class="h4 border-bottom pb-1 mt-4 anchored">Day 3 – <span class="schedule-day-date" data-day="3"></span></h2>
+    
+    <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Panel" data-index="19" data-categories="UGFuZWw=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-07T16:00:00Z" data-end="2025-11-07T17:00:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Panel</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Commonalities and Differences between HCI and HSI</a>
+            <small class="text-muted listing-authors">P. Palanque,Contributors</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI fundamentals</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">Critisizing</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-automotive-ai">
-              <p class="mb-0 listing-abstract">Session on AI integration in automotive contexts with emphasis on predictive methods and organizational implementation of HSI.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-automotive-ai" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-commonalities-and-differences-between-hci-and-hsi" aria-expanded="false">Show more</button>
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="18">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-07T12:00:00Z" data-end="2025-11-07T13:30:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Health HSI</a>
-                <small class="text-muted listing-authors">Renaldo Blocker,P. Lambertson,G. Kennedy</small>
-              </div>
-              <div class="listing-category badge bg-primary">Panel</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">F</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">D</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-commonalities-and-differences-between-hci-and-hsi">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Comparative exploration of Human-Computer Interaction and Human Systems Integration domains to map overlaps, divergences, and collaboration opportunities.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Talk" data-index="20" data-categories="VGFsaw==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-07T17:00:00Z" data-end="2025-11-07T17:30:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Talk</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">HSI in the 5th Industrial Revolution</a>
+            <small class="text-muted listing-authors">Avi Harel</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Critisizing</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">contempory challenges</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">modelling Simulation</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-health-hsi">
-              <p class="mb-0 listing-abstract">Panel on implementing HSI practices in healthcare domains, addressing prediction, safety, and organizational transformation.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-health-hsi" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-in-the-5th-industrial-revolution" aria-expanded="false">Show more</button>
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="19">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-07T13:30:00Z" data-end="2025-11-07T15:00:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Modern Technological Applications</a>
-                <small class="text-muted listing-authors">TBD</small>
-              </div>
-              <div class="listing-category badge bg-primary">Talk</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">F</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">D</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-hsi-in-the-5th-industrial-revolution">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Examines sustainability, error-proofing by design, and scenario-based methods to manage operational complexity with AI and model-driven approaches.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Break" data-index="21" data-categories="QnJlYWs=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-07T17:30:00Z" data-end="2025-11-07T17:45:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Break</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Break</a>
+            <small class="text-muted listing-authors"></small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-break3.1">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span></p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Workshop" data-index="22" data-categories="V29ya3Nob3A=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-07T17:45:00Z" data-end="2025-11-07T19:15:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Workshop</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Heuristics Workshop</a>
+            <small class="text-muted listing-authors">G. Kennedy,H. Lee</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI fundamentals</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">Critisizing</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-modern-technological-applications">
-              <p class="mb-0 listing-abstract">Survey of emerging technological applications integrating HSI for predictive performance and organizational adoption.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-modern-technological-applications" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-heuristics-workshop" aria-expanded="false">Show more</button>
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="20">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-07T15:00:00Z" data-end="2025-11-07T16:30:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Space</a>
-                <small class="text-muted listing-authors">SY Kim</small>
-              </div>
-              <div class="listing-category badge bg-primary">Talk</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">F</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">D</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-heuristics-workshop">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Workshop to derive and refine a set of HSI heuristics from primer materials; participants review an LLM-generated starter set and synthesize a concise validated collection for the INCOSE heuristics database.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Panel" data-index="23" data-categories="UGFuZWw=">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-07T19:15:00Z" data-end="2025-11-07T20:15:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Panel</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">HSI Outreach and Inter-network Directions</a>
+            <small class="text-muted listing-authors">INCOSE,IEA,ACM,IEEE,NAB</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">Critisizing</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">contempory challenges</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-space">
-              <p class="mb-0 listing-abstract">Discussion of HSI practices and predictive approaches in space systems contexts.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-space" aria-expanded="false">Show more</button>
-          </li>
-        
+            
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-hsi-outreach-and-inter-network-directions" aria-expanded="false">Show more</button>
+            
+          </div>
           
-          <li class="session-item mb-3 p-3 border rounded" data-index="21">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-07T16:30:00Z" data-end="2025-11-07T18:00:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Advanced Air Mobility</a>
-                <small class="text-muted listing-authors">TBD</small>
-              </div>
-              <div class="listing-category badge bg-primary">Panel</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">F</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">D</span>
-                
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-hsi-outreach-and-inter-network-directions">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Panel of international HSI-related networks sharing activities, challenges, joint opportunities, and future collaboration pathways.
+</p>
+        </div>
+        
+      </li>
+      
+      
+      
+      <li class="session-item mb-3 p-3 border rounded Plenary" data-index="24" data-categories="UGxlbmFyeQ==">
+        <div class="dgrid align-items-baseline gap-2">
+          
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="2025-11-07T20:15:00Z" data-end="2025-11-07T20:30:00.000Z">
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-category badge bg-dark">Plenary</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Closing Remarks</a>
+            <small class="text-muted listing-authors">G. Kennedy</small>
+          </div>
+          
+         
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+            
+              <div class="listing-tags">
+              
+                <span class="badge bg-secondary me-1 listing-tag">HSI fundamentals</span>
+              
+                <span class="badge bg-secondary me-1 listing-tag">Critisizing</span>
+              
               </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-advanced-air-mobility">
-              <p class="mb-0 listing-abstract">Panel addressing HSI considerations in emerging advanced air mobility ecosystems and safety-critical integration.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-advanced-air-mobility" aria-expanded="false">Show more</button>
-          </li>
-        
-          
-          <li class="session-item mb-3 p-3 border rounded" data-index="22">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-07T18:00:00Z" data-end="2025-11-07T19:30:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Nuclear</a>
-                <small class="text-muted listing-authors">A. Williams (Sandia),J. See</small>
-              </div>
-              <div class="listing-category badge bg-primary">Talk</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">F</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">D</span>
-                
-              </div>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-nuclear">
-              <p class="mb-0 listing-abstract">Presentation on HSI implementation and predictive assessment in nuclear systems contexts.
-</p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-nuclear" aria-expanded="false">Show more</button>
-          </li>
-        
-          
-          <li class="session-item mb-3 p-3 border rounded" data-index="23">
-            <div class="d-flex flex-wrap align-items-baseline gap-2">
-              <div class="session-time fw-bold" data-start="2025-11-07T19:30:00Z" data-end="2025-11-07T21:00:00Z">
-                <span class="time-range">--:-- – --:--</span>
-              </div>
-              <div class="flex-grow-1">
-                <a href="" class="listing-title h6 d-block mb-0">Defence HSI</a>
-                <small class="text-muted listing-authors">Mike Miller,SY Kim,G. Kennedy,Others</small>
-              </div>
-              <div class="listing-category badge bg-primary">Panel</div>
-               
-              <div class="mt-1 small listing-tags">
-                
-                  <span class="badge bg-secondary me-1 listing-tag">F</span>
-                
-                  <span class="badge bg-secondary me-1 listing-tag">D</span>
-                
-              </div>
+            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-ClosingRemarks" aria-expanded="false">Show more</button>
             
-            </div>
-           
-            <div class="session-abstract collapse mt-2" id="abs-defence-hsi">
-              <p class="mb-0 listing-abstract">Panel on defense sector HSI implementation, predictive methods, and cross-organization collaboration frameworks.
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-ClosingRemarks">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>The INCOSE HSI Working Group Chair provides closing remarks, summarizing key insights from the workshop, acknowledging contributions, and outlining next steps for continued collaboration and advancement of HSI practices.
 </p>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-defence-hsi" aria-expanded="false">Show more</button>
-          </li>
+        </div>
         
-      </ul>
-    </section>
+      </li>
+      
+    </ul>
+  </section>
   
 </div>
 
 <script>
-(function(){
-  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  const tzEl = document.getElementById('tz-indicator');
-  if (tzEl) tzEl.textContent = tz;
-  function formatRange(startISO,endISO){
-    try {
-      const s = new Date(startISO);
-      const e = new Date(endISO);
-      const fmt = new Intl.DateTimeFormat(undefined,{hour:'2-digit',minute:'2-digit'});
-      return fmt.format(s) + ' – ' + fmt.format(e);
-    } catch { return startISO + ' – ' + endISO; }
-  }
-  document.querySelectorAll('.session-item .session-time').forEach(el=>{
-    const start = el.getAttribute('data-start');
-    const end = el.getAttribute('data-end');
-    el.querySelector('.time-range').textContent = formatRange(start,end);
-  });
-  // toggle abstract
-  document.querySelectorAll('.toggle-abstract').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      const sel = btn.getAttribute('data-target');
-      const panel = document.querySelector(sel);
-      if (!panel) return;
-      const shown = panel.classList.toggle('show');
-      btn.setAttribute('aria-expanded', shown ? 'true':'false');
-      btn.textContent = shown ? 'Show less' : 'Show more';
+  (function() {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const tzEl = document.getElementById('tz-indicator');
+    if (tzEl) tzEl.textContent = tz;
+
+    function formatRange(startISO, endISO) {
+      try {
+        const s = new Date(startISO);
+        const e = new Date(endISO);
+        // Get the lang/region from the browser
+        const lang = navigator.language || 'en-US';
+        const fmt = new Intl.DateTimeFormat(lang, {
+          hour: '2-digit',
+          minute: '2-digit'
+        });
+        return fmt.format(s) + ' - ' + fmt.format(e);
+      } catch {
+        return startISO + ' – ' + endISO;
+      }
+    }
+    document.querySelectorAll('.session-item .session-time').forEach(el => {
+      const start = el.getAttribute('data-start');
+      const end = el.getAttribute('data-end');
+      el.querySelector('.time-range').textContent = formatRange(start, end);
     });
-  });
-  // Assign human dates for day headings (optional mapping)
-  const dayDates = {"1":"5 Nov 2025","2":"6 Nov 2025","3":"7 Nov 2025"};
-  document.querySelectorAll('.schedule-day-date').forEach(span=>{
-    const d = span.getAttribute('data-day');
-    if (dayDates[d]) span.textContent = dayDates[d];
-  });
-})();
+    // toggle abstract
+    document.querySelectorAll('.toggle-abstract').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const sel = btn.getAttribute('data-target');
+        const panel = document.querySelector(sel);
+        if (!panel) return;
+        const shown = panel.classList.toggle('show');
+        btn.setAttribute('aria-expanded', shown ? 'true' : 'false');
+        btn.textContent = shown ? 'Show less' : 'Show more';
+      });
+    });
+    // Assign human dates for day headings (optional mapping)
+    const dayDates = {"1":"5 Nov 2025","2":"6 Nov 2025","3":"7 Nov 2025"};
+    document.querySelectorAll('.schedule-day-date').forEach(span => {
+      const d = span.getAttribute('data-day');
+      if (dayDates[d]) span.textContent = dayDates[d];
+    });
+  })();
 </script>
 
-<div class="listing-no-matching d-none">
-No matching items
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-</div></main> <!-- /main -->
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
       }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
     });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/hsi-wg\.github\.io\/conferences\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
     }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/hsi-wg\.github\.io\/conferences");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-        return container.innerHTML
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -1421,185 +1657,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 
 

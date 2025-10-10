@@ -1,5 +1,14 @@
 /* css styles */
-
+:root {
+  --light-gray: #f5f5f5;
+  --mint-green: #b6e2ddff;
+  --tea-green: #c8ddbbff;
+  --vanilla: #e9e5afff;
+  --peach-yellow: #fbdf9dff;
+  --peach: #fbc99dff;
+  --melon: #fbb39dff;
+  --salmon-pink: #fba09dff;
+}
 /* Highlight current year (2025) nav link */
 /* Target anchor with href ending in HSI2025/  (built site will rewrite to html) */
 /* We include both .qmd and .html variants for compatibility during preview vs output */
@@ -7,33 +16,70 @@ nav.navbar a.nav-link[href$="HSI2025/"],
 nav.navbar a.nav-link[href$="HSI2025/index.html"],
 nav.navbar a.dropdown-item[href$="HSI2025/index.html"],
 nav.navbar a.dropdown-item[href$="HSI2025/"] {
-	position: relative;
-	font-weight: 600;
-	color: #0d47a1 !important;
+  position: relative;
+  font-weight: 600;
+  color: #0d47a1 !important;
 }
 
 nav.navbar a.nav-link[href$="HSI2025/"]::after,
 nav.navbar a.nav-link[href$="HSI2025/index.html"]::after {
-	content: "Current";
-	display: inline-block;
-	margin-left: .5rem;
-	padding: 2px 6px;
-	font-size: 0.65rem;
-	text-transform: uppercase;
-	letter-spacing: .5px;
-	background: linear-gradient(90deg,#ffca28,#ff9800);
-	color: #111;
-	border-radius: 10px;
-	box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+  content: "Current";
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 2px 6px;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #ffca28, #ff9800);
+  color: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 /* Optional subtle underline hover for all year links */
-nav.navbar a.nav-link[href*="HSI20"]:hover { text-decoration: underline; }
+nav.navbar a.nav-link[href*="HSI20"]:hover {
+  text-decoration: underline;
+}
 
 /* Distinguish current year in sidebar title */
 .quarto-sidebar h2:has(> span:contains("2025")) {
-	color: #0d47a1;
+  color: #0d47a1;
 }
 
 /* Fallback if :has or :contains unsupported: style the first sidebar when id matches hsi2025 */
-div#quarto-sidebar h2 { font-weight: 600; }
+div#quarto-sidebar h2 {
+  font-weight: 600;
+}
+
+.Keynote {
+  background-color: var(--peach-yellow);
+}
+.Workshop {
+  background-color: var(--salmon-pink);
+}
+.Break {
+  background-color: var(--light-gray);
+}
+.Plenary {
+  background-color: var(--mint-green);
+}
+.Talk {
+  background-color: var(--peach);
+}
+.Panel,
+.Discussion {
+  background-color: var(--tea-green);
+}
+
+.dgrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.dCol-2 {
+  grid-column: span 2;
+}
+.dCol-8 {
+  grid-column: span 8;
+}
