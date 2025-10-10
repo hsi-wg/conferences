@@ -8,6 +8,21 @@
   --peach: #fbc99dff;
   --melon: #fbb39dff;
   --salmon-pink: #fba09dff;
+
+  --white: #0d47a1ff;
+  --linen: #f1e4dbff;
+  --isabelline: #f7f0eaff;
+  --isabelline-2: #f4ece7ff;
+  --alabaster: #eae9e3ff;
+
+  --cobalt-blue: #0d48a0ff;
+  --powder-blue: #b5c4e3ff;
+  --french-gray: #c1c6d7ff;
+  --french-gray-2: #ccc9cfff;
+  --timberwolf: #d5c7c3ff;
+  --desert-sand: #e1c9b7ff;
+  --desert-sand-2: #efcba9ff;
+  --orange-peel: #ff9900ff;
 }
 /* Highlight current year (2025) nav link */
 /* Target anchor with href ending in HSI2025/  (built site will rewrite to html) */
@@ -18,7 +33,7 @@ nav.navbar a.dropdown-item[href$="HSI2025/index.html"],
 nav.navbar a.dropdown-item[href$="HSI2025/"] {
   position: relative;
   font-weight: 600;
-  color: #0d47a1 !important;
+  color: var(--cobalt-blue) !important;
 }
 
 nav.navbar a.nav-link[href$="HSI2025/"]::after,
@@ -30,7 +45,7 @@ nav.navbar a.nav-link[href$="HSI2025/index.html"]::after {
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  background: linear-gradient(90deg, #ffca28, #ff9800);
+  background: linear-gradient(90deg, var(--peach-yellow), var(--orange-peel));
   color: #111;
   border-radius: 10px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
@@ -52,10 +67,10 @@ div#quarto-sidebar h2 {
 }
 
 .Keynote {
-  background-color: var(--peach-yellow);
+  background-color: var(--orange-peel);
 }
 .Workshop {
-  background-color: var(--salmon-pink);
+  background-color: var(--desert-sand-2);
 }
 .Break {
   background-color: var(--light-gray);
@@ -64,11 +79,11 @@ div#quarto-sidebar h2 {
   background-color: var(--mint-green);
 }
 .Talk {
-  background-color: var(--peach);
+  background-color: var(--powder-blue);
 }
 .Panel,
 .Discussion {
-  background-color: var(--tea-green);
+  background-color: var(--timberwolf);
 }
 
 .dgrid {
