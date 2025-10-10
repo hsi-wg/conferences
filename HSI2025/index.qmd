@@ -5,13 +5,20 @@ about:
   links: 
     - text: Official Incose Event Page 
       href: https://www.incose.org/events/event-detail/2025/11/05/default-calendar/incose-hsi-conference-2024---jeju--korea
+    - text: Registration
+      href: https://forms.office.com/r/Z4YHudgCt3
 toc: false
-layout: full
+page-layout: full
+title-block-banner: assets/HSI2025-banner.png
 ---
 
 # HSI 2025 – Fourth Conference (Current Event)
 
-We are pleased to announce that the INCOSE HSI International Workshop (HSI 2025) will be held from November 5th-7th 2025.  This year the workshop will be fully virtual. 
+![HSI2025 Banner](/assets/HSI2025-banner.png)
+
+Welcome to the Fourth INCOSE HSI International Workshop. This year’s workshop is focussed on knowledge sharing around contemporary HSI practices and how the worldwide community can collaborate towards progressing the field. Join the worldwide community at this virtual series of workshops spread over 2.5 days from November 5-7th 2025.
+
+Our program has been curated to present the interests of the HSI WG members, giving a platform to share, interact and discuss our work and challenges. As this event is fully virtual, we're pleased to offer free registration, however registration is essential to obtain the event meeting links). [**Registration Here**](https://forms.office.com/r/Z4YHudgCt3)
 
 The theme of this year's workshop is: **HSI Now: People, Practice and Potential**.  
 Exploring the current landscape of Human Systems Integration through shared insights and evolving expertise.
