@@ -1,13 +1,36 @@
 ---
-title: "HSI 2022 Workshop"
+title: "INCOSE Human Systems Integration (HSI) Workshop 2022"
+listing:
+  id: conference-sessions
+  template: ../templates/schedule.ejs
+  contents: 
+    - sessions.yml
+  template-params:
+    days: { '1':'5 Nov 2025', '2':'6 Nov 2025', '3':'7 Nov 2025' }
+  sort-ui: false
+  filter-ui: false
+  page-size: 100
 ---
 
-# HSI 2022 – Second Workshop
+The **INCOSE Human Systems Integration (HSI) Workshop 2022** was held from **Wednesday, November 16 to Friday, November 18, 2022**, at the **Torrance Marriott Redondo Beach** in **Torrance, California**.
 
-Overview.
+Building on the success of the **digital HSI Workshop** organized in 2020 with the **INCOSE Israel Chapter** and **ESTIA Institute of Technology**, the INCOSE Human Systems Integration Working Group hosted a more **interactive and engaging workshop** in 2022, featuring contributions and experiences from **renowned speakers**.
 
-## Focus Areas
-- ...
+The event included **three lectures** on contemporary HSI topics such as **situational awareness**, **human–machine teaming**, **organizational automation**, **levels of autonomy**, and more.  
+In addition, participants attended **presentations and discussions** on the progress and content of the **INCOSE HSI Primer (Volumes I, II, and III)**.
 
+Collaboration between INCOSE and the **International Ergonomics Association (IEA)** was also highlighted, with representatives from both organizations discussing ongoing partnerships and joint activities.  
+Several **laboratory initiatives** were presented by research centers from around the world, showcasing practical advancements in HSI.
+
+Other **INCOSE working groups** also participated to promote cross-disciplinary collaboration on Human Systems Integration within the broader field of **systems engineering**.
+
+The HSI Workshop 2022 was organized as a **hybrid event**, combining in-person and virtual participation. Sessions were limited to **90 minutes** to maintain a high level of engagement for all attendees.  
+Overall, the workshop successfully fostered **active interaction, knowledge exchange, and community building** among HSI practitioners and researchers.
+
+## Program
+
+:::{#conference-sessions}
+
+:::
 ## Resources
 See the [Resources page](resources.qmd).
