@@ -366,6 +366,7 @@ window.Quarto = {
     const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const tzEl = document.getElementById('tz-indicator');
     if (tzEl) tzEl.textContent = tz;
+    const root = document.querySelector('.schedule-day-list');
 
     function formatRange(startISO, endISO) {
       try {
@@ -382,16 +383,17 @@ window.Quarto = {
         return startISO + ' – ' + endISO;
       }
     }
-    document.querySelectorAll('.session-item .session-time').forEach(el => {
+
+    root.querySelectorAll('.session-item .session-time').forEach(el => {
       const start = el.getAttribute('data-start');
       const end = el.getAttribute('data-end');
       el.querySelector('.time-range').textContent = formatRange(start, end);
     });
     // toggle abstract
-    document.querySelectorAll('.toggle-abstract').forEach(btn => {
+    root.querySelectorAll('.toggle-abstract').forEach(btn => {
       btn.addEventListener('click', () => {
         const sel = btn.getAttribute('data-target');
-        const panel = document.querySelector(sel);
+        const panel = root.querySelector(sel);
         if (!panel) return;
         const shown = panel.classList.toggle('show');
         btn.setAttribute('aria-expanded', shown ? 'true' : 'false');
@@ -400,14 +402,12 @@ window.Quarto = {
     });
     // Assign human dates for day headings (optional mapping)
     const dayDates = {"1":"27 Aug 2024","2":"28 Aug 2024","3":"29 Aug 2024"};
-    document.querySelectorAll('.schedule-day-date').forEach(span => {
+    root.querySelectorAll('.schedule-day-date').forEach(span => {
       const d = span.getAttribute('data-day');
       if (dayDates[d]) span.textContent = dayDates[d];
     });
   });
 </script>
-
-<h1 class="mb-4">Conference Schedule</h1>
 
 <div class="schedule-controls mb-3">
   <div class="row g-2">
@@ -427,13 +427,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="0">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="0">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-27T08:30:00+09:00" data-end="2024-08-27T09:15:00+09:00">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -469,13 +469,13 @@ Session Chair: Dimitri Masson, ESTIA, France
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="1">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="1">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-27T09:15:00+09:00" data-end="2024-08-27T09:45:00+09:00">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -509,13 +509,13 @@ Session Chair: Kahina Amokrane-Ferka (SystemX, France)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="2">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="2">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-27T09:45:00+09:00" data-end="2024-08-27T10:15:00+09:00">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -544,13 +544,13 @@ Session Chair: Kahina Amokrane-Ferka (SystemX, France)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="3">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="3">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-27T10:15:00+09:00" data-end="2024-08-27T11:45:00+09:00">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -601,13 +601,13 @@ Co-Chair: Dimitri Masson (ESTIA, France)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="4">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="4">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-27T11:45:00+09:00" data-end="2024-08-27T13:15:00+09:00">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -645,13 +645,13 @@ Session Chair: Kahina Amokrane-Ferka (SystemX, France)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="5">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="5">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-27T13:15:00+09:00" data-end="2024-08-27T14:45:00+09:00">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -692,13 +692,13 @@ Session Chair: Elina Parviainen (IEA, HumanProcess Ltd, Finland)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="6">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="6">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-27T13:15:00+09:00" data-end="2024-08-27T14:45:00+09:00">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -741,13 +741,13 @@ Session Chair: Kine Reegård (Institute for Energy Technology, Norway)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="7">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="7">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-27T14:45:00+09:00" data-end="2024-08-27T15:00:00+09:00">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -776,13 +776,13 @@ Session Chair: Kine Reegård (Institute for Energy Technology, Norway)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Plenary" data-index="8">
+      <li class="session-item mb-1 p-3 border rounded Plenary" data-index="8">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-27T15:00:00+09:00" data-end="2024-08-27T16:45:00+09:00">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Plenary</div>
+            <div class="listing-sessionType badge bg-dark Plenary">Plenary</div>
           </div>
 
           <div class="dCol-8">
@@ -824,13 +824,13 @@ Panelists: Ms. Grace Kennedy, Prof. Dr. Guy André Boy, Prof. Dr. Yushi Fujita, 
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="9">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="9">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-27T16:45:00+09:00" data-end="2024-08-27T18:15:00+09:00">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -870,13 +870,13 @@ Session Chair: Lei Wang (Civil Aviation University of China, China)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="10">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="10">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-27T16:45:00+09:00" data-end="2024-08-27T17:30:00+09:00">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -916,13 +916,13 @@ Session Chair: Vivek Kant (Indian Institute of Technology Kanpur, India)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Banquet" data-index="11">
+      <li class="session-item mb-1 p-3 border rounded Banquet" data-index="11">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-27T18:15:00+09:00" data-end="2024-08-27T20:15:00+09:00">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Banquet</div>
+            <div class="listing-sessionType badge bg-dark Banquet">Banquet</div>
           </div>
 
           <div class="dCol-8">
@@ -959,13 +959,13 @@ Joint INCOSE-IEA Banquet Dinner
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Keynote" data-index="12">
+      <li class="session-item mb-1 p-3 border rounded Keynote" data-index="12">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-28T09:00:00+09:00" data-end="2024-08-28T10:00:00+09:00">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Keynote</div>
+            <div class="listing-sessionType badge bg-dark Keynote">Keynote</div>
           </div>
 
           <div class="dCol-8">
@@ -1000,13 +1000,13 @@ Dr. Cynthia Null (NASA Ames Research Center, USA)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="13">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="13">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-28T10:00:00+09:00" data-end="2024-08-28T10:15:00+09:00">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -1035,13 +1035,13 @@ Dr. Cynthia Null (NASA Ames Research Center, USA)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="14">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="14">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-28T10:15:00+09:00" data-end="2024-08-28T11:45:00+09:00">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -1083,13 +1083,13 @@ Session Chair: Paul Lambertson (Boeing, USA)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Workshop" data-index="15">
+      <li class="session-item mb-1 p-3 border rounded Workshop" data-index="15">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-28T10:15:00+09:00" data-end="2024-08-28T11:45:00+09:00">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Workshop</div>
+            <div class="listing-sessionType badge bg-dark Workshop">Workshop</div>
           </div>
 
           <div class="dCol-8">
@@ -1123,13 +1123,13 @@ Session organizer: Grace Kennedy (Acmena Group, Australia)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="16">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="16">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-28T11:45:00+09:00" data-end="2024-08-28T13:15:00+09:00">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -1158,13 +1158,13 @@ Session organizer: Grace Kennedy (Acmena Group, Australia)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="17">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="17">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-28T13:15:00+09:00" data-end="2024-08-28T14:45:00+09:00">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -1205,13 +1205,13 @@ Co-Chair: Dimitri Masson (ESTIA, France)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="18">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="18">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-28T13:15:00+09:00" data-end="2024-08-28T14:45:00+09:00">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -1252,13 +1252,13 @@ Co-Chair: Prof. Dr. Guy André Boy (HSI2024 Program Co-Chair, France)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="19">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="19">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-28T14:45:00+09:00" data-end="2024-08-28T15:00:00+09:00">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -1287,13 +1287,13 @@ Co-Chair: Prof. Dr. Guy André Boy (HSI2024 Program Co-Chair, France)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="20">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="20">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-28T15:00:00+09:00" data-end="2024-08-28T16:30:00+09:00">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -1334,13 +1334,13 @@ Co-Chair: Dimitri Masson (ESTIA, France)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="21">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="21">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-28T16:30:00+09:00" data-end="2024-08-28T16:45:00+09:00">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -1369,13 +1369,13 @@ Co-Chair: Dimitri Masson (ESTIA, France)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="22">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="22">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-28T16:45:00+09:00" data-end="2024-08-28T18:15:00+09:00">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -1415,13 +1415,13 @@ Co-Chair: Dimitri Masson (ESTIA, France)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Keynote" data-index="23">
+      <li class="session-item mb-1 p-3 border rounded Keynote" data-index="23">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-29T09:00:00+09:00" data-end="2024-08-29T10:00:00+09:00">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Keynote</div>
+            <div class="listing-sessionType badge bg-dark Keynote">Keynote</div>
           </div>
 
           <div class="dCol-8">
@@ -1456,13 +1456,13 @@ Dr. Ayse P. Gurses (Johns Hopkins University, USA)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="24">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="24">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-29T10:00:00+09:00" data-end="2024-08-29T10:15:00+09:00">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -1491,13 +1491,13 @@ Dr. Ayse P. Gurses (Johns Hopkins University, USA)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="25">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="25">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-29T10:15:00+09:00" data-end="2024-08-29T11:45:00+09:00">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -1537,13 +1537,13 @@ Session Chair: Ricardo Reis (Embraer, Portugal)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Session" data-index="26">
+      <li class="session-item mb-1 p-3 border rounded Session" data-index="26">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-29T10:15:00+09:00" data-end="2024-08-29T11:45:00+09:00">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Session</div>
+            <div class="listing-sessionType badge bg-dark Session">Session</div>
           </div>
 
           <div class="dCol-8">
@@ -1583,13 +1583,13 @@ Session Chair: Gopal Jani (P.P. Savani University, India)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="27">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="27">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-29T11:45:00+09:00" data-end="2024-08-29T13:15:00+09:00">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -1618,13 +1618,13 @@ Session Chair: Gopal Jani (P.P. Savani University, India)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Workshop" data-index="28">
+      <li class="session-item mb-1 p-3 border rounded Workshop" data-index="28">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-29T13:15:00+09:00" data-end="2024-08-29T14:45:00+09:00">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Workshop</div>
+            <div class="listing-sessionType badge bg-dark Workshop">Workshop</div>
           </div>
 
           <div class="dCol-8">
@@ -1658,13 +1658,13 @@ Session organizer: Dimitri Masson (ESTIA Institute of Technology, France)
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Workshop" data-index="29">
+      <li class="session-item mb-1 p-3 border rounded Workshop" data-index="29">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-29T13:15:00+09:00" data-end="2024-08-29T14:45:00+09:00">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Workshop</div>
+            <div class="listing-sessionType badge bg-dark Workshop">Workshop</div>
           </div>
 
           <div class="dCol-8">
@@ -1698,13 +1698,13 @@ Session organizers: Yakir Yaniv, Yuval Bitan and Nirit Gavish (Israeli Human Fac
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="30">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="30">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-29T14:45:00+09:00" data-end="2024-08-29T15:00:00+09:00">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -1733,13 +1733,13 @@ Session organizers: Yakir Yaniv, Yuval Bitan and Nirit Gavish (Israeli Human Fac
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Closing" data-index="31">
+      <li class="session-item mb-1 p-3 border rounded Closing" data-index="31">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2024-08-29T15:00:00+09:00" data-end="2024-08-29T16:30:00+09:00">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Closing</div>
+            <div class="listing-sessionType badge bg-dark Closing">Closing</div>
           </div>
 
           <div class="dCol-8">

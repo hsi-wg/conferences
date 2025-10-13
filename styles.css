@@ -23,7 +23,21 @@
   --desert-sand: #e1c9b7ff;
   --desert-sand-2: #efcba9ff;
   --orange-peel: #ff9900ff;
+
+  --keynote: #ff9900ff;
+  --panel: #0d48a0ff;
+  --workshop: #fbdf9dff;
+  --plenary: #b6e2ddff;
+  --talk: #c8ddbbff;
+  --discussion: #fba09dff;
+  --break: #999999ff;
+
+  --outreach: #fbdf9dff;
+  --cross-working-group: #fbc99dff;
+  --domain-specific: #c8ddbbff;
+  --topic: #0d48a0ff;
 }
+
 /* Highlight current year (2025) nav link */
 /* Target anchor with href ending in HSI2025/  (built site will rewrite to html) */
 /* We include both .qmd and .html variants for compatibility during preview vs output */
@@ -66,24 +80,111 @@ div#quarto-sidebar h2 {
   font-weight: 600;
 }
 
-.Keynote {
-  background-color: var(--orange-peel);
+.session-item {
+  border-left-width: 4px !important;
 }
-.Workshop {
-  background-color: var(--desert-sand-2);
+
+badge.Keynote {
+  background-color: var(--keynote);
 }
-.Break {
-  background-color: var(--light-gray);
+
+.badge.Outreach {
+  background-color: var(--outreach) !important;
+  color: #111;
 }
-.Plenary {
-  background-color: var(--mint-green);
+
+.badge.Cross-Working-Group {
+  background-color: var(--cross-working-group) !important;
+  color: #111;
 }
-.Talk {
-  background-color: var(--powder-blue);
+
+.badge.Domain-specific {
+  background-color: var(--domain-specific) !important;
+  color: #111;
 }
-.Panel,
-.Discussion {
+.badge.Topic {
+  background-color: var(--topic) !important;
+  color: #fff;
+}
+
+/* Session border-left colors by type */
+.session-item.Outreach,
+.session-block.Outreach {
+  border-left-color: var(--outreach) !important;
+}
+
+.session-item.Cross-Working-Group,
+.session-block.Cross-Working-Group {
+  border-left-color: var(--cross-working-group) !important;
+}
+
+.session-item.Domain-specific,
+.session-block.Domain-specific {
+  border-left-color: var(--domain-specific) !important;
+}
+.session-item.Topic,
+.session-block.Topic {
+  border-left-color: var(--topic) !important;
+}
+/* Badge background colors by type */
+.badge.Keynote {
+  background-color: var(--keynote) !important;
+  color: #fff;
+}
+.badge.Break {
+  background-color: var(--break) !important;
+  color: #fff;
+}
+.badge.Talk {
+  background-color: var(--talk) !important;
+  color: #fff;
+}
+.badge.Workshop {
+  background-color: var(--workshop) !important;
+  color: #111;
+}
+.badge.Plenary {
+  background-color: var(--plenary) !important;
+  color: #fff;
+}
+.badge.Panel {
+  background-color: var(--panel) !important;
+  color: #fff;
+}
+.badge.Discussion {
+  background-color: var(--discussion) !important;
+  color: #fff;
+}
+
+/* Session border-left colors by type */
+.session-item.Keynote,
+.session-block.Keynote {
+  border-left-color: var(--keynote) !important;
+}
+.session-item.Break,
+.session-block.Break {
+  border-left-color: var(--break) !important;
   background-color: var(--timberwolf);
+}
+.session-item.Talk,
+.session-block.Talk {
+  border-left-color: var(--talk) !important;
+}
+.session-item.Workshop,
+.session-block.Workshop {
+  border-left-color: var(--workshop) !important;
+}
+.session-item.Plenary,
+.session-block.Plenary {
+  border-left-color: var(--plenary) !important;
+}
+.session-item.Panel,
+.session-block.Panel {
+  border-left-color: var(--panel) !important;
+}
+.session-item.Discussion,
+.session-block.Discussion {
+  border-left-color: var(--discussion) !important;
 }
 
 .dgrid {

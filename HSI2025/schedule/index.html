@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-conference-sessions .list');
+    const listingTargetEl = window.document.querySelector('#listing-conference-sessions-grid .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -91,7 +91,35 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-conference-sessions'] = new List('listing-conference-sessions', options);
+    window['quarto-listings']['listing-conference-sessions-grid'] = new List('listing-conference-sessions-grid', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-conference-sessions-list .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-people','listing-tags','listing-sessions',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-people","listing-tags","listing-sessions"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-conference-sessions-list'] = new List('listing-conference-sessions-list', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -219,13 +247,13 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../HSI2025/schedule/index.html">Schedule</a></li><li class="breadcrumb-item"><a href="../../HSI2025/schedule/index.html">Overview</a></li></ol></nav>
+    <div class="quarto-title column-page-right"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../HSI2025/schedule/index.html">Schedule</a></li><li class="breadcrumb-item"><a href="../../HSI2025/schedule/index.html">Overview</a></li></ol></nav>
       <h1 class="title">HSI 2025 Schedule</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-body">
+  <div class="quarto-title-meta column-page-right">
 
       
     
@@ -305,10 +333,9 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
 
 
 
@@ -317,13 +344,11 @@ window.Quarto = {
 <section id="event-schedule-overview" class="level1">
 <h1>Event Schedule Overview</h1>
 <p>Below is the full conference program. Times are shown in your local timezone. Click “Show more” to expand abstracts.</p>
-<div id="listing-conference-sessions" class="quarto-listing quarto-listing-container-custom">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">List View</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Grid View</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="listing-conference-sessions-list" class="quarto-listing quarto-listing-container-custom">
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -331,6 +356,7 @@ window.Quarto = {
     const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const tzEl = document.getElementById('tz-indicator');
     if (tzEl) tzEl.textContent = tz;
+    const root = document.querySelector('.schedule-day-list');
 
     function formatRange(startISO, endISO) {
       try {
@@ -347,16 +373,17 @@ window.Quarto = {
         return startISO + ' – ' + endISO;
       }
     }
-    document.querySelectorAll('.session-item .session-time').forEach(el => {
+
+    root.querySelectorAll('.session-item .session-time').forEach(el => {
       const start = el.getAttribute('data-start');
       const end = el.getAttribute('data-end');
       el.querySelector('.time-range').textContent = formatRange(start, end);
     });
     // toggle abstract
-    document.querySelectorAll('.toggle-abstract').forEach(btn => {
+    root.querySelectorAll('.toggle-abstract').forEach(btn => {
       btn.addEventListener('click', () => {
         const sel = btn.getAttribute('data-target');
-        const panel = document.querySelector(sel);
+        const panel = root.querySelector(sel);
         if (!panel) return;
         const shown = panel.classList.toggle('show');
         btn.setAttribute('aria-expanded', shown ? 'true' : 'false');
@@ -365,14 +392,12 @@ window.Quarto = {
     });
     // Assign human dates for day headings (optional mapping)
     const dayDates = {"1":"5 Nov 2025","2":"6 Nov 2025","3":"7 Nov 2025"};
-    document.querySelectorAll('.schedule-day-date').forEach(span => {
+    root.querySelectorAll('.schedule-day-date').forEach(span => {
       const d = span.getAttribute('data-day');
       if (dayDates[d]) span.textContent = dayDates[d];
     });
   });
 </script>
-
-<h1 class="mb-4">Conference Schedule</h1>
 
 <div class="schedule-controls mb-3">
   <div class="row g-2">
@@ -392,13 +417,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Plenary" data-index="0">
+      <li class="session-item mb-1 p-3 border rounded Plenary" data-index="0">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-05T18:45:00Z" data-end="2025-11-05T19:15:00.000Z">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Plenary</div>
+            <div class="listing-sessionType badge bg-dark Plenary">Plenary</div>
           </div>
 
           <div class="dCol-8">
@@ -433,18 +458,18 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Keynote" data-index="1">
+      <li class="session-item mb-1 p-3 border rounded Keynote" data-index="1">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-05T19:15:00Z" data-end="2025-11-05T20:15:00.000Z">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Keynote</div>
+            <div class="listing-sessionType badge bg-dark Keynote">Keynote</div>
           </div>
 
           <div class="dCol-8">
-            <a href="" class="listing-title h6 d-block mb-0">Complex Adaptive and Self-organising Systems</a>
-            <small class="text-muted listing-authors">Patrick Hoverstadt</small>
+            <a href="" class="listing-title h6 d-block mb-0">Keynote 2: SySTEAM</a>
+            <small class="text-muted listing-authors">Caitlyn Singam</small>
           </div>
 
           <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch  align-items-center">
@@ -456,7 +481,7 @@ window.Quarto = {
               
             
             
-            <button class="btn btn-sm btn-outline-secondary mt-1 toggle-abstract" data-target="#abs-keynote-workshop" aria-expanded="false">Show more</button>
+            <button class="btn btn-sm btn-outline-secondary mt-1 toggle-abstract" data-target="#abs-keynote-2-systeam" aria-expanded="false">Show more</button>
             
           </div>
           
@@ -464,9 +489,9 @@ window.Quarto = {
           
         </div>
 
-        <div class="session-abstract collapse mt-2" id="abs-keynote-workshop">
+        <div class="session-abstract collapse mt-2" id="abs-keynote-2-systeam">
           <hr>
-          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Patrick Hoverstadt will explore how organisations function as complex adaptive systems, where people are not just components—but catalysts of transformation. Drawing on decades of experience with the Viable System Model and his work in The Grammar of Systems, Patrick will unpack how human agency, collaborative practice, and systemic awareness shape the potential of organisations to adapt, evolve, and thrive. This session will offer a compelling look at how embracing complexity, rather than resisting it, unlocks new possibilities for meaningful and sustainable change.
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Caitlyn Singam will be sharing about INCOSE's SySTEAM initiative that strives towards interdisciplinary systems skills being a foundation for every student at all levels of the school curricula. This talk highlights the potential for our current and future HSI people who will be the caretakers of societal progress, creating new practices, and harnessing technologies in digitally savvy and creative ways to engineer for our future challenges.
 </p>
         </div>
         
@@ -474,13 +499,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="2">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="2">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-05T20:15:00Z" data-end="2025-11-05T21:00:00.000Z">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -506,13 +531,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Talk" data-index="3">
+      <li class="session-item mb-1 p-3 border rounded Topic" data-index="3">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-05T21:00:00Z" data-end="2025-11-05T21:30:00.000Z">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Talk</div>
+            <div class="listing-sessionType badge bg-dark Topic">Topic</div>
           </div>
 
           <div class="dCol-8">
@@ -549,13 +574,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Talk" data-index="4">
+      <li class="session-item mb-1 p-3 border rounded Topic" data-index="4">
         <div class="dgrid align-items-baseline gap-2">
 
-          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-05T21:30:00Z" data-end="2025-11-05T22:00:00.000Z">
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-05T21:30:00Z" data-end="2025-11-05T22:30:00.000Z">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Talk</div>
+            <div class="listing-sessionType badge bg-dark Topic">Topic</div>
           </div>
 
           <div class="dCol-8">
@@ -588,56 +613,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Talk" data-index="5">
-        <div class="dgrid align-items-baseline gap-2">
-
-          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-05T22:00:00Z" data-end="2025-11-05T22:30:00.000Z">
-            <span class="listing-day hidden">1</span>
-            <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Talk</div>
-          </div>
-
-          <div class="dCol-8">
-            <a href="" class="listing-title h6 d-block mb-0">Requirements: HSI &amp; SysML</a>
-            <small class="text-muted listing-authors">Caitlin Ryan,Chris Bartlett</small>
-          </div>
-
-          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch  align-items-center">
-            
-              
-                <span class="badge bg-secondary listing-category rounded mb-1 me-1 ">contempory challenges</span>
-              
-                <span class="badge bg-secondary listing-category rounded mb-1 me-1 ">modelling Simulation</span>
-              
-                <span class="badge bg-secondary listing-category rounded mb-1 me-1 ">HSI methods and tools</span>
-              
-            
-            
-            <button class="btn btn-sm btn-outline-secondary mt-1 toggle-abstract" data-target="#abs-hsi-in-sysml-mil-std-1472h" aria-expanded="false">Show more</button>
-            
-          </div>
-          
-          
-          
-        </div>
-
-        <div class="session-abstract collapse mt-2" id="abs-hsi-in-sysml-mil-std-1472h">
-          <hr>
-          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Detailed walkthrough of modeling MIL-STD 1472H in SysML, highlighting digital engineering standards adoption challenges and access pathways via INCOSE SELab.
-</p>
-        </div>
-        
-      </li>
-    
-      
-      
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="6">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="5">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-05T22:30:00Z" data-end="2025-11-05T22:45:00.000Z">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -663,18 +645,21 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Panel" data-index="7">
+      <li class="session-item mb-1 p-3 border rounded Topic" data-index="6">
         <div class="dgrid align-items-baseline gap-2">
 
-          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-05T22:45:00Z" data-end="2025-11-05T23:10:00.000Z">
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-05T22:45:00Z" data-end="2025-11-06T00:00:00.000Z">
             <span class="listing-day hidden">1</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Panel</div>
+            <div class="listing-sessionType badge bg-dark Topic">Topic</div>
           </div>
 
           <div class="dCol-8">
-            <a href="" class="listing-title h6 d-block mb-0">Model-based HSI</a>
-            <small class="text-muted listing-authors">John S. Baras,Others TBD</small>
+            <a href="" class="listing-title h6 d-block mb-0">Model-based HSI (J. Barras)
+Requirements: HSI &amp; SYSML (Caitlyn Ryan)
+Human Digital Twin Ontology (Mike Miller) 
+</a>
+            <small class="text-muted listing-authors">John S. Baras,Caitlyn Ryan,Mike Miller</small>
           </div>
 
           <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch  align-items-center">
@@ -699,84 +684,8 @@ window.Quarto = {
         <div class="session-abstract collapse mt-2" id="abs-efficient-integration-of-model-based-and-data-driven-approaches">
           <hr>
           <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Session on modeling, monitoring, valuation, and management of HSI using integrated model-based and data-driven techniques including trust, risk, and multi-metric trade analysis.
-</p>
-        </div>
-        
-      </li>
-    
-      
-      
-      <li class="session-item mb-3 p-3 border rounded Talk" data-index="8">
-        <div class="dgrid align-items-baseline gap-2">
-
-          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-05T23:10:00Z" data-end="2025-11-05T23:35:00.000Z">
-            <span class="listing-day hidden">1</span>
-            <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Talk</div>
-          </div>
-
-          <div class="dCol-8">
-            <a href="" class="listing-title h6 d-block mb-0">HRLs / ORLs Measurement</a>
-            <small class="text-muted listing-authors">Judi See (TBC)</small>
-          </div>
-
-          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch  align-items-center">
-            
-              
-                <span class="badge bg-secondary listing-category rounded mb-1 me-1 ">HSI Maturity</span>
-              
-            
-            
-            <button class="btn btn-sm btn-outline-secondary mt-1 toggle-abstract" data-target="#abs-hrls-orls-measurement" aria-expanded="false">Show more</button>
-            
-          </div>
-          
-          
-          
-        </div>
-
-        <div class="session-abstract collapse mt-2" id="abs-hrls-orls-measurement">
-          <hr>
-          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Examination of Human Readiness Levels (HRLs) and Operational Readiness Levels (ORLs) metrics, potential measurement frameworks, and maturity considerations.
-</p>
-        </div>
-        
-      </li>
-    
-      
-      
-      <li class="session-item mb-3 p-3 border rounded Discussion" data-index="9">
-        <div class="dgrid align-items-baseline gap-2">
-
-          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-05T23:35:00Z" data-end="2025-11-06T00:00:00.000Z">
-            <span class="listing-day hidden">1</span>
-            <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Discussion</div>
-          </div>
-
-          <div class="dCol-8">
-            <a href="" class="listing-title h6 d-block mb-0">Human Digital Twin Ontology Development</a>
-            <small class="text-muted listing-authors">Mike Miller</small>
-          </div>
-
-          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch  align-items-center">
-            
-              
-                <span class="badge bg-secondary listing-category rounded mb-1 me-1 ">modelling Simulation</span>
-              
-            
-            
-            <button class="btn btn-sm btn-outline-secondary mt-1 toggle-abstract" data-target="#abs-human-digital-twin-ontology-development" aria-expanded="false">Show more</button>
-            
-          </div>
-          
-          
-          
-        </div>
-
-        <div class="session-abstract collapse mt-2" id="abs-human-digital-twin-ontology-development">
-          <hr>
-          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Discussion of expanding digital twin ontology efforts to encompass human digital twins: applications, terminology alignment, and potential working group formation.
+Detailed walkthrough of modeling MIL-STD 1472H in SysML, highlighting digital engineering standards adoption challenges and access pathways via INCOSE SELab.
+Discussion of expanding digital twin ontology efforts to encompass human digital twins: applications, terminology alignment, and potential working group formation.
 </p>
         </div>
         
@@ -791,17 +700,17 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Workshop" data-index="10">
+      <li class="session-item mb-1 p-3 border rounded Cross-Working-Group" data-index="7">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-06T16:00:00Z" data-end="2025-11-06T17:30:00.000Z">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Workshop</div>
+            <div class="listing-sessionType badge bg-dark Cross-Working-Group">Cross-Working-Group</div>
           </div>
 
           <div class="dCol-8">
-            <a href="" class="listing-title h6 d-block mb-0">Advance HSI Infused Architecting of AI Enabled Systems</a>
+            <a href="" class="listing-title h6 d-block mb-0">Advanced HSI infused architecting of AI enabled Systems for Safety Critical Domains</a>
             <small class="text-muted listing-authors">R. Reis</small>
           </div>
 
@@ -834,13 +743,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="11">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="8">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-06T17:30:00Z" data-end="2025-11-06T17:45:00.000Z">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -866,13 +775,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Talk" data-index="12">
+      <li class="session-item mb-1 p-3 border rounded Domain-Specific" data-index="9">
         <div class="dgrid align-items-baseline gap-2">
 
-          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-06T17:45:00Z" data-end="2025-11-06T19:15:00.000Z">
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-06T17:45:00Z" data-end="2025-11-06T18:15:00.000Z">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Talk</div>
+            <div class="listing-sessionType badge bg-dark Domain-Specific">Domain-Specific</div>
           </div>
 
           <div class="dCol-8">
@@ -907,18 +816,18 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Keynote" data-index="13">
+      <li class="session-item mb-1 p-3 border rounded Topic" data-index="10">
         <div class="dgrid align-items-baseline gap-2">
 
-          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-06T19:15:00Z" data-end="2025-11-06T20:15:00.000Z">
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-06T18:15:00Z" data-end="2025-11-06T19:15:00.000Z">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Keynote</div>
+            <div class="listing-sessionType badge bg-dark Topic">Topic</div>
           </div>
 
           <div class="dCol-8">
-            <a href="" class="listing-title h6 d-block mb-0">Keynote 2: SySTEAM</a>
-            <small class="text-muted listing-authors">Caitlyn Singam</small>
+            <a href="" class="listing-title h6 d-block mb-0">HSI Measures &amp; HRLs</a>
+            <small class="text-muted listing-authors">Judi See,P. Lambertson</small>
           </div>
 
           <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch  align-items-center">
@@ -930,7 +839,7 @@ window.Quarto = {
               
             
             
-            <button class="btn btn-sm btn-outline-secondary mt-1 toggle-abstract" data-target="#abs-keynote-2-systeam" aria-expanded="false">Show more</button>
+            <button class="btn btn-sm btn-outline-secondary mt-1 toggle-abstract" data-target="#abs-HSI Measures &amp; HRLs (Judi See, P. Lambertson)" aria-expanded="false">Show more</button>
             
           </div>
           
@@ -938,9 +847,9 @@ window.Quarto = {
           
         </div>
 
-        <div class="session-abstract collapse mt-2" id="abs-keynote-2-systeam">
+        <div class="session-abstract collapse mt-2" id="abs-HSI Measures &amp; HRLs (Judi See, P. Lambertson)">
           <hr>
-          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Caitlyn Singam will be sharing about INCOSE's SySTEAM initiative that strives towards interdisciplinary systems skills being a foundation for every student at all levels of the school curricula. This talk highlights the potential for our current and future HSI people who will be the caretakers of societal progress, creating new practices, and harnessing technologies in digitally savvy and creative ways to engineer for our future challenges.
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Discussion on Human Systems Integration (HSI) measures and Human Readiness Levels (HRLs).
 </p>
         </div>
         
@@ -948,13 +857,54 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="14">
+      <li class="session-item mb-1 p-3 border rounded Keynote" data-index="11">
+        <div class="dgrid align-items-baseline gap-2">
+
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-06T19:15:00Z" data-end="2025-11-06T20:15:00.000Z">
+            <span class="listing-day hidden">2</span>
+            <span class="time-range">--:-- – --:--</span>
+            <div class="listing-sessionType badge bg-dark Keynote">Keynote</div>
+          </div>
+
+          <div class="dCol-8">
+            <a href="" class="listing-title h6 d-block mb-0">Complex Adaptive and Self-organising Systems</a>
+            <small class="text-muted listing-authors">Patrick Hoverstadt</small>
+          </div>
+
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch  align-items-center">
+            
+              
+                <span class="badge bg-secondary listing-category rounded mb-1 me-1 ">HSI fundamentals</span>
+              
+                <span class="badge bg-secondary listing-category rounded mb-1 me-1 ">Critisizing</span>
+              
+            
+            
+            <button class="btn btn-sm btn-outline-secondary mt-1 toggle-abstract" data-target="#abs-keynote-workshop" aria-expanded="false">Show more</button>
+            
+          </div>
+          
+          
+          
+        </div>
+
+        <div class="session-abstract collapse mt-2" id="abs-keynote-workshop">
+          <hr>
+          <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span>Patrick Hoverstadt will explore how organisations function as complex adaptive systems, where people are not just components—but catalysts of transformation. Drawing on decades of experience with the Viable System Model and his work in The Grammar of Systems, Patrick will unpack how human agency, collaborative practice, and systemic awareness shape the potential of organisations to adapt, evolve, and thrive. This session will offer a compelling look at how embracing complexity, rather than resisting it, unlocks new possibilities for meaningful and sustainable change.
+</p>
+        </div>
+        
+      </li>
+    
+      
+      
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="12">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-06T20:15:00Z" data-end="2025-11-06T21:00:00.000Z">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -980,13 +930,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Panel" data-index="15">
+      <li class="session-item mb-1 p-3 border rounded Topic" data-index="13">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-06T21:00:00Z" data-end="2025-11-06T22:00:00.000Z">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Panel</div>
+            <div class="listing-sessionType badge bg-dark Topic">Topic</div>
           </div>
 
           <div class="dCol-8">
@@ -1021,13 +971,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Workshop" data-index="16">
+      <li class="session-item mb-1 p-3 border rounded Cross-Working-Group" data-index="14">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-06T22:00:00Z" data-end="2025-11-06T22:45:00.000Z">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Workshop</div>
+            <div class="listing-sessionType badge bg-dark Cross-Working-Group">Cross-Working-Group</div>
           </div>
 
           <div class="dCol-8">
@@ -1060,13 +1010,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="17">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="15">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-06T22:45:00Z" data-end="2025-11-06T23:00:00.000Z">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -1092,13 +1042,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Panel" data-index="18">
+      <li class="session-item mb-1 p-3 border rounded Domain-Specific" data-index="16">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-06T23:00:00Z" data-end="2025-11-07T00:00:00.000Z">
             <span class="listing-day hidden">2</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Panel</div>
+            <div class="listing-sessionType badge bg-dark Domain-Specific">Domain-Specific</div>
           </div>
 
           <div class="dCol-8">
@@ -1140,13 +1090,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Panel" data-index="19">
+      <li class="session-item mb-1 p-3 border rounded Outreach" data-index="17">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-07T16:00:00Z" data-end="2025-11-07T17:00:00.000Z">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Panel</div>
+            <div class="listing-sessionType badge bg-dark Outreach">Outreach</div>
           </div>
 
           <div class="dCol-8">
@@ -1181,13 +1131,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Talk" data-index="20">
+      <li class="session-item mb-1 p-3 border rounded Outreach" data-index="18">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-07T17:00:00Z" data-end="2025-11-07T17:30:00.000Z">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Talk</div>
+            <div class="listing-sessionType badge bg-dark Outreach">Outreach</div>
           </div>
 
           <div class="dCol-8">
@@ -1224,13 +1174,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Break" data-index="21">
+      <li class="session-item mb-1 p-3 border rounded Break" data-index="19">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-07T17:30:00Z" data-end="2025-11-07T17:45:00.000Z">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Break</div>
+            <div class="listing-sessionType badge bg-dark Break">Break</div>
           </div>
 
           <div class="dCol-8">
@@ -1256,18 +1206,18 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Workshop" data-index="22">
+      <li class="session-item mb-1 p-3 border rounded Cross-Working-Group" data-index="20">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-07T17:45:00Z" data-end="2025-11-07T19:15:00.000Z">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Workshop</div>
+            <div class="listing-sessionType badge bg-dark Cross-Working-Group">Cross-Working-Group</div>
           </div>
 
           <div class="dCol-8">
-            <a href="" class="listing-title h6 d-block mb-0">Heuristics Workshop</a>
-            <small class="text-muted listing-authors">G. Kennedy,H. Lee</small>
+            <a href="" class="listing-title h6 d-block mb-0">HSI Knowledge Sharing Heuristics Workshop</a>
+            <small class="text-muted listing-authors">Dimitri Masson,H. Lee</small>
           </div>
 
           <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch  align-items-center">
@@ -1297,13 +1247,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Panel" data-index="23">
+      <li class="session-item mb-1 p-3 border rounded Outreach" data-index="21">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-07T19:15:00Z" data-end="2025-11-07T20:15:00.000Z">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Panel</div>
+            <div class="listing-sessionType badge bg-dark Outreach">Outreach</div>
           </div>
 
           <div class="dCol-8">
@@ -1338,13 +1288,13 @@ window.Quarto = {
     
       
       
-      <li class="session-item mb-3 p-3 border rounded Plenary" data-index="24">
+      <li class="session-item mb-1 p-3 border rounded Plenary" data-index="22">
         <div class="dgrid align-items-baseline gap-2">
 
           <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="2025-11-07T20:15:00Z" data-end="2025-11-07T20:30:00.000Z">
             <span class="listing-day hidden">3</span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-sessionType badge bg-dark">Plenary</div>
+            <div class="listing-sessionType badge bg-dark Plenary">Plenary</div>
           </div>
 
           <div class="dCol-8">
@@ -1379,6 +1329,598 @@ window.Quarto = {
     
     
     </ul>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="listing-conference-sessions-grid" class="quarto-listing quarto-listing-container-custom">
+
+<script>
+  
+  const fmtTime = new Intl.DateTimeFormat(navigator.language || 'en-US', { hour: '2-digit', minute: '2-digit' });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const tzEl = document.getElementById('tz-indicator');
+    if (tzEl) tzEl.textContent = tz;
+
+    // Helpers
+    
+
+    function floorTo(startDate, minutes) {
+      const d = new Date(startDate);
+      d.setSeconds(0,0);
+      const ms = minutes * 60 * 1000;
+      return new Date(Math.floor(d.getTime() / ms) * ms);
+    }
+    function ceilTo(endDate, minutes) {
+      const d = new Date(endDate);
+      d.setSeconds(0,0);
+      const ms = minutes * 60 * 1000;
+      return new Date(Math.ceil(d.getTime() / ms) * ms);
+    }
+    function addDurationISO(startISO, dur) {
+      try {
+        const start = new Date(startISO);
+        const m = /^PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/.exec(dur || '');
+        if (!m) return null;
+        const [,h,mn,s] = m.map(x => parseInt(x||'0',10));
+        start.setHours(start.getHours() + (h||0));
+        start.setMinutes(start.getMinutes() + (mn||0));
+        start.setSeconds(start.getSeconds() + (s||0));
+        return start;
+      } catch { return null; }
+    }
+
+  const grid = document.getElementById('grid-schedule');
+  const timeCol = grid.querySelector('.grid-body .time-col');
+  const body = grid.querySelector('.grid-body');
+  const header = grid.querySelector('.grid-header');
+
+    const slotMins = parseInt(grid.getAttribute('data-slot-mins') || '5', 10);
+    const rowPx = parseInt(grid.getAttribute('data-row-height') || '8', 10);
+
+    // Collect sessions (numeric-day only)
+    const sessEls = Array.from(grid.querySelectorAll('.session-block'));
+
+    // Resolve end times if missing
+    for (const el of sessEls) {
+      const startISO = el.getAttribute('data-start');
+      let endISO = el.getAttribute('data-end');
+      const dur = el.getAttribute('data-duration');
+      if (!endISO && startISO && dur) {
+        const endDate = addDurationISO(startISO, dur);
+        if (endDate) endISO = endDate.toISOString();
+        if (endISO) el.setAttribute('data-end', endISO);
+      }
+    }
+
+    // Compute global time bounds across days
+    const allStarts = [];
+    const allEnds = [];
+    for (const el of sessEls) {
+      const day = el.getAttribute('data-day');
+      if (!day || isNaN(parseInt(day,10))) continue; // skip non-scheduled (day = X)
+      const start = new Date(el.getAttribute('data-start'));
+      start.setHours(start.getHours() - 24 * day);
+      const endAttr = el.getAttribute('data-end');
+      const end = endAttr ? new Date(endAttr) : addDurationISO(el.getAttribute('data-start'), el.getAttribute('data-duration'));
+      end.setHours(end.getHours() - 24 * day);
+      if (!isNaN(start) && !isNaN(end)) {
+        allStarts.push(start);
+        allEnds.push(end);
+      }
+    }
+    if (!allStarts.length || !allEnds.length) return; // nothing to draw
+
+    const globalStart = floorTo(new Date(Math.min.apply(null, allStarts)), slotMins);
+    const globalEnd = ceilTo(new Date(Math.max.apply(null, allEnds)), slotMins);
+    const totalMs = globalEnd - globalStart;
+    const slotMs = slotMins * 60 * 1000;
+    const slots = Math.max(1, Math.round(totalMs / slotMs));
+
+    // Apply grid row sizing to body
+    body.style.gridTemplateRows = "repeat("+slots+", "+rowPx+"px)";
+
+    // Build the time ruler (labels every 15 minutes)
+    for (let i = 0; i <= slots; i++) {
+      const t = new Date(globalStart.getTime() + i * slotMs);
+      const showLabel = (i % (15 / slotMins) === 0); // every 15 minutes
+      const slot = document.createElement('div');
+      slot.className = 'time-slot' + (showLabel ? ' with-label' : '');
+      slot.style.gridColumn = '1';
+      const rowStart = i + 1; // grid rows are 1-based
+      slot.style.gridRow = ""+ rowStart + " / " + (rowStart+1);
+      if (showLabel) slot.textContent = fmtTime.format(t);
+      timeCol.appendChild(slot);
+    }
+
+    // Place sessions in their day columns
+  const dayOrder = (grid.getAttribute('data-day-keys') || '').split(',').filter(Boolean);
+  // Set dynamic grid columns (time column + one per day)
+  const dayCols = Array(dayOrder.length).fill('1fr').join(' ');
+  header.style.gridTemplateColumns = "var(--time-col-w) " + dayCols;
+  body.style.gridTemplateColumns = "var(--time-col-w) " + dayCols;
+  const colOffset = 2; // col 1 is time ruler
+  for (const el of sessEls) {
+    const day = el.getAttribute('data-day');
+    if (!day || isNaN(parseInt(day,10))) { el.style.display = 'none'; continue; }
+      const colIndex = dayOrder.indexOf(day);
+      if (colIndex < 0) { el.style.display = 'none'; continue; }
+      const start = new Date(el.getAttribute('data-start'));
+      const end = new Date(el.getAttribute('data-end'));
+      start.setHours(start.getHours() - 24 * day);
+      end.setHours(end.getHours() - 24 * day);
+      if (isNaN(start) || isNaN(end)) { el.style.display = 'none'; continue; }
+      const startSlots = Math.floor((start - globalStart) / slotMs);
+      const endSlots = Math.ceil((end - globalStart) / slotMs);
+      const rowStart = Math.max(1, startSlots + 1);
+      const rowEnd = Math.max(rowStart + 1, endSlots + 1);
+      el.style.gridColumn = String(colOffset + colIndex);
+      el.style.gridRow = ""+ rowStart + " / " + rowEnd;
+
+    // Compose title as "Start - End : <Session type> Title"
+    const sessionType = el.getAttribute('data-sessionType');
+    const sessionTitle = el.title
+    const startStr = fmtTime.format(start);
+    const endStr = end && !isNaN(end) ? fmtTime.format(end) : '';
+    el.title = startStr + ' - ' + endStr + (sessionType ? ' : ' + sessionType : '') + ' ' + sessionTitle;
+    }
+  });
+</script>
+
+<style>
+  .grid-schedule { --time-col-w: 96px; --slot-h: 8px; }
+  .grid-header { display: grid; gap: 6px; align-items: end; }
+  .grid-body { display: grid; gap: 2px; }
+  .grid-header .hdr { font-weight: 600; border-bottom: 1px solid var(--bs-border-color, #ddd); padding-bottom: .25rem; }
+  .grid-header .hdr .sub { display:block; font-weight: 400; font-size: .8rem; color: var(--bs-secondary-color, #666); }
+  .time-col { display: contents; }
+  .time-slot { border-top: 1px dashed #e5e5e5; font-size: .75rem; color: #666; padding-right: .25rem; text-align: right; }
+  .time-slot.with-label { color: #333; }
+  .session-block { background: var(--bs-light, #f8f9fa); border: 1px solid var(--bs-border-color, #ddd); border-left-width: 4px; border-left-color: var(--bs-primary, #0d6efd);
+                   border-radius: 4px; padding: .35rem .5rem; overflow: hidden; }
+  .session-title { font-size: .85rem; margin: 0; }
+  .session-meta { font-size: .7rem; color: var(--bs-secondary-color, #666); }
+  .tag-pill { display:inline-block; font-size:.65rem; padding:.1rem .35rem; border-radius: 999px; background:#eef; color:#225; margin-right:.25rem; }
+  .grid-wrap { overflow-x: auto; }
+</style>
+
+<div class="small text-muted mb-2">Local time: <span id="tz-indicator"></span></div>
+
+<div class="grid-wrap">
+  <div id="grid-schedule" class="grid-schedule" data-slot-mins="5" data-row-height="8" data-day-keys="1,2,3">
+    <div class="grid-header">
+      <div class="hdr">Time</div>
+      
+        <div class="hdr">Day 1<span class="sub">5 Nov 2025</span></div>
+      
+        <div class="hdr">Day 2<span class="sub">6 Nov 2025</span></div>
+      
+        <div class="hdr">Day 3<span class="sub">7 Nov 2025</span></div>
+      
+    </div>
+
+    <div class="grid-body">
+      <div class="time-col"></div>
+
+      
+      
+        
+        
+        
+          <div class="session-block rounded Plenary" data-sessiontype="Plenary" data-day="1" data-start="2025-11-05T18:45:00Z" data-end="2025-11-05T19:15:00.000Z" data-duration="PT30M" title="Chair Welcome">
+            <p class="session-title">Chair Welcome</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>GK</strong></span>
+              <span class="me-2">G. Kennedy</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">HSI fundamentals</span>
+                
+                  <span class="tag-pill">Critisizing</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Keynote" data-sessiontype="Keynote" data-day="1" data-start="2025-11-05T19:15:00Z" data-end="2025-11-05T20:15:00.000Z" data-duration="PT60M" title="Keynote 2: SySTEAM">
+            <p class="session-title">Keynote 2: SySTEAM</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>G.Kennedy</strong></span>
+              <span class="me-2">Caitlyn Singam</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">HSI fundamentals</span>
+                
+                  <span class="tag-pill">Critisizing</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Break" data-sessiontype="Break" data-day="1" data-start="2025-11-05T20:15:00Z" data-end="2025-11-05T21:00:00.000Z" data-duration="PT45M" title="Lunch Break">
+            <p class="session-title">Lunch Break</p>
+            <div class="session-meta">
+              
+              
+              
+            </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Topic" data-sessiontype="Topic" data-day="1" data-start="2025-11-05T21:00:00Z" data-end="2025-11-05T21:30:00.000Z" data-duration="PT30M" title="HSI from a Development Perspective">
+            <p class="session-title">HSI from a Development Perspective</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>SY</strong></span>
+              <span class="me-2">Peter Hellekant</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">HSI fundamentals</span>
+                
+                  <span class="tag-pill">HSI methods and tools</span>
+                
+                  <span class="tag-pill">Implementation of HSI in org</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Topic" data-sessiontype="Topic" data-day="1" data-start="2025-11-05T21:30:00Z" data-end="2025-11-05T22:30:00.000Z" data-duration="PT60M" title="CONOPS Early Stage R&amp;D">
+            <p class="session-title">CONOPS Early Stage R&amp;D</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>SY</strong></span>
+              <span class="me-2">R. Reis</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">HSI methods and tools</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Break" data-sessiontype="Break" data-day="1" data-start="2025-11-05T22:30:00Z" data-end="2025-11-05T22:45:00.000Z" data-duration="PT15M" title="Break">
+            <p class="session-title">Break</p>
+            <div class="session-meta">
+              
+              
+              
+            </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Topic" data-sessiontype="Topic" data-day="1" data-start="2025-11-05T22:45:00Z" data-end="2025-11-06T00:00:00.000Z" data-duration="PT75M" title="Model-based HSI (J. Barras)
+Requirements: HSI &amp; SYSML (Caitlyn Ryan)
+Human Digital Twin Ontology (Mike Miller) 
+">
+            <p class="session-title">Model-based HSI (J. Barras)
+Requirements: HSI &amp; SYSML (Caitlyn Ryan)
+Human Digital Twin Ontology (Mike Miller) 
+</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>Chris Greenbank</strong></span>
+              <span class="me-2">John S. Baras, Caitlyn Ryan, Mike Miller</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">HSI fundamentals</span>
+                
+                  <span class="tag-pill">contempory challenges</span>
+                
+                  <span class="tag-pill">modelling Simulation</span>
+                
+              </div>
+            
+          </div>
+        
+      
+        
+        
+        
+          <div class="session-block rounded Cross-Working-Group" data-sessiontype="Cross-Working-Group" data-day="2" data-start="2025-11-06T16:00:00Z" data-end="2025-11-06T17:30:00.000Z" data-duration="PT90M" title="Advanced HSI infused architecting of AI enabled Systems for Safety Critical Domains">
+            <p class="session-title">Advanced HSI infused architecting of AI enabled Systems for Safety Critical Domains</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>RR</strong></span>
+              <span class="me-2">R. Reis</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">contempory challenges</span>
+                
+                  <span class="tag-pill">modelling Simulation</span>
+                
+                  <span class="tag-pill">HSI methods and tools</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Break" data-sessiontype="Break" data-day="2" data-start="2025-11-06T17:30:00Z" data-end="2025-11-06T17:45:00.000Z" data-duration="PT15M" title="Break">
+            <p class="session-title">Break</p>
+            <div class="session-meta">
+              
+              
+              
+            </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Domain-Specific" data-sessiontype="Domain-Specific" data-day="2" data-start="2025-11-06T17:45:00Z" data-end="2025-11-06T18:15:00.000Z" data-duration="PT30M" title="HSI in Medicine Administration">
+            <p class="session-title">HSI in Medicine Administration</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>AH</strong></span>
+              <span class="me-2">Yuval Bitan</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">Implementation of HSI in org</span>
+                
+                  <span class="tag-pill">Prediction and Anticipation</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Topic" data-sessiontype="Topic" data-day="2" data-start="2025-11-06T18:15:00Z" data-end="2025-11-06T19:15:00.000Z" data-duration="PT60M" title="HSI Measures &amp; HRLs">
+            <p class="session-title">HSI Measures &amp; HRLs</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>PL</strong></span>
+              <span class="me-2">Judi See, P. Lambertson</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">HSI fundamentals</span>
+                
+                  <span class="tag-pill">Critisizing</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Keynote" data-sessiontype="Keynote" data-day="2" data-start="2025-11-06T19:15:00Z" data-end="2025-11-06T20:15:00.000Z" data-duration="PT60M" title="Complex Adaptive and Self-organising Systems">
+            <p class="session-title">Complex Adaptive and Self-organising Systems</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>GK</strong></span>
+              <span class="me-2">Patrick Hoverstadt</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">HSI fundamentals</span>
+                
+                  <span class="tag-pill">Critisizing</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Break" data-sessiontype="Break" data-day="2" data-start="2025-11-06T20:15:00Z" data-end="2025-11-06T21:00:00.000Z" data-duration="PT45M" title="Lunch Break">
+            <p class="session-title">Lunch Break</p>
+            <div class="session-meta">
+              
+              
+              
+            </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Topic" data-sessiontype="Topic" data-day="2" data-start="2025-11-06T21:00:00Z" data-end="2025-11-06T22:00:00.000Z" data-duration="PT60M" title="Well intentioned behaviours that block SE: Social, organisational and cultural factors in embedding HSI practices">
+            <p class="session-title">Well intentioned behaviours that block SE: Social, organisational and cultural factors in embedding HSI practices</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>GK</strong></span>
+              <span class="me-2">Ryan Messina, Grace Kennedy, Richard Beasley?</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">Prediction and Anticipation</span>
+                
+                  <span class="tag-pill">Critisizing</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Cross-Working-Group" data-sessiontype="Cross-Working-Group" data-day="2" data-start="2025-11-06T22:00:00Z" data-end="2025-11-06T22:45:00.000Z" data-duration="PT45M" title="Project Wildfire: Sociotechnical Systems-of-Systems for Resilience">
+            <p class="session-title">Project Wildfire: Sociotechnical Systems-of-Systems for Resilience</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>GK</strong></span>
+              <span class="me-2">G. Kennedy, Project Wildfire Team</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">contempory challenges</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Break" data-sessiontype="Break" data-day="2" data-start="2025-11-06T22:45:00Z" data-end="2025-11-06T23:00:00.000Z" data-duration="PT15M" title="Break">
+            <p class="session-title">Break</p>
+            <div class="session-meta">
+              
+              
+              
+            </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Domain-Specific" data-sessiontype="Domain-Specific" data-day="2" data-start="2025-11-06T23:00:00Z" data-end="2025-11-07T00:00:00.000Z" data-duration="PT60M" title="Transport HSI">
+            <p class="session-title">Transport HSI</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>PL</strong></span>
+              <span class="me-2">V. Valentinova, Authors</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">Implementation of HSI in org</span>
+                
+                  <span class="tag-pill">Prediction and Anticipation</span>
+                
+              </div>
+            
+          </div>
+        
+      
+        
+        
+        
+          <div class="session-block rounded Outreach" data-sessiontype="Outreach" data-day="3" data-start="2025-11-07T16:00:00Z" data-end="2025-11-07T17:00:00.000Z" data-duration="PT60M" title="Commonalities and Differences between HCI and HSI">
+            <p class="session-title">Commonalities and Differences between HCI and HSI</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>DM</strong></span>
+              <span class="me-2">P. Palanque, Contributors</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">HSI fundamentals</span>
+                
+                  <span class="tag-pill">Critisizing</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Outreach" data-sessiontype="Outreach" data-day="3" data-start="2025-11-07T17:00:00Z" data-end="2025-11-07T17:30:00.000Z" data-duration="PT30M" title="HSI in the 5th Industrial Revolution">
+            <p class="session-title">HSI in the 5th Industrial Revolution</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>PP</strong></span>
+              <span class="me-2">Avi Harel</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">Critisizing</span>
+                
+                  <span class="tag-pill">contempory challenges</span>
+                
+                  <span class="tag-pill">modelling Simulation</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Break" data-sessiontype="Break" data-day="3" data-start="2025-11-07T17:30:00Z" data-end="2025-11-07T17:45:00.000Z" data-duration="PT15M" title="Break">
+            <p class="session-title">Break</p>
+            <div class="session-meta">
+              
+              
+              
+            </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Cross-Working-Group" data-sessiontype="Cross-Working-Group" data-day="3" data-start="2025-11-07T17:45:00Z" data-end="2025-11-07T19:15:00.000Z" data-duration="PT90M" title="HSI Knowledge Sharing Heuristics Workshop">
+            <p class="session-title">HSI Knowledge Sharing Heuristics Workshop</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>SK</strong></span>
+              <span class="me-2">Dimitri Masson, H. Lee</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">HSI fundamentals</span>
+                
+                  <span class="tag-pill">Critisizing</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Outreach" data-sessiontype="Outreach" data-day="3" data-start="2025-11-07T19:15:00Z" data-end="2025-11-07T20:15:00.000Z" data-duration="PT60M" title="HSI Outreach and Inter-network Directions">
+            <p class="session-title">HSI Outreach and Inter-network Directions</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>PL</strong></span>
+              <span class="me-2">INCOSE, IEA, ACM, IEEE, NAB</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">Critisizing</span>
+                
+                  <span class="tag-pill">contempory challenges</span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <div class="session-block rounded Plenary" data-sessiontype="Plenary" data-day="3" data-start="2025-11-07T20:15:00Z" data-end="2025-11-07T20:30:00.000Z" data-duration="PT15M" title="Closing Remarks">
+            <p class="session-title">Closing Remarks</p>
+            <div class="session-meta">
+              <span class="me-2">Chair: <strong>GK</strong></span>
+              <span class="me-2">G. Kennedy</span>
+              
+            </div>
+            
+              <div class="mt-1">
+                
+                  <span class="tag-pill">HSI fundamentals</span>
+                
+                  <span class="tag-pill">Critisizing</span>
+                
+              </div>
+            
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+</div>
 </div>
 
 
