@@ -20,6 +20,7 @@ website:
   open-graph: 
     locale: en_US
     site-name: "HSI Conference and Workshop Series"
+  
 
 
 
@@ -29,6 +30,8 @@ format:
     css: styles.css
     toc: true
     title-block-banner: true
+    include-in-header: 
+      text: <meta name="google-site-verification" content="vp6AQz54wI5Ae1U5aDpXwPAuEmCqFg__D8G0vBTiaFg" />
 
 metadata-files:
   - ./navigation/_sidebars.yml
