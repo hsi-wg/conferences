@@ -3,13 +3,16 @@ title: "HSI 2025 Conference"
 about: 
   template: solana
   links: 
-    - text: Official Incose Event Page 
-      href: https://www.incose.org/events/event-detail/2025/11/05/default-calendar/incose-hsi-conference-2024---jeju--korea
+    - text: Schedule
+      href: HSI2025/schedule
     - text: Registration
       href: https://forms.office.com/r/Z4YHudgCt3
 toc: false
 page-layout: full
-title-block-banner: assets/HSI2025-banner.png
+description: | 
+  HSI2025 - November 5-7th 2025. Join the  Fourth INCOSE HSI International Workshop: **HSI Now: People, Practice and Potential**. 
+
+
 ---
 
 # HSI 2025 – Fourth Conference (Current Event)

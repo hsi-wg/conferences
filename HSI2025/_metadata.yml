@@ -1,1 +1,11 @@
 sidebar: hsi2025
+website: 
+  twitter-card: 
+    image: /assets/HSI2025_Flyer.png
+    image-width: 800
+    image-height: 418
+  open-graph:
+    image: /assets/HSI2025_Flyer.png
+    image-width: 800
+    image-height: 418
+description: "HSI2025 - The 3rd INCOSE HSI Conference and Workshop - November 5-7, 2025 - Online"
