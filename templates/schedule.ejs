@@ -5,7 +5,55 @@
    - title, href, start, end, tags (array), category, authors (string), day
   Group by day (1..n). Show local start/end times (converted client-side).
 */ %>
-<h1 class="mb-4">Conference Schedule</h1>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    console.log("updating schedule times");
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const tzEl = document.getElementById('tz-indicator');
+    if (tzEl) tzEl.textContent = tz;
+    const root = document.querySelector('.schedule-day-list');
+
+    function formatRange(startISO, endISO) {
+      try {
+        const s = new Date(startISO);
+        const e = new Date(endISO);
+        // Get the lang/region from the browser
+        const lang = navigator.language || 'en-US';
+        const fmt = new Intl.DateTimeFormat(lang, {
+          hour: '2-digit',
+          minute: '2-digit'
+        });
+        return fmt.format(s) + ' - ' + fmt.format(e);
+      } catch {
+        return startISO + ' – ' + endISO;
+      }
+    }
+
+    root.querySelectorAll('.session-item .session-time').forEach(el => {
+      const start = el.getAttribute('data-start');
+      const end = el.getAttribute('data-end');
+      el.querySelector('.time-range').textContent = formatRange(start, end);
+    });
+    // toggle abstract
+    root.querySelectorAll('.toggle-abstract').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const sel = btn.getAttribute('data-target');
+        const panel = root.querySelector(sel);
+        if (!panel) return;
+        const shown = panel.classList.toggle('show');
+        btn.setAttribute('aria-expanded', shown ? 'true' : 'false');
+        btn.textContent = shown ? 'Show less' : 'Show more';
+      });
+    });
+    // Assign human dates for day headings (optional mapping)
+    const dayDates = <%= JSON.stringify(templateParams.days) %>;
+    root.querySelectorAll('.schedule-day-date').forEach(span => {
+      const d = span.getAttribute('data-day');
+      if (dayDates[d]) span.textContent = dayDates[d];
+    });
+  });
+</script>
 
 <div class="schedule-controls mb-3">
   <div class="row g-2">
@@ -52,40 +100,39 @@ for (const item of items) {
 
 <% const dayKeys = Object.keys(byDay).sort((a,b)=>parseInt(a)-parseInt(b)); %>
 
-<div class="schedule-days">
+<ul class="schedule-days list schedule-day-list">
+  <!-- // Day Navigation -->
   <% for (const day of dayKeys) { %>
   <% const sessions = byDay[day].sort((a,b)=> new Date(a.start) - new Date(b.start)); %>
-  <section class="listing-day mb-5" data-day="<%= day %>">
-    <h2 class="h4 border-bottom pb-1 mt-4">Day <%= day %> – <span class="schedule-day-date" data-day="<%= day %>"></span></h2>
-    
-    <ul class="list schedule-day-list" style="list-style:none;padding-left:0;">
-      <% for (const sess of sessions) { %>
+    <li data-day=" <%= day %>">
+      <h2 class="h4 border-bottom pb-1 mt-4">Day <%= day %> – <span class="schedule-day-date" data-day="<%= day %>"></span></h2>
+    </li>    
+    <!-- <ul class="list schedule-day-list" style="list-style:none;padding-left:0;"> -->
+    <% for (const sess of sessions) { %>
       <% const tagStr = (sess.tags||[]).join(', '); %>
-      <% const classes = ['session-item', 'mb-3', 'p-3', 'border', 'rounded', ...sess.categories]; %>
+      <% const classes = ['session-item', 'mb-1', 'p-3', 'border', 'rounded', ...sess.sessionType]; %>
       <li class="<%= classes.join(' ') %>" <%= metadataAttrs(sess) %>>
         <div class="dgrid align-items-baseline gap-2">
-          
-          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column" data-start="<%- sess.start %>" data-end="<%- sess.end %>">
+
+          <div class="dCol-2 d-flex session-time fw-bold d-flex flex-column  align-items-center" data-start="<%- sess.start %>" data-end="<%- sess.end %>">
+            <span class="listing-day hidden"><%= day %></span>
             <span class="time-range">--:-- – --:--</span>
-            <div class="listing-category badge bg-dark"><%= sess.categories[0] %></div>
+            <div class="listing-sessionType badge bg-dark <%= sess.sessionType[0] %>"><%= sess.sessionType[0] %></div>
           </div>
 
           <div class="dCol-8">
             <a href="<%- sess.href %>" class="listing-title h6 d-block mb-0"><%= sess.title %></a>
             <small class="text-muted listing-authors"><%= sess.authors %></small>
           </div>
-          
-         
-          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch">
+
+          <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch  align-items-center">
             <% if (sess.tags && sess.tags.length) { %>
-              <div class="listing-tags">
               <% for (const t of sess.tags) { %>
-                <span class="badge bg-secondary me-1 listing-tag"><%= tags[t] ?? t %></span>
+                <span class="badge bg-secondary listing-category rounded mb-1 me-1 "><%= tags[t] ?? t %></span>
               <% } %>
-              </div>
             <% } %>
             <% if (sess.abstract) { %>
-            <button class="btn btn-sm btn-outline-secondary mt-2 toggle-abstract" data-target="#abs-<%= sess.id %>" aria-expanded="false">Show more</button>
+            <button class="btn btn-sm btn-outline-secondary mt-1 toggle-abstract" data-target="#abs-<%= sess.id %>" aria-expanded="false">Show more</button>
             <% } %>
           </div>
           
@@ -99,56 +146,10 @@ for (const item of items) {
         </div>
         
       </li>
-      <% } %>
+    <% } %>
+    <% } %>
     </ul>
-  </section>
-  <% } %>
 </div>
 
-<script>
-  (function() {
-    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    const tzEl = document.getElementById('tz-indicator');
-    if (tzEl) tzEl.textContent = tz;
-
-    function formatRange(startISO, endISO) {
-      try {
-        const s = new Date(startISO);
-        const e = new Date(endISO);
-        // Get the lang/region from the browser
-        const lang = navigator.language || 'en-US';
-        const fmt = new Intl.DateTimeFormat(lang, {
-          hour: '2-digit',
-          minute: '2-digit'
-        });
-        return fmt.format(s) + ' - ' + fmt.format(e);
-      } catch {
-        return startISO + ' – ' + endISO;
-      }
-    }
-    document.querySelectorAll('.session-item .session-time').forEach(el => {
-      const start = el.getAttribute('data-start');
-      const end = el.getAttribute('data-end');
-      el.querySelector('.time-range').textContent = formatRange(start, end);
-    });
-    // toggle abstract
-    document.querySelectorAll('.toggle-abstract').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const sel = btn.getAttribute('data-target');
-        const panel = document.querySelector(sel);
-        if (!panel) return;
-        const shown = panel.classList.toggle('show');
-        btn.setAttribute('aria-expanded', shown ? 'true' : 'false');
-        btn.textContent = shown ? 'Show less' : 'Show more';
-      });
-    });
-    // Assign human dates for day headings (optional mapping)
-    const dayDates = <%= JSON.stringify(templateParams.days) %>;
-    document.querySelectorAll('.schedule-day-date').forEach(span => {
-      const d = span.getAttribute('data-day');
-      if (dayDates[d]) span.textContent = dayDates[d];
-    });
-  })();
-</script>
 
 ```
