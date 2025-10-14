@@ -3,7 +3,7 @@ sessions:
     day: 1
     title: "Opening Remarks"
     authors: ["Dimitri Masson"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-27T08:30:00+09:00
     duration: PT45M
@@ -17,7 +17,7 @@ sessions:
     day: 1
     title: "Introduction to HSI2024 Posters"
     authors: ["Kahina Amokrane-Ferka"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-27T09:15:00+09:00
     duration: PT30M
@@ -29,7 +29,7 @@ sessions:
     day: 1
     title: "Break & Posters"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2024-08-27T09:45:00+09:00
     duration: PT30M
@@ -40,7 +40,7 @@ sessions:
     day: 1
     title: "Artificial Intelligence: Interface and Human-Centered Design"
     authors: ["Wen-Chin Li", "Dimitri Masson"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid", "AI", "Human-Centered"]
     start: 2024-08-27T10:15:00+09:00
     duration: PT90M
@@ -65,7 +65,7 @@ sessions:
     day: 1
     title: "Lunch & Posters"
     authors: ["Kahina Amokrane-Ferka"]
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: ["Hybrid"]
     start: 2024-08-27T11:45:00+09:00
     duration: PT90M
@@ -81,7 +81,7 @@ sessions:
     day: 1
     title: "Risk Assessment: Approaches, Methods and Development"
     authors: ["Elina Parviainen"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-27T13:15:00+09:00
     duration: PT90M
@@ -100,7 +100,7 @@ sessions:
     day: 1
     title: "Analyses and Approaches"
     authors: ["Kine Reegård"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-27T13:15:00+09:00
     duration: PT90M
@@ -121,7 +121,7 @@ sessions:
     day: 1
     title: "Break & Posters"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2024-08-27T14:45:00+09:00
     duration: PT15M
@@ -132,7 +132,7 @@ sessions:
     day: 1
     title: "Joint Plenary"
     authors: []
-    categories: ["Plenary"]
+    sessionType: ["Plenary"]
     tags: ["Hybrid"]
     start: 2024-08-27T15:00:00+09:00
     duration: PT105M
@@ -152,7 +152,7 @@ sessions:
     day: 1
     title: "Aviation-1: HSI and Pilot's perspectives and roles"
     authors: ["Lei Wang"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-27T16:45:00+09:00
     duration: PT90M
@@ -170,7 +170,7 @@ sessions:
     day: 1
     title: "Verification: Strategies and Frameworks"
     authors: ["Vivek Kant"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-27T16:45:00+09:00
     duration: PT45M
@@ -188,7 +188,7 @@ sessions:
     day: 1
     title: "Joint INCOSE-IEA Banquet Dinner"
     authors: []
-    categories: ["Banquet"]
+    sessionType: ["Banquet"]
     tags: []
     start: 2024-08-27T18:15:00+09:00
     duration: PT120M
@@ -200,7 +200,7 @@ sessions:
     day: 2
     title: "Keynote: Taking measure of Human Systems Integration: A view from NASA"
     authors: ["Dr. Cynthia Null"]
-    categories: ["Keynote"]
+    sessionType: ["Keynote"]
     tags: ["Hybrid"]
     start: 2024-08-28T09:00:00+09:00
     duration: PT60M
@@ -213,7 +213,7 @@ sessions:
     day: 2
     title: "Break & Posters"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2024-08-28T10:00:00+09:00
     duration: PT15M
@@ -224,7 +224,7 @@ sessions:
     day: 2
     title: "Design: Interfaces, User-centered design, and challenges"
     authors: ["Paul Lambertson"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-28T10:15:00+09:00
     duration: PT90M
@@ -244,7 +244,7 @@ sessions:
     day: 2
     title: "HSI Primer Writing Workshop"
     authors: ["Grace Kennedy"]
-    categories: ["Workshop"]
+    sessionType: ["Workshop"]
     tags: ["Hybrid"]
     start: 2024-08-28T10:15:00+09:00
     duration: PT90M
@@ -256,7 +256,7 @@ sessions:
     day: 2
     title: "Lunch & Posters"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2024-08-28T11:45:00+09:00
     duration: PT90M
@@ -267,7 +267,7 @@ sessions:
     day: 2
     title: "MBSE: Case Studies: HSI influences and Analysis"
     authors: ["Romain Pinquié", "Dimitri Masson"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-28T13:15:00+09:00
     duration: PT90M
@@ -286,7 +286,7 @@ sessions:
     day: 2
     title: "Aviation-2: Analysis and Evaluation"
     authors: ["Wei Tan", "Guy André Boy"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-28T13:15:00+09:00
     duration: PT90M
@@ -305,7 +305,7 @@ sessions:
     day: 2
     title: "Break & Posters"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2024-08-28T14:45:00+09:00
     duration: PT15M
@@ -316,7 +316,7 @@ sessions:
     day: 2
     title: "Sociotechnical Systems: Organizational assessment & Change"
     authors: ["Alexandre Disdier", "Dimitri Masson"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-28T15:00:00+09:00
     duration: PT90M
@@ -335,7 +335,7 @@ sessions:
     day: 2
     title: "Break & Posters"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2024-08-28T16:30:00+09:00
     duration: PT15M
@@ -346,7 +346,7 @@ sessions:
     day: 2
     title: "Human-Centered AI and Blockchain Integration: Pioneering Automation for Future Design"
     authors: ["Gopal Jani"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-28T16:45:00+09:00
     duration: PT90M
@@ -357,7 +357,7 @@ sessions:
     day: 2
     title: "Invited Panel: Bridging sociotechnical system approaches with HSI Design"
     authors: ["Michelle M. Robertson", "So Young Kim"]
-    categories: ["Panel"]
+    sessionType: ["Panel"]
     tags: ["Hybrid"]
     start: 2024-08-28T16:40:00+09:00
     duration: PT95M
@@ -371,7 +371,7 @@ sessions:
     day: 3
     title: "Keynote: Human Systems Integration Across the Health Care Continuum"
     authors: ["Dr. Ayse P. Gurses"]
-    categories: ["Keynote"]
+    sessionType: ["Keynote"]
     tags: ["Hybrid"]
     start: 2024-08-29T09:00:00+09:00
     duration: PT60M
@@ -384,7 +384,7 @@ sessions:
     day: 3
     title: "Break & Posters"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2024-08-29T10:00:00+09:00
     duration: PT15M
@@ -395,7 +395,7 @@ sessions:
     day: 3
     title: "Case studies: Applying HSI system engineering, cognitive models and Sociotechnical Ecosystem"
     authors: ["Ricardo Reis"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-29T10:15:00+09:00
     duration: PT90M
@@ -413,7 +413,7 @@ sessions:
     day: 3
     title: "User interface and automation design"
     authors: ["Gopal Jani"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2024-08-29T10:15:00+09:00
     duration: PT90M
@@ -431,7 +431,7 @@ sessions:
     day: 3
     title: "Lunch & Posters"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2024-08-29T11:45:00+09:00
     duration: PT90M
@@ -442,7 +442,7 @@ sessions:
     day: 3
     title: "HSI Primer Volume 2 Writing Workshop"
     authors: ["Dimitri Masson"]
-    categories: ["Workshop"]
+    sessionType: ["Workshop"]
     tags: ["Hybrid"]
     start: 2024-08-29T13:15:00+09:00
     duration: PT90M
@@ -454,7 +454,7 @@ sessions:
     day: 3
     title: "The development of an HSI massive open online course"
     authors: ["Yakir Yaniv", "Yuval Bitan", "Nirit Gavish"]
-    categories: ["Workshop"]
+    sessionType: ["Workshop"]
     tags: ["Hybrid"]
     start: 2024-08-29T13:15:00+09:00
     duration: PT90M
@@ -466,7 +466,7 @@ sessions:
     day: 3
     title: "Break & Posters"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2024-08-29T14:45:00+09:00
     duration: PT15M
@@ -477,7 +477,7 @@ sessions:
     day: 3
     title: "Closing remarks"
     authors: ["Guy André Boy"]
-    categories: ["Closing"]
+    sessionType: ["Closing"]
     tags: ["Hybrid"]
     start: 2024-08-29T15:00:00+09:00
     duration: PT90M

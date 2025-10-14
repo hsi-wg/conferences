@@ -3,7 +3,7 @@ sessions:
     day: 0
     title: "Tutorial: HSI Engineering: Theory and Framework for STS Integration"
     authors: ["Instructors TBD"]
-    categories: ["Tutorial"]
+    sessionType: ["Tutorial"]
     tags: ["Hybrid"]
     start: 2022-11-15T10:00:00-08:00
     duration: PT7H
@@ -16,7 +16,7 @@ sessions:
     day: 1
     title: "Welcome & Invited talk: HSI State of the Art at INCOSE & Human-Machine Teaming"
     authors: ["Speakers TBD"]
-    categories: ["Invited"]
+    sessionType: ["Invited"]
     tags: ["Hybrid"]
     start: 2022-11-16T08:30:00-08:00
     duration: PT1H
@@ -29,7 +29,7 @@ sessions:
     day: 1
     title: "Workshop 1: INCOSE HSI Primer - Volumes 1 & 2 (HSI 101)"
     authors: ["Facilitators TBD"]
-    categories: ["Workshop"]
+    sessionType: ["Workshop"]
     tags: ["Hybrid"]
     start: 2022-11-16T09:30:00-08:00
     duration: PT1H
@@ -41,7 +41,7 @@ sessions:
     day: 1
     title: "Break"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2022-11-16T10:30:00-08:00
     duration: PT30M
@@ -53,7 +53,7 @@ sessions:
     day: 1
     title: "Where Are we Wrong? - Integration of Human-System Considerations in Ventures"
     authors: ["Speakers TBD"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2022-11-16T11:00:00-08:00
     duration: PT90M
@@ -65,7 +65,7 @@ sessions:
     day: 1
     title: "Panel: Agnostic Characteristics of MB-HSI"
     authors: ["Panelists TBD"]
-    categories: ["Panel"]
+    sessionType: ["Panel"]
     tags: ["Hybrid"]
     start: 2022-11-16T11:30:00-08:00
     duration: PT1H
@@ -77,7 +77,7 @@ sessions:
     day: 1
     title: "Lunch"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2022-11-16T12:30:00-08:00
     duration: PT1H
@@ -89,7 +89,7 @@ sessions:
     day: 1
     title: "Before everything: the need of strategic vision to improve architecting from the HSI perspective"
     authors: ["Speakers TBD"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2022-11-16T13:30:00-08:00
     duration: PT90M
@@ -101,7 +101,7 @@ sessions:
     day: 1
     title: "HSI in SE Technical Leadership with INCOSE TLI"
     authors: ["Speakers TBD"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2022-11-16T13:30:00-08:00
     duration: PT90M
@@ -113,7 +113,7 @@ sessions:
     day: 1
     title: "Break"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2022-11-16T15:00:00-08:00
     duration: PT30M
@@ -125,7 +125,7 @@ sessions:
     day: 1
     title: "Implementation and Changing Trends in Requirements with INCOSE Requirements WG"
     authors: ["Speakers TBD"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2022-11-16T15:30:00-08:00
     duration: PT90M
@@ -137,7 +137,7 @@ sessions:
     day: 1
     title: "Lab Talk"
     authors: ["Presenters TBD"]
-    categories: ["Lab Talk"]
+    sessionType: ["Lab Talk"]
     tags: ["Hybrid"]
     start: 2022-11-16T15:30:00-08:00
     duration: PT90M
@@ -149,7 +149,7 @@ sessions:
     day: 1
     title: "Training-centred Design"
     authors: ["Speakers TBD"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2022-11-16T15:30:00-08:00
     duration: PT90M
@@ -161,7 +161,7 @@ sessions:
     day: 1
     title: "Welcome reception"
     authors: []
-    categories: ["Reception"]
+    sessionType: ["Reception"]
     tags: []
     start: 2022-11-16T18:00:00-08:00
     duration: PT90M
@@ -173,7 +173,7 @@ sessions:
     day: 2
     title: "Invited Talk: HSI at the NASA JPL"
     authors: ["Speaker TBD"]
-    categories: ["Invited"]
+    sessionType: ["Invited"]
     tags: ["Hybrid"]
     start: 2022-11-17T08:30:00-08:00
     duration: PT1H
@@ -185,7 +185,7 @@ sessions:
     day: 2
     title: "Workshop 2: INCOSE HSI Primer - Vol 3+"
     authors: ["Facilitators TBD"]
-    categories: ["Workshop"]
+    sessionType: ["Workshop"]
     tags: ["Hybrid"]
     start: 2022-11-17T09:30:00-08:00
     duration: PT1H
@@ -197,7 +197,7 @@ sessions:
     day: 2
     title: "Break"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2022-11-17T10:30:00-08:00
     duration: PT30M
@@ -209,7 +209,7 @@ sessions:
     day: 2
     title: "Panel: HSI and Readiness Levels: Defining a shared language and approaches"
     authors: ["INCOSE HSI WG", "IEA", "IEEE", "ACM SIGCHI"]
-    categories: ["Panel"]
+    sessionType: ["Panel"]
     tags: ["Hybrid"]
     start: 2022-11-17T11:00:00-08:00
     duration: PT90M
@@ -221,7 +221,7 @@ sessions:
     day: 2
     title: "Lunch"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2022-11-17T12:30:00-08:00
     duration: PT1H
@@ -233,7 +233,7 @@ sessions:
     day: 2
     title: "Lab Talk: Human-Robot AI"
     authors: ["Presenters TBD"]
-    categories: ["Lab Talk"]
+    sessionType: ["Lab Talk"]
     tags: ["Hybrid"]
     start: 2022-11-17T13:30:00-08:00
     duration: PT30M
@@ -245,7 +245,7 @@ sessions:
     day: 2
     title: "Panel: Human Contribution to Safety – It’s Not Just About Error"
     authors: ["Panelists TBD"]
-    categories: ["Panel"]
+    sessionType: ["Panel"]
     tags: ["Hybrid"]
     start: 2022-11-17T13:30:00-08:00
     duration: PT90M
@@ -257,7 +257,7 @@ sessions:
     day: 2
     title: "Intersections of Human Systems, Social Systems and Social Justice (with INCOSE Social Systems WG)"
     authors: ["Panelists TBD"]
-    categories: ["Panel"]
+    sessionType: ["Panel"]
     tags: ["Hybrid"]
     start: 2022-11-17T13:30:00-08:00
     duration: PT90M
@@ -269,7 +269,7 @@ sessions:
     day: 2
     title: "Break"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2022-11-17T15:00:00-08:00
     duration: PT30M
@@ -281,7 +281,7 @@ sessions:
     day: 2
     title: "Lab Talk: Flextech Modelling & Simulation"
     authors: ["Presenters TBD"]
-    categories: ["Lab Talk"]
+    sessionType: ["Lab Talk"]
     tags: ["Hybrid"]
     start: 2022-11-17T15:30:00-08:00
     duration: PT90M
@@ -293,7 +293,7 @@ sessions:
     day: 2
     title: "Modelling & Simulation Specifics (case studies)"
     authors: ["Speakers TBD"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2022-11-17T15:30:00-08:00
     duration: PT90M
@@ -305,7 +305,7 @@ sessions:
     day: 3
     title: "Invited Talk: Beyond socio-technical systems: Designing and using AI in networks of accountability"
     authors: ["Speaker TBD"]
-    categories: ["Invited"]
+    sessionType: ["Invited"]
     tags: ["Hybrid"]
     start: 2022-11-18T08:00:00-08:00
     duration: PT1H
@@ -317,7 +317,7 @@ sessions:
     day: 3
     title: "WORKSHOP 3: INCOSE HSI Website"
     authors: ["Facilitators TBD"]
-    categories: ["Workshop"]
+    sessionType: ["Workshop"]
     tags: ["Hybrid"]
     start: 2022-11-18T09:00:00-08:00
     duration: PT1H
@@ -329,7 +329,7 @@ sessions:
     day: 3
     title: "Break"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2022-11-18T10:00:00-08:00
     duration: PT30M
@@ -341,7 +341,7 @@ sessions:
     day: 3
     title: "Digital Twins"
     authors: ["Speakers TBD"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2022-11-18T10:30:00-08:00
     duration: PT1H
@@ -353,7 +353,7 @@ sessions:
     day: 3
     title: "Lab Talk: Autonomous Vehicles & Human Operators Lab"
     authors: ["Presenters TBD"]
-    categories: ["Lab Talk"]
+    sessionType: ["Lab Talk"]
     tags: ["Hybrid"]
     start: 2022-11-18T10:30:00-08:00
     duration: PT1H
@@ -365,7 +365,7 @@ sessions:
     day: 3
     title: "Human-centred AI with INCOSE AI WG"
     authors: ["Speakers TBD"]
-    categories: ["Session"]
+    sessionType: ["Session"]
     tags: ["Hybrid"]
     start: 2022-11-18T11:30:00-08:00
     duration: PT1H
@@ -377,7 +377,7 @@ sessions:
     day: 3
     title: "Lab Talks: AFIT HSI Education & Research; SAFEMODE Risk Design"
     authors: ["Presenters TBD"]
-    categories: ["Lab Talk"]
+    sessionType: ["Lab Talk"]
     tags: ["Hybrid"]
     start: 2022-11-18T11:30:00-08:00
     duration: PT1H
@@ -390,7 +390,7 @@ sessions:
     day: 3
     title: "Wrap up & Conclusions"
     authors: []
-    categories: ["Closing"]
+    sessionType: ["Closing"]
     tags: []
     start: 2022-11-18T12:30:00-08:00
     duration: PT30M
@@ -402,7 +402,7 @@ sessions:
     day: 3
     title: "Lunch"
     authors: []
-    categories: ["Break"]
+    sessionType: ["Break"]
     tags: []
     start: 2022-11-18T13:00:00-08:00
     duration: PT1H
