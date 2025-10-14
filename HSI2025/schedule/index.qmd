@@ -1,17 +1,26 @@
 ---
 title: "HSI 2025 Schedule"
 listing:
-  id: conference-sessions
-  template: ../../templates/schedule.ejs
-  contents: 
-    - sessions.yml
-  template-params:
-    days: { '1':'5 Nov 2025', '2':'6 Nov 2025', '3':'7 Nov 2025' }
-  sort-ui: false
-  filter-ui: true
-  
+  - id: conference-sessions-grid
+    template: ../../templates/grid_schedule.ejs
+    contents: 
+      - sessions.yml
+    template-params:
+      days: { '1':'5 Nov 2025', '2':'6 Nov 2025', '3':'7 Nov 2025' }
+    sort-ui: false
+    filter-ui: false
 
-  page-size: 100
+  - id: conference-sessions-list
+    template: ../../templates/schedule.ejs
+    contents: 
+      - sessions.yml
+    template-params:
+      days: { '1':'5 Nov 2025', '2':'6 Nov 2025', '3':'7 Nov 2025' }
+    sort-ui: false
+    filter-ui: false
+
+
+
 toc: false
 page-layout: full
 --- 
@@ -19,6 +28,20 @@ page-layout: full
 
 Below is the full conference program. Times are shown in your local timezone. Click "Show more" to expand abstracts.
 
-:::{ #conference-sessions }
+:::{.panel-tabset}
+
+## List View
+
+:::{#conference-sessions-list}
+:::
+
+## Grid View
+  
+:::{#conference-sessions-grid}
+:::
+
+
+
+
 
 :::
