@@ -4,15 +4,13 @@ about:
   template: solana
   links: 
     - text: Schedule
-      href: HSI2025/schedule
+      href: conferences/HSI2025/schedule/index.qmd
     - text: Registration
       href: https://forms.office.com/r/Z4YHudgCt3
 toc: false
 page-layout: full
 description: | 
   HSI2025 - November 5-7th 2025. Join the  Fourth INCOSE HSI International Workshop: **HSI Now: People, Practice and Potential**. 
-
-
 ---
 
 # HSI 2025 – Fourth Workshop
