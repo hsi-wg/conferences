@@ -1,0 +1,153 @@
+- id: Ryan.Messina
+  name: "Ryan Messina"
+  affiliation: "Defence Science and Technology Group"
+  country: "Australia"
+  roles: ["Speaker"]
+  picture: "RyanMessina.jpg"
+  email: "ryanjmessina@gmail.com"
+  bio: |
+    With over a decade of experience in systems engineering, Ryan has worked across a diverse
+    range of complex domains, including computer vision product development and integration, 
+    advanced food production technologies, and defence ICT infrastructure. 
+    More recently, he has contributed to defence research in camouflage systems and 
+    human-in-the-loop experimentation, as well as the acquisition of battle management software. 
+    Throughout his career, Ryan has focused on bridging the interaction between humans and technology,
+    applying systems thinking to deliver capability in challenging and multidisciplinary environments.
+- id: Yuval.Bitan
+  name: "Yuval Bitan, Ph.D."
+  affiliation: "Ben-Gurion University of the Negev"
+  country: "Israel"
+  roles: ["Speaker"]
+  picture: "YuvalBitan.png"
+  email: "yuval@bitan.net"
+  bio: |
+    Yuval Bitan (Ph.D.) is a human factors engineer and research scientist who studies cognitive systems
+    engineering at Ben-Gurion University of the Negev. His research focuses on the cognitive strategies
+    human operators apply to handle incomplete and conflicting interactions with information, and the
+    impact this has on decision making. Integrating the insights derived from such research into the
+    design of healthcare systems and processes will enhance their resilience and improve operational
+    efficiency and usability in both routine and emergency contexts, and will improve patient safety.
+    Yuval is an Associate Professor in the Department of Health Policy and Management, at Ben-Gurion
+    University of the Negev, Beer Sheva, Israel, and serves as the director of SimReC, the Research
+    Center for Simulation in Healthcare. Prior to his tenured position, he was an Assistant Professor
+    (status only) in the Department of Mechanical and Industrial Engineering at the University of
+    Toronto, and a Research Associate at the Cognitive Technologies Laboratory (University of Chicago,
+    Illinois) and at HumanEra (University Health Network, Toronto, Canada). Yuval received a Ph.D. in
+    Industrial Engineering and Management in 2003 from Ben-Gurion University of the Negev, Beer-Sheva,
+    Israel.
+- id: Victoria.Valentinova
+  affiliation: "Mott MacDonald"
+  name: "Victoria Valentinova"
+  email: "v.valentinova.g@gmail.com"
+  picture: "VictoriaValentinova.jpg"
+  bio : |
+    CPEng, C.ErgHF MCIEHF, MSc, BEng (Hons) <br>
+    Valentinova is a Chartered Systems Engineer and Human Factors Specialist with over 15 years of
+    international experience spanning public and private sectors across three continents. She holds a
+    Bachelor's degree in Aeronautical Engineering and a Master's degree in Human Factors and Safety
+    Assessment in Aeronautics. She is a Chartered Professional Engineer in both Leadership & Management
+    and Systems Engineering, as well as a Chartered Ergonomist. <br>
+    Victoria brings expertise in systems engineering leadership, systems assurance, and human factors
+    integration, particularly in the delivery of safety-critical air traffic management systems and major
+    transport infrastructure projects. Her career includes roles such as Technical Services Engineer, Human
+    Factors Manager, Systems Assurance Engineer, and Program Manager, reflecting her broad and versatile
+    skill set in both technical and strategic domains. <br>
+    She currently serves as Technical Director at Mott MacDonald, where she leads the delivery of complex
+    infrastructure programs across the ASEAN region.
+
+- id: Anthony.Smoker
+  name: "Anthony Smoker"
+  affiliation: "Lund University, IFACTA Member"
+  country: "Sweden"
+  roles: ["Speaker"]
+  picture: "AnthonySmoker.png"
+  email: "anthony.smoker@aviation.lth.se"
+  bio: |
+    Dr. Smoker is a former ATCO with NATS, for some thirty-seven years, in which he was an en-route and
+    terminal area controller at the London Air Traffic Control Centre and then an En route controller and
+    supervisor at Swanwick Centre. Whilst still an active controller at Swanwick he took up the post of
+    Head of Operational Safety at Swanwick in 2006. Subsequently taking up several safety management
+    roles before leaving NATS in 2015.
+
+    In 2015, he took up a researcher position at the faculty of engineering at Lund University in Sweden.
+    A role that was undertaken until February 2024. In this role he undertook research in several SESAR
+    projects as well as working with Transportstyrelsen and LFV in Sweden. Research subjects included
+    resilient performance in complex adaptive sociotechnical systems, safety management systems,
+    cognitive system engineering and resilience engineering dimensions of advanced automation and
+    human-machine agent teaming.
+
+    Whilst at Lund University, Dr Smoker managed and lectured in the LU Human Factors and System
+    Safety MSc as well as supervise and examine MSc HFSS research. As a member of IFATCA, he has
+    represented IFATCA in a number of safety, human factors and regulatory activities, including EASA
+    rule making groups. He is a member of the EASA Human Factors CAG and within IFATCA a member
+    of the organisations Joint Cognitive Human Machine System group.
+
+    Additionally, he was one of the IFATCA group that piloted the Just Culture Prosecutor Expert Courses
+    in 2008.
+  
+- id: Grace.Kennedy
+  name: "Grace Kennedy"
+  affiliation: "Acmena"
+  country: "Australia"
+  roles: ["Chair", "Speaker"]
+  picture: "GraceKennedy.jpg"
+  email: ""
+  bio: |
+   Grace is a Chartered Systems Engineer and Certified SE Professional (CSEP). Specialising in the 
+   integration of systems engineering and human factors in safety-critical industries, Grace has over 16 
+   years’ experience in industry and academia across rail, defence, healthcare, water and manufacturing. 
+   Offering extensive expertise in supporting technology implementation and alignment of organisational 
+   work systems within a diverse range of organisations, Grace demonstrates the value of sociotechnical 
+   systems approaches through pragmatically applying both human factors and systems engineering 
+   techniques. She is an inducted member of the INCOSE Technical Leadership Institute (Cohort 7) and 
+   contributing author of the INCOSE SE Handbook. Grace is the chair of the INCOSE Human Systems 
+   Integration WG. 
+- id: Peter.Hellekant
+  name: "Peter Hellekant"
+  affiliation: "Saab"
+  country: "Sweden"
+  roles: ["Speaker"]
+  picture: "PeterHellekant.jpg"
+  bio: 
+    Peter Hellekant is a retired (2005) Army Officer who specialized in the training of anti-tank warfare 
+    units and soldiers. For the last 15 years, he has worked as a Senior Systems Engineer at Saab Dynamics 
+    R&D department. His main focus has been on Human Factors Integration (HFI), contributing to various 
+    projects to make HFI/HIS a natural part of the Integrated Product Creation process within Saab.
+- id: Caitlin.Ryan
+  name: "Caitlin Ryan"
+  affiliation: "Independent Consultant"
+  country: "USA"
+  roles: ["Speaker"]
+  picture: "CaitlinRyan.jpg"
+  bio: |
+    Caitlin Ryan is a Human Systems and Model-Based Systems Engineer with extensive experience supporting 
+    Department of Defense (DoD) programs at both an industry prominent UARC, as well as an established DoD 
+    industry prime. Her work has focused on developing and implementing Human Systems Integration (HSI) and 
+    Model-Based Systems Engineering (MBSE) frameworks for advanced military platforms—including rotary, 
+    ground, and uncrewed systems—ensuring interoperability, ergonomic compliance, and MOSA-alignment. She’s 
+    led the architecture development of an agnostic UAS compliance model in SysML to enhance acquisition 
+    phase integration and data traceability across multidisciplinary teams. <br>
+    Drawing from a background in the arts and industrial design, Caitlin brings a human-centered and creative 
+    approach to complex engineering challenges. She now contracts her systems engineering expertise in the 
+    sustainable energy industry, applying the same rigor and innovation used in defense systems to enable 
+    efficient, resilient, and human-focused technological solutions.
+- id: Chris.Bartlett
+  name: "Chris Bartlett"
+  affiliation: "Independent Consultant"
+  country: "USA"
+  roles: ["Speaker"]
+  picture: "ChrisBartlett.jpg"
+  bio: |
+    Chris Bartlett is a human-systems engineer and product designer with 15 years of multidisciplinary experience
+    delivering applied research, prototype-to-field demonstrations, and program execution across defense, 
+    healthcare, infrastructure, and commercial domains. During that time, he led cross-functional teams 
+    to translate human-centered requirements into certified avionics and system solutions using MBSE, 
+    MOSA/FACE architectures, and ARINC-661 cockpit development while maintaining ISO 9001–aligned program controls 
+    and budget authority. <br>
+    He directs complex HSI and human-in-the-loop evaluations, authors DoD(W) acquisition conformant HSI data 
+    deliverables, and authors test plans for compliance with MIL-STD-1472H and MIL-HDBK-516C Airworthiness 
+    Certification Criteria. His demonstrated strengths include pilot-vehicle interface design for Army 
+    rotary-wing platforms, medical device design, rapid physical and software prototyping, stakeholder-aligned 
+    program management for multi-million-dollar efforts and mentoring engineering talent toward operational outcomes. 
+    He is co-founder and Chief Design Officer for Neva Healthcare, a medical device developer, manufacturer, 
+    and marketer of its own proprietary technologies in the infectious control space.

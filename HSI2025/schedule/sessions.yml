@@ -51,7 +51,6 @@ sessions:
     duration: PT60M
     abstract: |
       Caitlyn Singam will be sharing about INCOSE's SySTEAM initiative that strives towards interdisciplinary systems skills being a foundation for every student at all levels of the school curricula. This talk highlights the potential for our current and future HSI people who will be the caretakers of societal progress, creating new practices, and harnessing technologies in digitally savvy and creative ways to engineer for our future challenges.
-
   # BREAK ---
   - id: break1.1
     day: 1
@@ -83,9 +82,6 @@ sessions:
     duration: PT60M
     abstract: |
       Exploration of early-stage research and development approaches for Concept of Operations (CONOPS) framing within HSI-driven system design and validation.
-
-  # End Session 1.4 ---
-
   # BREAK ---
   - id: break1.2
     day: 1
@@ -94,7 +90,6 @@ sessions:
     start: 2025-11-05T22:30:00Z
     duration: PT15M
   # BREAK ---
-
   - id: efficient-integration-of-model-based-and-data-driven-approaches
     day: 1
     title: |
@@ -147,7 +142,32 @@ sessions:
     start: 2025-11-06T17:45:00Z
     duration: PT30M
     abstract: |
-      Session 2.2 — Focus on HSI challenges and practices in medicine administration.
+      Healthcare represents one of the most complex work environments, where patient outcomes 
+      rely on the precise execution of numerous interdependent processes. These processes are 
+      carried out by multidisciplinary teams of caregivers who interact with a wide range of 
+      medical technologies and equipment. The inherent complexity of healthcare systems renders 
+      them highly vulnerable to disruptions and errors, particularly because human operators 
+      are involved in many critical aspects of the process. <br>
+      This presentation focuses on the process of medication administration, a task that is 
+      considerably more intricate than it may appear at first glance. It involves multiple steps, 
+      interfaces, and decision points that demand coordination, vigilance, and cognitive effort 
+      from clinicians. Improving this process requires a systematic and evidence-based approach 
+      that recognizes the interdependence between human, technological, and organizational factors.
+      A human systems integration (HSI) framework provides such an approach by integrating human 
+      capabilities and limitations into system design, thereby reducing the likelihood of error 
+      and enhancing performance of the entire system. <br>
+      The demanding and dynamic nature of clinical work environments, often characterized by high 
+      workload, time pressure, and frequent interruptions, can lead to cognitive overload, degraded
+      performance, and adverse events. By embedding HSI principles into the design and evaluation 
+      of medication administration processes, healthcare organizations can improve safety, 
+      efficiency, and resilience. <br>
+      Despite advances in technology and training, opportunities remain underutilized for improving 
+      consistency and reliability in medication administration. Applying a systems approach guided 
+      by HSI can demonstrate how safety can be enhanced through standardization and design 
+      optimization. For example, the development of clear and consistent standards for the shape, 
+      color, and labeling of medication packaging can better align with clinicians’ perceptual 
+      and cognitive capabilities, thereby reducing confusion, preventing selection errors, 
+      and ultimately improving patient safety.
 
   - id: HSI Measures & HRLs (Judi See, P. Lambertson)
     day: 2
