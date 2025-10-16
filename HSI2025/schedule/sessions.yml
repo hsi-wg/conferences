@@ -7,56 +7,56 @@ people:
       affiliation: Fractal Consulting
       name: "Patrick Hoverstadt"
       bio: "Fractal Consulting"
-  - Caitlyn Singam: 
+  - Caitlyn Singam:
       name:
-      affiliation: SySTEAM 
+      affiliation: SySTEAM
       bio:
   - Yuval Bitan:
       name: "Yuval Bitan"
       affiliation: "Ben-Gurion University of the Negev"
       bio: |
         Yuval Bitan (Ph.D.) is a human factors engineer and research scientist who studies cognitive systems engineering at Ben-Gurion University of the Negev. His research focuses on the cognitive strategies human operators apply to handle incomplete and conflicting interactions with information, and the impact this has on decision making. Integrating the insights derived from such research into the design of healthcare systems and processes will enhance their resilience and improve operational efficiency and usability in both routine and emergency contexts, and will improve patient safety.
-        Yuval is an Associate Professor in the Department of Health Policy and Management, at Ben-Gurion University of the Negev, Beer Sheva, Israel, and serves as the director of SimReC, the Research Center for Simulation in Healthcare. Prior to his tenured position, he was an Assistant Professor (status only) in the Department of Mechanical and Industrial Engineering at the University of Toronto, and a Research Associate at the Cognitive Technologies Laboratory (University of Chicago, Illinois) and at HumanEra (University Health Network, Toronto, Canada). Yuval received a Ph.D. in Industrial Engineering and Management in 2003 from Ben-Gurion University of the Negev, Beer-Sheva, Israel. 
+        Yuval is an Associate Professor in the Department of Health Policy and Management, at Ben-Gurion University of the Negev, Beer Sheva, Israel, and serves as the director of SimReC, the Research Center for Simulation in Healthcare. Prior to his tenured position, he was an Assistant Professor (status only) in the Department of Mechanical and Industrial Engineering at the University of Toronto, and a Research Associate at the Cognitive Technologies Laboratory (University of Chicago, Illinois) and at HumanEra (University Health Network, Toronto, Canada). Yuval received a Ph.D. in Industrial Engineering and Management in 2003 from Ben-Gurion University of the Negev, Beer-Sheva, Israel.
 tags:
   A: HSI fundamentals
   B: HSI methods and tools
-  C: modelling Simulation
+  C: Modelling & Simulation
   D: Prediction and Anticipation
   E: HSI Maturity
   F: Implementation of HSI in org
-  G: Critisizing
-  H: contempory challenges
+  G: Critiqueing
+  H: contemporary challenges
 sessions:
   # Session 1.1
-  
+
   - id: ChairWelcome-workshop
     day: 1
     title: "Chair Welcome"
     authors: ["G. Kennedy"]
     chair: "GK"
-    sessionType: [ "Plenary"]
+    sessionType: ["Plenary"]
     tags: ["A", "G"]
-    start: 2025-11-05T18:45:00Z
-    duration: PT30M
+    start: 2025-11-05T19:00:00Z
+    duration: PT15M
     abstract: |
       The INCOSE HSI Working Group welcomes participants to this year’s workshop, introducing the theme HSI Now: People, Practice and Potential. The session sets the tone for collaboration, emphasizing shared learning, exploration of current HSI practices, and collective efforts to shape the future of Human Systems Integration.
   - id: keynote-2-systeam
     day: 1
-    title: "Keynote 2: SySTEAM"
+    title: "Keynote 1: SySTEAM"
     authors: ["Caitlyn Singam"]
     chair: "G.Kennedy"
-    sessionType: [ "Keynote"]
+    sessionType: ["Keynote"]
     tags: ["A", "G"]
     start: 2025-11-05T19:15:00Z
     duration: PT60M
     abstract: |
       Caitlyn Singam will be sharing about INCOSE's SySTEAM initiative that strives towards interdisciplinary systems skills being a foundation for every student at all levels of the school curricula. This talk highlights the potential for our current and future HSI people who will be the caretakers of societal progress, creating new practices, and harnessing technologies in digitally savvy and creative ways to engineer for our future challenges.
-  
+
   # BREAK ---
   - id: break1.1
     day: 1
     title: "Lunch Break"
-    sessionType: [ "Break"]
+    sessionType: ["Break"]
     start: 2025-11-05T20:15:00Z
     duration: PT45M
   # BREAK ---
@@ -66,7 +66,7 @@ sessions:
     title: "HSI from a Development Perspective"
     authors: ["Peter Hellekant"]
     chair: "SY"
-    sessionType: [ "Topic"]
+    sessionType: ["Topic"]
     tags: ["A", "B", "F"]
     start: 2025-11-05T21:00:00Z
     duration: PT30M
@@ -77,33 +77,33 @@ sessions:
     title: "CONOPS Early Stage R&D"
     authors: ["R. Reis"]
     chair: "SY"
-    sessionType: [ "Topic"]
+    sessionType: ["Topic"]
     tags: ["B"]
     start: 2025-11-05T21:30:00Z
     duration: PT60M
     abstract: |
       Exploration of early-stage research and development approaches for Concept of Operations (CONOPS) framing within HSI-driven system design and validation.
-  
+
   # End Session 1.4 ---
- 
-  # BREAK --- 
+
+  # BREAK ---
   - id: break1.2
     day: 1
     title: "Break"
-    sessionType: [ "Break"]
+    sessionType: ["Break"]
     start: 2025-11-05T22:30:00Z
     duration: PT15M
-  # BREAK --- 
- 
+  # BREAK ---
+
   - id: efficient-integration-of-model-based-and-data-driven-approaches
     day: 1
     title: |
-      Model-based HSI (J. Barras)
-      Requirements: HSI & SYSML (Caitlyn Ryan)
-      Human Digital Twin Ontology (Mike Miller) 
+      Model-based HSI (J. Barras) <br>
+      Requirements: HSI & SYSML (Caitlyn Ryan) <br>
+      Human Digital Twin Ontology (Mike Miller)
     authors: ["John S. Baras", "Caitlyn Ryan", "Mike Miller"]
     chair: "Chris Greenbank"
-    sessionType: [ "Topic"]
+    sessionType: ["Topic"]
     tags: ["A", "H", "C"]
     start: 2025-11-05T22:45:00Z
     duration: PT75M
@@ -111,7 +111,7 @@ sessions:
       Session on modeling, monitoring, valuation, and management of HSI using integrated model-based and data-driven techniques including trust, risk, and multi-metric trade analysis.
       Detailed walkthrough of modeling MIL-STD 1472H in SysML, highlighting digital engineering standards adoption challenges and access pathways via INCOSE SELab.
       Discussion of expanding digital twin ontology efforts to encompass human digital twins: applications, terminology alignment, and potential working group formation.
-  
+
   # DAY 2 ---
 
   # Session 2.1 ---
@@ -120,7 +120,7 @@ sessions:
     title: "Advanced HSI infused architecting of AI enabled Systems for Safety Critical Domains"
     authors: ["R. Reis"]
     chair: "RR"
-    sessionType: [ "Cross-Working-Group"]
+    sessionType: ["Cross-Working-Group"]
     tags: ["H", "C", "B"]
     start: 2025-11-06T16:00:00Z
     duration: PT90M
@@ -131,18 +131,18 @@ sessions:
   - id: break2.1
     day: 2
     title: "Break"
-    sessionType: [ "Break"]
+    sessionType: ["Break"]
     start: 2025-11-06T17:30:00Z
     duration: PT15M
   # BREAK ---
-  
+
   # Session 2.2 ---
   - id: hsi-in-medicine-administration
     day: 2
     title: "HSI in Medicine Administration"
     authors: ["Yuval Bitan"]
     chair: "AH"
-    sessionType: [ "Domain-Specific"]
+    sessionType: ["Domain-Specific"]
     tags: ["F", "D"]
     start: 2025-11-06T17:45:00Z
     duration: PT30M
@@ -154,7 +154,7 @@ sessions:
     title: "HSI Measures & HRLs"
     authors: ["Judi See", "P. Lambertson"]
     chair: "PL"
-    sessionType: [ "Topic"]
+    sessionType: ["Topic"]
     tags: ["A", "G"]
     start: 2025-11-06T18:15:00Z
     duration: PT60M
@@ -168,30 +168,29 @@ sessions:
     title: "Complex Adaptive and Self-organising Systems"
     authors: ["Patrick Hoverstadt"]
     chair: "GK"
-    sessionType: [ "Keynote"]
+    sessionType: ["Keynote"]
     tags: ["A", "G"]
     start: 2025-11-06T19:15:00Z
     duration: PT60M
     abstract: |
       Patrick Hoverstadt will explore how organisations function as complex adaptive systems, where people are not just components—but catalysts of transformation. Drawing on decades of experience with the Viable System Model and his work in The Grammar of Systems, Patrick will unpack how human agency, collaborative practice, and systemic awareness shape the potential of organisations to adapt, evolve, and thrive. This session will offer a compelling look at how embracing complexity, rather than resisting it, unlocks new possibilities for meaningful and sustainable change.
-  
 
   # BREAK ---
   - id: break2.2
     day: 2
     title: "Lunch Break"
-    sessionType: [ "Break"]
+    sessionType: ["Break"]
     start: 2025-11-06T20:15:00Z
     duration: PT45M
   # BREAK ---
-  
+
   # Session 2.4 ---
   - id: well-intentioned-behaviours-block-se
     day: 2
     title: "Well intentioned behaviours that block SE: Social, organisational and cultural factors in embedding HSI practices"
-    authors: ["Ryan Messina", "Grace Kennedy", "Richard Beasley?"]
+    authors: ["Ryan Messina", "Grace Kennedy", "Richard Beasley"]
     chair: "GK"
-    sessionType: [ "Topic"]
+    sessionType: ["Topic"]
     tags: ["D", "G"]
     start: 2025-11-06T21:00:00Z
     duration: PT60M
@@ -204,19 +203,19 @@ sessions:
     title: "Project Wildfire: Sociotechnical Systems-of-Systems for Resilience"
     authors: ["G. Kennedy", "Project Wildfire Team"]
     chair: "GK"
-    sessionType: [ "Cross-Working-Group"]
+    sessionType: ["Cross-Working-Group"]
     tags: ["H"]
     start: 2025-11-06T22:00:00Z
     duration: PT45M
     abstract: |
       Kickoff engagement for Project Wildfire exploring resilience in wildfire emergencies across extreme conditions, sustainment, responder wellbeing, community rebuilding, logistics, multi-agency coordination, and SoS characteristics.
-  
+
   # End Session 2.5 ---
   # BREAK ---
   - id: break2.3
     day: 2
     title: "Break"
-    sessionType: [ "Break"]
+    sessionType: ["Break"]
     start: 2025-11-06T22:45:00Z
     duration: PT15M
   - id: transport-hsi
@@ -224,7 +223,7 @@ sessions:
     title: "Transport HSI"
     authors: ["V. Valentinova", "Authors"]
     chair: "PL"
-    sessionType: [ "Domain-Specific"]
+    sessionType: ["Domain-Specific"]
     tags: ["F", "D"]
     start: 2025-11-06T23:00:00Z
     duration: PT60M
@@ -237,7 +236,7 @@ sessions:
     title: "Commonalities and Differences between HCI and HSI"
     authors: ["P. Palanque", "Contributors"]
     chair: "DM"
-    sessionType: [ "Outreach"]
+    sessionType: ["Outreach"]
     tags: ["A", "G"]
     start: 2025-11-07T16:00:00Z
     duration: PT60M
@@ -248,29 +247,29 @@ sessions:
     title: "HSI in the 5th Industrial Revolution"
     authors: ["Avi Harel"]
     chair: "PP"
-    sessionType: [ "Outreach"]
+    sessionType: ["Outreach"]
     tags: ["G", "H", "C"]
     start: 2025-11-07T17:00:00Z
     duration: PT30M
     abstract: |
       Examines sustainability, error-proofing by design, and scenario-based methods to manage operational complexity with AI and model-driven approaches.
 
-# Break ---
+  # Break ---
   - id: break3.1
     day: 3
     title: "Break"
-    sessionType: [ "Break"]
+    sessionType: ["Break"]
     start: 2025-11-07T17:30:00Z
     duration: PT15M
   # BREAK ---
-# Session 3.2 ---
+  # Session 3.2 ---
 
   - id: heuristics-workshop
     day: 3
-    title: "HSI Knowledge Sharing Heuristics Workshop"
-    authors: ["Dimitri Masson", "H. Lee"]
+    title: "HSI knowledge sharing.  Heuristics Workshop and SEBOK.  D. Masson, H. Lee and B. Schwartz"
+    authors: ["Dimitri Masson", "H. Lee", "B. Schwartz"]
     chair: "SK"
-    sessionType: [ "Cross-Working-Group"]
+    sessionType: ["Cross-Working-Group"]
     tags: ["A", "G"]
     start: 2025-11-07T17:45:00Z
     duration: PT90M
@@ -281,22 +280,21 @@ sessions:
     title: "HSI Outreach and Inter-network Directions"
     authors: ["INCOSE", "IEA", "ACM", "IEEE", "NAB"]
     chair: "PL"
-    sessionType: [ "Outreach"]
+    sessionType: ["Outreach"]
     tags: ["G", "H"]
     start: 2025-11-07T19:15:00Z
     duration: PT60M
     abstract: |
       Panel of international HSI-related networks sharing activities, challenges, joint opportunities, and future collaboration pathways.
-# End Session 3.2 ---
+  # End Session 3.2 ---
   - id: ClosingRemarks
     day: 3
     title: "Closing Remarks"
     authors: ["G. Kennedy"]
     chair: "GK"
-    sessionType: [ "Plenary"]
+    sessionType: ["Plenary"]
     tags: ["A", "G"]
     start: 2025-11-07T20:15:00Z
     duration: PT15M
     abstract: |
       The INCOSE HSI Working Group Chair provides closing remarks, summarizing key insights from the workshop, acknowledging contributions, and outlining next steps for continued collaboration and advancement of HSI practices.
-
