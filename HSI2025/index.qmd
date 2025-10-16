@@ -1,5 +1,5 @@
 ---
-title: "HSI 2025 Conference"
+title: "HSI 2025 Workshop"
 about: 
   template: solana
   links: 
@@ -15,7 +15,7 @@ description: |
 
 ---
 
-# HSI 2025 – Fourth Conference (Current Event)
+# HSI 2025 – Fourth Workshop
 
 ![HSI2025 Banner](/assets/HSI2025-banner.png)
 
