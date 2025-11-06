@@ -221,9 +221,9 @@ const dayNames = templateParams && templateParams.days ? templateParams.days : {
             title="<%= s.title %>"
             >
             <p class="session-title"><%= s.title %></p>
-            <div class="session-meta">
-              <% if (s.chair) { %><span class="me-2">Chair: <strong><%= s.chair %></strong></span><% } %>
-              <% if (s.authors) { %><span class="me-2"><%= Array.isArray(s.authors) ? s.authors.join(', ') : s.authors %></span><% } %>
+            <div class="session-meta">              
+              <% if (s.authors) { %><span class="me-2"><%= Array.isArray(s.authors) ? s.authors.map(a => `<strong>${a}</strong>` ).join(', ') : s.authors %></span><% } %>
+              <% if (s.chair) { %><span class="me-2">Chair: <%= s.chair %></span><% } %>
               <% if (s.category) { %><span class="me-2">[<%= s.category %>]</span><% } %>
             </div>
             <% if (s.tags && s.tags.length) { %>
