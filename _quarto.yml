@@ -10,6 +10,7 @@ website:
   favicon: assets/favicon.png
   description: "A series of conferences and workshops dedicated to Human Systems Integration (HSI), organized by the INCOSE HSI Working Group."
   site-url: "https://hsi-wg.github.io/conferences"
+  site-path: "/conferences"
   image: assets/HSI2025-banner_twitter.png
   twitter-card: 
     creator: "@dhmmasson"
@@ -20,10 +21,18 @@ website:
   open-graph: 
     locale: en_US
     site-name: "HSI Conference and Workshop Series"
+  reader-mode: true
+  cookie-consent: 
+    prefs-text: "this site uses cookies to measure traffic and improve user experience through google analytics. There are no targeting or advertising cookies."
+  google-analytics: 
+    tracking-id: "G-3R59JBLZYP"
+    anonymize-ip: true
+    storage: cookies
+  announcement: 
+    content: "HSI2025 announcement - November 5-7, 2025 - Online" 
+    position: below-navbar 
+    type: primary
   
-
-
-
 format:
   html:
     theme: cosmo
