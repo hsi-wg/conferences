@@ -1,153 +1,284 @@
-- id: Ryan.Messina
-  name: "Ryan Messina"
-  affiliation: "Defence Science and Technology Group"
-  country: "Australia"
-  roles: ["Speaker"]
-  picture: "RyanMessina.jpg"
-  email: "ryanjmessina@gmail.com"
-  bio: |
-    With over a decade of experience in systems engineering, Ryan has worked across a diverse
-    range of complex domains, including computer vision product development and integration, 
-    advanced food production technologies, and defence ICT infrastructure. 
-    More recently, he has contributed to defence research in camouflage systems and 
-    human-in-the-loop experimentation, as well as the acquisition of battle management software. 
-    Throughout his career, Ryan has focused on bridging the interaction between humans and technology,
-    applying systems thinking to deliver capability in challenging and multidisciplinary environments.
-- id: Yuval.Bitan
-  name: "Yuval Bitan, Ph.D."
-  affiliation: "Ben-Gurion University of the Negev"
-  country: "Israel"
-  roles: ["Speaker"]
-  picture: "YuvalBitan.png"
-  email: "yuval@bitan.net"
-  bio: |
-    Yuval Bitan (Ph.D.) is a human factors engineer and research scientist who studies cognitive systems
-    engineering at Ben-Gurion University of the Negev. His research focuses on the cognitive strategies
-    human operators apply to handle incomplete and conflicting interactions with information, and the
-    impact this has on decision making. Integrating the insights derived from such research into the
-    design of healthcare systems and processes will enhance their resilience and improve operational
-    efficiency and usability in both routine and emergency contexts, and will improve patient safety.
-    Yuval is an Associate Professor in the Department of Health Policy and Management, at Ben-Gurion
-    University of the Negev, Beer Sheva, Israel, and serves as the director of SimReC, the Research
-    Center for Simulation in Healthcare. Prior to his tenured position, he was an Assistant Professor
-    (status only) in the Department of Mechanical and Industrial Engineering at the University of
-    Toronto, and a Research Associate at the Cognitive Technologies Laboratory (University of Chicago,
-    Illinois) and at HumanEra (University Health Network, Toronto, Canada). Yuval received a Ph.D. in
-    Industrial Engineering and Management in 2003 from Ben-Gurion University of the Negev, Beer-Sheva,
-    Israel.
-- id: Victoria.Valentinova
-  affiliation: "Mott MacDonald"
-  name: "Victoria Valentinova"
-  email: "v.valentinova.g@gmail.com"
-  picture: "VictoriaValentinova.jpg"
-  bio : |
-    CPEng, C.ErgHF MCIEHF, MSc, BEng (Hons) <br>
-    Valentinova is a Chartered Systems Engineer and Human Factors Specialist with over 15 years of
-    international experience spanning public and private sectors across three continents. She holds a
-    Bachelor's degree in Aeronautical Engineering and a Master's degree in Human Factors and Safety
-    Assessment in Aeronautics. She is a Chartered Professional Engineer in both Leadership & Management
-    and Systems Engineering, as well as a Chartered Ergonomist. <br>
-    Victoria brings expertise in systems engineering leadership, systems assurance, and human factors
-    integration, particularly in the delivery of safety-critical air traffic management systems and major
-    transport infrastructure projects. Her career includes roles such as Technical Services Engineer, Human
-    Factors Manager, Systems Assurance Engineer, and Program Manager, reflecting her broad and versatile
-    skill set in both technical and strategic domains. <br>
-    She currently serves as Technical Director at Mott MacDonald, where she leads the delivery of complex
-    infrastructure programs across the ASEAN region.
-
-- id: Anthony.Smoker
-  name: "Anthony Smoker"
-  affiliation: "Lund University, IFACTA Member"
-  country: "Sweden"
-  roles: ["Speaker"]
-  picture: "AnthonySmoker.png"
-  email: "anthony.smoker@aviation.lth.se"
-  bio: |
-    Dr. Smoker is a former ATCO with NATS, for some thirty-seven years, in which he was an en-route and
-    terminal area controller at the London Air Traffic Control Centre and then an En route controller and
-    supervisor at Swanwick Centre. Whilst still an active controller at Swanwick he took up the post of
-    Head of Operational Safety at Swanwick in 2006. Subsequently taking up several safety management
-    roles before leaving NATS in 2015.
-
-    In 2015, he took up a researcher position at the faculty of engineering at Lund University in Sweden.
-    A role that was undertaken until February 2024. In this role he undertook research in several SESAR
-    projects as well as working with Transportstyrelsen and LFV in Sweden. Research subjects included
-    resilient performance in complex adaptive sociotechnical systems, safety management systems,
-    cognitive system engineering and resilience engineering dimensions of advanced automation and
-    human-machine agent teaming.
-
-    Whilst at Lund University, Dr Smoker managed and lectured in the LU Human Factors and System
-    Safety MSc as well as supervise and examine MSc HFSS research. As a member of IFATCA, he has
-    represented IFATCA in a number of safety, human factors and regulatory activities, including EASA
-    rule making groups. He is a member of the EASA Human Factors CAG and within IFATCA a member
-    of the organisations Joint Cognitive Human Machine System group.
-
-    Additionally, he was one of the IFATCA group that piloted the Just Culture Prosecutor Expert Courses
-    in 2008.
-  
-- id: Grace.Kennedy
-  name: "Grace Kennedy"
-  affiliation: "Acmena"
-  country: "Australia"
-  roles: ["Chair", "Speaker"]
-  picture: "GraceKennedy.jpg"
-  email: ""
-  bio: |
-   Grace is a Chartered Systems Engineer and Certified SE Professional (CSEP). Specialising in the 
-   integration of systems engineering and human factors in safety-critical industries, Grace has over 16 
-   years’ experience in industry and academia across rail, defence, healthcare, water and manufacturing. 
-   Offering extensive expertise in supporting technology implementation and alignment of organisational 
-   work systems within a diverse range of organisations, Grace demonstrates the value of sociotechnical 
-   systems approaches through pragmatically applying both human factors and systems engineering 
-   techniques. She is an inducted member of the INCOSE Technical Leadership Institute (Cohort 7) and 
-   contributing author of the INCOSE SE Handbook. Grace is the chair of the INCOSE Human Systems 
-   Integration WG. 
-- id: Peter.Hellekant
-  name: "Peter Hellekant"
-  affiliation: "Saab"
-  country: "Sweden"
-  roles: ["Speaker"]
-  picture: "PeterHellekant.jpg"
-  bio: 
-    Peter Hellekant is a retired (2005) Army Officer who specialized in the training of anti-tank warfare 
-    units and soldiers. For the last 15 years, he has worked as a Senior Systems Engineer at Saab Dynamics 
-    R&D department. His main focus has been on Human Factors Integration (HFI), contributing to various 
-    projects to make HFI/HIS a natural part of the Integrated Product Creation process within Saab.
-- id: Caitlin.Ryan
-  name: "Caitlin Ryan"
-  affiliation: "Independent Consultant"
-  country: "USA"
-  roles: ["Speaker"]
-  picture: "CaitlinRyan.jpg"
-  bio: |
-    Caitlin Ryan is a Human Systems and Model-Based Systems Engineer with extensive experience supporting 
-    Department of Defense (DoD) programs at both an industry prominent UARC, as well as an established DoD 
-    industry prime. Her work has focused on developing and implementing Human Systems Integration (HSI) and 
-    Model-Based Systems Engineering (MBSE) frameworks for advanced military platforms—including rotary, 
-    ground, and uncrewed systems—ensuring interoperability, ergonomic compliance, and MOSA-alignment. She’s 
-    led the architecture development of an agnostic UAS compliance model in SysML to enhance acquisition 
-    phase integration and data traceability across multidisciplinary teams. <br>
-    Drawing from a background in the arts and industrial design, Caitlin brings a human-centered and creative 
-    approach to complex engineering challenges. She now contracts her systems engineering expertise in the 
-    sustainable energy industry, applying the same rigor and innovation used in defense systems to enable 
-    efficient, resilient, and human-focused technological solutions.
-- id: Chris.Bartlett
-  name: "Chris Bartlett"
-  affiliation: "Independent Consultant"
-  country: "USA"
-  roles: ["Speaker"]
-  picture: "ChrisBartlett.jpg"
-  bio: |
-    Chris Bartlett is a human-systems engineer and product designer with 15 years of multidisciplinary experience
-    delivering applied research, prototype-to-field demonstrations, and program execution across defense, 
-    healthcare, infrastructure, and commercial domains. During that time, he led cross-functional teams 
-    to translate human-centered requirements into certified avionics and system solutions using MBSE, 
-    MOSA/FACE architectures, and ARINC-661 cockpit development while maintaining ISO 9001–aligned program controls 
-    and budget authority. <br>
-    He directs complex HSI and human-in-the-loop evaluations, authors DoD(W) acquisition conformant HSI data 
-    deliverables, and authors test plans for compliance with MIL-STD-1472H and MIL-HDBK-516C Airworthiness 
-    Certification Criteria. His demonstrated strengths include pilot-vehicle interface design for Army 
-    rotary-wing platforms, medical device design, rapid physical and software prototyping, stakeholder-aligned 
-    program management for multi-million-dollar efforts and mentoring engineering talent toward operational outcomes. 
-    He is co-founder and Chief Design Officer for Neva Healthcare, a medical device developer, manufacturer, 
-    and marketer of its own proprietary technologies in the infectious control space.
+-   id: Emanuel.Robinson
+    picture: Emanuel.Robinson.jpg
+    Name: Emanuel Robinson
+    Job Title: Director of the Board on Human-Systems Integration at the National Academies of Sciences, Engineering, and Medicine
+    mail: aerobinson@nas.edu
+    Affiliations: NASEM
+    Country: USA
+    Bio: Dr. Emanuel Robinson is the Director of the Board on Human-Systems Integration at the National Academies of Sciences, Engineering, and Medicine. Dr. Robinson’s work spans human factors, industrial/organizational and cognitive psychology, and program evaluation. He has worked with a range of federal, state, private, and philanthropic organizations to successfully execute projects in decision-making strategies, transportation, technology design and human factors, organizational change and leadership, behavioral economics, and safety. Dr. Robinson has published in these areas and is regularly invited to speak at conferences and professional meetings. Prior to joining the Academies, he led the Center for Human Performance and Safety at a leading science research non-profit and was a Senior Study Director for Transportation Systems Management and Operations at a top behavioral research firm. Dr. Robinson received a B.S. from the University of New Orleans in Psychology, and an M.S. and Ph.D. in Experimental Psychology from the Georgia Institute of Technology.
+-   id: Alan.Harding
+    picture: Alan.Harding.jpg
+    Name: Alan Harding
+    Job Title: 
+    mail: Alan.Harding@incose.net
+    Affiliations: INCOSE
+    Country: 
+    Bio: 
+-   id: Ami.Harel
+    picture: Ami.Harel.jpg
+    Name: Ami Harel
+    Job Title: CEO
+    mail: ami@e2es.co.il
+    Affiliations: End To End Systems
+    Country: Israel
+    Bio: Ami Harel has more than 40 years of experience in knowledge-intensive industries, specializing in systems engineering, integration, and complex project management in Israel and internationally. He is the CEO of End To End Systems Ltd., operating in India and Israel, and previously held senior leadership roles at organizations including Rafael and Plasan, managing teams of up to 800 employees. His experience includes serving as President of Plasan Sasa during major defense programs for the US military and heading the Land Combat Systems Directorate at Rafael. He lectures in M.Sc. engineering programs and is a board member of INCOSE_IL, where he leads initiatives in human-systems integration and integrated logistics support.
+        picture: t of Plasan Sasa during major defense programs for the US military and heading the Land Combat Systems Directorate at Rafael. He lectures in M.Sc. engineering programs and is a board member of INCOSE_IL, where he leads initiatives in human-systems integration and integrated logistics support..jpg
+-   id: Anthony.Smoker
+    picture: Anthony.Smoker.jpg
+    Name: Anthony Smoker
+    Job Title: Research Scientis
+    mail: anthony.smoker@aviation.lth.se
+    Affiliations: Lund University
+    Country: Sweden
+    Bio: Dr. Smoker is a former air traffic controller with NATS, where he served for approximately 37 years in en-route and terminal operations at the London Air Traffic Control Centre and later as an en-route controller and supervisor at Swanwick Centre. While at Swanwick, he became Head of Operational Safety in 2006 and subsequently held additional safety management positions until 2015. From 2015 to 2024, he was a researcher in the Faculty of Engineering at Lund University, contributing to SESAR projects and collaborating with Swedish aviation authorities. His work addressed resilience in sociotechnical systems, safety management, cognitive systems engineering, and human-machine teaming. He also taught in Lund’s Human Factors and System Safety MSc program and remains active in IFATCA and EASA human factors associations.
+-   id: John.Baras
+    picture: John.Baras.jpg
+    Name: John Baras
+    Job Title: 
+    mail: baras@umd.edu
+    Affiliations: University of Maryland College Park
+    Country: USA
+    Bio: John S. Baras is a Distinguished University Professor at the University of Maryland, where he holds the Lockheed Martin Chair in Systems Engineering and has been a faculty member since completing his Ph.D. in applied mathematics at Harvard University in 1973. He was the founding director of the Institute for Systems Research and directs the Maryland Center for Hybrid Networks, which he co-founded. He is a Fellow of multiple academies and professional societies and a foreign member of the Royal Swedish Academy of Engineering Sciences. His research spans systems, control, optimization, autonomy, communication networks, machine learning, formal methods, and model-based systems engineering. He holds numerous patents and has received major awards in control, communications, and aerospace engineering.
+        picture: etworks, which he co-founded. He is a Fellow of multiple academies and professional societies and a foreign member of the Royal Swedish Academy of Engineering Sciences. His research spans systems, control, optimization, autonomy, communication networks, machine learning, formal methods, and model-based systems engineering. He holds numerous patents and has received major awards in control, communications, and aerospace engineering..jpg
+-   id: Ben.Schwartz
+    picture: Ben.Schwartz.jpg
+    Name: Ben Schwartz
+    Job Title: Director of Human Engineering
+    mail: bschwartz@mti-inc.com
+    Affiliations: Monterey Technologies
+    Country: USA
+    Bio: Benjamin Schwartz is the Vice President of Human-Centered Engineering at Monterey Technologies, Inc. (MTI), a small business delivering human engineering solutions for complex, mission-critical defense systems. He is an INCOSE CSEP with broad experience across projects for the Navy, Army, and Air Force. As an advocate for user-centered systems engineering, he ensures that human and mission needs are integrated in the systems engineering process and outcomes. 
+        picture: t of Human-Centered Engineering at Monterey Technologies, Inc. (MTI), a small business delivering human engineering solutions for complex, mission-critical defense systems. He is an INCOSE CSEP with broad experience across projects for the Navy, Army, and Air Force. As an advocate for user-centered systems engineering, he ensures that human and mission needs are integrated in the systems engineering process and outcomes. .jpg
+-   id: Caitlin.Ryan
+    picture: Caitlin.Ryan.jpg
+    Name: Caitlin Ryan
+    Job Title: 
+    mail: caitlinryan1794@gmail.com
+    Affiliations: SEDAC LLC
+    Country: USA
+    Bio: Caitlin Ryan is a human systems and model-based systems engineer with experience supporting Department of Defense programs in both a university-affiliated research center and a major defense contractor. Her work has focused on developing and applying human systems integration and model-based systems engineering frameworks for military platforms, including rotary, ground, and uncrewed systems, with attention to interoperability, ergonomic requirements, and MOSA principles. She has led development of a SysML-based unmanned aircraft system compliance model to support acquisition and multidisciplinary collaboration. With a background in the arts and industrial design, she now consults in the sustainable energy sector, applying human-centered engineering approaches to emerging technologies.
+        picture: ciplinary collaboration. With a background in the arts and industrial design, she now consults in the sustainable energy sector, applying human-centered engineering approaches to emerging technologies..jpg
+-   id: Caitlyn.Singam
+    picture: Caitlyn.Singam.jpg
+    Name: Caitlyn Singam
+    Job Title: 
+    mail: Caitlyn.Singam@incose.net
+    Affiliations: 
+    Country: USA
+    Bio: Caitlyn A. K. Singam, M.Sc., is an INCOSE-accredited systems engineer and lead of the INCOSE SySTEAM Initiative, which advances the integration of systems competencies into STEM and STEAM education internationally. She conducts research spanning biological and aerospace systems, including development of a signal-routing algorithm for disruption-prone satellite networks that demonstrated performance gains over NASA’s standard bundle protocol and earned recognition at the International Conference on Space Operations. Her work also includes analysis of planetary protection policy presented at the International Astronautical Congress. She engages in outreach supporting equitable access to advanced academic programs in Maryland and contributes to leadership development efforts within the systems engineering community.
+-   id: Chris.Greenbank
+    picture: Chris.Greenbank.jpg
+    Name: Chris Greenbank
+    Job Title: 
+    mail: chris.greenbank@apac.bmt.org
+    Affiliations: BMT
+    Country: Australia
+    Bio: Chris Greenbank is a principal consultant at BMT specializing in human systems integration and defense capability development. He is a Chartered Human Factors Specialist and BMT Fellow with more than 22 years of experience supporting major defense and transportation programs in Australia and the United Kingdom. His work spans submarines, aviation, unmanned systems, and autonomous capability development, with expertise in human systems integration, defense acquisition, and program leadership. He focuses on translating technical, human, and operational insights into actionable outcomes that enhance capability, inform decision making, and manage risk. His approach emphasizes practical application of evidence-based methods and alignment with operational needs.
+        picture: ce-based methods and alignment with operational needs..jpg
+-   id: Dimitri.Masson
+    picture: Dimitri.Masson.jpg
+    Name: Dimitri Masson
+    Job Title: 
+    mail: d.masson@estia.fr
+    Affiliations: ESTIA
+    Country: France
+    Bio: Dimitri Masson is an assistant professor at ESTIA whose work centers on human-system integration at the intersection of systems engineering and human factors. His research examines how systems can support cognitive activities such as creativity and decision-making, with applications in digital twins, control rooms, digital product passports, and creative support environments. He teaches computer science, systems engineering, and scenario-based design. He co-chairs the INCOSE Human System Integration Working Group and is a member of the INCOSE Technical Leadership Institute. He holds a PhD in computer science from the University of Grenoble Alpes.
+-   id: Avi.Harel
+    picture: Avi.Harel.jpg
+    Name: Avi Harel
+    Job Title: 
+    mail: ergolight@gmail.com
+    Affiliations: 
+    Country: Israel
+    Bio: Avi Harel, M.Sc., holds degrees in mathematics from the Technion and has worked in systems engineering, integration engineering, and human-systems integration, with a focus on preventing operational errors. He served at Rafael’s R&D division prior to founding Ergolight Ltd., where he has developed methodologies for usability diagnostics, integration-oriented systems design, and resilience assurance in complex socio-technical systems. His work spans safety-critical, mission-critical, productivity-critical, and consumer product domains, and he has published extensively on human interaction design, model-based integration engineering, error prevention, and systems resilience.
+-   id: Grace.Kennedy
+    picture: Grace.Kennedy.jpg
+    Name: Grace Kennedy
+    Job Title: Principal Consultant Human Systems Engineering
+    mail: grace.kennedy@acmena.com.au
+    Affiliations: Acmena
+    Country: Australia
+    Bio: Grace is a Chartered Systems Engineer and Certified SE Professional (CSEP). Specialising in the integration of systems engineering and human factors in safety-critical industries, Grace has over 16 years’ experience in industry and academia across rail, defence, healthcare, water and manufacturing. Offering extensive expertise in supporting technology implementation and alignment of organisational work systems within a diverse range of organisations, Grace demonstrates the value of sociotechnical systems approaches through pragmatically applying both human factors and systems engineering techniques.  She is an inducted member of the INCOSE Technical Leadership Institute (Cohort 7) and contributing author of the INCOSE SE Handbook. Grace is the chair of the INCOSE Human Systems Integration WG.
+-   id: Guy.Boy
+    picture: Guy.Boy.jpg
+    Name: Guy Andre Boy
+    Job Title: 
+    mail: guy.andre.boy@gmail.com
+    Affiliations: Paris Saclay University 
+    Country: France
+    Bio: Guy André Boy is a French and American scientist and engineer specializing in human-centered design, cognitive systems, and human-systems integration. He is a Fellow of INCOSE, the Air and Space Academy, and the International Academy of Astronautics. His academic roles include serving as FlexTech Chair at CentraleSupélec and ESTIA (2019–2024), where he continues to teach, and as professor and dean at the Florida Institute of Technology, where he founded the Human-Centered Design Institute. He has also been a senior research scientist at IHMC and Chief Scientist for Human-Centered Design at NASA Kennedy Space Center. His work encompasses intelligent assistance, cognitive function analysis, and orchestration of life-critical systems.
+        picture: Institute of Technology, where he founded the Human-Centered Design Institute. He has also been a senior research scientist at IHMC and Chief Scientist for Human-Centered Design at NASA Kennedy Space Center. His work encompasses intelligent assistance, cognitive function analysis, and orchestration of life-critical systems..jpg
+-   id: Harington.Lee
+    picture: Harington.Lee.jpg
+    Name: Harington Lee
+    Job Title: Senior Systems Engineer
+    mail: haringtonl@gmail.com
+    Affiliations: Sierra Nevada Corporation
+    Country: USA
+    Bio: Harington Lee is a systems engineer with expertise in model-based systems engineering and digital thread integration at Sierra Nevada Corporation. He holds certification as a Certified Systems Engineering Professional (CSEP) and contributes to the application of systems engineering methods in complex technical environments. His work involves aligning systems architecture, lifecycle processes, and digital engineering practices to support organizational goals in aerospace and defence sectors.
+-   id: Jacky.Silva-Martinez
+    picture: Jacky.Silva-Martinez.jpg
+    Name: Jacky Silva-Martinez
+    Job Title: 
+    mail: Jackelynne.p.silva-martinez@nasa.gov
+    Affiliations: NASA
+    Country: USA
+    Bio: 'Dr. Jackelynne Silva-Martinez works at NASA serving as SpaceX Starbase Resident Office Lead for the Human Landing System Program, and as Artemis Mission Integrator for the Moon to Mars Program. She previously worked for the Human Health and Performance Directorate serving as Human Systems Engineering and Integration Lead for the Commercial LEO Development Program and as Human Systems Integration Manager for the Gateway Program. Jackelynne worked within the Flight Operations Directorate for the International Space Station and Artemis Programs as Flight Controller and Systems Engineer executing mission planning and integration. She also worked as a Mechanical Engineer and Test Operator at Jet Propulsion Laboratory for the Mars Science Laboratory. Prior to that, Jackelynne worked for Lockheed Martin as Antennas Mechanical Design Engineer and then Systems Integration and Test Engineer for commercial and government satellite programs. She holds degrees in Mechanical and Aerospace Engineering, Aerospace & Aviation Human Factors, Aerospace System Engineering, and Leadership Organizational Management. Jackelynne founded and led NASA''s Agile Community of Practice, and has co-authored the NASA Human Systems Integration Handbook.'
+        picture: t Office Lead for the Human Landing System Program, and as Artemis Mission Integrator for the Moon to Mars Program. She previously worked for the Human Health and Performance Directorate serving as Human Systems Engineering and Integration Lead for the Commercial LEO Development Program and as Human Systems Integration Manager for the Gateway Program. Jackelynne worked within the Flight Operations Directorate for the International Space Station and Artemis Programs as Flight Controller and Systems Engineer executing mission planning and integration. She also worked as a Mechanical Engineer and Test Operator at Jet Propulsion Laboratory for the Mars Science Laboratory. Prior to that, Jackelynne worked for Lockheed Martin as Antennas Mechanical Design Engineer and then Systems Integration and Test Engineer for commercial and government satellite programs. She holds degrees in Mechanical and Aerospace Engineering, Aerospace & Aviation Human Factors, Aerospace System Engineering, and Leadership Organizational Management. Jackelynne founded and led NASA''s Agile Community of Practice, and has co-authored the NASA Human Systems Integration Handbook.'.jpg
+-   id: Judith.Dahmann
+    picture: Judith.Dahmann.jpg
+    Name: Judith Dahmann
+    Job Title: 
+    mail: jdahmann@mitre.org
+    Affiliations: 
+    Country: 
+    Bio: 
+-   id: Judi.See
+    picture: Judi.See.jpg
+    Name: Judi See
+    Job Title: Human Factors Engineer
+    mail: jesee@sandia.gov
+    Affiliations: Sandia National Laboratories
+    Country: USA
+    Bio: Dr. Judi See is a Distinguished Member of Technical Staff at Sandia National Laboratories in Albuquerque, New Mexico, where she has worked as a systems analyst and human factors engineer since 2010. Previously, she worked as a Department of Defense contractor for 16 years, primarily supporting rapid acquisition for the Air Force. Dr. See has a doctorate in Experimental Psychology (Human Factors) and master’s degrees in Experimental Psychology (Human Factors) and Systems Engineering. She also has professional certification in human factors and ergonomics from the Board of Certification in Professional Ergonomics (BCPE). Dr. See has published research in the areas of vigilance, target detection, signal detection theory, visual inspection, mental workload, and human readiness levels. She is a senior editor for the Ergonomics in Design journal, chair of the Human Factors and Ergonomics Society (HFES) Representatives and Liaisons committee, and a member of the Foundation for Professional Ergonomics board of directors. Dr. See led research and maturation of the Human Readiness Levels (HRL) scale and associated ANSI/HFES 400-2021 standard. 
+        picture: cquisition for the Air Force. Dr. See has a doctorate in Experimental Psychology (Human Factors) and master’s degrees in Experimental Psychology (Human Factors) and Systems Engineering. She also has professional certification in human factors and ergonomics from the Board of Certification in Professional Ergonomics (BCPE). Dr. See has published research in the areas of vigilance, target detection, signal detection theory, visual inspection, mental workload, and human readiness levels. She is a senior editor for the Ergonomics in Design journal, chair of the Human Factors and Ergonomics Society (HFES) Representatives and Liaisons committee, and a member of the Foundation for Professional Ergonomics board of directors. Dr. See led research and maturation of the Human Readiness Levels (HRL) scale and associated ANSI/HFES 400-2021 standard. .jpg
+-   id: Mike.Miller
+    picture: Mike.Miller.jpg
+    Name: Mike Miller
+    Job Title: Chief Technology Officer
+    mail: mikemiller365@gmail.com
+    Affiliations: Intuiscan ATC Technologies
+    Country: USA
+    Bio: Michael E. Miller is a Professor of Systems Engineering at the Air Force Institute of Technology. He teaches courses in human factors, human Human Agent Teaming, and Human Systems Integration. Prior to joining AFIT in 2010, Mike was a Human Factors Engineer at Eastman Kodak where he contributed to several products, including pioneering an OLED device architecture that was commercialized by LG Display in the first commercially available OLED television. Mike holds a PhD from Virginia Tech in Industrial and Systems Engineering. He is a member of the Human Factors and Ergonomics Society, the International Council on Systems Engineering, as well as a senior member of the Society for Information Display.  Mike has authored over 100 issued U.S. patents, more than 50 peer-reviewed journal articles, and 60 conference papers. He has recently coauthored a book entitled “Integrating Artificial and Human Intelligence through Agent Oriented Systems Design”, which was published by CRC Press. Additionally, he co-led a recent NATO Research Specialists meeting on “Human Digital Twin in the Military: Findings and Perspectives". 
+-   id: Patrick.Hoverstadt
+    picture: Patrick.Hoverstadt.jpg
+    Name: Patrick Hoverstadt
+    Job Title: 
+    mail: patrick@fractal-consulting.com
+    Affiliations: Fractal Consulting
+    Country: UK
+    Bio: Patrick Hoverstadt is a consultant specializing in strategy, organizational design, and large-scale change, working across private, public, and third-sector organizations in more than twenty countries since 1995. He applies systems approaches to complex enterprises and has supported over 200 strategy and restructuring initiatives focusing on organizational diagnosis, design, and execution. Earlier, he led an engineering business for 13 years before founding Fractal. He has authored multiple books on systems and strategy, including works on the Viable System Model and systemic strategy. He chairs SCiO, lectures internationally, and is a Visiting Research Fellow at Cranfield School of Management.
+-   id: Paul.Lambertson
+    picture: Paul.Lambertson.jpg
+    Name: Paul Lambertson
+    Job Title: Flight Deck Lead Engineer - Integration & Test
+    mail: paul.s.lambertson@boeing.com
+    Affiliations: Boeing
+    Country: USA
+    Bio: Paul Lambertson is a designated expert at Boeing, technical lead engineer  and has been working systems engineering and human factors integration for over 30 years. These include projects on all Boeing major aircraft.  Paul has focused on flight decks and has been able to lead team in human systems integration, human factors, ergonomics, test and integration, optics and lighting. Paul is a pilot has a bachelor’s of science in mechanical engineering a master’s in business administration and several certificates related to systems engineering, technology and human factors.  Paul is a co-chair in the INCOSE human systems integration working group.​
+-   id: Peter.Hellekant
+    picture: Peter.Hellekant.jpg
+    Name: Peter Hellekant
+    Job Title: 
+    mail: peter.hellekant@saabgroup.com
+    Affiliations: Saab Group
+    Country: Sweden
+    Bio: Peter Hellekant is a retired Army officer who specialized in training anti-tank units and soldiers before transitioning to industry in 2005. For the past 15 years, he has served as a senior systems engineer at Saab Dynamics in the research and development division. His work has focused on human-factors integration, contributing to multiple projects aimed at embedding human-factors and human-systems considerations into Saab’s integrated product development processes. He has applied operational military experience to support system design activities, helping ensure effective human performance and system usability in defense applications.
+        picture: ations into Saab’s integrated product development processes. He has applied operational military experience to support system design activities, helping ensure effective human performance and system usability in defense applications..jpg
+-   id: Philippe.Palanque
+    picture: Philippe.Palanque.jpg
+    Name: Philippe Palanque
+    Job Title: Professor
+    mail: philippe.palanque@irit.fr
+    Affiliations: IRIT
+    Country: France
+    Bio: Philippe Palanque is a professor of computer science at the University of Toulouse 3 – Paul Sabatier and head of the Reliability Systems and Software department at the Institut de Recherche en Informatique de Toulouse (IRIT). Since the late 1980s, his research has focused on formal description techniques for interactive systems and has supported satellite ground-segment projects at CNES and cockpit user-interface design for Airbus. He has participated in the SESAR-funded HALA! network on future European air traffic management systems. Over the past two decades his work has addressed usability, safety and dependability in safety-critical interactive systems.
+-   id: Richard.Beasley
+    picture: Richard.Beasley.jpg
+    Name: Richard Beasley
+    Job Title: Systems Advisor
+    mail: Richard.Beasley@incose.net
+    Affiliations: RBSystems
+    Country: UK
+    Bio: Richard Beasley joined Rolls-Royce plc in 1986 after completing a BSc in Physics from Bristol University. He also has an MSc in Gas Turbine Engineering from Cranfield University (1996). Richard worked in Installation Aerodynamics and then on “design for service” issues. In 2006 He started to leaded Systems Engineering implementation in Rolls-Royce, becoming a Rolls-Royce Associate Fellow in Systems Engineering in 2011. He retired in 2024 and now provides systems advice (via his sole trading, part-time company RB Systems). Richard has been a member of INCOSE since 2006, contributing to the SEBoK (2012) and being a lead author on the first issue of the INCOSE SE Competency Framework (2018). He has served INCOSE as President of the UK Chapter (2014-16) and was main board Director of Services (Jan 2022 - Jan 2024).  He now is the chair of the INCOSE Embedding SE into Organizations Working Group, and a visiting Fellow at Loughborough University.
+        picture:  systems advice (via his sole trading, part-time company RB Systems). Richard has been a member of INCOSE since 2006, contributing to the SEBoK (2012) and being a lead author on the first issue of the INCOSE SE Competency Framework (2018). He has served INCOSE as President of the UK Chapter (2014-16) and was main board Director of Services (Jan 2022 - Jan 2024).  He now is the chair of the INCOSE Embedding SE into Organizations Working Group, and a visiting Fellow at Loughborough University..jpg
+-   id: Ricardo.Reis
+    picture: Ricardo.Reis.jpg
+    Name: Ricardo Reis
+    Job Title: 
+    mail: rjreis@embraer.fr
+    Affiliations: Embraer
+    Country: 
+    Bio: Ricardo Reis, Ph.D., ASEP, has worked in research and development at Embraer since 2012 and currently contributes to the Flight Autonomy team, focusing on CONOPS and OPSC, requirements, architecture, and model-based systems engineering. He has served as technical lead for international collaborations in European programs addressing future aircraft concepts, aviation safety, and human factors. He co-leads SAE G34/EuroCAE WG 114 Subgroup 8 on human factors for AI-based system certification and moderates Embraer’s systems engineering community of practice. His work increasingly emphasizes human-systems integration, including active contributions to the INCOSE HSI Working Group and co-leadership of the emerging INCOSE Portugal chapter. He earned his Ph.D. in turbulence flow simulation using high-performance computing.
+-   id: Renee.Rookwood
+    picture: Renee.Rookwood.jpg
+    Name: Renee Rookwood
+    Job Title: Principal, Human Systems Integration and Analysis
+    mail: rrookwood@mitre.org
+    Affiliations: 
+    Country: 
+    Bio: 
+-   id: Ryan.Messina
+    picture: Ryan.Messina.jpg
+    Name: Ryan Messina
+    Job Title: Engineers Australia ITEE Vic - Past chair
+    mail: ryanjmessina@gmail.com
+    Affiliations: ITEE
+    Country: Australia
+    Bio: Ryan has more than ten years of experience in systems engineering across domains including computer vision product development, advanced food production technologies, and defense information and communications systems. His recent work includes research on camouflage systems, human-in-the-loop experimentation, and acquisition of battle management software. Throughout his career, he has focused on the interaction between humans and technology, applying systems thinking to deliver capability in complex, multidisciplinary environments.
+        picture: ciplinary environments..jpg
+-   id: SoYoung.Kim
+    picture: SoYoung.Kim.jpg
+    Name: So Young Kim
+    Job Title: 
+    mail: soyoung.kim@collins.com
+    Affiliations: Collins Aerospace
+    Country: 
+    Bio: So Young Kim is Associate Director of Research and Chief Technologist for Autonomous Systems at Collins Aerospace, where she manages US portfolios in heterogeneous multiagent teaming and human-centered autonomous systems. Previously, she was Technical Point of Contact for Human Systems Integration at NASA JPL, Chief Engineer for Enterprise and Info Systems Engineering, and Spacecraft Systems Engineer. Her career also includes leading programs at GE Global Research and advanced work in human systems integration and human-autonomy teaming. Dr. Kim holds a Ph.D. and M.S. in Aerospace Engineering from Georgia Tech.
+-   id: Susan.Ronning
+    picture: Susan.Ronning.jpg
+    Name: Susan Ronning
+    Job Title: Principal Engineer
+    mail: Susan.Ronning@incose.net
+    Affiliations: ADCOMM Engineering
+    Country: USA
+    Bio: Susan E. Ronning is Owner and Principal Engineer at ADCOMM Engineering LLC, specializing in design, testing, deployment, and integration of critical communication systems. She has more than 25 years of systems engineering and project implementation experience in the land mobile radio industry, following four years of military service. Her roles have included avionics technician in the U.S. Navy, systems engineer at major radio manufacturers, and supervisor for municipal radio operations. She currently serves as co-chair of the International Council on Systems Engineering (INCOSE) ICT Working Group and holds registrations as a professional engineer, project management professional and Associate Systems Engineering Professional.
+-   id: Victoria.Valentinova
+    picture: Victoria.Valentinova.jpg
+    Name: Victoria Valentinova
+    Job Title: Technical Director Asset Management Services
+    mail: victoria.valentinova@mottmac.com
+    Affiliations: Mott Macdonald
+    Country: Singapore
+    Bio: Victoria Valentinova is a chartered systems engineer and human factors specialist with more than 15 years of international experience in public and private sectors across three continents. She holds degrees in aeronautical engineering and human factors and safety assessment in aeronautics and is chartered in leadership and management, systems engineering, and ergonomics. Her work spans systems engineering leadership, systems assurance, and human-factors integration for safety-critical air traffic management and major transport infrastructure programs. She has held technical and managerial roles including human factors manager, systems assurance engineer, and program manager. She is currently Technical Director at Mott MacDonald, leading complex infrastructure programs in the ASEAN region.
+-   id: Yakir.Yaniv
+    picture: Yakir.Yaniv.jpg
+    Name: Yakir Yaniv
+    Job Title: Director of Complex Systems
+    mail: yakir.yaniv@aman.co.il
+    Affiliations: Aman Digital
+    Country: Israel
+    Bio: Yakir Yaniv is a human factors engineer and researcher focused on human-systems integration in advanced system development. He holds a diploma in mechanical engineering and has professional certification in usability engineering for medical devices in accordance with IEC 62366-1 standards. His career history includes production‐floor technical experience and subsequent roles in systems and human‐factors engineering. He currently serves as CEO of ED&U, an Israeli consultancy specializing in human-factors engineering for defense, aviation, and medical systems, contributing to both industry projects and academic forums in the HSI domain.
+-   id: Yuval.Bitan
+    picture: Yuval.Bitan.jpg
+    Name: Yuval Bitan
+    Job Title: 
+    mail: yuval@bitan.net <yuval@bitan.net>
+    Affiliations: 
+    Country: 
+    Bio: Yuval Bitan, Ph.D., is a human factors engineer and cognitive systems researcher at Ben-Gurion University of the Negev, where he is an Associate Professor in the Department of Health Policy and Management and director of the Research Center for Simulation in Healthcare. His work examines how operators manage incomplete and conflicting information and the implications for decision making, system resilience, and patient safety in routine and emergency healthcare environments. He has held research and academic positions at the University of Toronto and the University of Chicago. He earned his Ph.D. in industrial engineering and management from Ben-Gurion University.
+-   id: Chris.Bartlett
+    picture: Chris.Bartlett.jpg
+    Name: Chris Bartlett
+    Job Title: Independent Consultant
+    mail: 
+    Affiliations: 
+    Country: 
+    Bio: Chris Bartlett is a human-systems engineer and product designer with 15 years of experience in applied research, prototyping, and program execution in defense, healthcare, infrastructure, and commercial sectors. He has led cross-functional teams to translate human-centered requirements into certified avionics and system solutions using model-based systems engineering and open architecture frameworks. His work includes human-systems integration evaluations, development of acquisition-compliant HSI documentation, and preparation of test plans aligned with military standards for airworthiness and ergonomics. His experience spans pilot-vehicle interface design, medical device development, and rapid prototyping. He is co-founder and Chief Design Officer of Neva Healthcare, a medical technology company.
+        picture: rototyping. He is co-founder and Chief Design Officer of Neva Healthcare, a medical technology company..jpg
+-   id: Dorothy.McKineey
+    picture: Dorothy.McKineey.jpg
+    Name: Dorothy McKinney
+    Job Title: 
+    mail: 
+    Affiliations: 
+    Country: USA
+    Bio: 
+-   id: MichelleRobetson
+    picture: MichelleRobetson.jpg
+    Name: Michelle Robertson
+    Job Title: 
+    mail: 
+    Affiliations: 
+    Country: 
+    Bio: 
