@@ -42,9 +42,9 @@ sessions:
       The INCOSE HSI Working Group welcomes participants to this year’s workshop, introducing the theme HSI Now: People, Practice and Potential. The session sets the tone for collaboration, emphasizing shared learning, exploration of current HSI practices, and collective efforts to shape the future of Human Systems Integration.
   - id: keynote-2-systeam
     day: 1
-    title: "Keynote 1: SySTEAM"
+    title: "Keynote 1: Sociotechnical Education Systems"
     authors: ["Caitlyn Singam"]
-    chair: "G.Kennedy"
+    chair: "Grace Kennedy"
     sessionType: ["Keynote"]
     tags: ["A", "G"]
     start: 2025-11-05T19:15:00Z
@@ -64,7 +64,7 @@ sessions:
     day: 1
     title: "HSI from a Development Perspective"
     authors: ["Peter Hellekant"]
-    chair: "SY"
+    chair: "So Young Kim"
     sessionType: ["Topic"]
     tags: ["A", "B", "F"]
     start: 2025-11-05T21:00:00Z
@@ -73,9 +73,9 @@ sessions:
       Perspective on integrating HSI across development workflows, toolchains, and governance; linking fundamentals, methods, and organizational implementation.
   - id: conops-early-stage-rd
     day: 1
-    title: "CONOPS Early Stage R&D"
-    authors: ["R. Reis"]
-    chair: "SY"
+    title: "ConOps & Early-Stage R&D"
+    authors: ["Ricardo Reis, So Young Kim, Dimitri Masson"]
+    chair: "So Young Kim"
     sessionType: ["Topic"]
     tags: ["B"]
     start: 2025-11-05T21:30:00Z
@@ -93,10 +93,10 @@ sessions:
   - id: efficient-integration-of-model-based-and-data-driven-approaches
     day: 1
     title: |
-      Model-based HSI (J. Barras) <br>
-      Requirements: HSI & SYSML (Caitlyn Ryan) <br>
+      Efficient Integration of Model-based and Data Driven HSI Approaches (John Barras) <br>
+      HSI & SYSML (Caitlyn Ryan, Chris Bartlett ) <br>
       Human Digital Twin Ontology (Mike Miller)
-    authors: ["John S. Baras", "Caitlyn Ryan", "Mike Miller"]
+    authors: ["John Baras", "Caitlyn Ryan", "Chris Bartlett", "Mike Miller"]
     chair: "Chris Greenbank"
     sessionType: ["Topic"]
     tags: ["A", "H", "C"]
@@ -113,34 +113,27 @@ sessions:
   - id: advance-hsi-infused-architecting-of-ai-enabled-systems
     day: 2
     title: "Advanced HSI infused architecting of AI enabled Systems for Safety Critical Domains"
-    authors: ["R. Reis"]
-    chair: "RR"
+    authors: ["Ricardo Reis, AI WG"]
+    chair: "Ricardo Reis"
     sessionType: ["Cross-Working-Group"]
     tags: ["H", "C", "B"]
     start: 2025-11-06T16:00:00Z
-    duration: PT90M
+    duration: PT75M
     abstract: |
       Collaborative development of a COST action proposal to embed HSI concerns centrally in safety-critical AI-enabled systems architecture across domains.
 
-  # BREAK ---
-  - id: break2.1
-    day: 2
-    title: "Break"
-    sessionType: ["Break"]
-    start: 2025-11-06T17:30:00Z
-    duration: PT15M
-  # BREAK ---
+
 
   # Session 2.2 ---
   - id: hsi-in-medicine-administration
     day: 2
-    title: "HSI in Medicine Administration"
+    title: "Safety in Medication Administration"
     authors: ["Yuval Bitan"]
-    chair: "AH"
-    sessionType: ["Domain-Specific"]
+    chair: "Ami Harel"
+    sessionType: ["keynote"]
     tags: ["F", "D"]
-    start: 2025-11-06T17:45:00Z
-    duration: PT30M
+    start: 2025-11-06T17:15:00Z
+    duration: PT45M
     abstract: |
       Healthcare represents one of the most complex work environments, where patient outcomes 
       rely on the precise execution of numerous interdependent processes. These processes are 
@@ -169,11 +162,20 @@ sessions:
       and cognitive capabilities, thereby reducing confusion, preventing selection errors, 
       and ultimately improving patient safety.
 
+  # BREAK ---
+  - id: break2.1
+    day: 2
+    title: "Break"
+    sessionType: ["Break"]
+    start: 2025-11-06T18:00:00Z
+    duration: PT15M
+  # BREAK ---
+
   - id: HSI Measures & HRLs (Judi See, P. Lambertson)
     day: 2
     title: "HSI Measures & HRLs"
-    authors: ["Judi See", "P. Lambertson"]
-    chair: "PL"
+    authors: ["Judi See", "Paul Lambertson"]
+    chair: "Paul Lambertson"
     sessionType: ["Topic"]
     tags: ["A", "G"]
     start: 2025-11-06T18:15:00Z
@@ -185,7 +187,7 @@ sessions:
 
   - id: keynote-workshop
     day: 2
-    title: "Complex Adaptive and Self-organising Systems"
+    title: "Organisational Systems & SE – a systems thinking and practice view"
     authors: ["Patrick Hoverstadt"]
     chair: "GK"
     sessionType: ["Keynote"]
@@ -208,8 +210,8 @@ sessions:
   - id: well-intentioned-behaviours-block-se
     day: 2
     title: "Well intentioned behaviours that block SE: Social, organisational and cultural factors in embedding HSI practices"
-    authors: ["Ryan Messina", "Grace Kennedy", "Richard Beasley"]
-    chair: "GK"
+    authors: ["Ryan Messina", "Grace Kennedy", "Jacky Silva-Martinez", "Richard Beasley"]
+    chair: "Grace Kennedy"
     sessionType: ["Topic"]
     tags: ["D", "G"]
     start: 2025-11-06T21:00:00Z
@@ -221,8 +223,8 @@ sessions:
   - id: sociotechnical-systems-of-systems-for-resilience
     day: 2
     title: "Project Wildfire: Sociotechnical Systems-of-Systems for Resilience"
-    authors: ["G. Kennedy", "Project Wildfire Team"]
-    chair: "GK"
+    authors: ["Grace Kennedy", "Jacky Silva-Martinez", "Susan Ronning", "Renee Rookwood", "Judith Dahmann", "Alan Harding"]
+    chair: "Grace Kennedy"
     sessionType: ["Cross-Working-Group"]
     tags: ["H"]
     start: 2025-11-06T22:00:00Z
@@ -240,9 +242,9 @@ sessions:
     duration: PT15M
   - id: transport-hsi
     day: 2
-    title: "Transport HSI"
+    title: "HSI in Complex Transport Systems"
     authors: ["V. Valentinova", "Authors"]
-    chair: "PL"
+    chair: "Paul Lambertson"
     sessionType: ["Domain-Specific"]
     tags: ["F", "D"]
     start: 2025-11-06T23:00:00Z
@@ -254,8 +256,8 @@ sessions:
   - id: commonalities-and-differences-between-hci-and-hsi
     day: 3
     title: "Commonalities and Differences between HCI and HSI"
-    authors: ["P. Palanque", "Contributors"]
-    chair: "DM"
+    authors: ["Philippe Palanque"]
+    chair: "Dimitri Masson"
     sessionType: ["Outreach"]
     tags: ["A", "G"]
     start: 2025-11-07T16:00:00Z
@@ -266,7 +268,7 @@ sessions:
     day: 3
     title: "HSI in the 5th Industrial Revolution"
     authors: ["Avi Harel"]
-    chair: "PP"
+    chair: "Philippe Palanque"
     sessionType: ["Outreach"]
     tags: ["G", "H", "C"]
     start: 2025-11-07T17:00:00Z
@@ -286,9 +288,12 @@ sessions:
 
   - id: heuristics-workshop
     day: 3
-    title: "HSI knowledge sharing.  Heuristics Workshop and SEBOK.  D. Masson, H. Lee and B. Schwartz"
-    authors: ["Dimitri Masson", "H. Lee", "B. Schwartz"]
-    chair: "SK"
+    title: |
+      HSI Knowledge Sharing <br>
+      Heuristics for HSI (Dimitri Masson, Harington Lee & Dorothy McKinney) <br>
+      SEBoK wiki (Ben Schwartz) 
+    authors: [Dimitri Masson, Harington Lee , Dorothy McKinney, Ben Schwartz]
+    chair: "So Young Kim"
     sessionType: ["Cross-Working-Group"]
     tags: ["A", "G"]
     start: 2025-11-07T17:45:00Z
@@ -297,9 +302,9 @@ sessions:
       Workshop to derive and refine a set of HSI heuristics from primer materials; participants review an LLM-generated starter set and synthesize a concise validated collection for the INCOSE heuristics database.
   - id: hsi-outreach-and-inter-network-directions
     day: 3
-    title: "HSI Outreach and Inter-network Directions"
-    authors: ["INCOSE", "IEA", "ACM", "IEEE", "NAB"]
-    chair: "PL"
+    title: "HSI Outreach"
+    authors: ["Grace Kennedy (INCOSE)", "Yakir Yaniv (IEA)", "Michelle Robertson (IEA)", "Emanuel Robinson (NASEM)", "TBD (ACM)"]
+    chair: "Paul Lambertson"
     sessionType: ["Outreach"]
     tags: ["G", "H"]
     start: 2025-11-07T19:15:00Z
@@ -310,7 +315,7 @@ sessions:
   - id: ClosingRemarks
     day: 3
     title: "Closing Remarks"
-    authors: ["G. Kennedy"]
+    authors: ["Ami Harel"]
     chair: "GK"
     sessionType: ["Plenary"]
     tags: ["A", "G"]
