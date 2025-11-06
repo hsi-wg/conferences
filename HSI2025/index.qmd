@@ -3,8 +3,10 @@ title: "HSI 2025 Workshop"
 about: 
   template: solana
   links: 
-    - text: Schedule
-      href: conferences/HSI2025/schedule/index.qmd
+    - text: Web Schedule
+      href: conferences/HSI2025/schedule/
+    - text: PDF Schedule
+      href: conferences/HSI2025/schedule/HSI2025_Program.pdf
     - text: Registration
       href: https://forms.office.com/r/Z4YHudgCt3
 toc: false
