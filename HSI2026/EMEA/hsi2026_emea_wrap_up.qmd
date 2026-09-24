@@ -1,0 +1,444 @@
+---
+title: "Human Systems Integration 2026"
+subtitle: "From workshop ideas to a sharper network proposal"
+author: "INCOSE HSI Working Group"
+date: "2026-09-01"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    progress: true
+    transition: fade
+    footer: "HSI2026 EMEA consultation | Draft for discussion"
+    width: 1600
+    height: 900
+    margin: 0.08
+    center: false
+    smaller: true
+    navigation-mode: linear
+    controls: true
+    overview: true
+    keyboard: true
+    pdf-separate-fragments: false
+execute:
+  echo: false
+  warning: false
+---
+
+# Re-opening the HSI2026 conversation {background-color="#17324D"}
+
+## From a 14-person workshop to a wider conference discussion {background-color="#17324D"}
+
+**Sunday 30 August 2026 | HSI2026 EMEA workshop**
+
+The workshop brought together **14 participants** to explore a possible COST Action on Human Systems Integration.
+
+Today, we are opening the conversation again to the wider conference community.
+
+::: {.notes}
+**Timing: 1 minute.** Explain that the Sunday workshop had 14 participants. This session is a second consultation with a wider conference audience, not a presentation of a finished proposal.
+:::
+
+---
+
+## The purpose: prepare a COST proposal
+
+**COST** is the European Cooperation in Science and Technology programme. It funds networking: people meeting, exchanging knowledge, training, creating collaborations, and preparing future research and innovation.
+
+The proposal we are exploring would create a network focused on **Human Systems Integration for AI-infused critical sociotechnical systems**.
+
+The network would connect disciplines, countries, sectors, and existing projects so that HSI can be addressed earlier and more coherently in the design and use of critical systems.
+
+::: {.notes}
+**Timing: 1 minute.** Clarify that COST is a networking instrument, not a funding scheme for one research project. The purpose of this session is to gather direction for the proposal: scope, priorities, outputs, and connections.
+:::
+
+---
+
+# What did we ask in the workshop? {background-color="#2B6F77"}
+
+## The workshop questions
+
+We asked participants to explore:
+
+- which systems and application domains should define the network;
+- which HSI challenges need coordination;
+- which objectives and tangible products would be valuable;
+- which activities could create those products;
+- what would make the network distinctive and successful;
+- who should participate, and which communities should be connected.
+
+::: {.notes}
+**Timing: 1 minute.** Introduce the structure of the Sunday workshop before presenting its answers. The questions moved from scope, through substance and outputs, to community-building.
+:::
+
+---
+
+# 1. A focused HSI network {background-color="#2B6F77"}
+
+## The proposed focus
+
+Create a network around **Human Systems Integration for AI-infused critical sociotechnical systems**.
+
+The focus is not “AI” in general. It is the design, integration, operation, and evolution of critical systems in which AI functions change what people can perceive, decide, control, and be held responsible for.
+
+::: {.notes}
+**Timing: 1 minute.** This is the proposed focus for discussion. It is intentionally narrower than a network about every HSI topic, while remaining applicable across domains.
+:::
+
+---
+
+## Why AI-infused critical systems require HSI
+
+The workshop repeatedly returned to systems where outcomes depend on the interaction between:
+
+- people and AI-enabled functions;
+- distributed human-machine networks;
+- organizations, procedures, and technologies;
+- decisions made under uncertainty and time pressure;
+- systems that may adapt, recommend, act, or coordinate with limited predictability.
+
+::: {.notes}
+**Timing: 1 minute.** The point is not that HSI is only about AI. It is that advanced, tightly coupled sociotechnical systems make existing HSI questions harder and more urgent.
+:::
+
+---
+
+## The critical question: who controls the system?
+
+The workshop distinguished between being present in a system and having the conditions to control it.
+
+- Can the human observe what the system is doing and why?
+- At which points can the human accept, reject, interrupt, or redirect its action?
+- Does the human have enough time, knowledge, and understanding to decide?
+- Is the authority to act aligned with the responsibility assigned to the human?
+- Does the system preserve human capability and proficiency for exceptional situations?
+
+::: {.notes}
+**Timing: 2 minutes.** Go deeper here. In the transcript, the discussion asked where the decision points actually are, what the system can do autonomously, and where human intervention is required. The concern was that a human may be placed at a decision point only to absorb liability, without the time, knowledge, understanding, or authority to decide meaningfully. The appropriate threshold is context-dependent: a machine may act independently in one situation and require human intervention in another. The discussion also connected automation to workforce proficiency: if systems remove all struggle, people may not develop the skills needed when an exceptional situation arises.
+:::
+
+::: {.notes}
+**Timing: 1 minute.** This is one of the strongest conceptual threads in the transcript. Use it to move from technology enthusiasm to the HSI problem: responsibility and control have to be designed together.
+:::
+
+---
+
+## First scope question: which system properties matter?
+
+The workshop invited participants to identify properties of systems that should be central to HSI research and practice:
+
+- highly coupled joint cognitive systems;
+- Human-AI teaming;
+- distributed decision and action across human-machine networks;
+- predictive and non-predictive agents;
+- human-in-the-loop simulation;
+- maturity assessment and anticipation rather than prediction;
+- human-on-the-loop and human-after-the-loop arrangements;
+- meaningful control, authority, and liability.
+
+::: {.notes}
+**Timing: 1 minute.** Ask the audience to listen for the property that makes a system an HSI concern, independently of its sector. The workshop also raised the question of whether “systems of interest” might need to become “ecosystems of interest.”
+:::
+
+---
+
+## Second scope question: in which domains?
+
+The workshop suggested application domains where these properties could be examined:
+
+- defence;
+- transport: aviation, automotive, and maritime;
+- health;
+- decision support in highly uncertain situations;
+- energy production and distribution;
+- education, space, manufacturing, and service engineering.
+
+::: {.notes}
+**Timing: 1 minute.** Explain that domains are evidence and use-case contexts, not necessarily separate sub-networks. Ask whether the proposal should prioritize a small number of domains or use cross-domain comparison as its organizing principle.
+:::
+
+---
+
+# 2. What was prioritized {background-color="#2B6F77"}
+
+## Five challenges rose to the top
+
+| Priority signal | Points |
+|---|---:|
+| Safety of Human-AI interactions | **285** |
+| Early architecting for joint cognitive systems | **200** |
+| Value analysis | **177** |
+| Advanced HSI modelling | **173** |
+| Verification and validation | **172** |
+
+::: {.notes}
+**Timing: 2 minutes.** The points came from a 100-point allocation exercise. They show relative salience, not percentages, respondent counts, or a vote for a single winner. The lower-ranked items were Dynamic Allocation/HAT (97) and Tailoring of HSI (96).
+:::
+
+---
+
+## The additional challenges identified
+
+The workshop asked for **one challenge missing from the initial list**. These were the exact responses and like counts:
+
+- **Legal responsibility** — 5 likes
+- **Training for complex systems** — 4 likes
+- **Critical thinking** — 2 likes
+- **HSI as a core engineering discipline** — 2 likes
+- **Different humans think differently, in relation to diversity and inclusion** — 2 likes
+- **Tangibility in digital engineering** — 1 like
+- **Long-term effects of HSI designed mostly for adults on young people** — 1 like
+- **AI becoming the medium of decision** — 0 likes
+
+::: {.notes}
+**Timing: 1 minute.** The poll did not converge on one missing challenge. Legal responsibility was the strongest signal, and the discussion connected it to design, workers' law, training, engineering culture, complexity, and digital systems.
+:::
+
+---
+
+# 3. What could the network do? {background-color="#2B6F77"}
+
+## A network, not one more research project
+
+The proposed role is to:
+
+- understand and synthesize existing HSI work;
+- connect researchers, engineers, practitioners, educators, and stakeholders;
+- compare methods, evidence, and use cases across domains;
+- provoke new collaborations and open paths for future research.
+
+It would coordinate existing work, compare approaches, connect researchers with practice, and create conditions for future projects.
+
+::: {.notes}
+**Timing: 1 minute.** This distinction came directly from the workshop. A COST Action would support networking activities and outputs; it should not present itself as a single technical research project.
+:::
+
+---
+
+## Two complementary objectives
+
+:::: {.columns}
+::: {.column width="50%"}
+### Research coordination
+
+- shared HSI language and concepts;
+- map projects, methods, networks, and gaps;
+- compare evidence and use cases;
+- coordinate a forward-looking research agenda.
+:::
+
+::: {.column width="50%"}
+### Capacity building
+
+- practical workflows and guidance;
+- training schools and educational material;
+- mentoring and early-career participation;
+- exchange among academia, industry, policy, and practice.
+:::
+::::
+
+::: {.notes}
+**Timing: 1 minute.** Ask participants to notice the balance: the network needs intellectual coordination and mechanisms that help people apply and teach HSI.
+:::
+
+---
+
+## The practical outputs people preferred
+
+The strongest product signals were:
+
+1. **HSI Engineering Workflows Playbook**
+2. **Guidelines for HSI influence on AI development**
+3. **Reference book or database of HSI use cases**
+4. **Field guide for transdisciplinary HSI practice**
+
+Training materials and HSI heuristics were also strongly supported.
+
+::: {.notes}
+**Timing: 1 minute.** The workshop explicitly cautioned against promising too many products. The ranking is a starting point for selecting two or three feasible outputs.
+:::
+
+---
+
+## How activities would turn ideas into usable outputs
+
+:::: {.columns}
+::: {.column width="50%"}
+### Activities
+
+- workshops and conferences to compare methods and practical cases;
+- meetings and stakeholder roundtables to coordinate existing work;
+- training schools to create and test educational material;
+- scientific missions for focused cross-border exchange;
+- virtual networking to maintain a shared repository and progress.
+:::
+
+::: {.column width="50%"}
+### Community
+
+- researchers and engineers who contribute methods and real cases;
+- practitioners who test workflows against day-to-day constraints;
+- educators who turn outputs into courses and training schools;
+- mentors and early-career participants who carry the work forward;
+- existing networks that can share knowledge instead of being duplicated.
+:::
+::::
+
+The activities are not separate from the products: they are how products become tested, taught, maintained, and reused.
+
+::: {.notes}
+**Timing: 1 minute.** Give concrete examples. A playbook needs practitioner cases and review. Training material needs a school or course. A use-case repository needs contributors, curation, and safeguards for confidential information. A research agenda needs people who can carry it into future projects.
+:::
+
+---
+
+# 4. What should be distinctive? {background-color="#2B6F77"}
+
+## Focused on AI-infused critical sociotechnical systems
+
+The network would focus on how to integrate people, organizations, and AI-enabled technologies when system failure, loss of control, or unclear responsibility can have serious consequences.
+
+Its distinctive contribution would be to:
+
+- make HSI concepts usable at the point of early system architecting;
+- connect technical design decisions to authority, accountability, training, and work context;
+- compare critical use cases across domains without pretending that one method fits all;
+- preserve and exchange organizational experience, including failures and near misses;
+- build capability through practical resources, mentoring, and cross-border learning.
+
+::: {.notes}
+**Timing: 1 minute.** The focus is specific: AI-infused critical sociotechnical systems. Shared language is a means to make concepts and evidence comparable, not the end product. Invite the audience to challenge whether this is focused enough and whether it captures the HSI contribution.
+:::
+
+---
+
+## The working proposition
+
+> **Create a network that improves the design and use of AI-infused critical sociotechnical systems by integrating human, organizational, and technical concerns from the start.**
+
+The proposal is intentionally open at this stage.
+
+Today, the wider HSI community can help refine:
+
+- what the network should make possible that existing communities do not;
+- which system properties and domains should anchor the work;
+- which two or three outputs deserve scarce effort;
+- which ideas, cases, communities, and contacts could strengthen the proposal.
+
+::: {.notes}
+**Timing: 1 minute.** Read this as a draft goal, not a final title or acronym. The question is whether it expresses a sufficiently concrete reason for the network to exist.
+:::
+
+---
+
+# Your turn: sharpen the proposal {background-color="#17324D"}
+
+## Discussion 1 — Refine the goal and focus
+
+**What should this network make possible?**
+
+What specific gap would the network fill for AI-infused critical sociotechnical systems?
+
+**What belongs inside the core scope?**
+
+Which system properties and application domains should be central?
+
+**What should be narrowed or left out?**
+
+::: {.notes}
+**Timing: 4 minutes.** Invite concrete proposals for the goal. Then ask participants to distinguish a core system property from an example domain, and a core domain from a possible use case. Capture suggested wording.
+:::
+
+---
+
+## Discussion 2 — Which challenges should anchor the proposal?
+
+If the proposal can foreground only two or three challenges, which should they be?
+
+Consider:
+
+- the prioritized engineering challenges;
+- legal responsibility and the alignment of authority with accountability;
+- training, proficiency, complexity, diversity, and engineering culture.
+
+::: {.notes}
+**Timing: 4 minutes.** Ask participants to select two or three anchors. Probe whether responsibility, training, and complexity should be separate themes or integrated into the main HSI engineering work.
+:::
+
+---
+
+## Discussion 3 — What should the network deliver?
+
+Which **two or three** products would be:
+
+- genuinely useful in practice;
+- feasible for a networking action;
+- distinctive enough to justify the network;
+- testable with real cases and stakeholders?
+
+::: {.notes}
+**Timing: 4 minutes.** Put the four leading product options on screen or on a board. Ask participants to defend their choices, especially against the feasibility constraint.
+:::
+
+---
+
+## Discussion 4 — Ideas, cases, and contacts
+
+What idea, real-world case, activity, or existing resource should be included?
+
+- academia;
+- engineering practice and industry;
+- public authorities and law;
+- education and civil society;
+- early-career researchers and underrepresented countries.
+
+Which networks, projects, or communities should be connected? Who could help us reach them?
+
+::: {.notes}
+**Timing: 3 minutes.** Invite suggestions for ideas and contacts. Keep the slide anonymous: record possible contacts separately, with permission, and treat organization names as leads rather than commitments.
+:::
+
+---
+
+## Closing: three signals for the next draft
+
+Before we close, please offer one of each:
+
+1. **Strengthen:** one direction the proposal should emphasize.
+2. **Narrow or drop:** one direction that risks making the network too broad.
+3. **Contribute:** one kind of expertise, case, activity, idea, or connection you could help bring.
+
+::: {.notes}
+**Timing: 2 minutes.** Use this as a rapid final round or a written response. Thank the audience and explain that the responses will inform the next version of the scope, outputs, and consortium-building work.
+:::
+
+---
+
+## The proposal is open
+
+The first workshop gave us a strong starting point.
+
+This wider conversation can help turn it into a focused, useful, and connected HSI network.
+
+**Thank you.**
+
+::: {.notes}
+**Timing: 1 minute.** Close by reiterating that participation can mean contributing a case, reviewing an output, hosting an activity, joining later, or connecting the proposal to an existing community.
+:::
+
+---
+
+## Source note
+
+This draft synthesizes:
+
+- Wooclap results from `HSI2026/EMEA/emeasec2026_hsi_wooclap_BPIOKAR.xlsx`;
+- the normalized results in `HSI2026/EMEA/wooclap_results.yml`;
+- the session transcript and question-by-question synthesis in `HSI2026/EMEA/wooclap-transcript/`.
+
+Poll scores are treated as relative salience. Transcript quotations and speaker attributions are used cautiously because the recording contains automatic-caption errors and room-microphone attribution ambiguity.
+
+::: {.notes}
+This slide can be hidden during delivery if the audience does not need methodological detail. Keep it in the source deck for traceability.
+:::

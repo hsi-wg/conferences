@@ -1,0 +1,28 @@
+---
+title: "HSI2026 EMEA: Summary, Findings and Way Forward"
+subtitle: "From a 14-person workshop to a network consortium"
+author: "INCOSE HSI Working Group"
+date: "2026-09-01"
+format:
+  html:
+    toc: false
+    title-block-banner: true
+---
+
+## Workshop summary
+
+On 30 August 2026, **14 participants** met during the HSI2026 EMEA workshop to explore a possible COST Action on Human Systems Integration (HSI). The discussion considered how HSI can help shape AI-enabled systems whose outcomes depend on people, organizations, technology, and decisions made under uncertainty.
+
+## Quick findings
+
+- There is a clear opportunity to create a network around **HSI for AI-infused critical sociotechnical systems**.
+- The strongest priorities were **safe Human-AI interaction**, **early architecting for joint cognitive systems**, **value analysis**, **advanced HSI modelling**, and **verification and validation**.
+- **Legal responsibility**, training for complex systems, critical thinking, diversity and inclusion, and HSI as an engineering discipline should also inform the network.
+- The network should connect existing work across defence, transport, health, energy, and other critical domains rather than create another isolated research project.
+- Early practical outputs could include an HSI engineering workflows playbook, guidance on HSI influence on AI development, and a curated repository of use cases.
+
+## Way forward
+
+**Contact the INCOSE HSI Working Group to form a consortium or suggest names of interested participants.**
+
+The proposal remains open for refinement. Its immediate purpose is to build a connected community able to improve the design and use of AI-infused critical sociotechnical systems by integrating human, organizational, and technical concerns from the start.
