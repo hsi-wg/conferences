@@ -100,6 +100,12 @@ for (const item of items) {
 
 <% const dayKeys = Object.keys(byDay).sort((a,b)=>parseInt(a)-parseInt(b)); %>
 
+<% // Helper to make safe HTML id fragments %>
+<% function slugId(v) { 
+  const s = String(v || '').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-+/g,'-').replace(/^-|-$|/g,'');
+  return s || 'session';
+} %>
+
 <ul class="schedule-days list schedule-day-list">
   <!-- // Day Navigation -->
   <% for (const day of dayKeys) { %>
@@ -121,8 +127,12 @@ for (const item of items) {
           </div>
 
           <div class="dCol-8">
-            <a href="<%- sess.href %>" class="listing-title h6 d-block mb-0"><%= sess.title %></a>
-            <small class="text-muted listing-authors"><%= sess.authors %></small>
+            <% if (sess.href) { %>
+              <a href="<%- sess.href %>" class="listing-title h6 d-block mb-0"><%= sess.title %></a>
+            <% } else { %>
+              <span class="listing-title h6 d-block mb-0"><%= sess.title %></span>
+            <% } %>
+            <small class="text-muted listing-authors"><%= Array.isArray(sess.authors) ? sess.authors.join(', ') : (sess.authors || '') %></small>
           </div>
 
           <div class="dCol-2 d-flex flex-column mt-1 small .align-items-stretch  align-items-center">
@@ -132,7 +142,7 @@ for (const item of items) {
               <% } %>
             <% } %>
             <% if (sess.abstract) { %>
-            <button class="btn btn-sm btn-outline-secondary mt-1 toggle-abstract" data-target="#abs-<%= sess.id %>" aria-expanded="false">Show more</button>
+            <button class="btn btn-sm btn-outline-secondary mt-1 toggle-abstract" data-target="#abs-<%= slugId(sess.id) %>" aria-expanded="false">Show more</button>
             <% } %>
           </div>
           
@@ -140,7 +150,7 @@ for (const item of items) {
           
         </div>
 
-        <div class="session-abstract collapse mt-2" id="abs-<%= sess.id %>">
+        <div class="session-abstract collapse mt-2" id="abs-<%= slugId(sess.id) %>">
           <hr>
           <p class="mb-0 listing-abstract lead"><span class="fw-bold">Abstract: </span><%= sess.abstract %></p>
         </div>

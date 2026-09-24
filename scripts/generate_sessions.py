@@ -23,13 +23,13 @@ from pathlib import Path
 
 try:
     import yaml  # type: ignore
-except ImportError:  # Minimal fallback parser not provided; instruct user
-    print("PyYAML is required. Install with: pip install pyyaml", file=sys.stderr)
-    sys.exit(1)
+except ImportError:
+    yaml = None  # We'll error later with a clearer message
 
 ROOT = Path(__file__).resolve().parents[1]  # points to HSIConferenceWebsite/
 SCHEDULE_DIR = ROOT / "HSI2025" / "schedule"
-YAML_FILE = SCHEDULE_DIR / "sessions.yaml"
+# Our data file is sessions.yml (not .yaml)
+YAML_FILE = SCHEDULE_DIR / "sessions.yml"
 
 
 def parse_args():
@@ -45,11 +45,13 @@ def parse_args():
 def load_sessions():
     if not YAML_FILE.exists():
         raise SystemExit(f"YAML file not found: {YAML_FILE}")
+    if yaml is None:
+        raise SystemExit(
+            "PyYAML is required to read sessions.yml. Install with: pip install pyyaml")
     data = yaml.safe_load(YAML_FILE.read_text(encoding="utf-8"))
     sessions = data.get("sessions", []) if data else []
     if not isinstance(sessions, list):
-        raise SystemExit(
-            "sessions.yaml malformed: 'sessions' should be a list")
+        raise SystemExit("sessions.yml malformed: 'sessions' should be a list")
     return sessions
 
 
@@ -68,27 +70,52 @@ def iso_to_local_fragment(iso: str) -> tuple[str, str]:
     return dt.strftime("%H:%M"), dt.isoformat()
 
 
+def slugify(text: str) -> str:
+    """Create a filename-safe slug from an id/title.
+    Lowercase, replace non-alphanumerics with '-', collapse repeats, trim dashes.
+    """
+    import re as _re
+    if not text:
+        return "session"
+    s = text.lower()
+    s = _re.sub(r"[^a-z0-9]+", "-", s)
+    s = _re.sub(r"-+", "-", s)
+    s = s.strip('-')
+    return s or "session"
+
+
 def build_front_matter(sess: dict) -> str:
-    # Required keys
-    required = ["id", "title", "authors", "category", "tags",
-                "start", "duration", "end", "abstract", "day"]
-    missing = [k for k in required if k not in sess]
-    if missing:
-        raise ValueError(f"Session {sess.get('id')} missing keys: {missing}")
+    # Map current schema -> front matter
+    title = sess.get("title", "Untitled Session")
+    authors = sess.get("authors") or []
+    # In new schema, sessionType (array) replaces category
+    session_types = sess.get("sessionType") or []
+    category = session_types[0] if session_types else "Session"
+    tags = sess.get("tags") or []
+    abstract = (sess.get("abstract") or "").strip()
+    start = sess.get("start")
+    end = sess.get("end")
+    duration = sess.get("duration")
+    if not (start and (end or duration)):
+        raise ValueError(
+            f"Session {sess.get('id')} missing start and end/duration")
+
     fm_lines = [
         "---",
-        f"title: \"{sess['title']}\"",
-        f"author: \"{' ; '.join(sess['authors'])}\"",
-        f"category: {sess['category']}",
+        f"title: \"{title}\"",
+        f"author: \"{' ; '.join(authors)}\"",
+        f"category: {category}",
     ]
-    if sess.get("tags"):
-        tags_serial = ",".join([f'"{t}"' for t in sess["tags"]])
+    if tags:
+        tags_serial = ",".join([f'\"{t}\"' for t in tags])
         fm_lines.append(f"tags: [{tags_serial}]")
-    fm_lines.append(
-        f"abstract: |\n  {sess['abstract'].strip().replace('\n', '\n  ')}")
-    fm_lines.append(f"date: {sess['start']}")
-    fm_lines.append(f"duration: {sess['duration']}")
-    fm_lines.append(f"end: {sess['end']}")
+    if abstract:
+        fm_lines.append(f"abstract: |\n  {abstract.replace('\n', '\n  ')}")
+    fm_lines.append(f"date: {start}")
+    if duration:
+        fm_lines.append(f"duration: {duration}")
+    if end:
+        fm_lines.append(f"end: {end}")
     fm_lines.append("---")
     return "\n".join(fm_lines)
 
@@ -112,19 +139,22 @@ BODY_TEMPLATE = textwrap.dedent(
 
 
 def render_body(sess: dict) -> str:
-    print(sess)
-    start_hm, _ = iso_to_local_fragment(sess["start"])
-    end_hm, _ = iso_to_local_fragment(sess["end"])
+    start_hm, _ = iso_to_local_fragment(sess.get("start", ""))
+    end_hm, _ = iso_to_local_fragment(sess.get("end", ""))
     tags = ", ".join(sess.get("tags", [])) or "—"
     authors = "; ".join(sess.get("authors", []))
+    # sessionType to category label
+    session_types = sess.get("sessionType") or []
+    category = session_types[0] if session_types else "Session"
+    abstract = (sess.get("abstract") or "").strip() or "TBD."
     return BODY_TEMPLATE.format(
-        title=sess["title"],
+        title=sess.get("title", "Untitled Session"),
         authors=authors,
         start_hm=start_hm,
         end_hm=end_hm,
-        category=sess["category"],
+        category=category,
         tags=tags,
-        abstract=sess["abstract"].strip(),
+        abstract=abstract,
     )
 
 
@@ -149,7 +179,7 @@ def main():
     for sess in sessions:
         day_dir = SCHEDULE_DIR / f"day{sess['day']}"
         day_dir.mkdir(parents=True, exist_ok=True)
-        outfile = day_dir / f"{sess['id']}.qmd"
+        outfile = day_dir / f"{slugify(str(sess.get('id') or ''))}.qmd"
         content = build_front_matter(sess) + "\n\n" + render_body(sess)
         if not file_needs_update(outfile, content) and not args.force:
             skipped += 1
