@@ -8,7 +8,7 @@ page-layout: full
 Welcome to the archive and current information hub for the INCOSE Human Systems Integration (HSI) Working Group Conferences and Workshops.
 
 ## Current Event
-- **HSI 2025 Workshop** – See the [current conference page](HSI2025/index.qmd) for registration, schedule, and committee information.
+- **HSI 2025 Workshop** – See the [current workshop page](HSI2025/index.qmd) for registration, schedule, and committee information.
 
 ## Past Events
 - 2024 – [Third Conference](HSI2024/index.qmd) (with [Proceedings](HSI2024/proceedings.qmd))

@@ -1,6 +1,8 @@
 website:
   navbar:
     right:
+      - href: HSI2026/EMEA/summary.qmd
+        text: HSI2026 EMEA
       - href: HSI2025/index.qmd
         text: HSI2025
       - href: HSI2024/index.qmd
