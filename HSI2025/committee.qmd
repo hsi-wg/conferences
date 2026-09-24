@@ -11,3 +11,10 @@ title: "HSI 2025 Technical Committee & Chairs"
 - Paul Lambertson (Co-Chair - Americas Sector)
 - Ami Harel (Co-Chair - EMEA Sector)
 - Dimitri Masson (Co-Chair - EMEA Sector)
+
+## Technical Committee
+
+- Chris Greenbank
+- Guy Andre Boy 
+- Romain Pinque 
+- Philippe Palanque

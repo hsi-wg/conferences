@@ -130,7 +130,7 @@ sessions:
     title: "Safety in Medication Administration"
     authors: ["Yuval Bitan"]
     chair: "Ami Harel"
-    sessionType: ["keynote"]
+    sessionType: ["Keynote"]
     tags: ["F", "D"]
     start: 2025-11-06T17:15:00Z
     duration: PT45M
@@ -242,15 +242,15 @@ sessions:
     duration: PT15M
   - id: transport-hsi
     day: 2
-    title: "HSI in Complex Transport Systems"
-    authors: ["V. Valentinova", "Authors"]
+    title: "STPA at Boeing - Driving Safety Requirements for Future Aircraft Design"
+    authors: ["Paul Lambertson"]
     chair: "Paul Lambertson"
     sessionType: ["Domain-Specific"]
     tags: ["F", "D"]
     start: 2025-11-06T23:00:00Z
     duration: PT60M
     abstract: |
-      Multi-author session on transport domain human systems integration addressing safety, predictive methods, and organizational adoption.
+      This presentation describes how Boeing applies Systems-Theoretic Process Analysis (STPA) to define and improve safety requirements for future aircraft design. As aircraft systems become increasingly complex, STPA helps engineers manage this complexity by identifying potential safety issues early—before detailed architectures are developed. The approach emphasizes cross-functional teamwork, combining expertise from pilots, engineers, and specialists to ensure a complete understanding of system interactions. Compared with traditional methods, STPA produces more comprehensive and effective safety requirements, uncovering gaps and enhancing design robustness. The presentation concludes that STPA strengthens collaboration, supports proactive safety management, and ensures that system architectures are driven by safety objectives.
 
   # DAY 3 ---
   - id: commonalities-and-differences-between-hci-and-hsi

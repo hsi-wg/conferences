@@ -9,7 +9,6 @@ listing:
       days: { '1':'5 Nov 2025', '2':'6 Nov 2025', '3':'7 Nov 2025' }
     sort-ui: false
     filter-ui: false
-
   - id: conference-sessions-list
     template: ../../templates/schedule.ejs
     contents: 
@@ -18,28 +17,6 @@ listing:
       days: { '1':'5 Nov 2025', '2':'6 Nov 2025', '3':'7 Nov 2025' }
     sort-ui: false
     filter-ui: false
-about: 
 toc: false
 page-layout: full
 --- 
-# Event Schedule Overview
-
-Below is the full conference program. Times are shown in your local timezone. Click "Show more" to expand abstracts.
-
-:::{.panel-tabset}
-
-## List View
-
-:::{#conference-sessions-list}
-:::
-
-## Grid View
-  
-:::{#conference-sessions-grid}
-:::
-
-
-
-
-
-:::

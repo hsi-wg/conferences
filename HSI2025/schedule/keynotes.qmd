@@ -1,0 +1,16 @@
+---
+title: "HSI 2025 Keynotes"
+toc: false
+page-layout: full
+description: | 
+  HSI2025 (November 5-7th 2025), features two extraordinary keynote speakers
+---
+
+# SysTEAM
+
+Caitly Singam
+
+
+# Complex Adaptive & Self-Organising Systems
+
+Patrick Hoverstadt

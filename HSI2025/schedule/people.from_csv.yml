@@ -1,0 +1,777 @@
+people:
+- id: ACM.speakers
+  name: ACM speakers
+  job_title: N/A
+  email: N/A
+  affiliation: N/A
+  country: N/A
+  people:
+    - id: ACM.speakers
+      name: ACM speakers
+      job_title: N/A
+      email: N/A
+      affiliation: N/A
+      country: N/A
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions: []
+    - id: Alan.Harding
+      name: Alan Harding
+      job_title: N/A
+      email: Alan.Harding@incose.net
+      affiliation: N/A
+      country: N/A
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions: []
+    - id: Ami.Harel
+      name: Ami Harel
+      job_title: CEO
+      email: ami@e2es.co.il
+      affiliation: End To End Systems
+      country: Israel
+      roles:
+      - Chair/Organiser
+      picture: N/A
+      bio: N/A
+      sessions:
+      - hsi-in-the-5th-industrial-revolution
+    - id: Anthony.Smoker
+      name: Anthony Smoker
+      job_title: N/A
+      email: anthony.smoker@aviation.lth.se
+      affiliation: Lund University
+      country: Sweden
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions: []
+    - id: Avi.Harel
+      name: Avi Harel
+      job_title: N/A
+      email: ergolight@gmail.com
+      affiliation: N/A
+      country: Israel
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions:
+      - hsi-in-the-5th-industrial-revolution
+    - id: Ben.Schwartz
+      name: Ben Schwartz
+      job_title: Director of Human Engineering
+      email: bschwartz@mti-inc.com
+      affiliation: Monterey Technologies
+      country: USA
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions:
+      - heuristics-workshop
+    - id: Caitlin.Ryan
+      name: Caitlin Ryan
+      job_title: N/A
+      email: caitlinryan1794@gmail.com
+      affiliation: SEDAC LLC
+      country: USA
+      roles:
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions:
+      - efficient-integration-of-model-based-and-data-driven-approaches
+    - id: Caitlyn.Singam
+      name: Caitlyn Singam
+      job_title: N/A
+      email: Caitlyn.Singam@incose.net
+      affiliation: N/A
+      country: USA
+      roles:
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions:
+      - keynote-2-systeam
+    - id: Chris.Bartlett
+      name: Chris Bartlett
+      job_title: N/A
+      email: N/A
+      affiliation: N/A
+      country: N/A
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions: []
+    - id: Chris.Greenbank
+      name: Chris Greenbank
+      job_title: N/A
+      email: chris.greenbank@apac.bmt.org
+      affiliation: BMT
+      country: Australia
+      roles:
+      - Chair/Organiser
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions:
+      - efficient-integration-of-model-based-and-data-driven-approaches
+    - id: Dimitri.Masson
+      name: Dimitri Masson
+      job_title: Assistant Professor of computer Science
+      email: d.masson@estia.fr
+      affiliation: ESTIA
+      country: France
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions:
+      - heuristics-workshop
+    - id: Emanuel.Robinson
+      name: Emanuel Robinson
+      job_title: Board Director on Human-Systems Integration
+      email: aerobinson@nas.edu
+      affiliation: NASEM
+      country: USA
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions: []
+    - id: Grace.Kennedy
+      name: Grace Kennedy
+      job_title: Principal Consultant Human Systems Engineering
+      email: grace.kennedy@acmena.com.au
+      affiliation: Acmena
+      country: Australia
+      roles:
+      - Chair/Organiser
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions:
+      - ChairWelcome-workshop
+      - ClosingRemarks
+      - keynote-2-systeam
+      - sociotechnical-systems-of-systems-for-resilience
+      - well-intentioned-behaviours-block-se
+    - id: Guy.Boy
+      name: Guy Andre Boy
+      job_title: N/A
+      email: guy.andre.boy@gmail.com
+      affiliation: Paris Saclay University
+      country: France
+      roles:
+      - Chair/Organiser
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions: []
+    - id: Harington.Lee
+      name: Harington Lee
+      job_title: Senior Systems Engineer
+      email: haringtonl@gmail.com
+      affiliation: Sierra Nevada Corporation
+      country: USA
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions:
+      - heuristics-workshop
+    - id: John.Baras
+      name: John Baras
+      job_title: N/A
+      email: baras@umd.edu
+      affiliation: University of Maryland College Park
+      country: USA
+      roles:
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions:
+      - efficient-integration-of-model-based-and-data-driven-approaches
+    - id: Judi.See
+      name: Judi See
+      job_title: Human Factors Engineer
+      email: jesee@sandia.gov
+      affiliation: Sandia National Laboratories
+      country: USA
+      roles:
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions:
+      - HSI Measures & HRLs (Judi See, P. Lambertson)
+    - id: Judith.Dahmann
+      name: Judith Dahmann
+      job_title: N/A
+      email: jdahmann@mitre.org
+      affiliation: N/A
+      country: N/A
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions: []
+    - id: Mike.Miller
+      name: Mike Miller
+      job_title: Chief Technology Officer
+      email: mikemiller365@gmail.com
+      affiliation: Intuiscan ATC Technologies
+      country: USA
+      roles:
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions:
+      - efficient-integration-of-model-based-and-data-driven-approaches
+    - id: Other.Speakers?
+      name: Other Speakers?
+      job_title: N/A
+      email: N/A
+      affiliation: N/A
+      country: N/A
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions: []
+    - id: Patrick.Hoverstadt
+      name: Patrick Hoverstadt
+      job_title: N/A
+      email: patrick@fractal-consulting.com
+      affiliation: Fractal Consulting
+      country: UK
+      roles:
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions:
+      - keynote-workshop
+    - id: Paul.Lambertson
+      name: Paul Lambertson
+      job_title: Flight Deck Lead Engineer - Integration & Test
+      email: paul.s.lambertson@boeing.com
+      affiliation: Boeing
+      country: USA
+      roles:
+      - Chair/Organiser
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions:
+      - HSI Measures & HRLs (Judi See, P. Lambertson)
+    - id: Peter.Hellekant
+      name: Peter Hellekant
+      job_title: N/A
+      email: peter.hellekant@saabgroup.com
+      affiliation: Saab Group
+      country: Sweden
+      roles:
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions:
+      - hsi-from-a-development-perspective
+    - id: Philippe.Palanque
+      name: Philippe Palanque
+      job_title: Professor
+      email: philippe.palanque@irit.fr
+      affiliation: IRIT
+      country: France
+      roles:
+      - Chair/Organiser
+      picture: N/A
+      bio: N/A
+      sessions:
+      - commonalities-and-differences-between-hci-and-hsi
+    - id: Renee.Rookwood
+      name: Renee Rookwood
+      job_title: Principal, Human Systems Integration and Analysis
+      email: rrookwood@mitre.org
+      affiliation: N/A
+      country: N/A
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions: []
+    - id: Ricardo.Reis
+      name: Ricardo Reis
+      job_title: N/A
+      email: rjreis@embraer.fr
+      affiliation: Embraer
+      country: N/A
+      roles:
+      - Chair/Organiser
+      picture: N/A
+      bio: N/A
+      sessions:
+      - advance-hsi-infused-architecting-of-ai-enabled-systems
+      - conops-early-stage-rd
+    - id: Richard.Beasley
+      name: Richard Beasley
+      job_title: Systems Advisor
+      email: Richard.Beasley@incose.net
+      affiliation: RBSystems
+      country: UK
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions:
+      - well-intentioned-behaviours-block-se
+    - id: Ryan.Messina
+      name: Ryan Messina
+      job_title: N/A
+      email: ryanjmessina@gmail.com
+      affiliation: DSTG
+      country: Australia
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions:
+      - well-intentioned-behaviours-block-se
+    - id: So.Kim
+      name: So Young Kim
+      job_title: Associate Director Research
+      email: soyoung.kim@collins.com
+      affiliation: Collins Aerospace
+      country: USA
+      roles:
+      - Chair/Organiser
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions: []
+    - id: Susan.Ronning
+      name: Susan Ronning
+      job_title: Principal Engineer
+      email: Susan.Ronning@incose.net
+      affiliation: ADCOMM Engineering
+      country: USA
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions: []
+    - id: Victoria.Valentinova
+      name: Victoria Valentinova
+      job_title: Technical Director Asset Management Services
+      email: victoria.valentinova@mottmac.com
+      affiliation: Mott Macdonald
+      country: Singapore
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions:
+      - transport-hsi
+    - id: Yakir.Yaniv
+      name: Yakir Yaniv
+      job_title: Director of Complex Systems
+      email: yakir.yaniv@aman.co.il
+      affiliation: Aman Digital
+      country: Israel
+      roles:
+      - N/A
+      picture: N/A
+      bio: N/A
+      sessions: []
+    - id: Yuval.Bitan
+      name: Yuval Bitan
+      job_title: N/A
+      email: yuval@bitan.net
+      affiliation: N/A
+      country: N/A
+      roles:
+      - Speaker
+      picture: N/A
+      bio: N/A
+      sessions:
+      - hsi-in-medicine-administration
+  picture: N/A
+  bio: N/A
+  sessions: []
+- id: Ami.Harel
+  name: Ami Harel
+  job_title: CEO
+  email: ami@e2es.co.il
+  affiliation: End To End Systems
+  country: Israel
+  roles:
+  - Chair/Organiser
+  picture: N/A
+  bio: N/A
+  sessions:
+  - hsi-in-the-5th-industrial-revolution
+- id: Anthony.Smoker
+  name: Anthony Smoker
+  job_title: N/A
+  email: anthony.smoker@aviation.lth.se
+  affiliation: Lund University
+  country: Sweden
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions: []
+- id: Avi.Harel
+  name: Avi Harel
+  job_title: N/A
+  email: ergolight@gmail.com
+  affiliation: N/A
+  country: Israel
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions:
+  - hsi-in-the-5th-industrial-revolution
+- id: Ben.Schwartz
+  name: Ben Schwartz
+  job_title: Director of Human Engineering
+  email: bschwartz@mti-inc.com
+  affiliation: Monterey Technologies
+  country: USA
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions:
+  - heuristics-workshop
+- id: Caitlin.Ryan
+  name: Caitlin Ryan
+  job_title: N/A
+  email: caitlinryan1794@gmail.com
+  affiliation: SEDAC LLC
+  country: USA
+  roles:
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions:
+  - efficient-integration-of-model-based-and-data-driven-approaches
+- id: Caitlyn.Singam
+  name: Caitlyn Singam
+  job_title: N/A
+  email: Caitlyn.Singam@incose.net
+  affiliation: N/A
+  country: USA
+  roles:
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions:
+  - keynote-2-systeam
+- id: Chris.Bartlett
+  name: Chris Bartlett
+  job_title: N/A
+  email: N/A
+  affiliation: N/A
+  country: N/A
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions: []
+- id: Chris.Greenbank
+  name: Chris Greenbank
+  job_title: N/A
+  email: chris.greenbank@apac.bmt.org
+  affiliation: BMT
+  country: Australia
+  roles:
+  - Chair/Organiser
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions:
+  - efficient-integration-of-model-based-and-data-driven-approaches
+- id: Dimitri.Masson
+  name: Dimitri Masson
+  job_title: Assistant Professor of computer Science
+  email: d.masson@estia.fr
+  affiliation: ESTIA
+  country: France
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions:
+  - heuristics-workshop
+- id: Emanuel.Robinson
+  name: Emanuel Robinson
+  job_title: Board Director on Human-Systems Integration
+  email: aerobinson@nas.edu
+  affiliation: NASEM
+  country: USA
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions: []
+- id: Grace.Kennedy
+  name: Grace Kennedy
+  job_title: Principal Consultant Human Systems Engineering
+  email: grace.kennedy@acmena.com.au
+  affiliation: Acmena
+  country: Australia
+  roles:
+  - Chair/Organiser
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions:
+  - ChairWelcome-workshop
+  - ClosingRemarks
+  - keynote-2-systeam
+  - sociotechnical-systems-of-systems-for-resilience
+  - well-intentioned-behaviours-block-se
+- id: Guy.Boy
+  name: Guy Andre Boy
+  job_title: N/A
+  email: guy.andre.boy@gmail.com
+  affiliation: Paris Saclay University
+  country: France
+  roles:
+  - Chair/Organiser
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions: []
+- id: Harington.Lee
+  name: Harington Lee
+  job_title: Senior Systems Engineer
+  email: haringtonl@gmail.com
+  affiliation: Sierra Nevada Corporation
+  country: USA
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions:
+  - heuristics-workshop
+- id: John.Baras
+  name: John Baras
+  job_title: N/A
+  email: baras@umd.edu
+  affiliation: University of Maryland College Park
+  country: USA
+  roles:
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions:
+  - efficient-integration-of-model-based-and-data-driven-approaches
+- id: Judi.See
+  name: Judi See
+  job_title: Human Factors Engineer
+  email: jesee@sandia.gov
+  affiliation: Sandia National Laboratories
+  country: USA
+  roles:
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions:
+  - HSI Measures & HRLs (Judi See, P. Lambertson)
+- id: Judith.Dahmann
+  name: Judith Dahmann
+  job_title: N/A
+  email: jdahmann@mitre.org
+  affiliation: N/A
+  country: N/A
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions: []
+- id: Mike.Miller
+  name: Mike Miller
+  job_title: Chief Technology Officer
+  email: mikemiller365@gmail.com
+  affiliation: Intuiscan ATC Technologies
+  country: USA
+  roles:
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions:
+  - efficient-integration-of-model-based-and-data-driven-approaches
+- id: Other.Speakers?
+  name: Other Speakers?
+  job_title: N/A
+  email: N/A
+  affiliation: N/A
+  country: N/A
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions: []
+- id: Patrick.Hoverstadt
+  name: Patrick Hoverstadt
+  job_title: N/A
+  email: patrick@fractal-consulting.com
+  affiliation: Fractal Consulting
+  country: UK
+  roles:
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions:
+  - keynote-workshop
+- id: Paul.Lambertson
+  name: Paul Lambertson
+  job_title: Flight Deck Lead Engineer - Integration & Test
+  email: paul.s.lambertson@boeing.com
+  affiliation: Boeing
+  country: USA
+  roles:
+  - Chair/Organiser
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions:
+  - HSI Measures & HRLs (Judi See, P. Lambertson)
+- id: Peter.Hellekant
+  name: Peter Hellekant
+  job_title: N/A
+  email: peter.hellekant@saabgroup.com
+  affiliation: Saab Group
+  country: Sweden
+  roles:
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions:
+  - hsi-from-a-development-perspective
+- id: Philippe.Palanque
+  name: Philippe Palanque
+  job_title: Professor
+  email: philippe.palanque@irit.fr
+  affiliation: IRIT
+  country: France
+  roles:
+  - Chair/Organiser
+  picture: N/A
+  bio: N/A
+  sessions:
+  - commonalities-and-differences-between-hci-and-hsi
+- id: Renee.Rookwood
+  name: Renee Rookwood
+  job_title: Principal, Human Systems Integration and Analysis
+  email: rrookwood@mitre.org
+  affiliation: N/A
+  country: N/A
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions: []
+- id: Ricardo.Reis
+  name: Ricardo Reis
+  job_title: N/A
+  email: rjreis@embraer.fr
+  affiliation: Embraer
+  country: N/A
+  roles:
+  - Chair/Organiser
+  picture: N/A
+  bio: N/A
+  sessions:
+  - advance-hsi-infused-architecting-of-ai-enabled-systems
+  - conops-early-stage-rd
+- id: Richard.Beasley
+  name: Richard Beasley
+  job_title: Systems Advisor
+  email: Richard.Beasley@incose.net
+  affiliation: RBSystems
+  country: UK
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions:
+  - well-intentioned-behaviours-block-se
+- id: Ryan.Messina
+  name: Ryan Messina
+  job_title: N/A
+  email: ryanjmessina@gmail.com
+  affiliation: DSTG
+  country: Australia
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions:
+  - well-intentioned-behaviours-block-se
+- id: So.Kim
+  name: So Young Kim
+  job_title: Associate Director Research
+  email: soyoung.kim@collins.com
+  affiliation: Collins Aerospace
+  country: USA
+  roles:
+  - Chair/Organiser
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions: []
+- id: Susan.Ronning
+  name: Susan Ronning
+  job_title: Principal Engineer
+  email: Susan.Ronning@incose.net
+  affiliation: ADCOMM Engineering
+  country: USA
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions: []
+- id: Victoria.Valentinova
+  name: Victoria Valentinova
+  job_title: Technical Director Asset Management Services
+  email: victoria.valentinova@mottmac.com
+  affiliation: Mott Macdonald
+  country: Singapore
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions:
+  - transport-hsi
+- id: Yakir.Yaniv
+  name: Yakir Yaniv
+  job_title: Director of Complex Systems
+  email: yakir.yaniv@aman.co.il
+  affiliation: Aman Digital
+  country: Israel
+  roles:
+  - N/A
+  picture: N/A
+  bio: N/A
+  sessions: []
+- id: Yuval.Bitan
+  name: Yuval Bitan
+  job_title: N/A
+  email: yuval@bitan.net <yuval@bitan.net>
+  affiliation: N/A
+  country: N/A
+  roles:
+  - Speaker
+  picture: N/A
+  bio: N/A
+  sessions:
+  - hsi-in-medicine-administration
