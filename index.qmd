@@ -8,9 +8,11 @@ page-layout: full
 Welcome to the archive and current information hub for the INCOSE Human Systems Integration (HSI) Working Group Conferences and Workshops.
 
 ## Current Event
-- **HSI 2025 Workshop** – See the [current workshop page](HSI2025/index.qmd) for registration, schedule, and committee information.
+- **HSI2027: Navigating Complexity** - The Fourth International Conference on Human Systems Integration will be held in London, UK, from 23-25 August 2027 as part of the 23rd Triennial World Congress of the IEA. See the [HSI2027 conference page](HSI2027/index.qmd).
 
 ## Past Events
+- 2026 - [HSI2026 EMEA Workshop](HSI2026/EMEA/summary.qmd)
+- 2025 - [Fourth Workshop](HSI2025/index.qmd)
 - 2024 – [Third Conference](HSI2024/index.qmd) (with [Proceedings](HSI2024/proceedings.qmd))
 - 2023 – [Sector Workshops](HSI2023/index.qmd)
 - 2022 – [Second Workshop](HSI2022/index.qmd)

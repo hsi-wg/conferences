@@ -1,0 +1,77 @@
+---
+title: "HSI2027: Navigating Complexity"
+description: "The Fourth International Conference on Human Systems Integration, London, UK, 23-25 August 2027."
+page-layout: full
+toc: true
+---
+
+# HSI2027: Navigating Complexity
+
+**23-25 August 2027 | London, UK**
+
+HSI2027, the Fourth International Conference on Human Systems Integration (HSI), organised jointly by INCOSE and the International Ergonomics Association (IEA), will be held as part of the 23rd Triennial World Congress of the IEA.
+
+## IEA2027 Information and Submissions
+
+- [IEA2027 event information](https://ergonomics.org.uk/events-calendar/iea2027.html)
+- [Submit a paper through the IEA2027 submission portal](https://www.miceconciergeme.com/PresentationPortal/Account/Login?ReturnUrl=%2FPresentationPortal%2Fiea-2027%2Fsubmissions)
+
+## About HSI2027
+
+HSI emerges from the combination of human-centered design (HCD) and systems engineering (SE) as a highly participative and incremental process. In 2020, INCOSE and IEA signed a Memorandum of Understanding that fosters this combination. Momentum built at HSI2024/IEA2024 to collaborate resulted in the commitment to establish an IEA Technical Committee on HSI.
+
+As conference co-chairs, we are proud to lead the coordination of HSI2027 with the 23rd Triennial World Congress of the IEA.
+
+## Theme
+
+**Navigating Complexity**
+
+As the systems we engineer, and the systems within which people work, become more complex, HSI practitioners need more than ever to understand, design, and manage the integration between people, technology, processes, organisations, and operating environments. Together, these form interconnected sociotechnical systems.
+
+Navigating complexity requires balancing these interdependencies to achieve better system performance, safety, user experience, and mission outcomes.
+
+This conference brings together researchers, industry leaders, and innovators to tackle the pressing challenges facing HSI practitioners. Engage with operators, engineering designers, trainers, maintainers, certifiers, and other stakeholders as we explore how sociotechnical systems are shaped in an increasingly complex world.
+
+Be part of the conversation with experts across disciplines to exchange ideas, build connections, and help shape the future of safe, efficient, and sustainable systems. We invite papers on applied practice and learnings, as well as emerging and transformational ideas that progress the field of HSI.
+
+## Conference Topics
+
+### Complex Systems in Industry
+
+- Healthcare
+- Transport
+- Aviation
+- Defence
+- Energy and utilities
+- Social systems
+- Systems of systems
+
+### Enabling Technologies and Trends
+
+- Applied complex systems thinking
+- Dealing with uncertainty
+- Human-AI teaming
+- Digital engineering, modelling, and simulation
+- Industry 4.0 and Society 5.0
+
+### HSI in Practice
+
+- Embedding HSI in the systems lifecycle
+- The role and value of HSI in organisations
+- HSI standards and resources
+- Technology transfer: translating theory to practice
+- HSI for the future: education, training, and next directions
+
+Join us as we navigate complexity together and shape the future of human-centered systems engineering.
+
+## Conference Leadership
+
+### General Co-Chairs
+
+- Dr Grace Kennedy, INCOSE HSI Working Group Chair
+- Yakir Yaniv, IEA HSI Technical Committee Chair
+
+### Technical Co-Chairs
+
+- Prof. Yuval Bitan, representing IEA
+- A/Prof Dimitri Masson, representing INCOSE
