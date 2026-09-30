@@ -1,0 +1,16 @@
+---
+title: "Research on Multi-Temporal Safety Assessment of Approach Control System Based on Multi-Level Extensibility Evaluation Method"
+authors: [Tingting Lu, Yaqing He]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.022"
+abstract: |
+  Improving the safety of the approach control system is important for flight safety. Through the analysis of the risk in the operation process of the approach control system, the risk factor set is constructed by using the fault tree analysis method. Then, on this basis, the evaluation index system of its operation safety is established, and the weight is determined by using the fuzzy order relation analysis method. Finally, the multi-level safety evaluation model is constructed by using the extensibility method, and given the formula for calculating security assessment over multiple time periods of the day. Taking the operation of Qingdao air traffic control station as an example, the operation safety is evaluated and calculated, the results of the assessment are given, and the suggestions for improving the operation safety of the control system in recent years are given.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/research-on-multi-temporal-safety-assessment-of-approach-control-system-based-on-multi-level-extensibility-evaluation-method/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-11-with-Cover-Page.pdf)

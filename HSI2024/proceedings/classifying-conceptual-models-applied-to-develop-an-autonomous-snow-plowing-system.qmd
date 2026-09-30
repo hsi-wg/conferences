@@ -1,0 +1,16 @@
+---
+title: "Classifying Conceptual Models Applied to Develop an Autonomous Snow-Plowing System"
+authors: [Tommy Langen, Gerrit Muller, Kristin Falk]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.008"
+abstract: |
+  The integration of autonomous systems is increasing, while the development of future systems faces a growing complexity in their interactions with human operators. Conceptual modeling helps simplify the complexity while also being realistic enough to make sense. This paper demonstrates how a small company that develops an autonomous system for snow plowing machines at airports applies various conceptual models. The paper has classified the conceptual models according to A3AO, CAFCR+, and TOP frameworks with a Human Systems Integration perspective. Findings suggest that a mixed modeling approach with viewpoint hopping is used and found effective during the development of human and autonomous collaboration systems for confined industrial environments.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/classifying-conceptual-models-applied-to-develop-an-autonomous-snow-plowing-system/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-16-with-Cover-Page.pdf)

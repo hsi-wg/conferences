@@ -1,0 +1,16 @@
+---
+title: "Usability Challenges of Failure Mode and Effects Analysis (FMEA) within the V-Model"
+authors: [Dan Perreault, Erika E. Gallegos, Vincent P. Paglioni, Thomas H. Bradley]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.030"
+abstract: |
+  For over 70 years, failure mode and effects analysis (FMEA) has been used in development and assessment across products, processes, and services worldwide. In particular has been its application for useability and use error analysis. FMEA is considered a mainstay of predictive failure analysis and reliability, prescribed by multiple international standards. However, despite this level of adoption, FMEA encounters consistent and regular criticisms, particularly related to its ease of use and effectiveness. Research on improvement often focus on specific elements rather than on overall usability of the tool for practitioners. At the same time, the V-model has become a common approach for product design in systems engineering. However, the integration of these two popular processes together can be cumbersome and incompatible under their current uses. In this paper, we review current methodology for FMEA against similar V-model standards. We identify systemic challenges in using FMEA within the systems engineering V-model and suggest approaches for addressing these challenges to better serve FMEA users.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/usability-challenges-of-failure-mode-and-effects-analysis-fmea-within-the-v-model/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-33-with-Cover-Page.pdf)

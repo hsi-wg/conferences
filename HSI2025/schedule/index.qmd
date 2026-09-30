@@ -17,8 +17,7 @@ listing:
     template-params:
       days: { '1':'5 Nov 2025', '2':'6 Nov 2025', '3':'7 Nov 2025' }
     sort-ui: false
-    filter-ui: false
-about: 
+    filter-ui: false 
 toc: false
 page-layout: full
 --- 

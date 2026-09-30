@@ -1,0 +1,16 @@
+---
+title: "Developing Prompts to Facilitate Generative Pre-Trained Transformer Classifying Decision-Errors in Flight Operations"
+authors: [Wen-Chin Li, Declan Saunders, Hamed Amanzadeh]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.011"
+abstract: |
+  The emergence of artificial intelligence (AI) with advanced natural language processing offers promising approaches for enhancing the capacity of textual classification. The aviation industry is increasingly interested in adopting AI to improve efficiency, safety, and cost efficiency. This study explores the potential and challenges of using AI to analyse decision errors in flight operations based on the HFACS framework. In pre-training, the model is trained based on a large amount of data to predict the next word in a sequence which allows the model to learn relationships between the words and their meaning in the accident investigation reports. Initial discoveries demonstrated that the AI model could supply a consistent HFACS framework and populate these dimensions with moderate accuracy. Future research is focused on the development of this HFACS-GPT model through fine-tuning and deep learning, facilitating more reliable and consistent conversations.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/developing-prompts-to-facilitate-generative-pre-trained-transformer-classifying-decision-errors-in-flight-operations/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-20-with-Cover-Page.pdf)

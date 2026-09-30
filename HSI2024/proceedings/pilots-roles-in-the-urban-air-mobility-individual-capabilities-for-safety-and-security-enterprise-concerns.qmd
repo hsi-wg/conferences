@@ -1,0 +1,16 @@
+---
+title: "Pilot’s Roles in the Urban Air Mobility: Individual Capabilities for Safety and Security Enterprise Concerns"
+authors: [Raquel Hoffmann, Hidekazu Nishimura, Rodrigo Calhau]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.021"
+abstract: |
+  Safety and security are cross-cutting concerns of the Urban Air Mobility (UAM) ecosystem and critical for its future operations. Addressing those concerns requires an integrated approach, including stakeholders, people, processes, systems, and capabilities. While previous research has explored safety and security at the System-of-Systems (SoS) level, this paper embraces the Human Systems Integration (HSI) approach to investigate the pilot as an individual performer. In UAM’s early phases, the pilot is expected to be on board, controlling the vehicle and interacting with multiple systems and operators. This study employs the Unified Architecture Framework (UAF) to discern the pilot’s roles and capabilities consistent with the UAM as an enterprise. Results include views combining strategic resource exchanges and responsibilities associated with each pilot role. Lastly, we analyze the relationships among roles and capabilities and discuss the pilot’s critical capabilities for addressing situation awareness, security, and safety culture concerns. Leveraging the HSI approach allows for understanding the pilot’s perspective, facilitating informed decision-making, and fostering a culture of safety and security throughout the UAM ecosystem.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/pilots-roles-in-the-urban-air-mobility-individual-capabilities-for-safety-and-security-enterprise-concerns/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-19-with-Cover-Page.pdf)

@@ -1,0 +1,16 @@
+---
+title: "The Development of a Human-Systems Integration Massive Open Online Course (MOOC)"
+authors: [Nirit Gavish, Yuval Bitan, Yakir Yaniv]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.028"
+abstract: |
+  In the proposed lecture, we will describe how we developed a massive open on-line course (MOOC) entitled “Human-Systems Integration”. The goal, the expected learners and the content of the course will be described.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/the-development-of-a-human-systems-integration-massive-open-online-course-mooc/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-24-with-Cover-Page.pdf)

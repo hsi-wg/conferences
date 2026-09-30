@@ -1,0 +1,16 @@
+---
+title: "Study on Structure Model of Stressors for Pilot Cadets in Flight Training Based on DEMATEL-ISM"
+authors: [Furong Jiang, Zhaoning Zhang]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.025"
+abstract: |
+  Establishing a structural model of stressors for pilot cadets in flight training, this study developed a scale through interviews and literature research. Using the SHEL model for dimensional analysis, 18 stressors across five dimensions were identified. These stressors were evaluated through dimensional analysis and expert scoring, and modeled using DEMATEL and ISM. The model calculated the influencing, influenced, center, and cause degrees of each stressor and established a hierarchical interpretative structure. Key underlying stressors identified include weather conditions and unsafe incidents. Stressors like psychological pressure, difficulty, and progress in flight training were significantly impacted by other factors. Notably, psychological pressure, training difficulty and progress, and instructor relationships were found to be most influential on cadets’ stress. The DEMATEL-ISM method effectively established a structured hierarchical model of stressors in cadet flight training. The findings suggest that flight training schools should enhance safety management and instructors should positively influence cadets to manage stress effectively.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/study-on-structure-model-of-stressors-for-pilot-cadets-in-flight-training-based-on-dematel-ism/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-6-with-Cover-Page.pdf)

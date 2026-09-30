@@ -1,0 +1,16 @@
+---
+title: "Verification Complexity: Definitions, Measurements, and Indicators"
+authors: [Sukhwan Jung, Alejandro Salado]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.031"
+abstract: |
+  While verification is an integral process of systems engineering, there is no consensus on measures for a full-scale verification complexity and what it represents. Verification engineers can rely on their implicit expertise to determine relative complexity differences, but this is resource intensive and scales badly with large systems. This research aims to define the verification complexity in an explicit and mathematical manner, suggest relevant measures, and propose indicators for verification complexity. Data gathering and experiment design have been finished with varying sizes and interconnections. Background research is being conducted on the verification complexity definition and relevant measures. Once finished, machine learning models will be trained on the measures with the proposed definition as a dependent variable. The trained model will then be analyzed to determine accurate, explicit indicators of verification complexity. These are expected to aid more accurate information propagation between system stakeholders, especially engineers, reducing system development costs.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/verification-complexity-definitions-measurements-and-indicators/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-27-with-Cover-Page.pdf)

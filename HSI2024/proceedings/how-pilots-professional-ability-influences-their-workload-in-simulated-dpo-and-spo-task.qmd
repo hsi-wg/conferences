@@ -1,0 +1,16 @@
+---
+title: "How Pilots’ Professional Ability Influences Their Workload in Simulated DPO and SPO Task"
+authors: [Ruiyuan Hong, Yu Tian, Mingqian Gao, Shan Gao, Lei Wang]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.016"
+abstract: |
+  To ascertain the psychological factors needed for the pilots in SPO (single pilot operations) crew configuration, a study investigated the effects of professional ability on pilots’ workload in a simulated DPO (dual pilot operations) and SPO task. 46 pilots performed approaches with low visibility using a B737 full flight simulator in DPO and SPO crew configuration respectively, and their workload measured by NASA-TLX. A pilot’s psychological competency measurement tool was used to collect pilots’ professional ability data. The results showed that there were significant differences detected in crew configuration regarding workload and relative indexes. Mostly, the workload in the SPO crew configuration was higher than it was in the DPO crew configuration. Meanwhile, in DPO crew configuration, as the Pilot Flying (PF), better teamwork ability was significantly correlated with a worse self-evaluated performance. In SPO crew configuration, spatial orientation ability was negatively correlated with the mental demand index and physical demand index but positively correlated with the performance index (all ps<0.05). These findings contribute to the selection of pilots working in future SPO aircraft while demonstrating the practical application value of the pilots’ psychological competency measurement tool in safeguarding SPO flight safety.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/how-pilots-professional-ability-influences-their-workload-in-simulated-dpo-and-spo-task/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-22-with-Cover-Page.pdf)

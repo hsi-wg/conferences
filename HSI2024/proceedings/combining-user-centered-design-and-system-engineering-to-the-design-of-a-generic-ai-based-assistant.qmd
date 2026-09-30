@@ -1,0 +1,16 @@
+---
+title: "Combining User Centered Design and System Engineering to the Design of a Generic AI-Based Assistant"
+authors: [Kahina Amokrane-Ferka, Virgil Rousseaux, Matthieu Dussartre, Moustafa Zouinar, Nicolas Renoir]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.010"
+abstract: |
+  Human users’ needs must be considered at the beginning of system design. However, classical systems engineering approaches consider the needs of several stakeholders (clients, authorities, etc.) but those of end users are often less considered. Hence, neglecting or oversighting such needs will lead to unacceptance and non-adoption of systems by end users. This paper introduces an original approach that combines System Engineering (SE) and User-Centered Design (UCD) approaches to address the needs of end users from the early stages and throughout the design process of a generic system. This approach is applied to the design of a bidirectional AI-based assistant, incorporating principles of human-machine teaming. It aims at assisting operators in real time network supervision and piloting activities.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/combining-user-centered-design-and-system-engineering-to-the-design-of-a-generic-ai-based-assistant/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-18-with-Cover-Page.pdf)

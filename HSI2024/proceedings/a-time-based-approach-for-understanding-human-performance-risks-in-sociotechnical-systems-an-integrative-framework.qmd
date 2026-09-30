@@ -1,0 +1,16 @@
+---
+title: "A Time-Based Approach for Understanding Human Performance Risks in Sociotechnical Systems: An Integrative Framework"
+authors: [Belinda Cham, Alexandra Boeing, Katrina Hosszu, Mark Griffin, Karina Jorritsma]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.005"
+abstract: |
+  To achieve system success, it is critical to design sociotechnical systems that optimize human performance. To do so, we need to define and characterize the various aspects of human performance that we aim to enhance. In this paper, we introduce a novel time-based approach for conceptualizing human performance in sociotechnical systems. This approach explores how human performance can be considered over short-, medium- and long-term timeframes. We incorporate this time-based perspective into a framework that organizes existing system design tools into different bundles, each focusing on specific aspects of human performance at various system levels. By integrating knowledge and methods from diverse system design perspectives, we emphasize the strategic application of human-centered design approaches. Our future work will refine this framework for practical implementation, collaborating with industry partners to ensure that human considerations are effectively integrated into systems design and acquisition processes
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/a-time-based-approach-for-understanding-human-performance-risks-in-sociotechnical-systems-an-integrative-framework/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-13-with-Cover-Page.pdf)

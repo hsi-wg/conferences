@@ -1,0 +1,18 @@
+---
+title: "Exploring A Verification Complexity Framework"
+authors:
+  - Sukhwan Jung
+  - Alejandro Salado
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.013"
+abstract: |
+  While system complexity is considered an integral piece of information throughout the system development life cycle, the complexity of the verification is given comparatively lower focus in the field of systems engineering. There is no domain-wide consensus on the definition of verification complexity, resulting in disputed complexity measures or lack thereof. Verification is a pervasive task throughout the system development; its insufficient measurement is detrimental to both the system engineers and users. We propose the Verification Complexity Framework as a formal definition of verification complexity. A cube-shaped framework is proposed to cover both static and dynamic complexity through the time axis and the hierarchical complexity layers, covering from external effects to the verification structures. Its modular design allows the framework to be nested to mimic information flow between verification at multiple integration levels. This framework provides a common vocabulary for verification complexity, where both its definition and measurements can be discussed.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/exploring-a-verification-complexity-framework/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-45-with-Cover-Page.pdf)

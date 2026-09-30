@@ -1,0 +1,16 @@
+---
+title: "A Pilot Study for Analyzing Systems Engineer-Conversational GenAI Interaction: A Case Study for Requirements Development & Validation"
+authors: [Emilie Perreau, Romain Pinquié, Cédric Masclet]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.003"
+abstract: |
+  With the democratization of Large Language Models, academics and professionals are searching for new use cases of conversational Generative Artificial Intelligence (GenAI) for systems engineering, including requirements engineering. This paper presents a pilot study to understand the impact of guidelines and templates on the interaction between ChatGPT and a systems engineer for developing system requirements. Results show that when appropriately used, prompting guidelines and templates improve the quality of requirements. Still, without domain knowledge, the GenAI cannot generate outputs with the quality expected by requirements engineering international standards.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/a-pilot-study-for-analyzing-systems-engineer-conversational-genai-interaction-a-case-study-for-requirements-development-validation/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-30-with-Cover-Page.pdf)

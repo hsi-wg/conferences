@@ -1,0 +1,16 @@
+---
+title: "Human Reliability Analysis of Single-Pilot Operations Based on Improved CREAM Method"
+authors: [Wei Tan, Jiaqi Li, Zongxu Cheng]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.018"
+abstract: |
+  In order to effectively predict the human reliability of pilots under single-pilot operations (SPO) to ensure aviation safety, the CREAM method is improved to construct a prediction model of human error probability in line with SPO mode. Based on characteristics of the SPO and intelligent cockpit, the common performance conditions (CPCs) are modified and the weighting factors of cognitive function for improved CPCs are analyzed. In addition, new malfunctions in the intelligent aircraft that may arise are identified. In order to verify the improved CREAM method, a malfunction scenario of engine failure under SPO is designed, and the control mode of human cognitive activities corresponding to calculated results is tactical, which conforms to reality, indicating that the improved CREAM method is reasonable.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/human-reliability-analysis-of-single-pilot-operations-based-on-improved-cream-method/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-9-with-Cover-Page.pdf)

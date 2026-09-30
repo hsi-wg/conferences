@@ -1,0 +1,16 @@
+---
+title: "From Flying to Monitoring in the Future Flight Deck: The Differences in Pilot’s Perceived Mental Workload"
+authors: [Shan Gao, Yuanyuan Xian, Yu Bai, Lei Wang]
+date: 2024-06-01
+doi: "https://doi.org/10.65351/hsi24.014"
+abstract: |
+  The perceived mental workload of Single Pilot Operations (SPO), as an emerging trend in commercial aviation, has received significant attention. The objective of this study is to investigate the differences in pilots’ perceived mental workload between different role assignments and crew configurations. A total of 57 pilots with commercial pilot licenses participated in this study, undertaking three low-visibility approaches as pilot flying (PF) within a crew setting, pilot monitoring (PM) within a crew setting, and PM within a single-pilot setting, respectively. Their perceived mental workloads were evaluated using the National Aeronautics and Space Administration-Task Load Index (NASA-TLX). The results indicated that pilots experienced higher mental workload when performing as PF within the crew setting compared to their role as PM in both the crew and single-pilot settings. As PMs, compared to the crew setting, pilots reported lower levels of effort in the single-pilot setting while perceiving a higher level of physical demand. The significance of this study lies in providing empirical evidence from the perspective of perceived mental workload regarding the feasibility of normal SPO scenarios.
+---
+
+# Abstract
+
+{{< meta abstract >}}
+
+[View the INCOSE record](https://www.incose.org/resource/from-flying-to-monitoring-in-the-future-flight-deck-the-differences-in-pilots-perceived-mental-workload/)
+
+[Download the paper](https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-23-with-Cover-Page.pdf)
