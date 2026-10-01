@@ -54,9 +54,6 @@ website:
               href: HSI2024/schedule/index.qmd#day-3-–-29-aug-2024
         - text: Proceedings
           href: HSI2024/proceedings.qmd
-        - section: Papers
-          contents:
-            - auto: "HSI2024/proceedings/*.qmd"
     - id: hsi2023
       title: "HSI 2023"
       style: docked

@@ -1,15 +1,29 @@
 ---
 title: "Soft Skills for Hard Missions: Ethnographic Insights of Mars 2020 Space Operation Team Dynamics"
-authors: [Thomas Chan, So Young Kim, Basak Ramaswamy, Jeremy Argueta, Ana Patino, Alexandria Christoforatos]
-date: 2024-06-01
-doi: "https://doi.org/10.65351/hsi24.024"
+authors:
+  - name: Thomas Chan
+  - name: So Young Kim
+  - name: Basak Ramaswamy
+  - name: Jeremy Argueta
+  - name: Ana Patino
+  - name: Alexandria Christoforatos
+date: 2024-08-29
+doi: "10.65351/hsi24.024"
+citation:
+  type: paper-conference
+  container-title: "Proceedings International Conference on Human Systems Integration"
+  publisher: "INCOSE"
+  volume: 3
+  issued: 2024-08-29
+  event-title: "3rd International Conference on Human Systems Integration (HSI2024)"
+  event-place: "Jeju, Republic of Korea"
+  editor:
+    - name: Dimitri Masson
+      orcid: "0000-0002-7072-3146"
+  pdf-url: "https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-21-with-Cover-Page.pdf"
 abstract: |
   The Mars 2020 mission, characterized by its complex science and technological objectives and rapid decision-making requirements – presents a unique context for examining effective team collaboration across multiple disciplines. Conducted at the NASA Jet Propulsion Laboratory, the current ethnographic study spanned five Martian days (SOLs), focusing on the team decision-making processes among science, engineering, and space operation teams. Building on previous findings from the Mars Science Laboratory study, we delve deeper into the soft skills that facilitate deliberation among teams with varying technical expertise and agendas. Through systematic observation and coding of verbal exchanges, we identify key soft skills that enhance team efficiency and decision-making. Our findings reveal four overarching soft skill functions: Corporate Knowledge Gluers, Bridge Builders, Efficiency Optimizers, and Vibe Dispatchers. Together, these skills filled in knowledge gaps, fostered shared understanding, streamlined processes, and built trust and empathy in multidisciplinary teams. The study proposes a refined soft skills framework, applicable not only to space missions but also to other technically demanding and collaborative work environments. This framework serves as a guide for team design, emphasizing the integration of soft skills alongside technical competencies. Our results underscore the Gestalt of technical and interpersonal skills in achieving successful outcomes in complex science and engineering projects.
 ---
-
-# Abstract
-
-{{< meta abstract >}}
 
 [View the INCOSE record](https://www.incose.org/resource/soft-skills-for-hard-missions-ethnographic-insights-of-mars-2020-space-operation-team-dynamics/)
 

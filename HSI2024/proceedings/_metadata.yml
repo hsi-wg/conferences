@@ -1,0 +1,12 @@
+google-scholar: true
+citation:
+  type: paper-conference
+  container-title: "Proceedings International Conference on Human Systems Integration"
+  publisher: "INCOSE"
+  volume: 3
+  issued: 2024-08-29
+  event-title: "3rd International Conference on Human Systems Integration (HSI2024)"
+  event-place: "Jeju, Republic of Korea"
+  editor:
+    - name: Dimitri Masson
+      orcid: "0000-0002-7072-3146"

@@ -1,17 +1,25 @@
 ---
 title: "The Influence of Human-Systems Integration on the “Fuzzy Front End” of Innovation: A MedTech Case Study"
 authors:
-  - Yaroslav Menshenin
-  - Romain Pinquié
-date: 2024-06-01
-doi: "https://doi.org/10.65351/hsi24.029"
+  - name: Yaroslav Menshenin
+  - name: Romain Pinquié
+date: 2024-08-29
+doi: "10.65351/hsi24.029"
+citation:
+  type: paper-conference
+  container-title: "Proceedings International Conference on Human Systems Integration"
+  publisher: "INCOSE"
+  volume: 3
+  issued: 2024-08-29
+  event-title: "3rd International Conference on Human Systems Integration (HSI2024)"
+  event-place: "Jeju, Republic of Korea"
+  editor:
+    - name: Dimitri Masson
+      orcid: "0000-0002-7072-3146"
+  pdf-url: "https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-39-with-Cover-Page.pdf"
 abstract: |
   Human-Systems Integration (HSI) can be considered as the combination of Systems Engineering and Human-Centered Design approaches. To support HSI, the system of interest (SoI) and its broader context should be developed with a specific engineering design objective and consider humans part of the system. Using a MedTech industry case study, this paper explores the influence of including MedTech end-users, such as Healthcare Professionals, within the SoI definition. The MBSE approach models the “fuzzy front end” of innovation for the MedTech Combination Product and places the end-users within the SoI boundaries. The paper advocates that such an approach shifts the paradigm of enabling the human factors considerations to the early innovation phases rather than waiting for the first physical prototype.
 ---
-
-# Abstract
-
-{{< meta abstract >}}
 
 [View the INCOSE record](https://www.incose.org/resource/the-influence-of-human-systems-integration-on-the-fuzzy-front-end-of-innovation-a-medtech-case-study/)
 

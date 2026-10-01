@@ -1,15 +1,28 @@
 ---
 title: "A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems"
-authors: [Alexandre Disdier, Dimitri Masson, Marija Jankovic, Guy André Boy]
-date: 2024-06-01
-doi: "https://doi.org/10.65351/hsi24.001"
+authors:
+    - name: Alexandre Disdier
+    - name: Dimitri Masson
+      orcid: "0000-0002-7072-3146"
+    - name: Marija Jankovic
+    - name: Guy André Boy
+date: 2024-08-29
+doi: "10.65351/hsi24.001"
+citation:
+  type: paper-conference
+  container-title: "Proceedings International Conference on Human Systems Integration"
+  publisher: "INCOSE"
+  volume: 3
+  issued: 2024-08-29
+  event-title: "3rd International Conference on Human Systems Integration (HSI2024)"
+  event-place: "Jeju, Republic of Korea"
+  editor:
+    - name: Dimitri Masson
+      orcid: "0000-0002-7072-3146"
+  pdf-url: "https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-1-with-Cover-Page.pdf"
 abstract: |
   Complex sociotechnical systems are likely to display emergent properties that are difficult to anticipate at design time. One of the causes for emergence is the system’s sensitivity to its own operational context. Since context heavily drives the behavior of such systems, a proper HSI endeavor should define the relevant contextual elements during the early stages of the lifecycle, even before the system has been integrated and project resources have been committed. This paper presents an early-stage context elicitation methodology along with a companion software tool in development combining the HSI literature, the context literature and scenario-based design principles. The use of our tool is illustrated through the case study of the design of a remote air traffic control center.
 ---
-
-# Abstract
-
-{{< meta abstract >}}
 
 [View the INCOSE record](https://www.incose.org/resource/a-context-acquisition-methodology-for-the-design-of-complex-sociotechnical-systems/)
 

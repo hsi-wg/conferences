@@ -1,15 +1,29 @@
 ---
 title: "Human-AI Teaming for Cockpit Assistance"
-authors: [Ricardo J. N. dos Reis, Anaisa de Paula Guedes Villani, Théodore Letouze, Turkan Hentati, Charles Alban Dormoy, Jaime Diaz-Pineda]
-date: 2024-06-01
-doi: "https://doi.org/10.65351/hsi24.019"
+authors:
+  - name: Ricardo J. N. dos Reis
+  - name: Anaisa de Paula Guedes Villani
+  - name: Théodore Letouze
+  - name: Turkan Hentati
+  - name: Charles Alban Dormoy
+  - name: Jaime Diaz-Pineda
+date: 2024-08-29
+doi: "10.65351/hsi24.019"
+citation:
+  type: paper-conference
+  container-title: "Proceedings International Conference on Human Systems Integration"
+  publisher: "INCOSE"
+  volume: 3
+  issued: 2024-08-29
+  event-title: "3rd International Conference on Human Systems Integration (HSI2024)"
+  event-place: "Jeju, Republic of Korea"
+  editor:
+    - name: Dimitri Masson
+      orcid: "0000-0002-7072-3146"
+  pdf-url: "https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-46-with-Cover-Page.pdf"
 abstract: |
   This presentation reports ongoing work in HAIKU project, regarding development of an Human-AI Teaming (HAT) assistant concept for pilot decision support in re-route due to weather threat or need to divert, due to destination airport unavailable. The case is described and current, on-going, methodological exploration avenues reported.
 ---
-
-# Abstract
-
-{{< meta abstract >}}
 
 [View the INCOSE record](https://www.incose.org/resource/human-ai-teaming-for-cockpit-assistance/)
 

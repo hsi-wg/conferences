@@ -1,15 +1,27 @@
 ---
 title: "Function Analysis for Human-Machine Teaming for Semi-Automated Trains"
-authors: [Yang Sun, Guy André Boy, Marc Sango, Anne Barros]
-date: 2024-06-01
-doi: "https://doi.org/10.65351/hsi24.015"
+authors:
+  - name: Yang Sun
+  - name: Guy André Boy
+  - name: Marc Sango
+  - name: Anne Barros
+date: 2024-08-29
+doi: "10.65351/hsi24.015"
+citation:
+  type: paper-conference
+  container-title: "Proceedings International Conference on Human Systems Integration"
+  publisher: "INCOSE"
+  volume: 3
+  issued: 2024-08-29
+  event-title: "3rd International Conference on Human Systems Integration (HSI2024)"
+  event-place: "Jeju, Republic of Korea"
+  editor:
+    - name: Dimitri Masson
+      orcid: "0000-0002-7072-3146"
+  pdf-url: "https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-28-with-Cover-Page.pdf"
 abstract: |
   Increasing levels of automation is a solution for more efficient and better capacity for railway transportation. For the French railway company SNCF, the first step to enable this transition from manual driving to automate trains is to introduce automated train operation (ATO) to the existing train system. ATO provides a more precise train operation and speed control during the journey. By controlling the train at the operational speed calculated, ATO contributes to minimizing the energy consumption for train driving. In our work, we intend to integrate humans into system design at this early design phase to gain more flexibility and security of the system. This paper presents the ATO functional architecture from its specifications and functional analysis to clarify the task distributions between ATO and train drivers. This analysis identifies the safety-critical functions and tasks in the semi-automated train system. We emphasized these safety-critical functions and tasks while comparing human-in-the-loop simulation (HITLS) activities and the prescribed tasks. These comparisons enable the identification of the safety-related design gaps in the ATO system.
 ---
-
-# Abstract
-
-{{< meta abstract >}}
 
 [View the INCOSE record](https://www.incose.org/resource/function-analysis-for-human-machine-teaming-for-semi-automated-trains/)
 

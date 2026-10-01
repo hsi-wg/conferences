@@ -1,15 +1,26 @@
 ---
 title: "Multi-Temporal Operational Efficiency Evaluation of Approach Control System Based on VIKOR"
-authors: [Zhaoning Zhang, Yuying Fan, Jimin Liu]
-date: 2024-06-01
-doi: "https://doi.org/10.65351/hsi24.020"
+authors:
+  - name: Zhaoning Zhang
+  - name: Yuying Fan
+  - name: Jimin Liu
+date: 2024-08-29
+doi: "10.65351/hsi24.020"
+citation:
+  type: paper-conference
+  container-title: "Proceedings International Conference on Human Systems Integration"
+  publisher: "INCOSE"
+  volume: 3
+  issued: 2024-08-29
+  event-title: "3rd International Conference on Human Systems Integration (HSI2024)"
+  event-place: "Jeju, Republic of Korea"
+  editor:
+    - name: Dimitri Masson
+      orcid: "0000-0002-7072-3146"
+  pdf-url: "https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-10-with-Cover-Page.pdf"
 abstract: |
   The efficient operation of approach control system is one of its main tasks. The operational efficiency of the approach control system needs to be evaluated. Firstly, based on the analysis of the operational process of the approach control system, the influencing factors of the operational efficiency are considered from three aspects, namely, controllers’ workload, airspace utilization rate and degree of flight delay. Using the fishbone diagram analysis method, the main efficiency influencing factors are concluded from the aspect of man-machine-environment-management. Then, the evaluation index system of the operational efficiency of the approach control system is designed. On this basis, a multi-period operational efficiency evaluation model of the approach control system is established based on VIKOR. Finally, the operational efficiency of the Xiamen Air Traffic Control Station operational system is evaluated as an example which validate the feasibility of the model.
 ---
-
-# Abstract
-
-{{< meta abstract >}}
 
 [View the INCOSE record](https://www.incose.org/resource/multi-temporal-operational-efficiency-evaluation-of-approach-control-system-based-on-vikor/)
 

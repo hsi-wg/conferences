@@ -1,15 +1,25 @@
 ---
 title: "Cognitive Load Management for Planning and Executing Verification Strategies"
-authors: [Sukhwan Jung, Alejandro Salado]
-date: 2024-06-01
-doi: "https://doi.org/10.65351/hsi24.009"
+authors:
+  - name: Sukhwan Jung
+  - name: Alejandro Salado
+date: 2024-08-29
+doi: "10.65351/hsi24.009"
+citation:
+  type: paper-conference
+  container-title: "Proceedings International Conference on Human Systems Integration"
+  publisher: "INCOSE"
+  volume: 3
+  issued: 2024-08-29
+  event-title: "3rd International Conference on Human Systems Integration (HSI2024)"
+  event-place: "Jeju, Republic of Korea"
+  editor:
+    - name: Dimitri Masson
+      orcid: "0000-0002-7072-3146"
+  pdf-url: "https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-25-with-Cover-Page.pdf"
 abstract: |
   Verification is an integral stage of the system engineering process, partially to capture human errors during the process. There is, however, seemingly less attention given to the potential human errors caused by verification engineers themselves, that is, errors that result from ineffective verification planning and/or execution. We focus on two sets of possible cognitive overloads during the verification process: short term overloads during each verification event and long-term overloads over the system lifecycle. A graph-based mathematical approach is proposed to lower such cognitive overloads, utilizing orthogonality and graphical representation. The research is in progress, with theoretical and empirical validations remaining. Practical engineering considerations will be added to finalize the proposed approach, which will then go through an empirical study for validation.
 ---
-
-# Abstract
-
-{{< meta abstract >}}
 
 [View the INCOSE record](https://www.incose.org/resource/cognitive-load-management-for-planning-and-executing-verification-strategies/)
 

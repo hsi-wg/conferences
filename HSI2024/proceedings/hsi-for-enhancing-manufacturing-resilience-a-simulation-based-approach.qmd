@@ -1,19 +1,27 @@
 ---
 title: "HSI for Enhancing Manufacturing Resilience: A Simulation-Based Approach"
 authors:
-  - Tero Sotamaa
-  - Ari Teppo
-  - Arto Reiman
-  - Elina Parviainen
-date: 2024-06-01
-doi: "https://doi.org/10.65351/hsi24.017"
+  - name: Tero Sotamaa
+  - name: Ari Teppo
+  - name: Arto Reiman
+  - name: Elina Parviainen
+date: 2024-08-29
+doi: "10.65351/hsi24.017"
+citation:
+  type: paper-conference
+  container-title: "Proceedings International Conference on Human Systems Integration"
+  publisher: "INCOSE"
+  volume: 3
+  issued: 2024-08-29
+  event-title: "3rd International Conference on Human Systems Integration (HSI2024)"
+  event-place: "Jeju, Republic of Korea"
+  editor:
+    - name: Dimitri Masson
+      orcid: "0000-0002-7072-3146"
+  pdf-url: "https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-37-with-Cover-Page.pdf"
 abstract: |
   This early-stage research addresses an essential need to deepen our understanding of enhancing manufacturing resilience by focusing on internal factors such as workforce, manufacturing processes, and physical assets. Employing Human-Systems Integration (HSI) principles, the study focuses on the assembly operator within the assembly cell in a real manufacturing process environment. Recognizing insufficiencies in standards concerning human strain and its connection to performance, the study will eventually propose a simulation model for decision-making. The aim is to deepen understanding and enhance manufacturing resilience through risk management by considering human factors and continuously improving the design interface of the manufacturing process. Through simulation, the study will experiment with changes in different parameters related to human factors and assess their effects on process performance. The focus is on the assembly operator’s physical performance and force generation, considering variables like gender, age, individual differences, and injury recovery timelines. By analyzing the force generation of human operators with various variables, we aim to address the effects of changes on performance. The simulation is aimed at building decision-making scenarios and assessing the impact of changes on performance. In the context of HSI in manufacturing, the study promotes system design that incorporates technical and human aspects into manufacturing processes. This integration aims to proactively contribute to the development of a resilient manufacturing system by fostering adaptability and robustness to address diverse challenges.
 ---
-
-# Abstract
-
-{{< meta abstract >}}
 
 [View the INCOSE record](https://www.incose.org/resource/hsi-for-enhancing-manufacturing-resilience-a-simulation-based-approach/)
 

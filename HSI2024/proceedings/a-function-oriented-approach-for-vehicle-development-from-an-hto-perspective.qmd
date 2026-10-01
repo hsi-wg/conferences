@@ -1,15 +1,25 @@
 ---
 title: "A Function-Oriented Approach for Vehicle Development from an HTO Perspective"
-authors: [Ekin Uhri, Ingrid Isenhardt]
-date: 2024-06-01
-doi: "https://doi.org/10.65351/hsi24.002"
+authors:
+  - name: Ekin Uhri
+  - name: Ingrid Isenhardt
+date: 2024-08-29
+doi: "10.65351/hsi24.002"
+citation:
+  type: paper-conference
+  container-title: "Proceedings International Conference on Human Systems Integration"
+  publisher: "INCOSE"
+  volume: 3
+  issued: 2024-08-29
+  event-title: "3rd International Conference on Human Systems Integration (HSI2024)"
+  event-place: "Jeju, Republic of Korea"
+  editor:
+    - name: Dimitri Masson
+      orcid: "0000-0002-7072-3146"
+  pdf-url: "https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-4-with-Cover-Page.pdf"
 abstract: |
   The automotive industry commonly adopts a component-oriented approach in the development process, where the focus lies on the components. However, due to the current challenges in the industry, this approach is no longer sufficient to fulfill customer requirements. By shifting the focus to functions instead of components, the enterprise can adapt more easily to changing requirements and manage the increasing complexity. Successful implementation and long-term success of this approach require attention not only to technological aspects but also to human and organizational factors affecting the development process. The research aim is to conceptualize a holistic, function-oriented development approach regarding the technological, human, and organizational factors.
 ---
-
-# Abstract
-
-{{< meta abstract >}}
 
 [View the INCOSE record](https://www.incose.org/resource/a-function-oriented-approach-for-vehicle-development-from-an-hto-perspective/)
 

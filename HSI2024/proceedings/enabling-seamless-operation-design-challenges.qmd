@@ -1,16 +1,24 @@
 ---
 title: "Enabling Seamless Operation: Design Challenges"
 authors:
-  - Avi Harel
-date: 2024-06-01
-doi: "https://doi.org/10.65351/hsi24.012"
+  - name: Avi Harel
+date: 2024-08-29
+doi: "10.65351/hsi24.012"
+citation:
+  type: paper-conference
+  container-title: "Proceedings International Conference on Human Systems Integration"
+  publisher: "INCOSE"
+  volume: 3
+  issued: 2024-08-29
+  event-title: "3rd International Conference on Human Systems Integration (HSI2024)"
+  event-place: "Jeju, Republic of Korea"
+  editor:
+    - name: Dimitri Masson
+      orcid: "0000-0002-7072-3146"
+  pdf-url: "https://www.incose.org/wp-content/uploads/2026/07/HSI24-Final-Paper-35-with-Cover-Page.pdf"
 abstract: |
   Typically, accidents are commonly attributed to decision errors made by the human operators. The article presents models of normal operation and of operational errors, and a framework for eliminating these errors by integration engineering. These models describe monitor-controller-server interactions in normal and exceptional operation of socio-technical system. The design goal proposed is to eliminate the operational risks. Based on several case studies, the conclusion is that the key to preventing accidents is in managing the risks of operating in exceptional situations, in which the server is not coordinated with the controller. A protocol of scenario-based interaction may be employed to ensure that the interaction is always coordinated.
 ---
-
-# Abstract
-
-{{< meta abstract >}}
 
 [View the INCOSE record](https://www.incose.org/resource/enabling-seamless-operation-design-challenges/)
 
