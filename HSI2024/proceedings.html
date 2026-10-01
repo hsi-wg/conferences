@@ -87,9 +87,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-sidebar','listing-google-scholar','listing-citation','listing-title','listing-authors','listing-date','listing-doi','listing-abstract','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-sidebar","listing-google-scholar","listing-citation","listing-title","listing-authors","listing-date","listing-doi","listing-abstract","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -167,15 +168,9 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="HSI 2024 Proceedings – HSI Conference and Workshop Series">
-<meta property="og:description" content="A series of conferences and workshops dedicated to Human Systems Integration (HSI), organized by the INCOSE HSI Working Group.">
-<meta property="og:image" content="https://hsi-wg.github.io/conferences/HSI2024/assets/HSI2025-banner_twitter.png">
+<meta property="og:description" content="HSI2027: Navigating Complexity, the Fourth International Conference on Human Systems Integration, London, UK, 23-25 August 2027.">
 <meta property="og:site_name" content="HSI Conference and Workshop Series">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:title" content="HSI 2024 Proceedings – HSI Conference and Workshop Series">
-<meta name="twitter:description" content="A series of conferences and workshops dedicated to Human Systems Integration (HSI), organized by the INCOSE HSI Working Group.">
-<meta name="twitter:image" content="https://hsi-wg.github.io/conferences/HSI2024/assets/HSI2025-banner_twitter.png">
-<meta name="twitter:creator" content="@dhmmasson">
-<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light">
@@ -197,6 +192,14 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../HSI2027/index.html"> 
+<span class="menu-text">HSI2027</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../HSI2026/EMEA/summary.html"> 
+<span class="menu-text">HSI2026 EMEA</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../HSI2025/index.html"> 
 <span class="menu-text">HSI2025</span></a>
@@ -249,8 +252,8 @@ window.Quarto = {
       </button>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="93cd3ac2a4f621ae3c88bad359f6b62f" class="alert alert-primary hidden"><div class="quarto-announcement-content">
-<p>HSI2025 announcement - November 5-7, 2025 - Online</p>
+  <div id="quarto-announcement" data-announcement-id="1965adb6ba4d381b69b4072067112847" class="alert alert-primary hidden"><div class="quarto-announcement-content">
+<p>HSI2027: Navigating Complexity - London, UK - 23-25 August 2027</p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
@@ -331,23 +334,6 @@ window.Quarto = {
  <span class="menu-text">Proceedings</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Papers</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../HSI2024/proceedings/paper-template-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Paper Title Placeholder</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
@@ -361,7 +347,7 @@ window.Quarto = {
   <li><a href="#proceedings-hsi-2024" id="toc-proceedings-hsi-2024" class="nav-link active" data-scroll-target="#proceedings-hsi-2024">Proceedings – HSI 2024</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -371,38 +357,704 @@ window.Quarto = {
 
 <section id="proceedings-hsi-2024" class="level1">
 <h1>Proceedings – HSI 2024</h1>
-<p>Below are the papers (template entries). Update each paper file in <code>proceedings/</code>.</p>
+<p>Below are the HSI 2024 proceedings papers.</p>
 
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1717192800000" data-listing-file-modified-sort="1759919984174" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail"><a href="../HSI2024/proceedings/paper-template-1.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HSI2024/proceedings/paper-template-1.html" class="no-external">Paper Title Placeholder</a>
-</h3>
-<div class="delink listing-description"><a href="../HSI2024/proceedings/paper-template-1.html" class="no-external">
-<p>Short abstract placeholder. Replace with actual abstract text summarizing contribution.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../HSI2024/proceedings/paper-template-1.html" class="no-external">
-<div class="listing-date">
-Jun 1, 2024
-</div>
-</a>
-</div>
-</div>
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="quarto-listing-container-custom">
+  <div class="list quarto-listing-default">
+    
+    <article class="quarto-posts-default" data-index="0" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517748" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/a-context-acquisition-methodology-for-the-design-of-complex-sociotechnical-systems.html">A Context Acquisition Methodology for the Design of Complex Sociotechnical Systems</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Alexandre Disdier, Dimitri Masson, Marija Jankovic, Guy André Boy
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.001">10.65351/hsi24.001</a>
+      </p>
+      
+      
+      <p class="listing-abstract">Complex sociotechnical systems are likely to display emergent properties that are difficult to anticipate at design time. One of the causes for emergence is the system’s sensitivity to its own operational context. Since context heavily drives the behavior of such systems, a proper HSI endeavor should define the relevant contextual elements during the early stages of the lifecycle, even before the system has been integrated and project resources have been committed. This paper presents an early-stage context elicitation methodology along with a companion software tool in development combining the HSI literature, the context literature and scenario-based design principles. The use of our tool is illustrated through the case study of the design of a remote air traffic control center.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="1" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517748" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/a-function-oriented-approach-for-vehicle-development-from-an-hto-perspective.html">A Function-Oriented Approach for Vehicle Development from an HTO Perspective</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Ekin Uhri, Ingrid Isenhardt
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.002">10.65351/hsi24.002</a>
+      </p>
+      
+      
+      <p class="listing-abstract">The automotive industry commonly adopts a component-oriented approach in the development process, where the focus lies on the components. However, due to the current challenges in the industry, this approach is no longer sufficient to fulfill customer requirements. By shifting the focus to functions instead of components, the enterprise can adapt more easily to changing requirements and manage the increasing complexity. Successful implementation and long-term success of this approach require attention not only to technological aspects but also to human and organizational factors affecting the development process. The research aim is to conceptualize a holistic, function-oriented development approach regarding the technological, human, and organizational factors.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="2" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517748" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/a-pilot-study-for-analyzing-systems-engineer-conversational-genai-interaction-a-case-study-for-requirements-development-validation.html">A Pilot Study for Analyzing Systems Engineer-Conversational GenAI Interaction: A Case Study for Requirements Development &amp; Validation</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Emilie Perreau, Romain Pinquié, Cédric Masclet
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.003">10.65351/hsi24.003</a>
+      </p>
+      
+      
+      <p class="listing-abstract">With the democratization of Large Language Models, academics and professionals are searching for new use cases of conversational Generative Artificial Intelligence (GenAI) for systems engineering, including requirements engineering. This paper presents a pilot study to understand the impact of guidelines and templates on the interaction between ChatGPT and a systems engineer for developing system requirements. Results show that when appropriately used, prompting guidelines and templates improve the quality of requirements. Still, without domain knowledge, the GenAI cannot generate outputs with the quality expected by requirements engineering international standards.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="3" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517748" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/a-planning-and-readiness-framework-for-organisational-systems-change-within-human-systems-integration.html">A Planning and Readiness Framework for Organisational Systems Change within Human Systems Integration</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Grace A. L. Kennedy
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.004">10.65351/hsi24.004</a>
+      </p>
+      
+      
+      <p class="listing-abstract">Human Systems Integration can be seen as the nexus between the human factors/ergonomics and systems engineering activities undertaken during the development of a system, with the entire systems lifecycle in mind. Human factors/ergonomics has three recognized domains; the physical, cognitive and organizational – whilst the physical domain is stereotypically most associated with the term ergonomics, and the cognitive domain has a well-established set of methods and tools, the consideration of the organizational domain lacks agreement in terms of the scope of both the organization in or as a system and the scope of activities. Whilst the exploration of human activity systems and envisaged organizational structures are performed early in the conceptual systems development stage, there exists a challenge in planning, synchronizing and positioning an organisation to adapt for the planned technological system change. This paper explores the dual challenges in planning for the evolution of the organizational system as well as the considerations for organizational change that can and should feed into system design and development. A triple-axis framework is proposed that will enable HSI practitioners to consider the evolution of the organizational system and the extent of organizational change planning alongside the phases of the system lifecycle.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="4" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/a-time-based-approach-for-understanding-human-performance-risks-in-sociotechnical-systems-an-integrative-framework.html">A Time-Based Approach for Understanding Human Performance Risks in Sociotechnical Systems: An Integrative Framework</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Belinda Cham, Alexandra Boeing, Katrina Hosszu, Mark Griffin, Karina Jorritsma
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.005">10.65351/hsi24.005</a>
+      </p>
+      
+      
+      <p class="listing-abstract">To achieve system success, it is critical to design sociotechnical systems that optimize human performance. To do so, we need to define and characterize the various aspects of human performance that we aim to enhance. In this paper, we introduce a novel time-based approach for conceptualizing human performance in sociotechnical systems. This approach explores how human performance can be considered over short-, medium- and long-term timeframes. We incorporate this time-based perspective into a framework that organizes existing system design tools into different bundles, each focusing on specific aspects of human performance at various system levels. By integrating knowledge and methods from diverse system design perspectives, we emphasize the strategic application of human-centered design approaches. Our future work will refine this framework for practical implementation, collaborating with industry partners to ensure that human considerations are effectively integrated into systems design and acquisition processes
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="5" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/accident-case-study-analysis-of-developmental-automated-driving-system-collison.html">Accident Case Study Analysis of Developmental Automated Driving System Collison</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Sanjeev K. Appicharla
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.006">10.65351/hsi24.006</a>
+      </p>
+      
+      
+      <p class="listing-abstract">The aim of the Case study is to produce a list of accident causal factors using the Cybernetic risk management model with the hybrid Swiss Cheese Model (SCM) and Management Oversight &amp; Risk Tree (MORT) Methodology. The hybrid SCM/MORT methodology incorporates Jens Rasmussen’s risk management framework (RMF) and is augmented by including the Heuristics &amp; Biases approach to make the methodology capable of identifying latent failures conditions at all levels of the socio-technical system that control the system of interest (SOI). The desk top study included collection of information and data that is publicly available to represent all relevant viewpoints to ensure completeness. The results raise awareness of latent causal factors in the form of biases that have impact on Risk management, Decision making, Assurance and wider Human factors concerns that are relevant and applicable to Artificial Intelligence/ Machine Learning (AI/ML) domain. It is hoped the Case Study will contribute to reflection on the part of systems engineers to help them plan, design, develop and operate safer automated vehicle systems.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="6" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/addressing-work-design-in-future-operations-of-advanced-nuclear-reactors.html">Addressing Work Design in Future Operations of Advanced Nuclear Reactors</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Kine Reegård, Asgeir Drøivoldsmo, Prosper Ameh Kwei-Narh
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.007">10.65351/hsi24.007</a>
+      </p>
+      
+      
+      <p class="listing-abstract">In this early stage research paper, we outline our approach for a three-year study that aims at examining the potential influence of work design on control room operators’ performance in the context of advanced nuclear reactor operations. The study is inspired by ongoing developments in the nuclear industry towards small modular reactors (SMRs) that are expected to partly transform the work of control room operators. The research intends to answer three key questions concerning anticipated work characteristics in SMRs, their differences compared to conventional plants, and how these characteristics can affect control room operators’ performance. The proposed approach, along with the study’s strengths and potential challenges, are outlined.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="7" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/classifying-conceptual-models-applied-to-develop-an-autonomous-snow-plowing-system.html">Classifying Conceptual Models Applied to Develop an Autonomous Snow-Plowing System</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Tommy Langen, Gerrit Muller, Kristin Falk
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.008">10.65351/hsi24.008</a>
+      </p>
+      
+      
+      <p class="listing-abstract">The integration of autonomous systems is increasing, while the development of future systems faces a growing complexity in their interactions with human operators. Conceptual modeling helps simplify the complexity while also being realistic enough to make sense. This paper demonstrates how a small company that develops an autonomous system for snow plowing machines at airports applies various conceptual models. The paper has classified the conceptual models according to A3AO, CAFCR+, and TOP frameworks with a Human Systems Integration perspective. Findings suggest that a mixed modeling approach with viewpoint hopping is used and found effective during the development of human and autonomous collaboration systems for confined industrial environments.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="8" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/cognitive-load-management-for-planning-and-executing-verification-strategies.html">Cognitive Load Management for Planning and Executing Verification Strategies</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Sukhwan Jung, Alejandro Salado
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.009">10.65351/hsi24.009</a>
+      </p>
+      
+      
+      <p class="listing-abstract">Verification is an integral stage of the system engineering process, partially to capture human errors during the process. There is, however, seemingly less attention given to the potential human errors caused by verification engineers themselves, that is, errors that result from ineffective verification planning and/or execution. We focus on two sets of possible cognitive overloads during the verification process: short term overloads during each verification event and long-term overloads over the system lifecycle. A graph-based mathematical approach is proposed to lower such cognitive overloads, utilizing orthogonality and graphical representation. The research is in progress, with theoretical and empirical validations remaining. Practical engineering considerations will be added to finalize the proposed approach, which will then go through an empirical study for validation.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="9" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/combining-user-centered-design-and-system-engineering-to-the-design-of-a-generic-ai-based-assistant.html">Combining User Centered Design and System Engineering to the Design of a Generic AI-Based Assistant</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Kahina Amokrane-Ferka, Virgil Rousseaux, Matthieu Dussartre, Moustafa Zouinar, Nicolas Renoir
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.010">10.65351/hsi24.010</a>
+      </p>
+      
+      
+      <p class="listing-abstract">Human users’ needs must be considered at the beginning of system design. However, classical systems engineering approaches consider the needs of several stakeholders (clients, authorities, etc.) but those of end users are often less considered. Hence, neglecting or oversighting such needs will lead to unacceptance and non-adoption of systems by end users. This paper introduces an original approach that combines System Engineering (SE) and User-Centered Design (UCD) approaches to address the needs of end users from the early stages and throughout the design process of a generic system. This approach is applied to the design of a bidirectional AI-based assistant, incorporating principles of human-machine teaming. It aims at assisting operators in real time network supervision and piloting activities.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="10" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/developing-prompts-to-facilitate-generative-pre-trained-transformer-classifying-decision-errors-in-flight-operations.html">Developing Prompts to Facilitate Generative Pre-Trained Transformer Classifying Decision-Errors in Flight Operations</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Wen-Chin Li, Declan Saunders, Hamed Amanzadeh
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.011">10.65351/hsi24.011</a>
+      </p>
+      
+      
+      <p class="listing-abstract">The emergence of artificial intelligence (AI) with advanced natural language processing offers promising approaches for enhancing the capacity of textual classification. The aviation industry is increasingly interested in adopting AI to improve efficiency, safety, and cost efficiency. This study explores the potential and challenges of using AI to analyse decision errors in flight operations based on the HFACS framework. In pre-training, the model is trained based on a large amount of data to predict the next word in a sequence which allows the model to learn relationships between the words and their meaning in the accident investigation reports. Initial discoveries demonstrated that the AI model could supply a consistent HFACS framework and populate these dimensions with moderate accuracy. Future research is focused on the development of this HFACS-GPT model through fine-tuning and deep learning, facilitating more reliable and consistent conversations.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="11" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/enabling-seamless-operation-design-challenges.html">Enabling Seamless Operation: Design Challenges</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Avi Harel
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.012">10.65351/hsi24.012</a>
+      </p>
+      
+      
+      <p class="listing-abstract">Typically, accidents are commonly attributed to decision errors made by the human operators. The article presents models of normal operation and of operational errors, and a framework for eliminating these errors by integration engineering. These models describe monitor-controller-server interactions in normal and exceptional operation of socio-technical system. The design goal proposed is to eliminate the operational risks. Based on several case studies, the conclusion is that the key to preventing accidents is in managing the risks of operating in exceptional situations, in which the server is not coordinated with the controller. A protocol of scenario-based interaction may be employed to ensure that the interaction is always coordinated.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="12" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/exploring-a-verification-complexity-framework.html">Exploring A Verification Complexity Framework</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Sukhwan Jung, Alejandro Salado
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.013">10.65351/hsi24.013</a>
+      </p>
+      
+      
+      <p class="listing-abstract">While system complexity is considered an integral piece of information throughout the system development life cycle, the complexity of the verification is given comparatively lower focus in the field of systems engineering. There is no domain-wide consensus on the definition of verification complexity, resulting in disputed complexity measures or lack thereof. Verification is a pervasive task throughout the system development; its insufficient measurement is detrimental to both the system engineers and users. We propose the Verification Complexity Framework as a formal definition of verification complexity. A cube-shaped framework is proposed to cover both static and dynamic complexity through the time axis and the hierarchical complexity layers, covering from external effects to the verification structures. Its modular design allows the framework to be nested to mimic information flow between verification at multiple integration levels. This framework provides a common vocabulary for verification complexity, where both its definition and measurements can be discussed.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="13" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/from-flying-to-monitoring-in-the-future-flight-deck-the-differences-in-pilots-perceived-mental-workload.html">From Flying to Monitoring in the Future Flight Deck: The Differences in Pilot’s Perceived Mental Workload</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Shan Gao, Yuanyuan Xian, Yu Bai, Lei Wang
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.014">10.65351/hsi24.014</a>
+      </p>
+      
+      
+      <p class="listing-abstract">The perceived mental workload of Single Pilot Operations (SPO), as an emerging trend in commercial aviation, has received significant attention. The objective of this study is to investigate the differences in pilots’ perceived mental workload between different role assignments and crew configurations. A total of 57 pilots with commercial pilot licenses participated in this study, undertaking three low-visibility approaches as pilot flying (PF) within a crew setting, pilot monitoring (PM) within a crew setting, and PM within a single-pilot setting, respectively. Their perceived mental workloads were evaluated using the National Aeronautics and Space Administration-Task Load Index (NASA-TLX). The results indicated that pilots experienced higher mental workload when performing as PF within the crew setting compared to their role as PM in both the crew and single-pilot settings. As PMs, compared to the crew setting, pilots reported lower levels of effort in the single-pilot setting while perceiving a higher level of physical demand. The significance of this study lies in providing empirical evidence from the perspective of perceived mental workload regarding the feasibility of normal SPO scenarios.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="14" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/function-analysis-for-human-machine-teaming-for-semi-automated-trains.html">Function Analysis for Human-Machine Teaming for Semi-Automated Trains</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Yang Sun, Guy André Boy, Marc Sango, Anne Barros
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.015">10.65351/hsi24.015</a>
+      </p>
+      
+      
+      <p class="listing-abstract">Increasing levels of automation is a solution for more efficient and better capacity for railway transportation. For the French railway company SNCF, the first step to enable this transition from manual driving to automate trains is to introduce automated train operation (ATO) to the existing train system. ATO provides a more precise train operation and speed control during the journey. By controlling the train at the operational speed calculated, ATO contributes to minimizing the energy consumption for train driving. In our work, we intend to integrate humans into system design at this early design phase to gain more flexibility and security of the system. This paper presents the ATO functional architecture from its specifications and functional analysis to clarify the task distributions between ATO and train drivers. This analysis identifies the safety-critical functions and tasks in the semi-automated train system. We emphasized these safety-critical functions and tasks while comparing human-in-the-loop simulation (HITLS) activities and the prescribed tasks. These comparisons enable the identification of the safety-related design gaps in the ATO system.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="15" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/how-pilots-professional-ability-influences-their-workload-in-simulated-dpo-and-spo-task.html">How Pilots’ Professional Ability Influences Their Workload in Simulated DPO and SPO Task</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Ruiyuan Hong, Yu Tian, Mingqian Gao, Shan Gao, Lei Wang
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.016">10.65351/hsi24.016</a>
+      </p>
+      
+      
+      <p class="listing-abstract">To ascertain the psychological factors needed for the pilots in SPO (single pilot operations) crew configuration, a study investigated the effects of professional ability on pilots’ workload in a simulated DPO (dual pilot operations) and SPO task. 46 pilots performed approaches with low visibility using a B737 full flight simulator in DPO and SPO crew configuration respectively, and their workload measured by NASA-TLX. A pilot’s psychological competency measurement tool was used to collect pilots’ professional ability data. The results showed that there were significant differences detected in crew configuration regarding workload and relative indexes. Mostly, the workload in the SPO crew configuration was higher than it was in the DPO crew configuration. Meanwhile, in DPO crew configuration, as the Pilot Flying (PF), better teamwork ability was significantly correlated with a worse self-evaluated performance. In SPO crew configuration, spatial orientation ability was negatively correlated with the mental demand index and physical demand index but positively correlated with the performance index (all ps&lt;0.05). These findings contribute to the selection of pilots working in future SPO aircraft while demonstrating the practical application value of the pilots’ psychological competency measurement tool in safeguarding SPO flight safety.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="16" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/hsi-for-enhancing-manufacturing-resilience-a-simulation-based-approach.html">HSI for Enhancing Manufacturing Resilience: A Simulation-Based Approach</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Tero Sotamaa, Ari Teppo, Arto Reiman, Elina Parviainen
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.017">10.65351/hsi24.017</a>
+      </p>
+      
+      
+      <p class="listing-abstract">This early-stage research addresses an essential need to deepen our understanding of enhancing manufacturing resilience by focusing on internal factors such as workforce, manufacturing processes, and physical assets. Employing Human-Systems Integration (HSI) principles, the study focuses on the assembly operator within the assembly cell in a real manufacturing process environment. Recognizing insufficiencies in standards concerning human strain and its connection to performance, the study will eventually propose a simulation model for decision-making. The aim is to deepen understanding and enhance manufacturing resilience through risk management by considering human factors and continuously improving the design interface of the manufacturing process. Through simulation, the study will experiment with changes in different parameters related to human factors and assess their effects on process performance. The focus is on the assembly operator’s physical performance and force generation, considering variables like gender, age, individual differences, and injury recovery timelines. By analyzing the force generation of human operators with various variables, we aim to address the effects of changes on performance. The simulation is aimed at building decision-making scenarios and assessing the impact of changes on performance. In the context of HSI in manufacturing, the study promotes system design that incorporates technical and human aspects into manufacturing processes. This integration aims to proactively contribute to the development of a resilient manufacturing system by fostering adaptability and robustness to address diverse challenges.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="17" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/human-ai-teaming-for-cockpit-assistance.html">Human-AI Teaming for Cockpit Assistance</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Ricardo J. N. dos Reis, Anaisa de Paula Guedes Villani, Théodore Letouze, Turkan Hentati, Charles Alban Dormoy, Jaime Diaz-Pineda
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.019">10.65351/hsi24.019</a>
+      </p>
+      
+      
+      <p class="listing-abstract">This presentation reports ongoing work in HAIKU project, regarding development of an Human-AI Teaming (HAT) assistant concept for pilot decision support in re-route due to weather threat or need to divert, due to destination airport unavailable. The case is described and current, on-going, methodological exploration avenues reported.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="18" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/human-reliability-analysis-of-single-pilot-operations-based-on-improved-cream-method.html">Human Reliability Analysis of Single-Pilot Operations Based on Improved CREAM Method</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Wei Tan, Jiaqi Li, Zongxu Cheng
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.018">10.65351/hsi24.018</a>
+      </p>
+      
+      
+      <p class="listing-abstract">In order to effectively predict the human reliability of pilots under single-pilot operations (SPO) to ensure aviation safety, the CREAM method is improved to construct a prediction model of human error probability in line with SPO mode. Based on characteristics of the SPO and intelligent cockpit, the common performance conditions (CPCs) are modified and the weighting factors of cognitive function for improved CPCs are analyzed. In addition, new malfunctions in the intelligent aircraft that may arise are identified. In order to verify the improved CREAM method, a malfunction scenario of engine failure under SPO is designed, and the control mode of human cognitive activities corresponding to calculated results is tactical, which conforms to reality, indicating that the improved CREAM method is reasonable.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="19" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/multi-temporal-operational-efficiency-evaluation-of-approach-control-system-based-on-vikor.html">Multi-Temporal Operational Efficiency Evaluation of Approach Control System Based on VIKOR</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Zhaoning Zhang, Yuying Fan, Jimin Liu
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.020">10.65351/hsi24.020</a>
+      </p>
+      
+      
+      <p class="listing-abstract">The efficient operation of approach control system is one of its main tasks. The operational efficiency of the approach control system needs to be evaluated. Firstly, based on the analysis of the operational process of the approach control system, the influencing factors of the operational efficiency are considered from three aspects, namely, controllers’ workload, airspace utilization rate and degree of flight delay. Using the fishbone diagram analysis method, the main efficiency influencing factors are concluded from the aspect of man-machine-environment-management. Then, the evaluation index system of the operational efficiency of the approach control system is designed. On this basis, a multi-period operational efficiency evaluation model of the approach control system is established based on VIKOR. Finally, the operational efficiency of the Xiamen Air Traffic Control Station operational system is evaluated as an example which validate the feasibility of the model.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="20" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/pilots-roles-in-the-urban-air-mobility-individual-capabilities-for-safety-and-security-enterprise-concerns.html">Pilot’s Roles in the Urban Air Mobility: Individual Capabilities for Safety and Security Enterprise Concerns</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Raquel Hoffmann, Hidekazu Nishimura, Rodrigo Calhau
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.021">10.65351/hsi24.021</a>
+      </p>
+      
+      
+      <p class="listing-abstract">Safety and security are cross-cutting concerns of the Urban Air Mobility (UAM) ecosystem and critical for its future operations. Addressing those concerns requires an integrated approach, including stakeholders, people, processes, systems, and capabilities. While previous research has explored safety and security at the System-of-Systems (SoS) level, this paper embraces the Human Systems Integration (HSI) approach to investigate the pilot as an individual performer. In UAM’s early phases, the pilot is expected to be on board, controlling the vehicle and interacting with multiple systems and operators. This study employs the Unified Architecture Framework (UAF) to discern the pilot’s roles and capabilities consistent with the UAM as an enterprise. Results include views combining strategic resource exchanges and responsibilities associated with each pilot role. Lastly, we analyze the relationships among roles and capabilities and discuss the pilot’s critical capabilities for addressing situation awareness, security, and safety culture concerns. Leveraging the HSI approach allows for understanding the pilot’s perspective, facilitating informed decision-making, and fostering a culture of safety and security throughout the UAM ecosystem.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="21" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/research-on-multi-temporal-safety-assessment-of-approach-control-system-based-on-multi-level-extensibility-evaluation-method.html">Research on Multi-Temporal Safety Assessment of Approach Control System Based on Multi-Level Extensibility Evaluation Method</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Tingting Lu, Yaqing He
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.022">10.65351/hsi24.022</a>
+      </p>
+      
+      
+      <p class="listing-abstract">Improving the safety of the approach control system is important for flight safety. Through the analysis of the risk in the operation process of the approach control system, the risk factor set is constructed by using the fault tree analysis method. Then, on this basis, the evaluation index system of its operation safety is established, and the weight is determined by using the fuzzy order relation analysis method. Finally, the multi-level safety evaluation model is constructed by using the extensibility method, and given the formula for calculating security assessment over multiple time periods of the day. Taking the operation of Qingdao air traffic control station as an example, the operation safety is evaluated and calculated, the results of the assessment are given, and the suggestions for improving the operation safety of the control system in recent years are given.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="22" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/risk-analysis-and-mitigation-of-human-interface-with-generative-artificial-intelligence-systems-to-enable-responsible-development.html">Risk Analysis and Mitigation of Human Interface with Generative Artificial Intelligence Systems to Enable Responsible Development</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Jennifer Giang, Steven J. Simske
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.023">10.65351/hsi24.023</a>
+      </p>
+      
+      
+      <p class="listing-abstract">As Generative Artificial Intelligence (GAI) becomes increasingly prevalent in society, ensuring responsible and ethical development and use is crucial. This study conducts a risk analysis of human interface with GAI Large Language Models (LLM) to identify potential hazards and suggest mitigation strategies for promoting responsible GAI development. This study is component of a larger research project that is proposing the adaptation of testing strategies for responsible development of GAI. Risks included in this analysis are bias/discrimination, security/privacy concerns, and lack of transparency/reliability are assessed based on probability, impact of cost, schedule, and performance criteria. Following the implementation of mitigation strategies, a re-evaluation of the risks is conducted to gauge their adjusted system risk. The findings show that implementing targeted mitigation strategies can effectively reduce the likelihood and severity of risks associated with human interaction and GAI systems, thus enabling the development of more responsible and ethically sound AI technology. This study contributes to the ongoing discourse on responsible AI development and provides practical insights for organizations seeking to navigate the complexities of human-AI interaction responsibly.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="23" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/soft-skills-for-hard-missions-ethnographic-insights-of-mars-2020-space-operation-team-dynamics.html">Soft Skills for Hard Missions: Ethnographic Insights of Mars 2020 Space Operation Team Dynamics</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Thomas Chan, So Young Kim, Basak Ramaswamy, Jeremy Argueta, Ana Patino, Alexandria Christoforatos
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.024">10.65351/hsi24.024</a>
+      </p>
+      
+      
+      <p class="listing-abstract">The Mars 2020 mission, characterized by its complex science and technological objectives and rapid decision-making requirements – presents a unique context for examining effective team collaboration across multiple disciplines. Conducted at the NASA Jet Propulsion Laboratory, the current ethnographic study spanned five Martian days (SOLs), focusing on the team decision-making processes among science, engineering, and space operation teams. Building on previous findings from the Mars Science Laboratory study, we delve deeper into the soft skills that facilitate deliberation among teams with varying technical expertise and agendas. Through systematic observation and coding of verbal exchanges, we identify key soft skills that enhance team efficiency and decision-making. Our findings reveal four overarching soft skill functions: Corporate Knowledge Gluers, Bridge Builders, Efficiency Optimizers, and Vibe Dispatchers. Together, these skills filled in knowledge gaps, fostered shared understanding, streamlined processes, and built trust and empathy in multidisciplinary teams. The study proposes a refined soft skills framework, applicable not only to space missions but also to other technically demanding and collaborative work environments. This framework serves as a guide for team design, emphasizing the integration of soft skills alongside technical competencies. Our results underscore the Gestalt of technical and interpersonal skills in achieving successful outcomes in complex science and engineering projects.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="24" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/study-on-structure-model-of-stressors-for-pilot-cadets-in-flight-training-based-on-dematel-ism.html">Study on Structure Model of Stressors for Pilot Cadets in Flight Training Based on DEMATEL-ISM</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Furong Jiang, Zhaoning Zhang
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.025">10.65351/hsi24.025</a>
+      </p>
+      
+      
+      <p class="listing-abstract">Establishing a structural model of stressors for pilot cadets in flight training, this study developed a scale through interviews and literature research. Using the SHEL model for dimensional analysis, 18 stressors across five dimensions were identified. These stressors were evaluated through dimensional analysis and expert scoring, and modeled using DEMATEL and ISM. The model calculated the influencing, influenced, center, and cause degrees of each stressor and established a hierarchical interpretative structure. Key underlying stressors identified include weather conditions and unsafe incidents. Stressors like psychological pressure, difficulty, and progress in flight training were significantly impacted by other factors. Notably, psychological pressure, training difficulty and progress, and instructor relationships were found to be most influential on cadets’ stress. The DEMATEL-ISM method effectively established a structured hierarchical model of stressors in cadet flight training. The findings suggest that flight training schools should enhance safety management and instructors should positively influence cadets to manage stress effectively.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="25" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/supporting-means-ends-reasoning-in-cybersecurity-critical-case-management-using-integrated-ecological-interface-design-process.html">Supporting Means-Ends Reasoning In Cybersecurity-Critical Case Management Using Integrated Ecological Interface Design Process</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Rohit Negi, Abhinaya Pranaikumar, Aparna Singh, Vivek Kant
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.026">10.65351/hsi24.026</a>
+      </p>
+      
+      
+      <p class="listing-abstract">Case management plays a critical role in safeguarding organizations from potential security threats by providing comprehensive and real-time insights into system activities, user behaviours, and anomalies. Effective case management can be conducted by leveraging the importance of meaningful information design for effectively handling cases, using HMI design processes, such as Integrated Ecological Interface Design (iEID). The means-ends reasoning or practical reasoning of the analysts is first modelled using the abstraction decomposition space of iEID and is used as a basis for design ideations. Based on the insights of the field study and the Abstraction Decomposition Space (ADS) model, the information design and interface elements were developed. The interface uses a part-whole partitioning of information and supports the analyst’s means-ends reasoning process. The paper demonstrates that human-centred design of security-critical systems is possible by using methods to design interfaces that support the analyst in the endeavour of case management in cybersecurity operations.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="26" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/systems-analysis-using-the-vee-model-and-concept-of-operations-in-human-systems-integration.html">Systems Analysis Using the Vee Model and Concept of Operations in Human Systems Integration</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Paul Lambertson, Carrie Lin
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.027">10.65351/hsi24.027</a>
+      </p>
+      
+      
+      <p class="listing-abstract">Systems engineering is a holistic approach that typically does not include the human as an integrated part of the system. Having an organization that takes a more HSI (Human System Integration) approach will allow for requirements that integrate people with the technology needed to solve a problem from a user perspective. Using the systems Vee designed for this approach and integrating human information into a concept of operations focusing on the user’s perspective we can create user centered requirements. This will be demonstrated using an example of how disabilities can be addressed in an aircraft.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="27" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/the-development-of-a-human-systems-integration-massive-open-online-course-mooc.html">The Development of a Human-Systems Integration Massive Open Online Course (MOOC)</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Nirit Gavish, Yuval Bitan, Yakir Yaniv
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.028">10.65351/hsi24.028</a>
+      </p>
+      
+      
+      <p class="listing-abstract">In the proposed lecture, we will describe how we developed a massive open on-line course (MOOC) entitled “Human-Systems Integration”. The goal, the expected learners and the content of the course will be described.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="28" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/the-influence-of-human-systems-integration-on-the-fuzzy-front-end-of-innovation-a-medtech-case-study.html">The Influence of Human-Systems Integration on the “Fuzzy Front End” of Innovation: A MedTech Case Study</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Yaroslav Menshenin, Romain Pinquié
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.029">10.65351/hsi24.029</a>
+      </p>
+      
+      
+      <p class="listing-abstract">Human-Systems Integration (HSI) can be considered as the combination of Systems Engineering and Human-Centered Design approaches. To support HSI, the system of interest (SoI) and its broader context should be developed with a specific engineering design objective and consider humans part of the system. Using a MedTech industry case study, this paper explores the influence of including MedTech end-users, such as Healthcare Professionals, within the SoI definition. The MBSE approach models the “fuzzy front end” of innovation for the MedTech Combination Product and places the end-users within the SoI boundaries. The paper advocates that such an approach shifts the paradigm of enabling the human factors considerations to the early innovation phases rather than waiting for the first physical prototype.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="29" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/usability-challenges-of-failure-mode-and-effects-analysis-fmea-within-the-v-model.html">Usability Challenges of Failure Mode and Effects Analysis (FMEA) within the V-Model</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Dan Perreault, Erika E. Gallegos, Vincent P. Paglioni, Thomas H. Bradley
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.030">10.65351/hsi24.030</a>
+      </p>
+      
+      
+      <p class="listing-abstract">For over 70 years, failure mode and effects analysis (FMEA) has been used in development and assessment across products, processes, and services worldwide. In particular has been its application for useability and use error analysis. FMEA is considered a mainstay of predictive failure analysis and reliability, prescribed by multiple international standards. However, despite this level of adoption, FMEA encounters consistent and regular criticisms, particularly related to its ease of use and effectiveness. Research on improvement often focus on specific elements rather than on overall usability of the tool for practitioners. At the same time, the V-model has become a common approach for product design in systems engineering. However, the integration of these two popular processes together can be cumbersome and incompatible under their current uses. In this paper, we review current methodology for FMEA against similar V-model standards. We identify systemic challenges in using FMEA within the systems engineering V-model and suggest approaches for addressing these challenges to better serve FMEA users.
+</p>
+      
+    </article>
+    
+    <article class="quarto-posts-default" data-index="30" data-listing-date-sort="1724882400000" data-listing-file-modified-sort="1790849517753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+      <h3 class="listing-title anchored">
+        <a href="../HSI2024/proceedings/verification-complexity-definitions-measurements-and-indicators.html">Verification Complexity: Definitions, Measurements, and Indicators</a>
+      </h3>
+      
+      <p class="listing-authors">
+        <strong>Authors:</strong>
+        Sukhwan Jung, Alejandro Salado
+      </p>
+      
+      
+      <p class="listing-doi">
+        <strong>DOI:</strong>
+        <a href="https://doi.org/10.65351/hsi24.031">10.65351/hsi24.031</a>
+      </p>
+      
+      
+      <p class="listing-abstract">While verification is an integral process of systems engineering, there is no consensus on measures for a full-scale verification complexity and what it represents. Verification engineers can rely on their implicit expertise to determine relative complexity differences, but this is resource intensive and scales badly with large systems. This research aims to define the verification complexity in an explicit and mathematical manner, suggest relevant measures, and propose indicators for verification complexity. Data gathering and experiment design have been finished with varying sizes and interconnections. Background research is being conducted on the verification complexity definition and relevant measures. Once finished, machine learning models will be trained on the measures with the proposed definition as a dependent variable. The trained model will then be analyzed to determine accurate, explicit indicators of verification complexity. These are expected to aid more accurate information propagation between system stakeholders, especially engineers, reducing system development costs.
+</p>
+      
+    </article>
+    
+  </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

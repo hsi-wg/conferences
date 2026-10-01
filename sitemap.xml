@@ -2,98 +2,238 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2025/registration.html</loc>
-    <lastmod>2025-10-08T15:14:29.630Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.754Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2025/committee.html</loc>
-    <lastmod>2025-10-16T08:31:18.346Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.754Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2025/schedule/index.html</loc>
-    <lastmod>2025-10-13T20:30:46.593Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.754Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2022/resources.html</loc>
-    <lastmod>2025-10-08T10:39:44.172Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.746Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2023/resources.html</loc>
-    <lastmod>2025-10-08T10:39:44.172Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.747Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings.html</loc>
-    <lastmod>2025-10-08T10:39:44.173Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.747Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2024/index.html</loc>
-    <lastmod>2025-10-08T10:39:44.173Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.747Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/risk-analysis-and-mitigation-of-human-interface-with-generative-artificial-intelligence-systems-to-enable-responsible-development.html</loc>
+    <lastmod>2026-10-01T10:11:57.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/addressing-work-design-in-future-operations-of-advanced-nuclear-reactors.html</loc>
+    <lastmod>2026-10-01T10:11:57.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/function-analysis-for-human-machine-teaming-for-semi-automated-trains.html</loc>
+    <lastmod>2026-10-01T10:11:57.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/a-pilot-study-for-analyzing-systems-engineer-conversational-genai-interaction-a-case-study-for-requirements-development-validation.html</loc>
+    <lastmod>2026-10-01T10:11:57.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/classifying-conceptual-models-applied-to-develop-an-autonomous-snow-plowing-system.html</loc>
+    <lastmod>2026-10-01T10:11:57.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/exploring-a-verification-complexity-framework.html</loc>
+    <lastmod>2026-10-01T10:11:57.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/usability-challenges-of-failure-mode-and-effects-analysis-fmea-within-the-v-model.html</loc>
+    <lastmod>2026-10-01T10:11:57.753Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/soft-skills-for-hard-missions-ethnographic-insights-of-mars-2020-space-operation-team-dynamics.html</loc>
+    <lastmod>2026-10-01T10:11:57.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/the-influence-of-human-systems-integration-on-the-fuzzy-front-end-of-innovation-a-medtech-case-study.html</loc>
+    <lastmod>2026-10-01T10:11:57.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/supporting-means-ends-reasoning-in-cybersecurity-critical-case-management-using-integrated-ecological-interface-design-process.html</loc>
+    <lastmod>2026-10-01T10:11:57.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/a-context-acquisition-methodology-for-the-design-of-complex-sociotechnical-systems.html</loc>
+    <lastmod>2026-10-01T10:11:57.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/accident-case-study-analysis-of-developmental-automated-driving-system-collison.html</loc>
+    <lastmod>2026-10-01T10:11:57.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/how-pilots-professional-ability-influences-their-workload-in-simulated-dpo-and-spo-task.html</loc>
+    <lastmod>2026-10-01T10:11:57.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/developing-prompts-to-facilitate-generative-pre-trained-transformer-classifying-decision-errors-in-flight-operations.html</loc>
+    <lastmod>2026-10-01T10:11:57.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/from-flying-to-monitoring-in-the-future-flight-deck-the-differences-in-pilots-perceived-mental-workload.html</loc>
+    <lastmod>2026-10-01T10:11:57.750Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2024/schedule/index.html</loc>
-    <lastmod>2025-10-08T10:39:44.174Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hsi-wg.github.io/conferences/index.html</loc>
-    <lastmod>2025-10-25T21:02:52.380Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hsi-wg.github.io/conferences/HSI2021/index.html</loc>
-    <lastmod>2025-10-08T10:39:44.170Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hsi-wg.github.io/conferences/HSI2019/resources.html</loc>
-    <lastmod>2025-10-08T10:39:44.168Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hsi-wg.github.io/conferences/HSI2020/resources.html</loc>
-    <lastmod>2025-10-08T10:39:44.169Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hsi-wg.github.io/conferences/HSI2020/index.html</loc>
-    <lastmod>2025-10-08T10:39:44.169Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hsi-wg.github.io/conferences/HSI2019/index.html</loc>
-    <lastmod>2025-10-08T10:39:44.168Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hsi-wg.github.io/conferences/HSI2021/committee.html</loc>
-    <lastmod>2025-10-08T10:39:44.170Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hsi-wg.github.io/conferences/HSI2021/resources.html</loc>
-    <lastmod>2025-10-08T10:39:44.171Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.753Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/about.html</loc>
-    <lastmod>2025-10-08T11:22:06.131Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.885Z</lastmod>
   </url>
   <url>
-    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/paper-template-1.html</loc>
-    <lastmod>2025-10-08T10:39:44.174Z</lastmod>
+    <loc>https://hsi-wg.github.io/conferences/HSI2021/resources.html</loc>
+    <lastmod>2026-10-01T10:11:57.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2021/committee.html</loc>
+    <lastmod>2026-10-01T10:11:57.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2026/EMEA/hsi2026_emea_wrap_up.html</loc>
+    <lastmod>2026-10-01T10:11:57.826Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2019/index.html</loc>
+    <lastmod>2026-10-01T10:11:57.744Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2020/resources.html</loc>
+    <lastmod>2026-10-01T10:11:57.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/IS2026/hsi_101.html</loc>
+    <lastmod>2026-10-01T10:11:57.870Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2020/index.html</loc>
+    <lastmod>2026-10-01T10:11:57.744Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2027/index.html</loc>
+    <lastmod>2026-10-01T10:11:57.827Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2019/resources.html</loc>
+    <lastmod>2026-10-01T10:11:57.744Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2026/EMEA/summary.html</loc>
+    <lastmod>2026-10-01T10:11:57.826Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2021/index.html</loc>
+    <lastmod>2026-10-01T10:11:57.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/index.html</loc>
+    <lastmod>2026-10-01T10:11:57.889Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/templates/proceedings.ejs.html</loc>
+    <lastmod>2026-10-01T10:11:57.890Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/systems-analysis-using-the-vee-model-and-concept-of-operations-in-human-systems-integration.html</loc>
+    <lastmod>2026-10-01T10:11:57.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/research-on-multi-temporal-safety-assessment-of-approach-control-system-based-on-multi-level-extensibility-evaluation-method.html</loc>
+    <lastmod>2026-10-01T10:11:57.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/combining-user-centered-design-and-system-engineering-to-the-design-of-a-generic-ai-based-assistant.html</loc>
+    <lastmod>2026-10-01T10:11:57.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/multi-temporal-operational-efficiency-evaluation-of-approach-control-system-based-on-vikor.html</loc>
+    <lastmod>2026-10-01T10:11:57.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/pilots-roles-in-the-urban-air-mobility-individual-capabilities-for-safety-and-security-enterprise-concerns.html</loc>
+    <lastmod>2026-10-01T10:11:57.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/hsi-for-enhancing-manufacturing-resilience-a-simulation-based-approach.html</loc>
+    <lastmod>2026-10-01T10:11:57.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/enabling-seamless-operation-design-challenges.html</loc>
+    <lastmod>2026-10-01T10:11:57.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/study-on-structure-model-of-stressors-for-pilot-cadets-in-flight-training-based-on-dematel-ism.html</loc>
+    <lastmod>2026-10-01T10:11:57.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/a-time-based-approach-for-understanding-human-performance-risks-in-sociotechnical-systems-an-integrative-framework.html</loc>
+    <lastmod>2026-10-01T10:11:57.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/cognitive-load-management-for-planning-and-executing-verification-strategies.html</loc>
+    <lastmod>2026-10-01T10:11:57.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/verification-complexity-definitions-measurements-and-indicators.html</loc>
+    <lastmod>2026-10-01T10:11:57.753Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/a-planning-and-readiness-framework-for-organisational-systems-change-within-human-systems-integration.html</loc>
+    <lastmod>2026-10-01T10:11:57.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/human-ai-teaming-for-cockpit-assistance.html</loc>
+    <lastmod>2026-10-01T10:11:57.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/the-development-of-a-human-systems-integration-massive-open-online-course-mooc.html</loc>
+    <lastmod>2026-10-01T10:11:57.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/a-function-oriented-approach-for-vehicle-development-from-an-hto-perspective.html</loc>
+    <lastmod>2026-10-01T10:11:57.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hsi-wg.github.io/conferences/HSI2024/proceedings/human-reliability-analysis-of-single-pilot-operations-based-on-improved-cream-method.html</loc>
+    <lastmod>2026-10-01T10:11:57.751Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2024/resources.html</loc>
-    <lastmod>2025-10-08T10:39:44.174Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.753Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2023/index.html</loc>
-    <lastmod>2025-10-08T10:39:44.172Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.747Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2022/index.html</loc>
-    <lastmod>2025-10-08T17:00:37.688Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.746Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2025/schedule/hsi2025_schedule.html</loc>
-    <lastmod>2025-10-16T08:55:57.742Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.754Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2025/schedule/keynotes.html</loc>
-    <lastmod>2025-10-16T06:57:08.475Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.754Z</lastmod>
   </url>
   <url>
     <loc>https://hsi-wg.github.io/conferences/HSI2025/index.html</loc>
-    <lastmod>2025-10-20T07:43:39.394Z</lastmod>
+    <lastmod>2026-10-01T10:11:57.754Z</lastmod>
   </url>
 </urlset>
