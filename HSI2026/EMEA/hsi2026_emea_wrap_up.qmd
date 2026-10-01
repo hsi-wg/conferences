@@ -431,13 +431,7 @@ This wider conversation can help turn it into a focused, useful, and connected H
 
 ## Source note
 
-This draft synthesizes:
-
-- Wooclap results from `HSI2026/EMEA/emeasec2026_hsi_wooclap_BPIOKAR.xlsx`;
-- the normalized results in `HSI2026/EMEA/wooclap_results.yml`;
-- the session transcript and question-by-question synthesis in `HSI2026/EMEA/wooclap-transcript/`.
-
-Poll scores are treated as relative salience. Transcript quotations and speaker attributions are used cautiously because the recording contains automatic-caption errors and room-microphone attribution ambiguity.
+This draft synthesizes participant responses and the workshop discussion. The findings are directional and intended to support continued conversation, rather than represent a finished proposal or a formal survey.
 
 ::: {.notes}
 This slide can be hidden during delivery if the audience does not need methodological detail. Keep it in the source deck for traceability.
